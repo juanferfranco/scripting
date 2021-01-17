@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sensores 1'
+project = 'Scripting'
 copyright = '2021, Juan Franco'
 author = 'Juan Franco'
 
 # The short X.Y version
 version = '2021.10.0'
 # The full version, including alpha/beta/rc tags
-release = 'rc'
+release = 'alpha'
 
 # -- General configuration ---------------------------------------------------
 
@@ -100,7 +100,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Sensores1'
+htmlhelp_basename = 'Scripting'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -127,7 +127,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'sensores1.tex', 'Curso sensores y actuadores 1',
+    (master_doc, 'scripting.tex', 'Curso Scripting',
      'Juan Franco', 'manual'),
 ]
 
@@ -137,7 +137,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sensores1', 'Curso sensores y actuadores 1',
+    (master_doc, 'scripting', 'Curso Scripting',
      [author], 1)
 ]
 
@@ -148,7 +148,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'sensores1', 'sensores1 Documentation',
-     author, 'sensores1', 'Documentación del curso sensores y actuadores 1',
+    (master_doc, 'scripting', 'scripting Documentation',
+     author, 'scripting', 'Documentación del curso scripting',
      'Miscellaneous'),
 ]

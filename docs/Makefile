@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    = -a -E
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = sensoresDocs
+SPHINXPROJ    = scriptingDocs
 SOURCEDIR     = .
 BUILDDIR      = _build
 
