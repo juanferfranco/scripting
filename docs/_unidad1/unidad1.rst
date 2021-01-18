@@ -167,3 +167,34 @@ de manera efectiva en equipo. ENTONCE vamos a practicar MUCHO.
 ¿Por qué Unity? Porque es una herramienta muy versátil con la que puedes hacer
 muchos tipos de productos interactivos, no solo videojuegos.
 
+
+Ejercicio 9
+^^^^^^^^^^^^
+
+En el ejercicio 1 te pedí que vieras la serie de videos del tutorial 
+de git de Gitkraken. Te voy a pedir que mires de nuevo 
+`este <https://youtu.be/S03EEusFxoI>`__. ¿Por qué es importante para nosotros?
+Por que como tu sabrás cuando hacemos aplicaciones interactivas generamos
+varios archivos binarios. Por tanto git lfs será necesario en nuestros 
+proyectos. 
+
+Lo primero entonces que tendrás que hacer es instalar el soporte para Git LFS. 
+Mira `aquí <https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage>`__ 
+cómo lo harías para tu sistema operativo.
+
+Ahora observa el `este <https://youtu.be/LS1VI1Y8WTM>`__ video que te explica cómo 
+usar git lfs con Unity.
+
+Ejercicio 10
+^^^^^^^^^^^^^
+
+¿Hay otra manera más fácil de hacer todo lo anterior? Si. Unity compró en 2020 la empresa 
+que hace PlaticSCM.
+
+Puedes leer al respecto en `este <https://forum.unity.com/threads/announcement-plastic-scm-joins-unity.953252/>`__ 
+foro. También encontrarás información reciente en `este <https://youtu.be/PjPK6hxGUFU>`__ video.
+
+.. warning::
+    En este curso vamos a utilizar Git y GitHub. Ten en cuenta que todos 
+    los repositorios que crees sean públicos para poder hacer seguimiento a tu trabajo.
+
