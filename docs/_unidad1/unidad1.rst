@@ -206,7 +206,7 @@ proyectos. En este curso puedes usar los boards y calendarios de Notion; sin emb
 puedes mirar otras herramientas como:
 
 * `Hacknplan <https://hacknplan.com/>`__ 
-*  `Codecks <https://www.codecks.io/>`__
+* `Codecks <https://www.codecks.io/>`__
 * GitKraken Boards, GitKraken TimeLines.
 
 .. warning::
