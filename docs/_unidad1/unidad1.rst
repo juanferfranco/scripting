@@ -182,8 +182,8 @@ Lo primero entonces que tendrás que hacer es instalar el soporte para Git LFS.
 Mira `aquí <https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage>`__ 
 cómo lo harías para tu sistema operativo.
 
-Ahora observa el `este <https://youtu.be/LS1VI1Y8WTM>`__ video que te explica cómo 
-usar git lfs con Unity.
+Ahora observa `este <https://youtu.be/LS1VI1Y8WTM>`__ video y `este <https://youtu.be/09McJ2NL7YM>`__ 
+otro. Te explicarán cómo usar Unity con git lfs.
 
 Ejercicio 10
 ^^^^^^^^^^^^^
