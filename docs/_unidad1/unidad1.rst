@@ -198,3 +198,18 @@ foro. También encontrarás información reciente en `este <https://youtu.be/PjP
     En este curso vamos a utilizar Git y GitHub. Ten en cuenta que todos 
     los repositorios que crees sean públicos para poder hacer seguimiento a tu trabajo.
 
+Ejercicio 11
+^^^^^^^^^^^^^^^
+
+En la introducción del curso te hablé de las herramientas de planeación o gestión de 
+proyectos. En este curso puedes usar los boards y calendarios de Notion; sin embargo, 
+puedes mirar otras herramientas como:
+
+* `Hacknplan <https://hacknplan.com/>`__ 
+*  `Codecks <https://www.codecks.io/>`__
+* GitKraken Boards, GitKraken TimeLines.
+
+.. warning::
+    En este curso vamos a utilizar Notion para realizar la gestión y documentación 
+    del trabajo del curso.
+
