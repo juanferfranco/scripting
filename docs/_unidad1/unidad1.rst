@@ -93,9 +93,8 @@ adicionas el proyecto de Unity.
 Ejercicio 4
 ^^^^^^^^^^^^
 
-Ahora reproduce tu mismo es otro caso:
-
-Creas un proyecto de Unity y luego adicionas un repositorio al proyecto. De todas 
+Ahora reproduce tu mismo el segundo caso (video anterior): Creas un proyecto de Unity y luego 
+adicionas un repositorio al proyecto. De todas 
 maneras no olvides ir a Project Settings (Project Settings: version control 
 (Visible Meta files) y asset serialization (Force text)).
 
