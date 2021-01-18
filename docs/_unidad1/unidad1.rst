@@ -185,7 +185,13 @@ cómo lo harías para tu sistema operativo.
 Ahora observa `este <https://youtu.be/LS1VI1Y8WTM>`__ video y `este <https://youtu.be/09McJ2NL7YM>`__ 
 otro. Te explicarán cómo usar Unity con git lfs.
 
-Ejercicio 10
+Ejercicio 11
+^^^^^^^^^^^^^
+
+Sigue las instrucciones del último video y practica la creación de un proyecto en Unity 
+con control de versión y lfs.
+
+Ejercicio 12
 ^^^^^^^^^^^^^
 
 ¿Hay otra manera más fácil de hacer todo lo anterior? Si. Unity compró en 2020 la empresa 
@@ -198,7 +204,7 @@ foro. También encontrarás información reciente en `este <https://youtu.be/PjP
     En este curso vamos a utilizar Git y GitHub. Ten en cuenta que todos 
     los repositorios que crees sean públicos para poder hacer seguimiento a tu trabajo.
 
-Ejercicio 11
+Ejercicio 13
 ^^^^^^^^^^^^^^^
 
 En la introducción del curso te hablé de las herramientas de planeación o gestión de 
