@@ -40,7 +40,7 @@ Estructura y metodología del curso
 
 El curso está divido en 4 unidades:
 
-#. Unidad 1: Estructuras de datos, algoritmos y trabajo en equipo.
+#. Unidad 1: Trabajo en equipo, estructuras de datos y algoritmos.
 #. Unidad 2: Patrones de diseño.
 #. Unidad 3: Depuración, perfilamiento y optimización.
 #. Unidad 4: Proyecto final.

@@ -14,7 +14,7 @@ Créditos y horas totales del curso: 2 créditos - 96 horas totales
    :caption: Contenido
 
    Introducción al curso <_intro/intro>
-   Unidad 1: Estructuras de datos, algoritmos y trabajo en equipo <_unidad1/unidad1>
+   Unidad 1: Trabajo en equipo, estructuras de datos y algoritmos <_unidad1/unidad1>
    Unidad 2: Patrones de diseño <_unidad2/unidad2>
    Unidad 3: Depuración, perfilamiento y optimización <_unidad3/unidad3>
    Unidad 4: Proyecto final <_unidad4/unidad4>

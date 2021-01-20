@@ -1,4 +1,4 @@
-Unidad 1. Estructuras de datos, algoritmos y trabajo en equipo
+Unidad 1. Trabajo en equipo, estructuras de datos y algoritmos
 =================================================================
 
 Introducción
