@@ -427,8 +427,8 @@ Ejercicio 22
 
 En este curso vas a trabajar con C#. Ingresa a 
 `este <https://docs.microsoft.com/en-us/dotnet/standard/collections/#algorithmic-complexity-of-collections>`__ 
-sitio. Mira por ejemplo la fila ``List<T>.Add`` observa que tienes dos medidas
-Amortized: ``O(1)``	y Worst Case:	``O(n)``. Amortized es el promedio. 
+sitio. Mira por ejemplo la fila ``List<T>.Add``. Observa que tienes dos medidas:
+Amortized con ``O(1)``	y Worst Case con	``O(n)``. Amortized es el promedio. 
 
 ¿Qué quiere decir lo anterior? Mira, en el caso de una List, la operación Add puede tomar 
 solo un paso siempre que tengas memoria disponible en la lista; sin embargo, si recuerdas, 
