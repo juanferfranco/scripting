@@ -117,7 +117,7 @@ puede tener la tarea de aprobar e integrar los cambios.
 Ejercicio 6
 ^^^^^^^^^^^^
 
-Ahora salta al minuto 18:10. Verás cómo deshacer errores. Reproduce los pasos 
+Salta al minuto 18:10. Verás cómo deshacer errores. Reproduce los pasos 
 en tu proyecto.
 
 
