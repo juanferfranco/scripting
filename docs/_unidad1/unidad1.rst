@@ -244,7 +244,7 @@ Ejercicio 15
 Considera el siguiente código donde crearemos dos perros Huskies. 
 Uno se llamará Pepe y el otro Tom. El color de los ojos de Pepe 
 será azul. A Tom lo crearemos copiando a Pepe y luego le cambiaremos el 
-color de los ojos a Tom para que los tenga cafés. Ejecuta el código 
+color de los ojos a café. Ejecuta el código 
 y observa el resultado. Descubre que salió mal. 
 
 .. code-block:: csharp
