@@ -345,7 +345,7 @@ decir, podrías llegar a tener dos cores de tu CPU ejecutando el programa. Cool!
 
 Ya te estarás preguntando, bueno, bueno, y ¿En dónde están los tales flujos de 
 instrucciones? El primer flujo comenzará ejecutando el método Main hasta terminar 
-con el ciclo for que imprime las ``x``. El segundo flujo ejecutará el método WriteY 
+con el ciclo ```for`` que imprime las ``x``. El segundo flujo ejecutará el método WriteY 
 y comenzará cuando el sistema operativo lo decida, luego de que solicites 
 iniciar el hilo con ``t.Start();``
 
