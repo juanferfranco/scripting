@@ -456,7 +456,7 @@ Ejercicio 24
 ^^^^^^^^^^^^^
 
 Ahora si vamos a practicar un poco más. Ya sabrás que una de las desventajas de los 
-arreglos es que son estáticos. Una vez creados, no puedes cambiar su tamaña. Entonces te 
+arreglos es que son estáticos. Una vez creados, no puedes cambiar su tamaño. Entonces te 
 propongo que crees una Lista. Tu me dirás, profe, pero eso ya existe en C#. Tienes toda la razón, 
 pero en esta Unidad vamos a aprovechar para calentar motores y repasar tus conceptos de 
 programación.
@@ -469,7 +469,7 @@ repositorio público.
 * Del repositorio público copia el archivo `Program.cs <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/blob/master/Section%202/Arrays/Program.cs>`__ 
 * Del repositorio público copia el archivo `Extensions.cs <https://raw.githubusercontent.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/master/Section%202/Arrays/Extensions.cs>`__ 
 
-No olvides adaptar el namespace de cada archivo al que definiste en un tu proyecto.
+No olvides ajustar el ``namespace``.
 
 * Lee el código y analiza en detalle. BUSCA todos los elementos sintácticos que no 
   entiendas.
@@ -483,7 +483,7 @@ Te haré algunas preguntas relacionadas con el código en ArrayList.cs:
 
 * ¿En ArrayList<T> qué significa <T> ? ¿Qué utilidad le ves a esto?
 * ¿Al crear un objeto de tipo ArrayList de qué tamaño es el arreglo inicial?
-* En el método ExpandStorage por qué se hace ``new T[_storage.Length * 2];``
+* En el método ExpandStorage ¿Por qué se hace ``new T[_storage.Length * 2];`` ?
 
 Ahora te pido que abras Program.cs y observes esta línea: ``customArrayList.PrintElements();``. 
 En customArrayList estamos almacenando una referencia a un objeto tipo ArrayList<int>. 
@@ -592,6 +592,11 @@ Así lo declaras:
 
 ¿Ya te diste cuenta? Mira que al llamar ``customArrayList.PrintElements();`` no 
 pasas ningún parámetro. Entonces ahí está el truco que están aplicando:
-almacenar en la variable ``arrayList`` la dirección en memoria, que está 
-en customArrayList, del objeto. UFFFFFFF. Interesante.
+almacenar en la variable ``arrayList`` la dirección en memoria del objeto. 
+UFFFFFFF. Interesante. Pero descansemos un rato...
+
+Una última cosa, por ahora. Me cuentas en notación Big-O ¿Cuál es el costo 
+de cada método?  (Profe, eso no es descansar...  Perdón).
+
+
 
