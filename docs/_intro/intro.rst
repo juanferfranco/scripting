@@ -48,8 +48,9 @@ El curso está divido en 4 unidades:
 Cada unidad estará constituida por tres fases:
 
 #. Fase 1: fundamentación. En esta fase se estudiarán los conceptos teóricos más relevantes de
-   cada unidad. Así mismo se complementarán con lecturas. En esta fase, debes 
-   repasar todos los conceptos olvidados de cursos anteriores.
+   cada unidad, pero lo haremos de manera práctica, es decir, te propondré una serie 
+   de ejercicios que te permitan experimentar. En esta fase, debes repasar todos los 
+   conceptos olvidados de cursos anteriores.
 #. Fase 2: proyecto. En esta fase se realizarán uno o más proyectos.
 #. Fase 3: evaluación. En esta fase se discuten los resultados de la unidad.
 
