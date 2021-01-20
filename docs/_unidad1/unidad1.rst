@@ -450,7 +450,7 @@ En notación Big-O ¿Cuál sería el costo de acceder a un elemento del arreglo?
 
 Toma el ejemplo de la página que te compartí. Añade un método y sus 
 `sobrecargas <https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/member-overloading>`__ 
-para imprimir todos los items de cada arreglos. ¿Todos te funcionaron? ¿Alguna excepción? ¿Por qué?
+para imprimir todos los items de cada arreglo. ¿Todos te funcionaron? ¿Alguna excepción? ¿Por qué?
 
 Ejercicio 24
 ^^^^^^^^^^^^^
