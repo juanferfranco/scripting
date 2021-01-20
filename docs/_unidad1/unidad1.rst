@@ -336,9 +336,9 @@ Ejecuta varias veces el programa. ¿Qué observas? ¿Notas que se comporta
 diferente cada vez que lo ejecutas?
 
 En este programa tan simple tenemos en un momento dado dos flujos de instrucciones 
-independientes que estás bajo el control del sistemas operativo. Tu programa 
+independientes que están bajo el control del sistemas operativo. Tu programa 
 pierde el control sobre los flujos y el sistema operativo hará lo mejor que pueda 
-por darles recursos de procesamiento. Para ejecutar un flujo de instrucciones el 
+por darles recursos de procesamiento (CPU/cores). Para ejecutar un flujo de instrucciones el 
 sistema operativo de tu computador crea una abstracción denominada Thread. De esta 
 manera el sistema operativo puede asignar recursos de cómputo a tu programa, es 
 decir, podrías llegar a tener dos cores de tu CPU ejecutando el programa. Cool! No?
