@@ -16,11 +16,11 @@ algoritmos relacionados con esas estructuras.
 Propósito de aprendizaje
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Aplicar algunas estructuras de datos y algoritmos en la resolución 
-de problemas.
-
 Aplicar herramientas de productividad y control de versión a la hora
 de programar.
+
+Aplicar algunas estructuras de datos y algoritmos en la resolución 
+de problemas.
 
 Temas
 ^^^^^^
