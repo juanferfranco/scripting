@@ -234,7 +234,7 @@ Asume que dentro de un método tienes lo siguiente:
 
 * ¿En qué parte de la memoria queda almacenada variable?
 * ¿En qué parte de la memoria queda almacenado el objeto?
-* ¿Cuál es la relación en variable y el objeto que se crea?
+* ¿Cuál es la relación entre variable y el objeto que se crea?
 * ¿Para qué sirve new?
 * ¿Para qué sirve el constructor de una clase?
 
