@@ -173,7 +173,7 @@ Ejercicio 9
 En el ejercicio 1 te pedí que vieras la serie de videos del tutorial 
 de git de Gitkraken. Te voy a pedir que mires de nuevo 
 `este <https://youtu.be/S03EEusFxoI>`__ video. ¿Por qué es importante para nosotros?
-Por que como tu sabrás cuando hacemos aplicaciones interactivas generamos
+Porque como tu sabrás cuando hacemos aplicaciones interactivas generamos
 varios archivos binarios. Por tanto git lfs será necesario en nuestros 
 proyectos. 
 
