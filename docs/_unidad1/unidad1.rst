@@ -31,7 +31,7 @@ Temas
 
 * Estructuras de datos: listas, stacks, colas, diccionarios, grafos.
 
-* Algoritmos de búsqueda de caminos y toma de decisiones.
+* Algoritmos de búsqueda y toma de decisiones.
 
 Ejercicios y proyectos
 ------------------------
