@@ -420,7 +420,7 @@ Observa `este <https://youtu.be/__vX2sjlpXU>`__ video.
   recurso puede servirte mucho para visualizar de manera gráfica la notación Big-O entre 
   dos algoritmos.
 
-* ¿Qué algoritmo crees que sea mejor uno con O(1) o con O(n) ?
+* ¿Qué algoritmo crees que sea mejor, uno con O(1) o con O(n) ?
 
 Ejercicio 22
 ^^^^^^^^^^^^^
