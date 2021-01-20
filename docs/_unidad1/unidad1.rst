@@ -193,8 +193,8 @@ con control de versión y lfs.
 Ejercicio 12
 ^^^^^^^^^^^^^
 
-¿Hay otra manera más fácil de hacer todo lo anterior? Si. Unity compró en 2020 la empresa 
-que hace PlaticSCM.
+¿Hay otra manera más fácil de hacer todo lo anterior? Si. Unity compró en 2020 la herramienta 
+PlaticSCM.
 
 Puedes leer al respecto en `este <https://forum.unity.com/threads/announcement-plastic-scm-joins-unity.953252/>`__ 
 foro. También encontrarás información reciente en `este <https://youtu.be/PjPK6hxGUFU>`__ video.
