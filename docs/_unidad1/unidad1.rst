@@ -161,7 +161,7 @@ y los flujos de trabajo, te voy a proponer un ejercicio en grupo:
 ¿Para qué te pido que hagas esto? Porque en este curso todo el código que escribas 
 debe estar bajo control de versión. Trabajar bajo control de versión es un 
 estándar en la industria y es una habilidad que deberás dominar para poder trabajar 
-de manera efectiva en equipo. ENTONCE vamos a practicar MUCHO.
+de manera efectiva en equipo. Por tanto, vamos a practicar MUCHO.
 
 ¿Por qué Unity? Porque es una herramienta muy versátil con la que puedes hacer
 muchos tipos de productos interactivos, no solo videojuegos.
