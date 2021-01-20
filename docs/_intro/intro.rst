@@ -171,8 +171,8 @@ libre, pero deberás incluir al menos lo siguiente:
 
 * No olvides dejar un enlace a tu repositorio público en GitHub.
 
-* Tu repositorio público debe reflejar un PROCESO por tanto debes tener
-  commits muy frecuentes. Conserva la rama principal de tu repositorio
+* Tu repositorio público debe reflejar un PROCESO. Por tanto, debes tener
+  commits frecuentes. Conserva la rama principal de tu repositorio
   estable, es decir, cada que implementes características nuevas en tu
   código crea una rama y luego realiza merges a la rama principal. No 
   es necesario que borres las ramas que crees.
