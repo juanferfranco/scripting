@@ -110,7 +110,7 @@ creación de ramas.
 En el ejercicio anterior creaste un repo. Ahora adiciona una rama llamada feature1.
 Realiza cambios al proyecto en esa rama. Cuando esté satisfecho con los cambios 
 realiza un pull request. Como es tu propio proyecto, tu mismo puedes aprobar los cambios
-y realizar un merge. AHORA, ten presente que al trabajar en equipo otro de tus compañeros 
+y realizar un merge. Ahora, ten presente que al trabajar en equipo otro de tus compañeros 
 puede tener la tarea de aprobar e integrar los cambios.
 
 
