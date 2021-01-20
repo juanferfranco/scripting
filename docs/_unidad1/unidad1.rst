@@ -433,7 +433,7 @@ Amortized con ``O(1)``	y Worst Case con	``O(n)``. Amortized es el promedio.
 ¿Qué quiere decir lo anterior? Mira, en el caso de una List, la operación Add puede tomar 
 solo un paso siempre que tengas memoria disponible en la lista; sin embargo, si recuerdas, 
 una List es una estructura de datos dinámica. Por tanto, si no hay espacio para hacer el 
-Add toca reservar más memoria, crecer la List. Tu dirás, eso es una operación. 
+Add toca reservar más memoria, es decir, crecer la List. Tu dirás, eso es una operación. 
 ¿Entonces de donde salen las N para convertirse en O(n)? Debes copiar TODOS los datos de la 
 lista vieja a la nueva (que tiene más memoria). Si tienes N datos, debes hacer N copias.
 
