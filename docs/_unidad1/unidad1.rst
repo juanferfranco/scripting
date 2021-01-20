@@ -9,8 +9,8 @@ organizar tu trabajo y trabajar en equipo. Una de las herramientas más
 importantes será aquella que permita hacer control de versión.
 
 También vamos a repasar algunos de los conceptos más importantes que has 
-estudiado en tus cursos de programación y claro, los avanzaremos aún más 
-estudiando a fondo la implementación de algunas estructuras de datos y 
+estudiado en tus cursos de programación, pero aprovecharemos para ir un poco 
+más lejos estudiando a fondo la implementación de algunas estructuras de datos y 
 algoritmos relacionados con esas estructuras. 
 
 Propósito de aprendizaje
