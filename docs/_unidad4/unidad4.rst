@@ -10,6 +10,6 @@ Propósito de aprendizaje
 Temas
 ^^^^^^
 
-Trayecto de acciones, tiempos y formas de trabajo
----------------------------------------------------
+Ejercicios y proyectos
+------------------------
 
