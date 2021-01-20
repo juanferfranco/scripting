@@ -94,7 +94,7 @@ Bibliografía
 ---------------------
 
 Vamos a utilizar recursos gratuitos en Internet e información que estará disponible
-en el sitio web del curso; sin embargo, te dejo alg
+en el sitio web del curso.
 
 Actividades de cada unidad
 ----------------------------
