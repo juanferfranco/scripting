@@ -606,3 +606,11 @@ adecuadosasd
 adecuadosasdasd
 adecuadosasddasd
 
+Ejercicio 26
+^^^^^^^^^^^^^
+adecuadossad
+aśd
+adecuadosasd
+adecuadosasdasd
+adecuadosasddasd
+
