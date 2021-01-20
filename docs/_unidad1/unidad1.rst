@@ -206,7 +206,7 @@ foro. También encontrarás información reciente en `este <https://youtu.be/PjP
 Ejercicio 13
 ^^^^^^^^^^^^^^^
 
-En la introducción del curso te hablé de las herramientas de planeación o gestión de 
+En la introducción del curso, te hablé de las herramientas de planeación o gestión de 
 proyectos. En este curso puedes usar los boards y calendarios de Notion; sin embargo, 
 puedes mirar otras herramientas como:
 
