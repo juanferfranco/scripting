@@ -597,3 +597,8 @@ UFFFFFFF. Interesante. Pero descansemos un rato...
 
 Una última cosa, por ahora. Me cuentas en notación Big-O ¿Cuál es el costo 
 de cada método en ArrayList.cs?  (Profe, eso no es descansar...  Perdón).
+
+
+Ejercicio 25: algoritmos de búsqueda en arreglos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
