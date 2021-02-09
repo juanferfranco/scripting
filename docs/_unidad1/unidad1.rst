@@ -602,3 +602,85 @@ de cada método en ArrayList.cs?  (Profe, eso no es descansar...  Perdón).
 Ejercicio 25: algoritmos de búsqueda en arreglos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Considera que tienes algunos elementos almacenados en un arreglo y quieres buscar 
+un elemento en particular. En el peor de los casos tendrías que buscar elemento 
+por elemento de manera lineal. ¿Por qué? En notación Big-O cuál sería el costo 
+de hacer esta búsqueda?
+
+La búsqueda en un arreglo se puede optimizar si el arreglo está ordenado. 
+
+Ten presente de todas maneras que existen otras estructuras de datos optimizadas para 
+los procesos de búsquedas de elementos, como por ejemplo las tablas hash y los árboles.
+
+Analiza el código que esta en `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%202/Searching>`__ repositorio. 
+Puedes crear un proyecto y adicionar los cinco archivos .cs que ves allí. NO OLVIDES EJECUTAR el código y observar la salida:
+
+.. code-block:: bash
+
+    Test array: [-34, -21, -18, -12, -3, -1, 0, 3, 8, 12, 23]
+    Searching for -12: Linear 3, Binary 3, Binary iterative 3
+    Searching for 0: Linear 6, Binary 6, Binary iterative 6
+    Searching for 23: Linear 10, Binary 10, Binary iterative 10
+    Searching for 2: Linear -1, Binary -1, Binary iterative -1
+
+El método de entrada al programa está en la clase Program.cs. En este ejemplo se realizan 3 tipos de búsquedas: 
+lineal, binaria e iterativa. Cada búsqueda está implementada como un Extension Method.
+
+Analiza cada algoritmo de búsqueda:
+
+* ¿Cómo funciona el algoritmo lineal?
+
+* ¿Cómo funciona el algoritmo binario?
+
+  Tips: 
+  
+  * Nota que algoritmo toma un elemento medio del arreglo y lo compara con el valor a buscar.
+    Si es valor es menor que el medio entonces valor estará del lado izquierdo del elemento medio. 
+    Si valor es mayor, entonces estará ubica del lado derecho del elemento medio.
+  * El algoritmo se repite partiendo siempre la parte del arreglo a buscar a la mitad.
+  * Mira por favor esta parte del código:
+
+    .. code-block:: csharp
+
+        private static int BinarySearch(int[] array, int start,int end, int value)
+        {
+            if (start > end) return -1;
+
+            int middleElement = (end + start) / 2;
+
+            if(value < array[middleElement])
+            {
+                return BinarySearch(array, start, middleElement - 1, value);
+            }
+            else if(value > array[middleElement])
+            {
+                return BinarySearch(array, middleElement + 1, end, value);
+            }
+            else
+            {
+                return middleElement;
+            }
+        }
+
+    Nota que el método BinarySearch se llama así mismo. A esta estrategia la conocemos como ejecución recursiva o algoritmo 
+    recursivo. Para implementar este tipo de técnica se utiliza el STACK. Cada que la función se llama, en el stack 
+    se crean nuevas variables para los parámetros de la función BinarySearch y sus variables locales. Por tanto, con cada 
+    llamado se crea un nuevo juego de variables, unas encima de las anteriores. Adicionalmente se registra como tal 
+    el llamado (la dirección de retorno). Si ves con detenimiento el código verás que en algún punto, EN EL TOPE del stack, 
+    se llamará una vez más a BinarySearch pero esta vez encontrará el valor y lo retornará. Y como efecto dominó, iran retornando 
+    los demás BinarySearch que registramos en el stack hasta retornar el sitio que originalmente llamó a BinarySearch con el resultado 
+    encontrado en el TOPE del stack.
+
+
+    .. image:: ../_static/recursive.png
+        :scale: 100%
+        :align: center
+        :alt: llamado recursivo
+
+|
+
+* ¿Cómo funciona el algoritmo binario iterativo?
+
+* En notación Big-O ¿Cuaĺ es el costo de cada algoritmo de búsqueda?
+
+
