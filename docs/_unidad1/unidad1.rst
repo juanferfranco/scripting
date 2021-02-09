@@ -683,4 +683,195 @@ Analiza cada algoritmo de búsqueda:
 
 * En notación Big-O ¿Cuaĺ es el costo de cada algoritmo de búsqueda?
 
+Ejercicio 26: algoritmos de ordenamiento
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Para el algoritmo de búsqueda binario del ejercicio anterior es necesario que los elementos estén ordenados.
+
+Analiza el código que está en `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/c2d3023792751e7cb9dd538b5713198cc1333455/Section%202/Sorting>`__ 
+repositorio. De nuevo, crea un proyecto copia las clases y ejecuta el código. El resultado será algo así:
+
+.. code-block:: bash 
+
+    The original array: 
+    [84, 47, 85, 60, 70, 52, 21, 46, 37, 17]
+    -----------------------
+    Selection sort: [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+    Bubble sort:    [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+    Merge sort:     [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+    Quick sort:     [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+
+Ten presente que el programa genera un arreglo aleatorio.
+
+* En Big-O ¿Cuál sería la complejidad del algoritmo Selection sort?
+* En Big-O ¿Cuál sería la complejidad del algoritmo Bubble sort?
+
+  Para encontrar este costo considera lo siguiente: si tienes un arreglo de tamaño :math:`n` y lo 
+  partes a la mitad en la primera iteración, tendrás un arreglo de tamaño :math:`n/2`, en la segunda 
+  iteración :math:`n/4`, en la tercera :math:`n/8`, en la k :math:`n/2^k`. Si en la iteración k 
+  la longitud del arreglo es 1, entonces cuántas iteraciones necesitas para llegar a un arreglo de tamaño 
+  1 partiendo de un arreglo de tamaño n:
+
+  .. math::
+
+      n/2^k = 1
+
+      2^k = n
+      
+      log_2(2^k) = log_2(n) 
+      
+      k = log_2(n)  
+
+
+  Entonces, en notación Big-O ¿Cuál sería el costo del algoritmo Bubble sort?
+
+* ¿Cómo funciona el algoritmo merger sort? 
+  
+  En el algoritmo Merge sort primero se parte en mitades el arreglo hasta obtener cada elemento:
+
+|
+
+  .. image:: ../_static/merge-split.png
+      :scale: 100%
+      :align: center
+      :alt: split
+
+|
+
+  ¿Cuál sería el costo en Big-O de hacer estas particiones?
+
+  Luego se comienzan a mezclar así: se toma la parte izquierda y la parte derecha. Se comparan los primeros 
+  elementos de cada parte. Si el elemento de la parte izquierda es menor que el elemento de la parte derecha ENTONCES 
+  se selecciona el primer elemento de la parte izquierda y se AVANZA al siguiente item de la parte izquierda.
+  Sino, se selecciona el elemento de la parte derecha y se avanza al siguiente elemento de la parte derecha.
+
+|
+
+  .. image:: ../_static/merge-1.png
+      :scale: 100%
+      :align: center
+      :alt: merge 1
+
+|
+
+  .. image:: ../_static/merge-2.png
+      :scale: 100%
+      :align: center
+      :alt: merge 2
+
+|
+
+  .. image:: ../_static/merge-3.png
+      :scale: 100%
+      :align: center
+      :alt: merge 3
+
+|
+
+  .. image:: ../_static/merge-4.png
+      :scale: 100%
+      :align: center
+      :alt: merge 4
+
+| 
+
+  .. image:: ../_static/merge-5.png
+      :scale: 100%
+      :align: center
+      :alt: merge 5
+
+|
+
+  .. image:: ../_static/merge-6.png
+      :scale: 100%
+      :align: center
+      :alt: merge 6
+
+|
+
+  .. image:: ../_static/merge-7.png
+      :scale: 100%
+      :align: center
+      :alt: merge 7
+
+|
+
+  .. image:: ../_static/merge-8.png
+      :scale: 100%
+      :align: center
+      :alt: merge 8
+
+|
+
+  .. image:: ../_static/merge-9.png
+      :scale: 100%
+      :align: center
+      :alt: merge 9
+
+|
+
+  .. image:: ../_static/merge-10.png
+      :scale: 100%
+      :align: center
+      :alt: merge 10
+
+|
+
+  .. image:: ../_static/merge-11.png
+      :scale: 100%
+      :align: center
+      :alt: merge 11
+
+|
+
+  .. image:: ../_static/merge-12.png
+      :scale: 100%
+      :align: center
+      :alt: merge 12
+
+|
+
+  .. image:: ../_static/merge-13.png
+      :scale: 100%
+      :align: center
+      :alt: merge 13
+
+|
+
+  .. image:: ../_static/merge-14.png
+      :scale: 100%
+      :align: center
+      :alt: merge 14
+
+|
+
+  .. image:: ../_static/merge-15.png
+      :scale: 100%
+      :align: center
+      :alt: merge 15
+
+|
+
+  .. image:: ../_static/merge-16.png
+      :scale: 100%
+      :align: center
+      :alt: merge 16
+
+|
+
+  .. image:: ../_static/merge-17.png
+      :scale: 100%
+      :align: center
+      :alt: merge 17
+
+|
+
+* No vamos a analizar el algoritmo Quick sort; sin embargo, la idea del algoritmo es 
+  optimizar optimizar el uso de la memoria mientras mantiene una complejidad similar al algoritmo 
+  merge sort.
+
+Ejercicio 27: listas enlazadas, stacks y colas 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
