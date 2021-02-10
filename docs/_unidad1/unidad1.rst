@@ -597,3 +597,392 @@ UFFFFFFF. Interesante. Pero descansemos un rato...
 
 Una última cosa, por ahora. Me cuentas en notación Big-O ¿Cuál es el costo 
 de cada método en ArrayList.cs?  (Profe, eso no es descansar...  Perdón).
+
+
+Ejercicio 25: algoritmos de búsqueda en arreglos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Considera que tienes algunos elementos almacenados en un arreglo y quieres buscar 
+un elemento en particular. En el peor de los casos tendrías que buscar elemento 
+por elemento de manera lineal. ¿Por qué? En notación Big-O cuál sería el costo 
+de hacer esta búsqueda?
+
+La búsqueda en un arreglo se puede optimizar si el arreglo está ordenado. 
+
+Ten presente de todas maneras que existen otras estructuras de datos optimizadas para 
+los procesos de búsquedas de elementos, como por ejemplo las tablas hash y los árboles.
+
+Analiza el código que esta en `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%202/Searching>`__ repositorio. 
+Puedes crear un proyecto y adicionar los cinco archivos .cs que ves allí. NO OLVIDES EJECUTAR el código y observar la salida:
+
+.. code-block:: bash
+
+    Test array: [-34, -21, -18, -12, -3, -1, 0, 3, 8, 12, 23]
+    Searching for -12: Linear 3, Binary 3, Binary iterative 3
+    Searching for 0: Linear 6, Binary 6, Binary iterative 6
+    Searching for 23: Linear 10, Binary 10, Binary iterative 10
+    Searching for 2: Linear -1, Binary -1, Binary iterative -1
+
+El método de entrada al programa está en la clase Program.cs. En este ejemplo se realizan 3 tipos de búsquedas: 
+lineal, binaria e iterativa. Cada búsqueda está implementada como un Extension Method.
+
+Analiza cada algoritmo de búsqueda:
+
+* ¿Cómo funciona el algoritmo lineal?
+
+* ¿Cómo funciona el algoritmo binario?
+
+  Tips: 
+  
+  * Nota que algoritmo toma un elemento medio del arreglo y lo compara con el valor a buscar.
+    Si es valor es menor que el medio entonces valor estará del lado izquierdo del elemento medio. 
+    Si valor es mayor, entonces estará ubica del lado derecho del elemento medio.
+  * El algoritmo se repite partiendo siempre la parte del arreglo a buscar a la mitad.
+  * Mira por favor esta parte del código:
+
+    .. code-block:: csharp
+
+        private static int BinarySearch(int[] array, int start,int end, int value)
+        {
+            if (start > end) return -1;
+
+            int middleElement = (end + start) / 2;
+
+            if(value < array[middleElement])
+            {
+                return BinarySearch(array, start, middleElement - 1, value);
+            }
+            else if(value > array[middleElement])
+            {
+                return BinarySearch(array, middleElement + 1, end, value);
+            }
+            else
+            {
+                return middleElement;
+            }
+        }
+
+    Nota que el método BinarySearch se llama así mismo. A esta estrategia la conocemos como ejecución recursiva o algoritmo 
+    recursivo. Para implementar este tipo de técnica se utiliza el STACK. Cada que la función se llama, en el stack 
+    se crean nuevas variables para los parámetros de la función BinarySearch y sus variables locales. Por tanto, con cada 
+    llamado se crea un nuevo juego de variables, unas encima de las anteriores. Adicionalmente se registra como tal 
+    el llamado (la dirección de retorno). Si ves con detenimiento el código verás que en algún punto, EN EL TOPE del stack, 
+    se llamará una vez más a BinarySearch pero esta vez encontrará el valor y lo retornará. Y como efecto dominó, iran retornando 
+    los demás BinarySearch que registramos en el stack hasta retornar el sitio que originalmente llamó a BinarySearch con el resultado 
+    encontrado en el TOPE del stack.
+
+
+    .. image:: ../_static/recursive.png
+        :scale: 100%
+        :align: center
+        :alt: llamado recursivo
+
+|
+
+* ¿Cómo funciona el algoritmo binario iterativo?
+
+* En notación Big-O ¿Cuaĺ es el costo de cada algoritmo de búsqueda?
+
+Ejercicio 26: algoritmos de ordenamiento
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Para el algoritmo de búsqueda binario del ejercicio anterior es necesario que los elementos estén ordenados.
+
+Analiza el código que está en `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/c2d3023792751e7cb9dd538b5713198cc1333455/Section%202/Sorting>`__ 
+repositorio. De nuevo, crea un proyecto copia las clases y ejecuta el código. El resultado será algo así:
+
+.. code-block:: bash 
+
+    The original array: 
+    [84, 47, 85, 60, 70, 52, 21, 46, 37, 17]
+    -----------------------
+    Selection sort: [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+    Bubble sort:    [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+    Merge sort:     [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+    Quick sort:     [17, 21, 37, 46, 47, 52, 60, 70, 84, 85]
+
+Ten presente que el programa genera un arreglo aleatorio.
+
+* En Big-O ¿Cuál sería la complejidad del algoritmo Selection sort?
+* En Big-O ¿Cuál sería la complejidad del algoritmo Bubble sort?
+
+  Para encontrar este costo considera lo siguiente: si tienes un arreglo de tamaño :math:`n` y lo 
+  partes a la mitad en la primera iteración, tendrás un arreglo de tamaño :math:`n/2`, en la segunda 
+  iteración :math:`n/4`, en la tercera :math:`n/8`, en la k :math:`n/2^k`. Si en la iteración k 
+  la longitud del arreglo es 1, entonces cuántas iteraciones necesitas para llegar a un arreglo de tamaño 
+  1 partiendo de un arreglo de tamaño n:
+
+  .. math::
+
+      n/2^k = 1
+
+      2^k = n
+      
+      log_2(2^k) = log_2(n) 
+      
+      k = log_2(n)  
+
+
+  Entonces, en notación Big-O ¿Cuál sería el costo del algoritmo Bubble sort?
+
+* ¿Cómo funciona el algoritmo merger sort? 
+  
+  En el algoritmo Merge sort primero se parte en mitades el arreglo hasta obtener cada elemento:
+
+|
+
+  .. image:: ../_static/merge-split.png
+      :scale: 100%
+      :align: center
+      :alt: split
+
+|
+
+  ¿Cuál sería el costo en Big-O de hacer estas particiones?
+
+  Luego se comienzan a mezclar así: se toma la parte izquierda y la parte derecha. Se comparan los primeros 
+  elementos de cada parte. Si el elemento de la parte izquierda es menor que el elemento de la parte derecha ENTONCES 
+  se selecciona el primer elemento de la parte izquierda y se AVANZA al siguiente item de la parte izquierda.
+  Sino, se selecciona el elemento de la parte derecha y se avanza al siguiente elemento de la parte derecha.
+
+|
+
+  .. image:: ../_static/merge-1.png
+      :scale: 100%
+      :align: center
+      :alt: merge 1
+
+|
+
+  .. image:: ../_static/merge-2.png
+      :scale: 100%
+      :align: center
+      :alt: merge 2
+
+|
+
+  .. image:: ../_static/merge-3.png
+      :scale: 100%
+      :align: center
+      :alt: merge 3
+
+|
+
+  .. image:: ../_static/merge-4.png
+      :scale: 100%
+      :align: center
+      :alt: merge 4
+
+| 
+
+  .. image:: ../_static/merge-5.png
+      :scale: 100%
+      :align: center
+      :alt: merge 5
+
+|
+
+  .. image:: ../_static/merge-6.png
+      :scale: 100%
+      :align: center
+      :alt: merge 6
+
+|
+
+  .. image:: ../_static/merge-7.png
+      :scale: 100%
+      :align: center
+      :alt: merge 7
+
+|
+
+  .. image:: ../_static/merge-8.png
+      :scale: 100%
+      :align: center
+      :alt: merge 8
+
+|
+
+  .. image:: ../_static/merge-9.png
+      :scale: 100%
+      :align: center
+      :alt: merge 9
+
+|
+
+  .. image:: ../_static/merge-10.png
+      :scale: 100%
+      :align: center
+      :alt: merge 10
+
+|
+
+  .. image:: ../_static/merge-11.png
+      :scale: 100%
+      :align: center
+      :alt: merge 11
+
+|
+
+  .. image:: ../_static/merge-12.png
+      :scale: 100%
+      :align: center
+      :alt: merge 12
+
+|
+
+  .. image:: ../_static/merge-13.png
+      :scale: 100%
+      :align: center
+      :alt: merge 13
+
+|
+
+  .. image:: ../_static/merge-14.png
+      :scale: 100%
+      :align: center
+      :alt: merge 14
+
+|
+
+  .. image:: ../_static/merge-15.png
+      :scale: 100%
+      :align: center
+      :alt: merge 15
+
+|
+
+  .. image:: ../_static/merge-16.png
+      :scale: 100%
+      :align: center
+      :alt: merge 16
+
+|
+
+  .. image:: ../_static/merge-17.png
+      :scale: 100%
+      :align: center
+      :alt: merge 17
+
+|
+
+* No vamos a analizar el algoritmo Quick sort; sin embargo, la idea del algoritmo es 
+  optimizar optimizar el uso de la memoria mientras mantiene una complejidad similar al algoritmo 
+  merge sort.
+
+Ejercicio 27: listas enlazadas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* ¿Qué es una lista enlazada y para qué sirve?
+
+  Es una colección lineal de elementos que llamamos nodos, solo que cada nodo tiene una referencia 
+  al siguiente nodo en la lista o colección. Así por ejemplo, el primer nodo tendrá una referencia 
+  al segundo nodo, este al tercero, etc. ¿Y el último nodo? ¡Excelente pregunta! el último nodo 
+  tendrá una referencia a NULL. De esta manera podemos identificar el último nodo de la colección.
+
+* ¿Qué pasa si quieres insertar o adicionar un elemento a la lista? Eso sería rápido. Por ejemplo, si vas 
+  a insertar, mira la figura:
+
+|
+
+  .. image:: ../_static/LL-insert.png
+      :scale: 100%
+      :align: center
+
+|
+
+* Acceder un elemento de la lista es LEEENNNNTOOOOO ¿Por qué? Porque tienes que recorrer toda la lista 
+  en el peor de los casos para encontrar el nodo deseado. Aprovecho y te pregunto, ¿Cómo accedes 
+  el tercer elemento de un arreglo? Responde esta pregunta y luego que analices el costo de acceder 
+  un nodo de la lista enlazada compara. 
+
+* Entonces, ya puedes ver en este punto por lo que te digo que una lista enlazada es mejor que un 
+  arreglo para insertar o borrar elementos, pero peor si necesitas acceder el elemento.
+
+* ¿Cuándo puedes usar una lista enlazada? Por ejemplo, para manejar la lista de suscriptores a un evento y 
+  para implementar otras estructuras de datos como los stacks y las colas.
+
+* En el siguiente `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/LinkedList>`__ 
+  encontrarás una implementación de una lista enlazada. Estudia detalladamente su implementación.
+
+  Te dejo algunas preguntas:
+
+  * En término de sintaxis de C# ¿Qué es esto?
+
+    .. code-block:: csharp
+
+        public Node<T> Next {get;set;}
+
+  * En términos de sintaxis de C# ¿Qué es esto?
+
+    .. code-block:: csharp
+
+        public (Node<T> previous, Node<T> found) FindFirst(T value)
+  
+  * En notación Big-O ¿Cuál sería el costo de acceder un elemento en la lista enlazada. Y otra vez  
+    ¿Cuál sería el costo de acceder un elemento en un arreglo? ¿Qué estructura de datos sería mejor 
+    para acceder rápidamente elementos?
+
+  * Al buscar un nodo ¿Por qué necesitas retornar el nodo que buscas y el anterior?
+
+    .. code-block:: csharp
+
+        public (Node<T> previous, Node<T> found) FindFirst(T value)
+
+Ejercicio 28: reto listas enlazadas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Implementa un programa que te permita contar la cantidad de nodos de una lista enlazada.
+
+
+Ejercicio 29: stacks y queues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Los stacks sirven para apilar información usando la estrategia last input - first output (LIFO). Te puedes 
+imaginar los stacks como pilas de platos. Tu vas armando la pila de platos y cuando necesitas un 
+plato tomas el último que colocaste en la pila.
+
+Las colas funcionan con la lógica first input - first output (FIFO). Son muy útiles para comunicar dos hilos 
+en un proceso. El hilo 1 envía mensajes a la cola, uno tras otro. El hilos 2 los va consumiendo en 
+orden FIFO, es decir, el primer mensaje enviado por el hilo 1 será el primero en ser retirado por el hilo 2 y así 
+con los demás mensajes.
+
+
+En este `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/Stack>`__ 
+puedes ver cómo está implementado un stack. Toma solo los archivos .cs y creo tu propio proyecto.
+
+* Realiza una gráficas que ilustren el funcionamiento del stack al adicionar y al sacar datos.
+  
+En este `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/Stack>`__ 
+puedes ver cómo está implementado una queue. Toma solo los archivos .cs y creo tu propio proyecto.
+
+* Realiza una gráficas que ilustren el funcionamiento de la queue al ingresar y sacar nodos de ella.
+
+Ejercicio 30: hash tables y diccionarios
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Las hash tables, al igual que los diccionarios se utilizan para resolver un problema concreto: ACELERAR la búsqueda de 
+elementos. ¿Cómo? Las hash tables usan funciones hash. Una función hash calcula un número único
+y con ese número único se puede ubicar rápidamente el elemento en una tabla (hash table).
+
+Los diccionarios en C# son una implementación de las hash table; sin embargo son diferentes.
+
+En `este <https://www.geeksforgeeks.org/difference-between-hashtable-and-dictionary-in-c-sharp/>`__ enlace podrás 
+ver algunos ejemplos de ambas estructuras de datos y una comparación entre ellas.
+
+Los códigos de producción que implementan las características internas de una hash table y un diccionario 
+son complejos; sin embargo, vamos a analizar una implementación SIMPLE, no optimizada, no de producción de una hash table,
+SOLO para que veas conceptualmente cómo funciona:
+
+* Copia los archivos .cs de `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%204/Hashtable>`__ 
+  enlace y crea un proyecto. Ejecuta el código.
+* Realiza dibujos que ilustren cómo es el funcionamiento interno de esta implementación 
+  de una hash table para las operaciones Add, Get y remove.
+* ¿Cómo se calcula el hash de cada una clave?
+* ¿Puedo tener varias claves con el mismo hash?
+* ¿Cómo se resuelven las colisiones de claves con el mismo hash?
+* Para qué se utilizan las listas enlazadas en esta implementación?
+
+
+
+
