@@ -870,8 +870,8 @@ Ten presente que el programa genera un arreglo aleatorio.
   optimizar optimizar el uso de la memoria mientras mantiene una complejidad similar al algoritmo 
   merge sort.
 
-Ejercicio 27: listas enlazadas, stacks y colas 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 27: listas enlazadas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * ¿Qué es una lista enlazada y para qué sirve?
 
@@ -880,29 +880,96 @@ Ejercicio 27: listas enlazadas, stacks y colas
   al segundo nodo, este al tercero, etc. ¿Y el último nodo? ¡Excelente pregunta! el último nodo 
   tendrá una referencia a NULL. De esta manera podemos identificar el último nodo de la colección.
 
+* ¿Qué pasa si quieres insertar o adicionar un elemento a la lista? Eso sería rápido. Por ejemplo, si vas 
+  a insertar, mira la figura:
 
-* Acceder un elemento de la lista es LEEENNNNTOOOOO, ¿Por qué? Porque tiene que recorrer toda la lista 
-  en el peor de los casos para encontrar el nodo que quieres. Aprovecho y te pregunto, ¿Cómo accedes 
-  el tercer elemento de un arreglo? y eso comparado con el acceso a una lista enlazada ¿Que te parece, mejor 
-  en este caso el arreglo o la lista enlazada? En notación Big-O ¿Cuál sería el costo de acceder un 
-  elemento de la lista enlazada?
+|
 
-* ¿Qué pasa si quieres insertar o adicionar un elemento a la lista? Eso si sería rápido. Por ejemplo, si vas 
-  a insertar:
+  .. image:: ../_static/LL-insert.png
+      :scale: 100%
+      :align: center
+
+|
+
+* Acceder un elemento de la lista es LEEENNNNTOOOOO ¿Por qué? Porque tienes que recorrer toda la lista 
+  en el peor de los casos para encontrar el nodo deseado. Aprovecho y te pregunto, ¿Cómo accedes 
+  el tercer elemento de un arreglo? Responde esta pregunta y luego que analices el costo de acceder 
+  un nodo de la lista enlazada compara. 
+
+* Entonces, ya puedes ver en este punto por lo que te digo que una lista enlazada es mejor que un 
+  arreglo para insertar o borrar elementos, pero peor si necesitas acceder el elemento.
+
+* ¿Cuándo puedes usar una lista enlazada? Por ejemplo, para manejar la lista de suscriptores a un evento y 
+  para implementar otras estructuras de datos como los stacks y las colas.
+
+* En el siguiente `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/LinkedList>`__ 
+  encontrarás una implementación de una lista enlazada. Estudia detalladamente su implementación.
+
+  Te dejo algunas preguntas:
+
+  * En término de sintaxis de C# ¿Qué es esto?
+
+    .. code-block:: csharp
+
+        public Node<T> Next {get;set;}
+
+  * En términos de sintaxis de C# ¿Qué es esto?
+
+    .. code-block:: csharp
+
+        public (Node<T> previous, Node<T> found) FindFirst(T value)
   
-   
+  * En notación Big-O ¿Cuál sería el costo de acceder un elemento en la lista enlazada. Y otra vez  
+    ¿Cuál sería el costo de acceder un elemento en un arreglo? ¿Qué estructura de datos sería mejor 
+    para acceder rápidamente elementos?
+
+  * Al buscar un nodo ¿Por qué necesitas retornar el nodo que buscas y el anterior?
+
+    .. code-block:: csharp
+
+        public (Node<T> previous, Node<T> found) FindFirst(T value)
+
+Ejercicio 28: reto listas enlazadas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Implementa un programa que te permita contar la cantidad de nodos de una lista enlazada.
 
 
+Ejercicio 29: stacks y queues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Las listas enlazadas sirven para implementar stacks y para implementar colas.
+Los stacks sirven para apilar información usando la estrategia last input - first output (LIFO). Te puedes 
+imaginar los stacks como pilas de platos. Tu vas armando la pila de platos y cuando necesitas un 
+plato tomas el último que colocaste en la pila.
+
+Las colas funcionan con la lógica first input - first output (FIFO). Son muy útiles para comunicar dos hilos 
+en un proceso. El hilo 1 envía mensajes a la cola, uno tras otro. El hilos 2 los va consumiendo en 
+orden FIFO, es decir, el primer mensaje enviado por el hilo 1 será el primero en ser retirado por el hilo 2 y así 
+con los demás mensajes.
+
+
+En este `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/Stack>`__ 
+puedes ver cómo está implementado un stack. Toma solo los archivos .cs y creo tu propio proyecto.
+
+* Realiza una gráficas que ilustren el funcionamiento del stack al adicionar y al sacar datos.
   
-  Los stacks sirven para apilar información usando la estrategia first input - first output (FIFO). Te puedes 
-  imaginar los stacks como pilas de platos. Tu vas armando la pila de platos y cuando necesitas un 
-  plato tomas el último que colocaste en la pila.
+En este `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/Stack>`__ 
+puedes ver cómo está implementado una queue. Toma solo los archivos .cs y creo tu propio proyecto.
 
-  Las colas funcionan con la lógica last input - first output (LIFO). Son muy útiles para comunicar dos hilos 
-  en un proceso. El hilo 1 envía mensajes a la cola, uno tras otro. El hilos 2 los va consumiendo en 
-  orden LIFO, es decir, el primer mensaje enviado por el hilo 1, será el retirado por el hilo 2 y así 
-  con los demás mensajes.
+* Realiza una gráficas que ilustren el funcionamiento de la queue al ingresar y sacar nodos de ella.
+
+Ejercicio 30: hash tables y diccionarios
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Las hash tables, al igual que los diccionarios se utilizan para resolver un problema concreto: ACELERAR la búsqueda de 
+elementos. ¿Cómo? Las hash tables usan funciones hash. Una función hash calcula un número único
+y con ese número único se puede ubicar rápidamente el elemento en una tabla (hash table).
+
+Los diccionarios en C# son una implementación de las hash table; sin embargo son diferentes.
+
+En `este <https://www.geeksforgeeks.org/difference-between-hashtable-and-dictionary-in-c-sharp/>`__ enlace podrás 
+ver algunos ejemplos de ambas estructuras de datos y una comparación entre ellas.
+
+
 
 
