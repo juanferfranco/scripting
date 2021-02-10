@@ -873,5 +873,36 @@ Ten presente que el programa genera un arreglo aleatorio.
 Ejercicio 27: listas enlazadas, stacks y colas 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* ¿Qué es una lista enlazada y para qué sirve?
+
+  Es una colección lineal de elementos que llamamos nodos, solo que cada nodo tiene una referencia 
+  al siguiente nodo en la lista o colección. Así por ejemplo, el primer nodo tendrá una referencia 
+  al segundo nodo, este al tercero, etc. ¿Y el último nodo? ¡Excelente pregunta! el último nodo 
+  tendrá una referencia a NULL. De esta manera podemos identificar el último nodo de la colección.
+
+
+* Acceder un elemento de la lista es LEEENNNNTOOOOO, ¿Por qué? Porque tiene que recorrer toda la lista 
+  en el peor de los casos para encontrar el nodo que quieres. Aprovecho y te pregunto, ¿Cómo accedes 
+  el tercer elemento de un arreglo? y eso comparado con el acceso a una lista enlazada ¿Que te parece, mejor 
+  en este caso el arreglo o la lista enlazada? En notación Big-O ¿Cuál sería el costo de acceder un 
+  elemento de la lista enlazada?
+
+* ¿Qué pasa si quieres insertar o adicionar un elemento a la lista? Eso si sería rápido. Por ejemplo, si vas 
+  a insertar:
+  
+   
+
+
+
+  Las listas enlazadas sirven para implementar stacks y para implementar colas.
+  
+  Los stacks sirven para apilar información usando la estrategia first input - first output (FIFO). Te puedes 
+  imaginar los stacks como pilas de platos. Tu vas armando la pila de platos y cuando necesitas un 
+  plato tomas el último que colocaste en la pila.
+
+  Las colas funcionan con la lógica last input - first output (LIFO). Son muy útiles para comunicar dos hilos 
+  en un proceso. El hilo 1 envía mensajes a la cola, uno tras otro. El hilos 2 los va consumiendo en 
+  orden LIFO, es decir, el primer mensaje enviado por el hilo 1, será el retirado por el hilo 2 y así 
+  con los demás mensajes.
 
 
