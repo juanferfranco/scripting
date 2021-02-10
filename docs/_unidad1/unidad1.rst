@@ -980,6 +980,49 @@ SOLO para que veas conceptualmente cómo funciona:
 * ¿Cómo se resuelven las colisiones de claves con el mismo hash?
 * Para qué se utilizan las listas enlazadas en esta implementación?
 
+Ejercicio 31: ejemplo de diccionarios
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%204/HashCollections>`__ 
+enlace vas a encontrar algunos ejemplos de cómo usar diccionarios y hash tables:
+
+* De nuevo, crear un proyecto y copia los archivos .cs necesarios para correr el ``HashingTricks.Demo();``
+* Nota en la clase Program.cs
+
+  .. code-block:: csharp
+
+      using System;
+      using System.Collections.Generic;
+
+      namespace HashCollections
+      {
+          class Program
+          {
+              static void Main(string[] args)
+              {
+                  //HashCollections.DictionaryDemo();
+                  //HashCollections.HashsetDemo();
+                  HashingTricks.Demo();
+              }
+          }
+      }
+
+  Ves que hay tres demos? vamos a probar solo el primero. Por tanto: 
+  
+  * borra la línea ``HashingTricks.Demo();`` y ``HashCollections.HashsetDemo();``
+  * Ejecuta el demo.
+
+* Para terminar con este ejercicio, realiza un resumen así:
+  
+  * ¿Cómo adiciono un item a un diccionario? Ilustra esto de dos maneras.
+  * ¿Cómo recupero un item de un diccionario?
+  * Describe cómo se usa el método TryGetValue.
+  
+Ejercicio 32: 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Este ejercicio es simple: ¿Cuál es la gracias de usar una ESTRUCTURA DE DATOS DICCIONARY? 
+¿Qué buscamos optimizar?
 
 
 
