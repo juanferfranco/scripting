@@ -970,6 +970,19 @@ Los diccionarios en C# son una implementación de las hash table; sin embargo so
 En `este <https://www.geeksforgeeks.org/difference-between-hashtable-and-dictionary-in-c-sharp/>`__ enlace podrás 
 ver algunos ejemplos de ambas estructuras de datos y una comparación entre ellas.
 
+Los códigos de producción que implementan las características internas de una hash table y un diccionario 
+son complejos; sin embargo, vamos a analizar una implementación SIMPLE, no optimizada, no de producción de una hash table,
+SOLO para que veas conceptualmente cómo funciona:
+
+* Copia los archivos .cs de `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%204/Hashtable>`__ 
+  enlace y crea un proyecto. Ejecuta el código.
+* Realiza dibujos que ilustren cómo es el funcionamiento interno de esta implementación 
+  de una hash table para las operaciones Add, Get y remove.
+* ¿Cómo se calcula el hash de cada una clave?
+* ¿Puedo tener varias claves con el mismo hash?
+* ¿Cómo se resuelven las colisiones de claves con el mismo hash?
+* Para qué se utilizan las listas enlazadas en esta implementación?
+
 
 
 
