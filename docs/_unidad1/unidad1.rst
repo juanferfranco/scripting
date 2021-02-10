@@ -967,9 +967,6 @@ y con ese número único se puede ubicar rápidamente el elemento en una tabla (
 
 Los diccionarios en C# son una implementación de las hash table; sin embargo son diferentes.
 
-En `este <https://www.geeksforgeeks.org/difference-between-hashtable-and-dictionary-in-c-sharp/>`__ enlace podrás 
-ver algunos ejemplos de ambas estructuras de datos y una comparación entre ellas.
-
 Los códigos de producción que implementan las características internas de una hash table y un diccionario 
 son complejos; sin embargo, vamos a analizar una implementación SIMPLE, no optimizada, no de producción de una hash table,
 SOLO para que veas conceptualmente cómo funciona:
