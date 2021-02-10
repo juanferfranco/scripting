@@ -1025,4 +1025,23 @@ Este ejercicio es simple: ¿Cuál es la gracias de usar una ESTRUCTURA DE DATOS 
 ¿Qué buscamos optimizar?
 
 
+PROYECTO 
+^^^^^^^^^^^^^
+
+Este proyecto se trata de analizar a fondo un videojuego sencillo basado en el uso 
+de estructuras de datos y algoritmos de búsqueda.
+
+Vamos a utilizar `este <https://github.com/lordjesus/Packt-Introduction-to-graph-algorithms-for-game-developers>`__ 
+código en GitHub de `Daniel Jallov <http://www.jallov.com/>`__
+
+* `Descarga <https://github.com/lordjesus/Packt-Introduction-to-graph-algorithms-for-game-developers/archive/master.zip>`__ 
+  el repositorio.
+* Abre en Unity el juego 8 puzzle game. Puedes usar la versión 2019.4.
+* Carga la escena 8puzzle.
+* Ejecuta el juego:
+
+  .. image:: ../_static/8puzzle.gif
+      :scale: 100%
+      :align: center
+      :alt: juego
 
