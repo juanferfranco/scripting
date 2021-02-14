@@ -1292,14 +1292,14 @@ Ilustra su funcionamiento utilizando un puzzle más simple. Parte de este punto:
 
 .. image:: ../_static/3-puzzle-init.png
    :alt:  3 puzzle init
-   :scale: 100%
+   :scale: 50%
    :align: center
 
 Para llegar aquí
 
 .. image:: ../_static/3-puzzle.png
    :alt:  3 puzzle
-   :scale: 100%
+   :scale: 50%
    :align: center
 
 Pregunta 2
