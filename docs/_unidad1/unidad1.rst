@@ -211,7 +211,7 @@ proyectos. En este curso puedes usar los boards y calendarios de Notion; sin emb
 puedes mirar otras herramientas como:
 
 * `Hacknplan <https://hacknplan.com/>`__ 
-* `Codecks <https://www.codecks.io/>`__
+* `eecks <https://www.codecks.io/>`__
 * GitKraken Boards, GitKraken TimeLines.
 
 .. warning::
@@ -1018,7 +1018,7 @@ enlace vas a encontrar algunos ejemplos de cómo usar diccionarios y hash tables
   * ¿Cómo recupero un item de un diccionario?
   * Describe cómo se usa el método TryGetValue.
   
-Ejercicio 32: 
+Ejercicio 32: reflexión
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Este ejercicio es simple: ¿Cuál es la gracias de usar una ESTRUCTURA DE DATOS DICCIONARY? 
@@ -1045,3 +1045,366 @@ código en GitHub de `Daniel Jallov <http://www.jallov.com/>`__
       :align: center
       :alt: juego
 
+Antes de analizar el proyecto, vas revisar, de manera aislada solo el algoritmo para resolver 
+el problema.
+
+* En `este <https://github.com/lordjesus/Packt-Introduction-to-graph-algorithms-for-game-developers/tree/master/Code%20for%20videos/Video%202.6%20-%208%20puzzle>`__ 
+  sitio puedes encontrar dos clases: Program.cs y PuzzleSolver.cs.
+* Crea en un proyecto en Visual Studio o en Rider que incluya el contenido de los archivos 
+  anteriores.
+* Ejecuta el programa. Verás algo similar a esto:
+
+  .. code:: bash
+  
+      Solving 
+      1 6 4 
+      5 8 2 
+      * 7 3 
+
+      Depth-first search took 227 ms
+      Depth-first search path contains 42181 states
+
+      Breadth-first search took 34 ms
+      Breadth-first search path contains 21 states
+
+      Printing solution
+
+      1 2 3 
+      4 5 6 
+      7 8 * 
+
+
+      1 2 3 
+      4 5 6 
+      7 * 8 
+
+
+      1 2 3 
+      4 * 6 
+      7 5 8 
+
+
+      1 2 3 
+      4 6 * 
+      7 5 8 
+
+
+      1 2 * 
+      4 6 3 
+      7 5 8 
+
+
+      1 * 2 
+      4 6 3 
+      7 5 8 
+
+
+      1 6 2 
+      4 * 3 
+      7 5 8 
+
+
+      1 6 2 
+      * 4 3 
+      7 5 8 
+
+
+      * 6 2 
+      1 4 3 
+      7 5 8 
+
+
+      6 * 2 
+      1 4 3 
+      7 5 8 
+
+
+      6 4 2 
+      1 * 3 
+      7 5 8 
+
+
+      6 4 2 
+      1 5 3 
+      7 * 8 
+
+
+      6 4 2 
+      1 5 3 
+      7 8 * 
+
+
+      6 4 2 
+      1 5 * 
+      7 8 3 
+
+
+      6 4 * 
+      1 5 2 
+      7 8 3 
+
+
+      6 * 4 
+      1 5 2 
+      7 8 3 
+
+
+      * 6 4 
+      1 5 2 
+      7 8 3 
+
+
+      1 6 4 
+      * 5 2 
+      7 8 3 
+
+
+      1 6 4 
+      5 * 2 
+      7 8 3 
+
+
+      1 6 4 
+      5 8 2 
+      7 * 3 
+
+
+      1 6 4 
+      5 8 2 
+      * 7 3 
+
+* El programa ejecuta dos algoritmos de búsqueda: `Depth First Search` y 
+  `Breadth First Search`, pero solo se imprime el resultado de `Breadth First Search`.
+* Observa detenidamente el resultado, lo que estás viendo son los pasos para 
+  llegar de aquí:
+
+  .. code:: bash
+
+      1 6 4
+      5 8 2
+      * 7 3
+
+  Hasta aquí:
+
+  .. code:: bash
+
+      1 2 3
+      4 5 6
+      7 8 *
+
+Pregunta 1
+#############
+
+Para responder esta pregunta vas a necesitar analizar cómo funciona el 
+algoritmo `Breadth First Search` (BFS). El algoritmo te permitirá recorrer 
+los nodos o vértices de un GRAFO. ¿Qué es un grafo? es una estructura de 
+datos compuesta por VÉRTICES y por ARCOS. Los arcos son las líneas 
+que conectan los vértices. En la siguiente gráfica te voy a mostrar 
+un grafo compuesto por 7 vértices y 9 arcos. Vamos a recorrer o visitar 
+cada vértice del grafo utilizando el algoritmo BFS. Nota que 
+usaremos además dos estructuras de datos: una cola (queue) y una 
+lista (nodos visitados). 
+
+Primero colocamos en la cola el nodo inicial, es decir, el nodo por donde 
+comenzaremos la búsqueda: V6. 
+
+.. image:: ../_static/bfs-1.png
+   :alt:  paso 1
+   :scale: 100%
+   :align: center
+
+Ahora lo sacamos de la cola, lo registramos como un nodo visitado y marcamos los 
+nodos con los cuales está conectado:
+
+.. image:: ../_static/bfs-2.png
+   :alt:  paso 2
+   :scale: 100%
+   :align: center
+
+Recuerda que la cola funciona con la lógica FIFO: first in, first out. Entonces 
+repetimos el mismo proceso anterior con los demás nodos de la cola hasta 
+que terminemos de recorrer todo el grafo o hasta que lleguemos al nodo deseado.
+
+.. image:: ../_static/bfs-3.png
+   :alt:  paso 3
+   :scale: 100%
+   :align: center
+
+|
+
+.. image:: ../_static/bfs-4.png
+   :alt:  paso 4
+   :scale: 100%
+   :align: center
+
+|
+
+.. image:: ../_static/bfs-5.png
+   :alt:  paso 5
+   :scale: 100%
+   :align: center
+
+|
+
+.. image:: ../_static/bfs-6.png
+   :alt:  paso 6
+   :scale: 100%
+   :align: center
+
+|
+
+.. image:: ../_static/bfs-7.png
+   :alt:  paso 7
+   :scale: 100%
+   :align: center
+
+|
+
+.. image:: ../_static/bfs-8.png
+   :alt:  paso 8
+   :scale: 100%
+   :align: center
+
+Vamos a utilizar este algoritmo para solucionar el puzzle. En este 
+caso, partimos de este nodo:
+
+  .. code:: bash
+
+      1 6 4
+      5 8 2
+      * 7 3
+
+Y queremos llegar a este otro:
+
+  .. code:: bash
+
+      1 2 3
+      4 5 6
+      7 8 *
+
+La solución al problema será EL CAMINO que conecta a estos dos ESTADOS 
+del puzzle.
+
+Ahora si, la pregunta 1. Explica ¿Cómo funciona la implementación 
+del algoritmo BFS que está `aquí <https://github.com/lordjesus/Packt-Introduction-to-graph-algorithms-for-game-developers/tree/master/Code%20for%20videos/Video%202.6%20-%208%20puzzle>`__.
+
+Ilustra su funcionamiento utilizando un puzzle más simple. Parte de este punto:
+
+.. image:: ../_static/3-puzzle-init.png
+   :alt:  3 puzzle init
+   :scale: 100%
+   :align: center
+
+Para llegar aquí
+
+.. image:: ../_static/3-puzzle.png
+   :alt:  3 puzzle
+   :scale: 100%
+   :align: center
+
+Pregunta 2
+############
+
+Explica cuáles son los pasos que sigue el programa para resolver el problema. Por ejemplo, 
+Observa el archivo Program.cs:
+
+.. code:: csharp
+
+    static void Main(string[] args)
+    {
+      ...
+
+      string state = PuzzleSolver.GenerateRandomSolvableState();
+
+        ...
+
+      path = PuzzleSolver.BreadthFirstSearch(state);
+
+        ...
+    }
+
+Aquí los pasos son: 
+
+#. Generar un problema inicial: `string state = PuzzleSolver.GenerateRandomSolvableState();`
+#. Encontrar el camino de nodos o el recorrido desde el problema inicial 
+   hasta la solución: `path = PuzzleSolver.BreadthFirstSearch(state);`
+
+¿Qué pasos se hacen en `BreadthFirstSearch`?
+
+Pregunta 3
+##############
+
+En el algoritmo BFS ¿Para qué y cómo se están usando una lista, una cola y un diccionario?
+
+Pregunta 4
+##############
+
+Ilustra de manera similar a la pregunta 1 ¿Cómo funciona el algoritmo 
+Depth-First Search?
+
+Pregunta 5
+##############
+
+En la implementación del algoritmo Depth-First Search ¿Para qué y cómo se 
+está utilizando un stack?
+
+Pregunta 6
+##############
+
+En el proyecto de Unity. Observa el código Block.cs.
+
+¿Qué es esto y para qué sirve?
+
+.. code:: csharp
+
+    public delegate void ClickedEventHandler(object sender, EventArgs e);
+    public event ClickedEventHandler Clicked;
+
+Pregunta 7
+##############
+
+Explica ¿Qué está pasando aquí?
+
+.. code:: csharp
+
+    protected virtual void OnClicked(EventArgs e)
+    {
+        if (Clicked != null)
+        {
+            Clicked(this, e);
+        }
+    }
+
+Pregunta 8
+##############
+
+Sin buscar la implementación de los eventos en C# ¿Qué estructura 
+de datos crees que se podría utilizar para implementar 
+un evento? Explica tu respuesta.
+
+Pregunta 9
+##############
+
+¿Qué pasa en el programa cuando se da click en uno de los números?
+
+Pregunta 10
+##############
+
+¿Qué parte del código gestiona los click de los números?
+
+Pregunta 11
+##############
+
+¿Cómo se conecta el PuzzleManager con cada número del puzzle?
+
+Pregunta 12
+##############
+
+¿Qué pasos ejecuta la aplicación cuando das click en solve?
+
+Pregunta 13
+##############
+
+¿Qué es una corrutina y cómo está funcionando en este caso 
+para animar el movimiento de los números en cada uno de los estados 
+almacenados en el path con la solución?
