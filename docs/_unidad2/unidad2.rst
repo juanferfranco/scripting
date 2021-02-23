@@ -73,8 +73,8 @@ En el ejercicio anterior anotaste los conceptos que no recordabas o
 no entendías. Ahora es tiempo de estudiarlos de nuevo.
 
 
-Ejercicio 6: principios SOLID- Video 2-ver
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 6: principios SOLID- Video 2- analiza
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vuelve a ver el video y responde estas preguntas luego de verlo:
 
@@ -113,4 +113,47 @@ Ejercicio 8: principios SOLID- Video 2 - RETO
 Añade otro comportamiento para la selección de objetos. RECUERDA, sigue 
 los principios SOLID y justifica por qué el nuevo comportamiento que has 
 añadido respecta dichos principios.
+
+Ejercicio 9: principios SOLID- Video 3 - ver
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Vas a continuar el procesos de refactoring aplicando los principios SOLID. 
+Esta será la segunda parte del video anterior. 
+`Aquí <https://www.youtube.com/watch?v=Fs8jy7DHDyc>`__ está el video.
+
+De nuevo, mira primero el video y anota todos los conceptos de programación 
+y de C# que no entiendas o no recuerdes.
+
+Ejercicio 10: principios SOLID- Video 3 - repasa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En el ejercicio anterior anotaste los conceptos que no recordabas o 
+no entendías. Ahora es tiempo de estudiarlos de nuevo.
+
+Ejercicio 11: principios SOLID- Video 3 - analiza
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Nota que en este video número 3 se identifican las responsabilidades 
+y luego se SEGREGAN esas responsabilidades en interfaces.
+
+* Lista cuáles son las responsabilidades del SelectionManager.
+
+* Indica cómo están segregadas las responsabilidades y qué principio SOLID  
+  se está aplicando.
+
+* Cuando decimos que una clase depende de una interface en vez de una 
+  implementación concreta a ¿Qué principio nos estamos refiriendo?
+
+* ¿En qué parte del código se ve aplicado el principio anterior?
+
+* Cuando queremos reemplazar fácilmente un comportamiento por otro 
+  ¿Qué principio estamos aplicando?
+
+* ¿Cómo aplicamos el principio anterior en este ejemplo?
+
+Ejercicio 12: principios SOLID- Video 3 - código
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Descarga el código del video 3 y organiza el proyecto para que puedas 
+ver funcionando todo lo que viste en el video.
 
