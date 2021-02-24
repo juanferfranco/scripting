@@ -157,3 +157,39 @@ Ejercicio 12: principios SOLID- Video 3 - código
 Descarga el código del video 3 y organiza el proyecto para que puedas 
 ver funcionando todo lo que viste en el video.
 
+Aprovecha y analiza de nuevo ya en contexto.
+
+Ejercicio 13: principios SOLID- Video 4-ver
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En `este <https://www.youtube.com/watch?v=cxJnvEpwQHc>`__ video vas a ver 
+uno de los beneficios de aplicar los principios SOLID cuando necesitas 
+hacer modificaciones a tu proyecto.
+
+Ejercicio 14: principios SOLID- Video 4 - analiza
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+¿Cómo funciona la idea de usar el producto punto en el video 4?
+
+Ejercicio 15: principios SOLID- Video 4 - código
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Descarga el código del video 4 y organiza el proyecto para que puedas 
+ver funcionando todo lo que viste en el video.
+
+Analiza de nuevo ya en contexto.
+
+Ejercicio 16: principios SOLID- Video 5 - ver
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En `este <https://www.youtube.com/watch?v=MjwbhfR7DsM>`__ último video de la 
+serie vas a aprender a realizar una herramienta 
+para el editor que te ayudará a realizar cambios de comportamientos 
+de manera más fácil y gracias al uso de los principios SOLID.
+
+Ejercicio 17: principios SOLID- Video 5 - código
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Descarga el código del video 5 y organiza el proyecto para que puedas 
+ver funcionando todo lo que viste en el video.
+
