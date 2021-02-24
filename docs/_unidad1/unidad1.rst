@@ -953,7 +953,7 @@ puedes ver cómo está implementado un stack. Toma solo los archivos .cs y creo 
 
 * Realiza una gráficas que ilustren el funcionamiento del stack al adicionar y al sacar datos.
   
-En este `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/Stack>`__ 
+En este `enlace <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%203/Queue>`__ 
 puedes ver cómo está implementado una queue. Toma solo los archivos .cs y creo tu propio proyecto.
 
 * Realiza una gráficas que ilustren el funcionamiento de la queue al ingresar y sacar nodos de ella.
