@@ -32,6 +32,17 @@ Temas
 Ejercicios y proyectos
 ------------------------
 
+Ejercicio 0: REPASO
+^^^^^^^^^^^^^^^^^^^^^^
+
+Recuerdas qué es una interfaz? un delegado? un evento? si la respuesta es NO.
+Te voy a dejar un `playlist <https://www.youtube.com/playlist?list=PLzDRvYVwl53t2GGC4rV_AmH7vSvSqjVmz>`__ 
+muy bueno donde podrás repasar esos conceptos.
+
+Para lo que sigue es IMPORTANTE que repases en especial 
+`qué es una interface <https://www.youtube.com/watch?v=MZOrGXk4XFI>`__.
+
+
 Ejercicio 1: principios SOLID- Video 1-ver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
