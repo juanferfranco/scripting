@@ -65,7 +65,8 @@ Ejercicio 3: principios SOLID- Video 1 - memoria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Crea un nuevo proyecto y trata de reproducir de memoria el proyecto 
-anterior.
+anterior, pero no tienes que reproducir el arte tal cual, solo nos vamos a 
+concentrar en el código.
 
 Ejercicio 4: principios SOLID- Video 2-ver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
