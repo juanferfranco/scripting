@@ -101,14 +101,14 @@ Vuelve a ver el video y responde estas preguntas luego de verlo:
   
 * ¿En este ejemplo qué deseamos extender y qué no queremos estar modificando?
 
-* ¿Cómo se está aplicando el principio SOLID Liskov substitution en este 
+* ¿Cómo se está aplicando el principio SOLID Liskov's substitution en este 
   ejemplo?
 
 * ¿Qué relación tiene el polimorfismo en tiempo de ejecución con este 
   principio SOLID?
 
-* En el ejemplo proponen una manera de aplicar otro principio
- ¿Cómo se aplica el principio SOLID Interface segregation? 
+* En el ejemplo proponen una manera de aplicar otro principio 
+  ¿Cómo se aplica el principio SOLID Interface segregation? 
 
 * Finalmente, en el ejemplo ¿Cómo se está aplicando el principio 
   SOLID Dependency inversion?
