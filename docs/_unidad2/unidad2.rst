@@ -240,6 +240,65 @@ Puedes bajar el código del video `aquí <https://www.patreon.com/posts/32320915
   en este caso?
 * ¿Por qué el refactoring que se propone con el patrón STATE es más escalable?
 
-Ejercicio 19: patrones de diseño -  EVENTOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 19: patrones de diseño -  INTERFACES
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ahora vas a ver la flexibilidad que obtienes al estructurar tu código por medio 
+de eventos. Pero antes de eso repasa de nuevo el manejo de interfaces.
+
+Dele una mirada a `este <https://youtu.be/2LA3BLqOw9g>`__ video. Mira que el personaje 
+del video ya terminó el programa, PERO, como siempre, si la arquitectura no está bien 
+pensada, extender el código o añadir funcionalidad no será fácil.
+
+Descarga el código del video de `este sitio <https://www.patreon.com/posts/35152838>`__.
+La escena inicial está en la carpeta _Project/Start Here.
+
+Analiza esta escena detenidamente.Observa los scripts.
+
+* ¿Por qué en el video indican que esta parte del código no es escalable?
+
+  .. code-block:: csharp
+
+      private void Update()
+      {
+          var nearestGameObject = GetNearestGameObject();
+          if (nearestGameObject == null) return;
+          
+          if (Input.GetButtonDown("Fire1"))
+          {
+              var lightSwitch = nearestGameObject.GetComponent<Lamp>();
+              if (lightSwitch != null)
+              {
+                  lightSwitch.Switch();
+              }
+              var door = nearestGameObject.GetComponent<Door>();
+              
+              if (door != null)
+              {
+                door.Open();
+              }
+              
+              var radio = nearestGameObject.GetComponent<Radio>();
+              if (radio != null)
+              {
+                radio.Toggle();
+              }
+          }
+      }
+
+* Si quieres adicionar otros objetos para interactuar tendrías que modificar el código anterior.
+  ¿Cómo lo harías? ¿Qué principio SOLID estarías violando?
+
+* En el video  ¿A qué se refieren con el término clase monolítica?
+
+* Específicamente cuál es el problema de escalabilidad que tiene el programa?
+
+La carpeta _Project/Completed tiene el refactoring al problema anterior
+
+* ¿Cómo se están usando las interfaces en este caso para permitir que el programa 
+  escale mejor?
+
+* ¿Qué principio SOLID estás aplicando en este caso?
+
+* Explica cómo funciona el componente CompositeInteractable.
 
