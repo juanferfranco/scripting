@@ -205,3 +205,35 @@ Ejercicio 17: principios SOLID- Video 5 - código
 Descarga el código del video 5 y organiza el proyecto para que puedas 
 ver funcionando todo lo que viste en el video.
 
+Ejercicio 18: patrones de diseño: ESTADOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ahora que ya conoces los principios SOLID, te voy a proponer que 
+estudies algunos patrones de diseño que te van a servir como 
+herramienta para estructurar mejor tu código. 
+
+Observa y analiza `este video <https://youtu.be/_1pz_ohupPs>`__.
+
+En `este enlace <https://github.com/Brackeys/Turn-based-combat>`__ puedes 
+descargar el juego.
+
+* ¿Qué tipo de juego se construye en el video?
+* ¿Cuáles son los ESTADOS del juego?
+* ¿Qué es un tipo `enum <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum>`__ 
+  en C# y para qué se usa en el juego?
+* Analiza detenidamente el código en BattleSystem.cs. Explica cómo funciona 
+  cuándo el juego inicia, al presionar los botones de ataque y curación.
+* ¿Para qué se usan las corutinas en el juego?
+* Trata de explicar cómo están implementadas las corutinas.
+
+Ahora vas a supón que necesitas ADICIONAR funcionalidad o añadir nuevas características 
+al juego.
+
+En `este <https://youtu.be/5PTd0WdKB-4>`__ video te proponen precisamente eso.
+
+* ¿Qué problema tiene el juego del primer video a la hora de añadir más funcionalidad?
+* ¿A qué se refieren en el video con el término Spaghetti Code?
+* ¿Para qué proponen utilizar una STATE MACHINE?
+
+
+
