@@ -205,8 +205,8 @@ Ejercicio 17: principios SOLID- Video 5 - código
 Descarga el código del video 5 y organiza el proyecto para que puedas 
 ver funcionando todo lo que viste en el video.
 
-Ejercicio 18: patrones de diseño: ESTADOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 18: patrones de diseño - ESTADOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora que ya conoces los principios SOLID, te voy a proponer que 
 estudies algunos patrones de diseño que te van a servir como 
@@ -240,11 +240,6 @@ Puedes bajar el código del video `aquí <https://www.patreon.com/posts/32320915
   en este caso?
 * ¿Por qué el refactoring que se propone con el patrón STATE es más escalable?
 
-Ahora te voy a proponer que mires `este otro <https://youtu.be/G1bd75R10m4>`__ video donde 
-te proponen un segundo refactoring.
-
-`Descarga <https://www.patreon.com/posts/32870529>`__ el código para que lo analices con 
-detenimiento.
-
-* ¿Qué ventaja tiene este nuevo refactoring con respecto al anterior?
+Ejercicio 19: patrones de diseño -  EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
