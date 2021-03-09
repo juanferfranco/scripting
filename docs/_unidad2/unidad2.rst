@@ -230,10 +230,21 @@ Ahora vas a supón que necesitas ADICIONAR funcionalidad o añadir nuevas caract
 al juego.
 
 En `este <https://youtu.be/5PTd0WdKB-4>`__ video te proponen precisamente eso.
+Puedes bajar el código del video `aquí <https://www.patreon.com/posts/32320915>`__.
 
 * ¿Qué problema tiene el juego del primer video a la hora de añadir más funcionalidad?
 * ¿A qué se refieren en el video con el término Spaghetti Code?
-* ¿Para qué proponen utilizar una STATE MACHINE?
+* ¿Para qué proponen utilizar una STATE MACHINE? ¿Qué patrón de diseño es este?
+* Explica en tus propias palabras qué es el PATRÓN STATE.
+* En la implementación del patrón se crea una clase abstracta. ¿Para qué sirve 
+  en este caso?
+* ¿Por qué el refactoring que se propone con el patrón STATE es más escalable?
 
+Ahora te voy a proponer que mires `este otro <https://youtu.be/G1bd75R10m4>`__ video donde 
+te proponen un segundo refactoring.
 
+`Descarga <https://www.patreon.com/posts/32870529>`__ el código para que lo analices con 
+detenimiento.
+
+* ¿Qué ventaja tiene este nuevo refactoring con respecto al anterior?
 
