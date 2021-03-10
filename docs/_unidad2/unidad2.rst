@@ -302,3 +302,24 @@ La carpeta _Project/Completed tiene el refactoring al problema anterior
 
 * Explica cómo funciona el componente CompositeInteractable.
 
+
+Ejercicio 20: patrones de diseño -  EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Los eventos permiten mantener desacopladas partes del código. Esto permite 
+flexibilidad. Observa el `siguiente video <https://youtu.be/GUTURxgcoj4>`__.
+
+* Explica qué ventaja tiene usar eventos en este caso.
+
+El `siguiente video <https://youtu.be/JupiI9jegFg>`__ muestra una característica particular 
+de Unity que permite exponer un evento en el editor de tal manera que puedas suscribirte 
+a ese evento de manera gráfica usando el editor.
+
+* ¿Qué ventaja le encuentras a lo anterior?
+
+Ejercicio 21: patrones de diseño -  EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Descarga el código de los dos video anteriores y analiza la implementación. 
+Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
+será ligeramente diferente al video, pero conserva la esencia.
