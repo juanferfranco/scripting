@@ -205,3 +205,121 @@ Ejercicio 17: principios SOLID- Video 5 - código
 Descarga el código del video 5 y organiza el proyecto para que puedas 
 ver funcionando todo lo que viste en el video.
 
+Ejercicio 18: patrones de diseño - ESTADOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ahora que ya conoces los principios SOLID, te voy a proponer que 
+estudies algunos patrones de diseño que te van a servir como 
+herramienta para estructurar mejor tu código. 
+
+Observa y analiza `este video <https://youtu.be/_1pz_ohupPs>`__.
+
+En `este enlace <https://github.com/Brackeys/Turn-based-combat>`__ puedes 
+descargar el juego.
+
+* ¿Qué tipo de juego se construye en el video?
+* ¿Cuáles son los ESTADOS del juego?
+* ¿Qué es un tipo `enum <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum>`__ 
+  en C# y para qué se usa en el juego?
+* Analiza detenidamente el código en BattleSystem.cs. Explica cómo funciona 
+  cuándo el juego inicia, al presionar los botones de ataque y curación.
+* ¿Para qué se usan las corutinas en el juego?
+* Trata de explicar cómo están implementadas las corutinas.
+
+Ahora vas a supón que necesitas ADICIONAR funcionalidad o añadir nuevas características 
+al juego.
+
+En `este <https://youtu.be/5PTd0WdKB-4>`__ video te proponen precisamente eso.
+Puedes bajar el código del video `aquí <https://www.patreon.com/posts/32320915>`__.
+
+* ¿Qué problema tiene el juego del primer video a la hora de añadir más funcionalidad?
+* ¿A qué se refieren en el video con el término Spaghetti Code?
+* ¿Para qué proponen utilizar una STATE MACHINE? ¿Qué patrón de diseño es este?
+* Explica en tus propias palabras qué es el PATRÓN STATE.
+* En la implementación del patrón se crea una clase abstracta. ¿Para qué sirve 
+  en este caso?
+* ¿Por qué el refactoring que se propone con el patrón STATE es más escalable?
+
+Ejercicio 19: patrones de diseño -  INTERFACES
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ahora vas a ver la flexibilidad que obtienes al estructurar tu código por medio 
+de eventos. Pero antes de eso repasa de nuevo el manejo de interfaces.
+
+Dele una mirada a `este <https://youtu.be/2LA3BLqOw9g>`__ video. Mira que el personaje 
+del video ya terminó el programa, PERO, como siempre, si la arquitectura no está bien 
+pensada, extender el código o añadir funcionalidad no será fácil.
+
+Descarga el código del video de `este sitio <https://www.patreon.com/posts/35152838>`__.
+La escena inicial está en la carpeta _Project/Start Here.
+
+Analiza esta escena detenidamente.Observa los scripts.
+
+* ¿Por qué en el video indican que esta parte del código no es escalable?
+
+  .. code-block:: csharp
+
+      private void Update()
+      {
+          var nearestGameObject = GetNearestGameObject();
+          if (nearestGameObject == null) return;
+          
+          if (Input.GetButtonDown("Fire1"))
+          {
+              var lightSwitch = nearestGameObject.GetComponent<Lamp>();
+              if (lightSwitch != null)
+              {
+                  lightSwitch.Switch();
+              }
+              var door = nearestGameObject.GetComponent<Door>();
+              
+              if (door != null)
+              {
+                door.Open();
+              }
+              
+              var radio = nearestGameObject.GetComponent<Radio>();
+              if (radio != null)
+              {
+                radio.Toggle();
+              }
+          }
+      }
+
+* Si quieres adicionar otros objetos para interactuar tendrías que modificar el código anterior.
+  ¿Cómo lo harías? ¿Qué principio SOLID estarías violando?
+
+* En el video  ¿A qué se refieren con el término clase monolítica?
+
+* Específicamente cuál es el problema de escalabilidad que tiene el programa?
+
+La carpeta _Project/Completed tiene el refactoring al problema anterior
+
+* ¿Cómo se están usando las interfaces en este caso para permitir que el programa 
+  escale mejor?
+
+* ¿Qué principio SOLID estás aplicando en este caso?
+
+* Explica cómo funciona el componente CompositeInteractable.
+
+
+Ejercicio 20: patrones de diseño -  EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Los eventos permiten mantener desacopladas partes del código. Esto permite 
+flexibilidad. Observa el `siguiente video <https://youtu.be/GUTURxgcoj4>`__.
+
+* Explica qué ventaja tiene usar eventos en este caso.
+
+El `siguiente video <https://youtu.be/JupiI9jegFg>`__ muestra una característica particular 
+de Unity que permite exponer un evento en el editor de tal manera que puedas suscribirte 
+a ese evento de manera gráfica usando el editor.
+
+* ¿Qué ventaja le encuentras a lo anterior?
+
+Ejercicio 21: patrones de diseño -  EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Descarga el código de los dos video anteriores y analiza la implementación. 
+Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
+será ligeramente diferente al video, pero conserva la esencia.
