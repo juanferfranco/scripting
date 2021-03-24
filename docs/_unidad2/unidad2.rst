@@ -205,8 +205,8 @@ Ejercicio 17: principios SOLID- Video 5 - código
 Descarga el código del video 5 y organiza el proyecto para que puedas 
 ver funcionando todo lo que viste en el video.
 
-Ejercicio 18: patrones de diseño - ESTADOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 18: patrones de diseño - STATE pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora que ya conoces los principios SOLID, te voy a proponer que 
 estudies algunos patrones de diseño que te van a servir como 
@@ -303,8 +303,8 @@ La carpeta _Project/Completed tiene el refactoring al problema anterior
 * Explica cómo funciona el componente CompositeInteractable.
 
 
-Ejercicio 20: patrones de diseño -  EVENTOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 20: patrones de diseño -  OBSERVER pattern / EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Los eventos permiten mantener desacopladas partes del código. Esto permite 
 flexibilidad. Observa el `siguiente video <https://youtu.be/GUTURxgcoj4>`__.
@@ -317,14 +317,14 @@ a ese evento de manera gráfica usando el editor.
 
 * ¿Qué ventaja le encuentras a lo anterior?
 
-Ejercicio 21: patrones de diseño -  EVENTOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 21: patrones de diseño -  OBSERVER pattern / EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Descarga el código de los dos video anteriores y analiza la implementación. 
 Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
 será ligeramente diferente al video, pero conserva la esencia.
 
-Ejercicio 22: patrones de diseño - command pattern
+Ejercicio 22: patrones de diseño - COMMAND pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Este patrón hace que un objeto le delegue la responsabilidad a otro 
@@ -361,7 +361,7 @@ Para analizar este patrón vas a comenzar mirando, solo mirando,
 
 * Analiza el demo2, puedes cambiar el personaje por un cilindro si gustas.
 
-Ejercicio 23: patrones de diseño - command pattern
+Ejercicio 23: patrones de diseño - COMMAND pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora mira de nuevo el video, pero esta vez reproduce el código del DEMO 1. 
