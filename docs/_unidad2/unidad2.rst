@@ -325,7 +325,7 @@ Ten presente que el autor simplificó al máximo las cosas entonces lo que verá
 será ligeramente diferente al video, pero conserva la esencia.
 
 Ejercicio 22: patrones de diseño - command pattern
-----------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Este patrón hace que un objeto le delegue la responsabilidad a otro 
 objeto de ejecutar un comando. Ya verás en el video por qué esto 
@@ -362,7 +362,7 @@ Para analizar este patrón vas a comenzar mirando, solo mirando,
 * Analiza el demo2, puedes cambiar el personaje por un cilindro si gustas.
 
 Ejercicio 23: patrones de diseño - command pattern
-----------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora mira de nuevo el video, pero esta vez reproduce el código del DEMO 1. 
 Ana vez te funcione, analiza detalladamente la estructura del código. Dibuja 
