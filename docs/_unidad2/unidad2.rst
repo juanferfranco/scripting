@@ -323,3 +323,48 @@ Ejercicio 21: patrones de diseño -  EVENTOS
 Descarga el código de los dos video anteriores y analiza la implementación. 
 Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
 será ligeramente diferente al video, pero conserva la esencia.
+
+Ejercicio 22: patrones de diseño - command pattern
+----------------------------------------------------
+
+Este patrón hace que un objeto le delegue la responsabilidad a otro 
+objeto de ejecutar un comando. Ya verás en el video por qué esto 
+te dará flexibilidad para hacer operaciones más complejas con el comando.
+
+Para analizar este patrón vas a comenzar mirando, solo mirando,
+`este <https://youtu.be/UoNumkMTx-U>`__ video de Jason Weimann.
+
+* En el video, cuando el autor dice que _inputReader y _commandProcessor 
+  serán ``getting chached`` ¿Qué quiere decir esto? ¿Qué ventaja tiene hacerlo?
+  ¿Qué pasaría si no lo hago?
+
+* ¿De qué instancias externas depende una ENTIDAD?
+
+* ¿Qué relación hay entre MoveCommand y Command?
+
+* ¿Por qué no se puede instanciar Command?
+
+* Nota que el método ExecuteCommand de CommandProcessor recibe una 
+  referencia a un tipo Command, pero en el código de la Entidad no se pasa
+  la referencia a un objeto tipo Command sino a un tipo MoveCommand. 
+  ¿Entonces por qué funciona? (recuerdas la pregunta sobre la relación entre 
+  MoveCommand y Command). A esto se le conoce como polimorfismo. ¿Qué 
+  tipo de polimorfismos es este?
+
+* En el video nota que el autor indica que sería posible llamar directamente 
+  a moveCommand.Execute(), pero no se hace así sino que se llama ese método
+  mediante otro objeto cuya referencia esta en _commandProcessor. ¿Por qué 
+  es esto? Entonces cuál es la gracias de este patrón Command?
+
+* El autor menciona que el demo 1 puede ser ineficiente en el uso de memoria, 
+  particularmente en el método update de la Entidad. ¿Por qué es esto?
+
+* Analiza el demo2, puedes cambiar el personaje por un cilindro si gustas.
+
+Ejercicio 23: patrones de diseño - command pattern
+----------------------------------------------------
+
+Ahora mira de nuevo el video, pero esta vez reproduce el código del DEMO 1. 
+Ana vez te funcione, analiza detalladamente la estructura del código. Dibuja 
+un diagrama de clases y un diagrama de secuencias.
+
