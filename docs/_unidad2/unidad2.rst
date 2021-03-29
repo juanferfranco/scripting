@@ -552,3 +552,8 @@ incremente. El entero estará en el mismo SO para ambas escenas.
    `proyecto CHOP-CHOP <https://github.com/UnityTechnologies/open-project-1>`__. Tiene 
    mucha documentación y es un proyecto cargada de muchas ideas que pueden servirte
 
+.. warning:: OPCIONAL
+
+   Este `es un tutorial <https://www.youtube.com/watch?v=HVls6_srbNc>`__ que muestra 
+   cómo usar el sistema de eventos de Chop-Chop.
+
