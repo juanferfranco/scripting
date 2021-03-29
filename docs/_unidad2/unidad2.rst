@@ -543,7 +543,7 @@ incremente. El entero estará en el mismo SO para ambas escenas.
 
 .. warning:: OPCIONAL
 
-   Lee e`ste blog <https://blogs.unity3d.com/2017/11/20/making-cool-stuff-with-scriptableobjects/>`__ 
+   Lee `este blog <https://blogs.unity3d.com/2017/11/20/making-cool-stuff-with-scriptableobjects/>`__ 
    y observa un par de videos que están allí. Verás más usos de los SO.
 
 .. warning:: PARA VACACIONES
