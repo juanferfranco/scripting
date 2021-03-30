@@ -557,3 +557,11 @@ incremente. El entero estará en el mismo SO para ambas escenas.
    Este `es un tutorial <https://www.youtube.com/watch?v=HVls6_srbNc>`__ que muestra 
    cómo usar el sistema de eventos de Chop-Chop.
 
+.. warning:: Repositorio en Git con códigos útiles
+
+   En `este enlace <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/tree/master/Assets/Patterns>`__ se 
+   puedes encontrar códigos útiles para la implementación 
+   de patrones de diseño. Por ejemplo, 
+   `aquí <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/blob/master/Assets/Patterns/Singleton/Singleton.cs>`__ 
+   se puede ver el código para implementar un singleton muy similar al que se observa 
+   en el video de Arquitectura con SOs del proyecto Chop Chop.
