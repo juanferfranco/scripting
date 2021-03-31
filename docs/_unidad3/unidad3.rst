@@ -4,7 +4,7 @@ Unidad 3. Depuración, perfilamiento y optimización
 Introducción
 --------------
 
-En esta unidad vas a estudiar alguna técnicas básicas de depuración 
+En esta unidad vas a estudiar alguna técnicas de depuración 
 que te permitirán identificar posibles errores en tu código. Adicionalmente, 
 varás algunas técnicas de perfilamiento y optimización de código.
 
@@ -12,19 +12,19 @@ varás algunas técnicas de perfilamiento y optimización de código.
 Propósito de aprendizaje
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Conocer algunas técnicas básicas de depuración, perfilamiento y optimización 
+Conocer algunas técnicas de depuración, perfilamiento y optimización 
 del código que describe el comportamiento de una aplicación interactiva.
 
 Temas
 ^^^^^^
 
-* Técnicas básica de depuración.
+* Técnicas de depuración.
 * Perfilamiento y optimización.
 
 Ejercicios y proyecto
 -----------------------
 
-Ejercicio 1: depuración - observar (30 min)
+Ejercicio 1: depuración - observar (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Lo primero que vas a hacer es aprender a depurar un programa. Para hacerlo tendrás 
@@ -38,13 +38,13 @@ Observa detenidamente este `video <https://youtu.be/y3kqIlLzIig>`__.
 * ¿Cuál era el problema con el primer ejemplo?
 * ¿Cuál era el problema del segundo ejemplo?
 
-Ejercicio 2: depuración - reproducir (30 min)
+Ejercicio 2: depuración - reproducir (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora que ya viste los ejemplos del video, trata de observalo de nuevo pero esta vez 
 reproduce los ejemplos y las situaciones de error en tu computador.
 
-Ejercicio 3: depuración - logs/introducción (30 min)
+Ejercicio 3: depuración - logs/introducción (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Utilizar Logs en tu aplicación puede ser de mucha ayuda a la hora de desarrollar. En este 
@@ -54,7 +54,7 @@ del manual de Unity.
 * ¿Que diferencia ves en la consola entre un log normal, un log de error y un log de advertencia?
 * La clase Debug tiene más métodos además de log. Lee qué otros métodos tienes disponibles.
 
-Ejercicio 4: depuración - logs/experimenta (30 min)
+Ejercicio 4: depuración - logs/experimenta (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 La clase `Debug <https://docs.unity3d.com/ScriptReference/Debug.html>`__ tiene varios 
@@ -62,7 +62,7 @@ ejemplos de cómo puedes usar algunos métodos estáticos para depurar tu progra
 
 Experimenta reproduciendo algunos de esos ejemplos.
 
-Ejercicio 5: depuración - logs/enriquecidos (30 min)
+Ejercicio 5: depuración - logs/enriquecidos (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método `Log <https://docs.unity3d.com/ScriptReference/Debug.Log.html>`__ te permite 
@@ -73,12 +73,90 @@ Ahora observa `este video <https://youtu.be/S2LNvvcVgRo>`__ para que veas en acc
 lo anterior. Ten presente que el autor utiliza Rider, pero tu puedes utilizar la consola 
 de Unity e ir y venir entre la consola y el editor de Visual Studio.
 
-Ejercicio 6: depuración - logs/enriquecidos (30 min)
+Ejercicio 6: depuración - logs/enriquecidos (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Observa de nuevo el video anterior, pero esta vez 
 `descarga el código <https://www.patreon.com/file?h=29898031&i=4427918>`__ 
 y reproduce lo que viste en el video.
 
+Ejercicio 7: perfilamiento - introducción (2)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Cuando desarrollas aplicaciones interactivas es importante que analices y depures 
+tu aplicación para que te asegures que está libre de errores y corre adecuadamente 
+en la plataforma deseada. Unity te ofrece una herramienta conocida como el ``PERFILAR``. 
 
+¿Qué es un perfilador (`profiler <https://docs.unity3d.com/Manual/Profiler.html>`__)? 
+Es una herramienta que te permite obtener y visualizar información para ANALIZAR cómo se 
+comporta tu aplicación en el tiempo en términos de uso de CPU, memoria, renderización 
+y audio.
+
+Tu puedes lanzar esta herramienta desde el editor, pero ten en cuenta que podrás 
+conectarla a tu dispositivo mediante una conexión de red, es decir, puedes perfilar 
+una aplicación interactiva que no está corriendo en el mismo dispositivo donde corres 
+el profiler. Así mismo, podrás correr una aplicación desde el editor de Unity y perfilar 
+una aplicación en desarrollo.
+
+¿Por qué es importante perfilar una aplicación? Porque esto permite encontrar posibles 
+errores u oportunidades de OPTIMIZACIÓN.
+
+Observa el `siguiente video <https://youtu.be/uXRURWwabF4>`__ que introduce las posibilidades 
+de profiling que tiene Unity.
+
+Ejercicio 7: perfilamiento - análisis (4)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Vuelve a observar el video anterior, pero esta vez analiza las siguientes preguntas:
+
+#. En el video mencionan que el profiler es un instrumentation-based profiler y no un sample-based. 
+   ¿Cuál es la diferencia?
+#. En el video indican que es posible hacer profiling de un dispositivo móvil o una consola.
+   ¿Cómo es posible hacer eso?
+#. ¿Qué módulos tiene el profiler? ¿Es posible ver datos solo de algunos módulos?
+#. Cuando se perfila la CPU y se usa el módulo jerárquico ¿Qué información puedes ver allí?
+#. Considera que tu aplicación está corriendo a muy pocos frames por segundo porque posiblemente 
+   hay un método que está tomando mucho tiempo en ejecutarse. ¿Para qué crees que pueda 
+   servirte ver el comportamiento de la CPU en modo jerárquico en este caso?
+#. Explica a qué se refiere el concepto de Budget (presupuesto) en términos de performance 
+   en una aplicación interactiva.
+#. En términos del concepto de Budget ¿Por qué crees que es más complicado hacer aplicaciones 
+   interactivas en realidad virtual?
+#. ¿Cuál es la estructura de un frame? Si buscas optimizar, es decir, hacer que una parte 
+   del frame se ejecuta más rápido ¿Qué parte puedes mejorar?
+#. ¿Qué es una GPU y qué función cumple en la ejecución de tu aplicación interactiva?
+#. En la estructura de un frame de CPU ¿Cuál es la función del rendering?
+#. ¿Qué hace que la GPU tenga que ``ESPERAR`` para poder renderizar un frame de tu aplicación?
+#. ¿Qué significa una estructura de frame CPU-bound? 
+#. ¿Qué significa una estructura de frame GPU-bound?
+#. ¿Qué es Gfx.WaitForPresent (`Gfx.WaitForPresentOnGfxThread <Gfx.WaitForPresentOnGfxThread>`__)? 
+#. ¿Qué quiere decir cuando este valor es muy alto?
+#. La vista timeline en el profiler para qué sirve?
+#. En el profiler se puede ver que el editor de Unity toma mucho tiempo en ejecutarse ¿Por qué 
+   esto no es importante a la hora de perfilar una aplicación?
+#. ¿Qué debes hacer si quieres sacar al editor de Unity del profiler? es decir, que no 
+   veas información de este.
+#. ¿Qué es WaitingForTargetFPS?
+#. ¿Una aplicación puede configurar el 
+   `FPS deseado <https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html>`__ 
+   de una aplicación interactiva?
+#. Explica el concepto de Screen tearing.
+#. ¿Para qué sirve el Vsync?
+#. Explica cómo funciona Vsync
+#. Piensa en esto. Considera que en una aplicación móvil quieres alcanzar 60 fps; sin embargo, 
+   el PlayerLoop toma 22 ms en ejecutarse. ¿Por qué los FPS serán 30 fps y no 45 fps?
+#. En la vista TimeLine ¿Qué son los Jobs?
+#. Qué significa que las físicas en Unity no son multi-hilo (multi-threaded)?
+#. ¿Por qué se menciona en el video que los Jobs están sub-utilizados?
+#. ¿Qué es el garbage collector?
+#. ¿En qué parte de la memoria de un PROCESO vive la basura?
+#. Recuerdas que en la Unidad 1 hablamos de la zona de memoria donde viven los objetos, ¿Cuál 
+   es?
+#. ¿Por qué en el TimeLine se ven PICOS en la CPU relativos al Garbage Collector?
+#. ¿Cómo puedes hacer para saber qué parte del código está generando la ``basura``?
+#. ¿Por qué crees que es importante mantener referencias de los objectos que vas 
+   a usar mucho en vez de estar creando objetos constantemente?
+#. ¿Qué significa un Garbage Collector incremental?
+#. ¿Para qué sirve el Profiler Analyzer?
+#. ¿Cuál es la diferencia entre el modo Single y el modo compare en el profiler analyzer?
+#. ¿Para qué sirve el frame debugger?
