@@ -160,3 +160,29 @@ Vuelve a observar el video anterior, pero esta vez analiza las siguientes pregun
 #. ¿Para qué sirve el Profiler Analyzer?
 #. ¿Cuál es la diferencia entre el modo Single y el modo compare en el profiler analyzer?
 #. ¿Para qué sirve el frame debugger?
+#. En el video recomiendan unos momentos ideales para realizar profiling. Indica 
+   cuáles o cuándo son esos momentos recomendados.
+#. ¿Qué significa realizar un profiling en escenarios reales?
+#. ¿Por qué es importante realizar un profiling cuando el juego lleva un rato 
+   corriendo?
+#. ¿Para qué crees que puede ser útil la clase Profiler.logFile de Unity?
+#. ¿Qué ventajas en términos de optimización el uso del patrón OBJECT POLLING?
+#. ¿Qué quiere decir la expresión Spreading the load in time?
+#. Si tienes un algoritmo que toma mucho tiempo en ejecutarse, considerando la pregunta 
+   anterior ¿Qué deberías hacer?
+
+.. 
+    Hasta aquí van 6 horas de trabajo
+
+Ejercicio 8: optimización (2)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Ejercicio 9: perfilamiento y optimización / caso de estudio (12)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. warning:: OPCIONAL
+
+   En uno de los ejercicios viste que Unity tiene unos Jobs
