@@ -183,6 +183,15 @@ Ejercicio 9: perfilamiento y optimización / caso de estudio (12)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. warning:: OPCIONAL
+.. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
 
-   En uno de los ejercicios viste que Unity tiene unos Jobs
+   Te voy a dejar aquí otros enlaces enlaces muy interesantes.
+
+   * `Mejoras al profiler <https://youtu.be/oWaBW8A1pmQ>`__.
+   * `Sobre el Job system <https://youtu.be/3o12aic7kDY>`__.
+   * `Tutorial sobre el Job system <https://youtu.be/C56bbgtPr_w>`__.
+   * `Sobre Dots <https://youtu.be/Z9-WkwdDoNY>`__.
+   * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
+   * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
+     sobre profiling y optimización.
+   * 
