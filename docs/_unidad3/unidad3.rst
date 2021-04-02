@@ -21,6 +21,10 @@ Temas
 * Técnicas de depuración.
 * Perfilamiento y optimización.
 
+.. 
+    Ejercicios 1 a 7: 7 horas. Semana 1 - parte de la 2
+    Ejercicio 8 y 9: 11 horas: semanas 2 y 3.
+
 Ejercicios y proyecto
 -----------------------
 
@@ -104,7 +108,7 @@ errores u oportunidades de OPTIMIZACIÓN.
 Observa el `siguiente video <https://youtu.be/uXRURWwabF4>`__ que introduce las posibilidades 
 de profiling que tiene Unity.
 
-Ejercicio 7: perfilamiento - análisis (4)
+Ejercicio 7: perfilamiento - análisis (6)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vuelve a observar el video anterior, pero esta vez analiza las siguientes preguntas:
@@ -172,14 +176,71 @@ Vuelve a observar el video anterior, pero esta vez analiza las siguientes pregun
    anterior ¿Qué deberías hacer?
 
 .. 
-    Hasta aquí van 6 horas de trabajo
+    Hasta aquí van 7 horas de trabajo
 
-Ejercicio 8: optimización (2)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System (1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En este ejercicio vas a estudiar un caso donde se recurre al Job System para 
+optimizar la aplicación interactiva.
+
+Se trata de un simulador de una ciudad que cuenta con 65 edificios. Cada 
+edificio tiene 150 pisos (aunque puedes modificar la cantidad) y en cada piso 
+pueden vivir entre 20 a 500 inquilinos (tenants). Para cada edificio se 
+realiza el cálculo de su consumo de energía. Esta operación es intensiva en el 
+uso de CPU, como te darás cuenta. Por tanto, esta aplicación será CPU-bounded o 
+ligada a la CPU. Ten en cuenta que otras aplicaciones son I/O-bounded, es decir, 
+la aplicación debe esperar a que se complete una operación de entrada-salida (I/O). 
+La técnica de optimización que verás en este ejercicio te sirve para lidiar 
+con problemas CPU-bounded. Cuando tengas escenarios I/O-bounded tendrás que 
+recurrir a otras técnicas; sin embargo, el mecanismos de fondo es usar ``Threads``.
+
+¿Quieres volver a repasar el concepto de Threads que viste en la Unidad 1?
+Te dejo por `aquí <https://youtu.be/Iwj0_p0bLpc>`__ un video corto para que lo hagas.
+
+Por lo pronto te voy a pedir SOLO VER `este video <https://youtu.be/3o12aic7kDY>`__ donde 
+se presenta el caso de estudio. En el siguiente ejercicio vas a analizar a fondo 
+el caso.
+
+Ejercicio 9: perfilamiento y optimización caso de estudio 1 / Job System (3)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
+
+#. Crea un proyecto en Unity 2019.4 LTS 
+#. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
+   y Jobs usando el Packet Manager. No olvides habilitar la opción de mostrar los paquete 
+   en preview (Show preview packages).
+#. Importa el paquete de código que descargaste.
+#. Carga la escena que en el directorio Start Here. Esta escena te permitirá 
+   observar la primera parte del video. Verifica el problema usando el profiler.
+   Deberías observar una figura similar a esta:
+
+   .. image:: ../_static/ExJobProblem.png
+      :alt:  captura del profiler con el problema
+      :scale: 50%
+      :align: center
+
+#. ¿Qué parte del código tiene el problema? ¿Cuál es el problema? (Observa 
+   la duración del PlayerLoop y la franja azul)
+#. Nota en la figura que el Main Thread está muy ocupado mientras que los 
+   Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
+   lo puedes hacer con el Job System.
+#. ¿Qué es el `C# Job system <https://docs.unity3d.com/Manual/JobSystem.html>`__?
+#. Para definir un Job se utiliza una struct. ¿Cuál es la razón que indican el video?
+#. Nota que se implementa la interfaz 
+   `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
+   ¿Qué relación hay entre esta interfaz y los Threads?
+
+.. 
+    Hasta aquí van 9 horas de trabajo
+
+.. 
+    Este segundo caso le añadiría 5 horas de video y 4 de análisis
+    para completar 18 horas de trabajo en este Unidad.
 
 
-
-Ejercicio 9: perfilamiento y optimización / caso de estudio (12)
+Ejercicio 10: perfilamiento y optimización / caso de estudio (20)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -194,4 +255,6 @@ Ejercicio 9: perfilamiento y optimización / caso de estudio (12)
    * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
    * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
      sobre profiling y optimización.
-   * 
+   * Los escenario I/O-bounded son muy comunes en las aplicaciones interactivas 
+     que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
+     integrar a la aplicación `DISPOSITIVOS EXTERNOS`. 
