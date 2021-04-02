@@ -255,6 +255,8 @@ Ejercicio 10: perfilamiento y optimización / caso de estudio (20)
    * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
    * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
      sobre profiling y optimización.
-   * Los escenario I/O-bounded son muy comunes en las aplicaciones interactivas 
+   * Los escenarios I/O-bounded son muy comunes en las aplicaciones interactivas 
      que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
-     integrar a la aplicación `DISPOSITIVOS EXTERNOS`. 
+     integrar a la aplicación `DISPOSITIVOS EXTERNOS`. Si tienes curiosidad puedes 
+     aprender un poco más acerca de esto 
+     `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__. 
