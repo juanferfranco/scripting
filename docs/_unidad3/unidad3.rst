@@ -342,4 +342,8 @@ Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
      que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
      integrar a la aplicación `DISPOSITIVOS EXTERNOS`. Si tienes curiosidad puedes 
      aprender un poco más acerca de esto 
-     `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__. 
+     `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__.
+   * `Conferencia de Unity <https://youtu.be/kwnb9Clh2Is>`__ en el GDC del 2018 donde 
+      explican algunos asuntos relativos al Job system, entre otros.
+   * `Conferencia introductoria <https://youtu.be/epTPFamqkZo>`__ sobre profiling y 
+     optimización en Unity.
