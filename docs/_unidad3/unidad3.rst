@@ -327,7 +327,8 @@ Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
 .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
 
    Te voy a dejar aquí otros enlaces muy interesantes. TEN PRESENTE 
-   que todo lo relacionado con Dots está en etapa experimental.
+   que varias de las tecnologías relacionadas con Dots están en etapa experimental, 
+   en particular la parte que llaman actualmente ENTITY (antes ECS).
 
    * `Mejoras al profiler <https://youtu.be/oWaBW8A1pmQ>`__.
    * `Sobre el Job system <https://youtu.be/3o12aic7kDY>`__.
