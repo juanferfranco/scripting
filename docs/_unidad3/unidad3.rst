@@ -209,10 +209,10 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
 
 #. Crea un proyecto en Unity 2019.4 LTS 
 #. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
-   y Jobs usando el Packet Manager. No olvides habilitar la opción de mostrar los paquete 
+   y Jobs usando el Packet Manager. No olvides habilitar la opción mostrar los paquete 
    en preview (Show preview packages).
 #. Importa el paquete de código que descargaste.
-#. Carga la escena que en el directorio Start Here. Esta escena te permitirá 
+#. Carga la escena que está en el directorio Start Here. Esta escena te permitirá 
    observar la primera parte del video. Verifica el problema usando el profiler.
    Deberías observar una figura similar a esta:
 
@@ -231,6 +231,86 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
 #. Nota que se implementa la interfaz 
    `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
    ¿Qué relación hay entre esta interfaz y los Threads?
+#. En el minuto 5:28 se crea un nuevo MonoBeHaviour llamado BuildingManager que tendrá 
+   una lista para almacenar las referencias a todos lo edificios y adicionalmente le dirá 
+   al Job System de Unity que por favor le reparta trabajo a los worker threads que tiene 
+   disponibles:
+
+   .. code-block:: csharp
+   
+      private void Update()
+      {
+        var job = new BuildingUpdateJob();
+        var jobHandle = _job.Schedule(buildings.Count, 1);
+        jobHandle.Complete();
+      }
+    
+   ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
+#. En el código anterior el método Complete() espera a que todos los Jobs terminen. 
+   ¿Qué crees que ocurra si el trabajo que tienen que hacer los Jobs es muy largo?
+   ¿Qué harías para lidiar con lo anterior?
+#. Observa que, en este caso, un Job (la estructura de datos) está definido por dos 
+   partes: un arreglo de datos y el código que se ejecutara sobre cada item del arreglo 
+   de datos. Mira el código que actuará sobre cada dato:
+
+   .. code-block:: csharp
+   
+      public void Execute(int index)
+      {
+            var data = BuildingDataArray[index];
+            data.Update();
+            BuildingDataArray[index] = data;
+      }
+   
+   ¿Por qué luego de actualizar a data (data.Update()) se copia de nuevo a data 
+   en el arreglo? Si necesitas repasar te dejo 
+   `aquí <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct>`__ 
+   un enlace.
+#. En el minuto 5:28 se creó BuildingManager y en el método update se escribió código 
+   para solicitarle al Job system de Unity que le diera trabajo a los worker threads: 
+   
+   .. code-block:: csharp
+   
+      private void Update()
+      {
+            var job = new BuildingUpdateJob();
+            var jobHandle = _job.Schedule(buildings.Count, 1);
+            jobHandle.Complete();
+      }
+
+   Nota que hasta este punto BuildingUpdateJob no tiene los datos almacenados sobre los 
+   cuales cada worker thread ejecutará el método Execute:  
+
+   .. code-block:: csharp
+   
+        private void Update()
+        {
+                // 1
+                var buildingDataArray = new NativeArray<Building.Data>(buildings.Count, Allocator.TempJob);
+                
+                // 2
+                for ( var i = 0; i < buildings.Count;i++)
+                {
+                    buildingDataArray[i] = new Building.Data(building[i]);
+                }
+
+                // 3
+                var job = new BuildingUpdateJob
+                {
+                    BuildingDataArray = buildingDataArray;
+                }
+                var jobHandle = _job.Schedule(buildings.Count, 1);
+                jobHandle.Complete();
+
+                // 4
+                buildingDataArray.Dispose();
+        }
+    
+   Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
+   estás haciendo una copia por valor o por referencia?
+#. Esta no es una pregunta. Pero quería contarte que en la parte final de la unidad 
+   te dejé un enlace con material que ven tus compañeros de experiencias sobre aplicaciones  
+   interactivas I/O bounded. 
 
 .. 
     Hasta aquí van 9 horas de trabajo
@@ -240,17 +320,19 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
     para completar 18 horas de trabajo en este Unidad.
 
 
-Ejercicio 10: perfilamiento y optimización / caso de estudio (20)
+Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
 
-   Te voy a dejar aquí otros enlaces enlaces muy interesantes.
+   Te voy a dejar aquí otros enlaces muy interesantes. TEN PRESENTE 
+   que todo lo relacionado con Dots está en etapa experimental.
 
    * `Mejoras al profiler <https://youtu.be/oWaBW8A1pmQ>`__.
    * `Sobre el Job system <https://youtu.be/3o12aic7kDY>`__.
    * `Tutorial sobre el Job system <https://youtu.be/C56bbgtPr_w>`__.
+   * `Conceptos básicos <https://youtu.be/HVzSTEIAXi8>`__ de Dots.
    * `Sobre Dots <https://youtu.be/Z9-WkwdDoNY>`__.
    * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
    * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
