@@ -333,7 +333,10 @@ El enlace al proyecto esta
 No olvides ir documentando toda la experiencia. Verás como varios de los conceptos 
 fundamentales que hemos abordado en el curso se aplican y analizan. Además de ir 
 documentando tu experiencia y resultados del proyecto, te voy a dejar algunas 
-preguntas para que reflexiones un poco más sobre los conceptos:
+preguntas para que reflexiones un poco más sobre los conceptos. TEN PRESENTE que 
+además verás conceptos nuevos que no solo se aplican a Unity sino a cualquier 
+otro tipo de motor. Este ejercicio es importante y por ello que le dedicaremos 
+9 horas de trabajo, es decir, semana y media.
 
 #. ¿Por qué la memoria que se usa en el stack se libera automáticamente?
 #. ¿Por qué se dice que le memoria en el heap es manejada?
@@ -345,6 +348,53 @@ preguntas para que reflexiones un poco más sobre los conceptos:
    vez de Update?
 #. ¿Cuándo deberías utilizar LateUpdate en vez de Update?
 #. ¿Cuándo deberías utilizar FixedUpdate en vez de Update?
+#. ¿Cómo se comparan las corutinas con las máquinas de estado?
+#. Si tienes una operación MUY MUY larga que te está tomando varios frames 
+   ¿Qué tienes que hacer para poder implementar esa operación con una corutina?
+#. En `esta parte <https://learn.unity.com/tutorial/introduction-to-optimization-with-unity-2019-3?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e1da6a0edbc2a3da3a31f09>`__ 
+   del proyecto hay un ejemplo de código que podría optimizarse. 
+   Muestra cómo podrías hacerlo.
+#. ¿Qué es el lenguaje CIL?
+#. ¿Qué hace un ahead of time compiler (AOT)?
+#. ¿Qué hace un Jit compiler?
+#. ¿Cuál es la diferencia entre el AOT y el Jit compilers?
+#. ¿Cuál es la relación entre el lenguaje C++ y el motor de Unity?
+#. ¿Qué es código manejado?
+#. ¿Qué es el managed run time?
+#. Enumera y explica las posibles causas para que un código no se ejecute de manera 
+   eficiente.
+#. ¿Qué es `reflection` y por qué es tan costosa en términos de desempeño?
+#. ¿Por qué el uso de find es costo en términos de desempeño? ¿Qué podrías hacer 
+   para minimizar su impacto en la aplicación?
+#. ¿Por qué no deberías tener métodos Update vacíos?
+#. ¿Por qué usar Camera.main es costoso en términos de desempeño y qué podrías 
+   hacer para minimizar este costo?
+#. Explica y muestra un ejemplo del concepto Culling.
+#. Explica a qué se refiere el concepto de LOD o level of detail.
+#. Enumera y explica varias estrategias que permitan minimizar el impacto del Garbage 
+   collector.
+#. ¿Qué síntomas en la ejecución de tu código pueden ser indicios de problemas 
+   con el Garbage collector? ¿A qué se puede deber este síntoma?
+#. ¿Cuál es la diferencia entre el manejo de memoria manual y el Garbage collector?
+#. ¿A qué se refiere el concepto de Allocated Memory?
+#. ¿A qué se refiere el concepto de Deallocated Memory?
+#. ¿Qué significa el concepto IN SCOPE relacionado con las variables?
+#. Explica cómo es el proceso de allocate y deallocate memoria del STACK.
+#. Explica cómo es el proceso de allocate y deallocate memoria del HEAP.
+#. ¿Cada cuánto se ejecuta el Garbage collector?
+#. ¿Qué puede hacer que el Garbage collector tome mucho tiempo en ejecutarse? 
+   ¿Crees que esto puede ser grave o no para tu aplicación? ¿Por qué?
+#. ¿Qué es el concepto de heap fragmentation?
+#. ¿Qué tipo de variables se almacenan en el heap y en el stack? Muestra ejemplos.
+#. Enumera y explica tres ESTRATEGIAS con las cuales puedes reducir el impacto del 
+   Garbage collector.
+#. Explica y da ejemplos de la técnicas Caching.
+#. ¿Por qué no deberías asignar memoria en métodos que sean llamados frecuentemente?
+#. Explica le técnica Clearing collections.
+#. ¿Por qué es útil en términos de memoria la clase StringBuilding?
+#. Explica y muestra un ejemplo del concepto de Boxing.
+#. ¿Por qué deberías evitar el Boxing?
+#. ¿Qué es el concepto de CLOSURE?
 
 
 
