@@ -323,6 +323,30 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
 Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+En este caso de estudio vas a realizar uno de los proyectos de Unity learn 
+relacionado con el asunto de esta unidad. La idea es que practiques de nuevo 
+todo lo que hemos estudiado. 
+
+El enlace al proyecto esta 
+`aquí <https://learn.unity.com/project/optimizing-for-performance-2019-3>`__.
+
+No olvides ir documentando toda la experiencia. Verás como varios de los conceptos 
+fundamentales que hemos abordado en el curso se aplican y analizan. Además de ir 
+documentando tu experiencia y resultados del proyecto, te voy a dejar algunas 
+preguntas para que reflexiones un poco más sobre los conceptos:
+
+#. ¿Por qué la memoria que se usa en el stack se libera automáticamente?
+#. ¿Por qué se dice que le memoria en el heap es manejada?
+#. ¿Por qué es más lento el manejo de memoria en el heap?
+#. Explica de nuevo en pocas palabras el concepto de Object pooling y explica 
+   por qué permite optimizar la recolección de basura por parte del Garbage 
+   collector.
+#. ¿Por qué puede ser mejor utilizar GetComponent en el método Start o Awake en 
+   vez de Update?
+#. ¿Cuándo deberías utilizar LateUpdate en vez de Update?
+#. ¿Cuándo deberías utilizar FixedUpdate en vez de Update?
+
+
 
 .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
 
