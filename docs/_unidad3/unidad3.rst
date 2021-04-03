@@ -319,6 +319,11 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
     Este segundo caso le añadiría 5 horas de video y 4 de análisis
     para completar 18 horas de trabajo en este Unidad.
 
+.. warning:: EJERCICIO LARGO!
+
+   Este último ejercicio de la unidad es largo. Te tomará aproximadamente 
+   9 horas en completarlo. Ten paciencia y distribuye tu tiempo. Te recomiendo 
+   que lo hagas en una semana y media.
 
 Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -329,6 +334,11 @@ todo lo que hemos estudiado.
 
 El enlace al proyecto esta 
 `aquí <https://learn.unity.com/project/optimizing-for-performance-2019-3>`__.
+
+Puedes bajar el código del proyecto 
+`aquí <https://connect-prd-cdn.unity.com/20200319/9d88a529-d7d4-4f3e-bfa6-9af72294a535/LearnLive_OptimizationAssets.zip?_ga=2.126028237.1943325220.1617376423-1653210251.1613099991>`__.
+
+Para usar el código crea un proyecto 3D en Unity 2019.4LTS e importa el packet anterior.
 
 No olvides ir documentando toda la experiencia. Verás como varios de los conceptos 
 fundamentales que hemos abordado en el curso se aplican y analizan. Además de ir 
@@ -395,6 +405,15 @@ otro tipo de motor. Este ejercicio es importante y por ello que le dedicaremos
 #. Explica y muestra un ejemplo del concepto de Boxing.
 #. ¿Por qué deberías evitar el Boxing?
 #. ¿Qué es el concepto de CLOSURE?
+#. Explica los pasos que debe realizar la CPU con cada frame que se renderiza.
+#. ¿Qué significa el término Draw Call?
+#. ¿Qué significa el término Batching.
+#. Explica los pasos que debe realizar la GPU con cada frame que se renderiza.
+#. ¿Qué significa que el PIPELINE de renderización es ineficiente?
+#. ¿Qué significa la técnicas occlusion culling?
+#. ¿Cuál es el `flujo de trabajo <https://learn.unity.com/tutorial/challenge-optimize-the-project-scripts?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e734280edbc2a001f390afd>`__ 
+   que debes seguir para optimizar un proyecto?
+#. ¿A qué se refiere el término Global Illumitation?
 
 
 
