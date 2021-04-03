@@ -325,6 +325,13 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
    9 horas en completarlo. Ten paciencia y distribuye tu tiempo. Te recomiendo 
    que lo hagas en una semana y media.
 
+   El ejercicio se basa en un proyecto de Unity learn. Primero 
+   tendrás que leer unos fundamentos teóricos y luego realizarás una serie de 
+   RETOS guiados para ir optimizando el proyecto.
+
+   Lo primero que debes hacer es descargar los archivos del proyecto. Es sobre 
+   este proyecto que realizarás todos los RETOS.
+
 Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -414,8 +421,9 @@ otro tipo de motor. Este ejercicio es importante y por ello que le dedicaremos
 #. ¿Cuál es el `flujo de trabajo <https://learn.unity.com/tutorial/challenge-optimize-the-project-scripts?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e734280edbc2a001f390afd>`__ 
    que debes seguir para optimizar un proyecto?
 #. ¿A qué se refiere el término Global Illumitation?
-
-
+#. Cuando estés realizando el RETO Bake the scene lighting ten presente que en el paso 
+   2 cuando selecciones Generate Lighting esto tardará un buen rato. Todo dependerá de 
+   tu computador.
 
 .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
 
