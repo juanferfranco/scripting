@@ -24,6 +24,8 @@ Temas
 .. 
     Ejercicios 1 a 7: 7 horas. Semana 1 - parte de la 2
     Ejercicio 8 y 9: 11 horas: semanas 2 y 3.
+    Si comienzan la unidad 3 en la semana 11 estarán terminando en 
+    la semana 13.
 
 Ejercicios y proyecto
 -----------------------
