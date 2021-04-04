@@ -14,6 +14,9 @@ Propósito de aprendizaje
 
 Aplicar y analizar todo lo aprendido en el curso a un proyecto propio. 
 
+.. 
+    La unidad se debería realizar entre la semana 14 a la 16: 3 semanas. 
+    más una semana más de colchón.
 
 Ejercicios y proyectos
 ------------------------
