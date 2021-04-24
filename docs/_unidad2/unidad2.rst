@@ -565,3 +565,10 @@ incremente. El entero estará en el mismo SO para ambas escenas.
    `aquí <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/blob/master/Assets/Patterns/Singleton/Singleton.cs>`__ 
    se puede ver el código para implementar un singleton muy similar al que se observa 
    en el video de Arquitectura con SOs del proyecto Chop Chop.
+
+.. warning:: Presentación sobre patrones de diseño
+
+   En `este enlace <https://www.notion.so/PATRONES-DE-DISE-O-8291412254bc47cfb1ad0588e4d6f28b>`__ se 
+   encuentra el material sobre las cápsulas de patrones de diseño que hemos visto en las 
+   sesiones sincrónicas. 
+   
