@@ -91,7 +91,7 @@ Ejercicio 7: perfilamiento - introducción (2)
 
 Cuando desarrollas aplicaciones interactivas es importante que analices y depures 
 tu aplicación para que te asegures que está libre de errores y corre adecuadamente 
-en la plataforma deseada. Unity te ofrece una herramienta conocida como el ``PERFILAR``. 
+en la plataforma deseada. Unity te ofrece una herramienta conocida como el ``PERFILADOR``. 
 
 ¿Qué es un perfilador (`profiler <https://docs.unity3d.com/Manual/Profiler.html>`__)? 
 Es una herramienta que te permite obtener y visualizar información para ANALIZAR cómo se 
