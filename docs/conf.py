@@ -24,7 +24,7 @@ copyright = '2021, Juan Franco'
 author = 'Juan Franco'
 
 # The short X.Y version
-version = '2021.10.0'
+version = '2021.20.0'
 # The full version, including alpha/beta/rc tags
 release = 'alpha'
 

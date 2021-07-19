@@ -35,8 +35,8 @@ Temas
 Lecturas y ejercicios 
 ------------------------
 
-Ejercicio 1
-^^^^^^^^^^^^^
+Ejercicio 1: Git y Github
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Crea una cuenta en GitHub con tu correo institucional de la UPB. Si
   tienes la cuenta, tanto mejor.
@@ -73,7 +73,7 @@ serían:
 #. Tu compañero encargado de hacer la integración de tus cambios al proyecto aprobará o no
    tu contribución luego de probar que todo está correcto.
 
-Ejercicio 1: proyecto de Unity bajo control de versión. Primero creando el repo 
+Ejercicio 2: proyecto de Unity bajo control de versión. Primero creando el repo 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora observa `este <https://youtu.be/WH7qDUYHGK8>`__ video. 
@@ -87,7 +87,7 @@ adicionas el proyecto de Unity.
 * ¿En dónde debe estar el archivo .gitignore? Abre el archivo y mira las primeras líneas.
   Ahí está la respuesta.
 
-Ejercicio 2: proyecto de Unity bajo control de versión. Primero creando el proyecto de Unity 
+Ejercicio 3: proyecto de Unity bajo control de versión. Primero creando el proyecto de Unity 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora reproduce tu mismo el segundo caso (video anterior): creas un proyecto de Unity y luego 
@@ -97,7 +97,7 @@ maneras no olvides ir a Project Settings (Project Settings: version control
 
 Comprueba que el proyecto queda publicado en GitHub.
 
-Ejercicio 3: creación de ramas con features
+Ejercicio 4: creación de ramas con features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En el minuto 12:10 del video te hablan sobre un flujo de trabajo que involucra la 
@@ -112,14 +112,14 @@ y realizar un merge. Ahora, ten presente que al trabajar en equipo otro de tus c
 puede tener la tarea de aprobar e integrar los cambios.
 
 
-Ejercicio 4: deshacer errores
+Ejercicio 5: deshacer errores
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Salta al minuto 18:10. Verás cómo deshacer errores. Reproduce los pasos 
 en tu proyecto.
 
 
-Ejercicio 5: consolidación del manejo de git
+Ejercicio 6: consolidación del manejo de git
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En este ejercicio te voy a pedir que hagas de memoria los siguientes pasos.
@@ -139,7 +139,7 @@ los pasos al menos una vez de memoria.
 * Ahora deshace todos los cambios, uno por uno, haciendo revert al commit inicial.
   comprueba los cambios en el proyecto cada que los hagas.
 
-Ejercicio 6: control de versión en equipo (ejercicio grupal)
+Ejercicio 7: control de versión en equipo (ejercicio grupal)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora que ya sabes qué es el control de versión, conoces las herramientas
@@ -164,7 +164,7 @@ de manera efectiva en equipo. Por tanto, vamos a practicar MUCHO.
 muchos tipos de productos interactivos, no solo videojuegos.
 
 
-Ejercicio 7: Soporte para grandes archivos LFS
+Ejercicio 8: Soporte para grandes archivos LFS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En el ejercicio 1 te pedí que vieras la serie de videos del tutorial 
@@ -181,13 +181,13 @@ cómo lo harías para tu sistema operativo.
 Ahora observa `este <https://youtu.be/LS1VI1Y8WTM>`__ video y `este <https://youtu.be/09McJ2NL7YM>`__ 
 otro. Te explicarán cómo usar Unity con git lfs.
 
-Ejercicio 8: practicar la creación de un proyecto con soporte para LFS
+Ejercicio 9: practicar la creación de un proyecto con soporte para LFS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sigue las instrucciones del último video y practica la creación de un proyecto en Unity 
 con control de versión y lfs.
 
-Ejercicio 9: información complementaria
+Ejercicio 10: información complementaria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ¿Hay otra manera más fácil de hacer todo lo anterior? Si. Unity compró en 2020 la herramienta 
@@ -200,7 +200,7 @@ foro. También encontrarás información reciente en `este <https://youtu.be/PjP
     En este curso vamos a utilizar Git y GitHub. Ten en cuenta que todos 
     los repositorios que crees sean públicos para poder hacer seguimiento a tu trabajo.
 
-Ejercicio 10: repaso de conceptos claves antes de comenzar con las estructuras de datos
+Ejercicio 11: repaso de conceptos claves antes de comenzar con las estructuras de datos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Antes de comenzar a estudiar algunas estructuras de datos y algoritmos, vamos 
@@ -220,7 +220,7 @@ Asume que dentro de un método tienes lo siguiente:
 * ¿Para qué sirve new?
 * ¿Para qué sirve el constructor de una clase?
 
-Ejercicio 11: stack vs heap
+Ejercicio 12: stack vs heap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el siguiente código donde crearemos dos perros Huskies. 
@@ -275,12 +275,12 @@ y observa el resultado. Descubre que salió mal.
       }
 
 
-Ejercicio 12: PROBLEMA
+Ejercicio 13: PROBLEMA
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Corrige el problema del código anterior.
 
-Ejercicio 13: tipos valor y tipos referencia
+Ejercicio 14: tipos valor y tipos referencia
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En C# ¿Cuál es la diferencia entre un tipo valor y un tipo referencia?
@@ -288,7 +288,7 @@ En C# ¿Cuál es la diferencia entre un tipo valor y un tipo referencia?
 Si no lo sabes, dale una mirada a `este <http://www.albahari.com/valuevsreftypes.aspx>`__ 
 artículo hasta antes de la sección Memory Disposal.
 
-Ejercicio 14: introducción al concepto de hilo
+Ejercicio 15: introducción al concepto de hilo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el siguiente programa (tomado de `aquí <http://www.albahari.com/threading/>`__):
@@ -331,7 +331,7 @@ con el ciclo ``for`` que imprime las ``x``. El segundo flujo ejecutará el méto
 y comenzará cuando el sistema operativo lo decida, luego de que solicites 
 iniciar el hilo con ``t.Start();``
 
-Ejercicio 15: diferencia entre objecto, clase, hilo
+Ejercicio 16: diferencia entre objecto, clase, hilo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora dale una mirada a este programa (tomado de `aquí <http://www.albahari.com/threading/>`__):
@@ -381,7 +381,7 @@ como un plan detallado y paso a paso para resolver un problema.
 ¿Conoces ejemplos de algunos algoritmos que se usen en la construcción de aplicaciones 
 interactivas?
 
-Ejercicio 16: notación BIG-O
+Ejercicio 17: notación BIG-O
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ¿Cómo analizar la eficiencia de un algoritmo? ¿Cómo comparo entre dos alternativas?
@@ -422,7 +422,7 @@ lista vieja a la nueva (que tiene más memoria). Si tienes N datos, debes hacer 
 Dale de nuevo una mirada a `este <https://docs.microsoft.com/en-us/dotnet/standard/collections/>`__ 
 sitio y déjalo en tus favoritos para futuras consultas.
 
-Ejercicio 17: arreglos
+Ejercicio 18: arreglos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Comencemos con los arrays. Mira `estos <https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/>`__ 
@@ -434,7 +434,7 @@ Toma el ejemplo de la página que te compartí. Añade un método y sus
 `sobrecargas <https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/member-overloading>`__ 
 para imprimir todos los items de cada arreglo. ¿Todos te funcionaron? ¿Alguna excepción? ¿Por qué?
 
-Ejercicio 18: listas
+Ejercicio 19: listas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora si vamos a practicar un poco más. Ya sabrás que una de las desventajas de los 
@@ -580,7 +580,7 @@ UFFFFFFF. Interesante. Pero descansemos un rato...
 Una última cosa, por ahora. Me cuentas en notación Big-O ¿Cuál es el costo 
 de cada método en ArrayList.cs?  (Profe, eso no es descansar...  Perdón).
 
-Ejercicio 19: algoritmos de búsqueda en arreglos
+Ejercicio 20: algoritmos de búsqueda en arreglos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera que tienes algunos elementos almacenados en un arreglo y quieres buscar 
@@ -664,7 +664,7 @@ Analiza cada algoritmo de búsqueda:
 
 * En notación Big-O ¿Cuaĺ es el costo de cada algoritmo de búsqueda?
 
-Ejercicio 20: algoritmos de ordenamiento
+Ejercicio 21: algoritmos de ordenamiento
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para el algoritmo de búsqueda binario del ejercicio anterior es necesario que los elementos estén ordenados.
@@ -851,7 +851,7 @@ Sino, se selecciona el elemento de la parte derecha y se avanza al siguiente ele
   optimizar optimizar el uso de la memoria mientras mantiene una complejidad similar al algoritmo 
   merge sort.
 
-Ejercicio 21: listas enlazadas
+Ejercicio 22: listas enlazadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * ¿Qué es una lista enlazada y para qué sirve?
@@ -911,13 +911,13 @@ Ejercicio 21: listas enlazadas
 
         public (Node<T> previous, Node<T> found) FindFirst(T value)
 
-Ejercicio 22: reto listas enlazadas
+Ejercicio 23: reto listas enlazadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Implementa un programa que te permita contar la cantidad de nodos de una lista enlazada.
 
 
-Ejercicio 23: stacks y queues
+Ejercicio 24: stacks y queues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Los stacks sirven para apilar información usando la estrategia last input - first output (LIFO). Te puedes 
@@ -940,7 +940,7 @@ puedes ver cómo está implementado una queue. Toma solo los archivos .cs y creo
 
 * Realiza una gráficas que ilustren el funcionamiento de la queue al ingresar y sacar nodos de ella.
 
-Ejercicio 24: hash tables y diccionarios
+Ejercicio 25: hash tables y diccionarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Las hash tables, al igual que los diccionarios se utilizan para resolver un problema concreto: ACELERAR la búsqueda de 
@@ -962,7 +962,7 @@ SOLO para que veas conceptualmente cómo funciona:
 * ¿Cómo se resuelven las colisiones de claves con el mismo hash?
 * Para qué se utilizan las listas enlazadas en esta implementación?
 
-Ejercicio 25: ejemplo de diccionarios
+Ejercicio 26: ejemplo de diccionarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%204/HashCollections>`__ 
@@ -1000,7 +1000,7 @@ enlace vas a encontrar algunos ejemplos de cómo usar diccionarios y hash tables
   * ¿Cómo recupero un item de un diccionario?
   * Describe cómo se usa el método TryGetValue.
   
-Ejercicio 26: evaluación formativa
+Ejercicio 27: evaluación formativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Este ejercicio es simple: ¿Cuál es la gracias de usar una ESTRUCTURA DE DATOS DICCIONARY? 
