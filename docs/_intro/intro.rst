@@ -35,6 +35,12 @@ Resultados de aprendizaje esperados
    de las partes y del todo de un software de manera ordenada y eficiente.
 
 
+Carta descriptiva
+--------------------
+
+En `este <https://drive.google.com/file/d/1LjrvO4K0zc3HSF85LJYQAfZ9TEkk2H90/view?usp=sharing>`__ enlace podrías 
+encontrar la carta descriptiva del curso.
+
 Estructura y metodología del curso
 -----------------------------------
 
@@ -45,50 +51,42 @@ El curso está divido en 4 unidades:
 #. Unidad 3: Depuración, perfilamiento y optimización.
 #. Unidad 4: Proyecto final.
 
-Cada unidad estará constituida por tres fases:
-
-#. Fase 1: fundamentación. En esta fase se estudiarán los conceptos teóricos más relevantes de
-   cada unidad, pero lo haremos de manera práctica, es decir, te propondré una serie 
-   de ejercicios que te permitan experimentar. En esta fase, debes repasar todos los 
-   conceptos olvidados de cursos anteriores.
-#. Fase 2: proyecto. En esta fase se realizarán uno o más proyectos.
-#. Fase 3: evaluación. En esta fase se discuten los resultados de la unidad.
+Cada unidad estará dividida en lecturas y ejercicios que te preparán para la evaluación donde 
+evidenciarás los criterios de competencia del curso.
 
 Cronograma
 -----------
 
-Te sugiero que termines una unidad cada cuatro semanas.
+#. Unidad 1: semanas 1 a 4
+#. Unidad 2: semanas 5 a 8
+#. Unidad 3: semanas 9 a 12
+#. Unidad 4: semanas 13 a 16  
 
 Evaluación
 -----------
 
-#. Unidad 1: 20%
-#. Unidad 2: 30%
-#. Unidad 3: 20%
-#. Unidad 4: 30%
+Grupo 1:
 
-La unidad solo se considera terminada cuando termines todos los ejercicios y
-los proyectos que están en ella al 100%. Por tanto, la nota de cada unidad, 
-una vez la termines, será 5.
+* Evaluación 1: agosto 19 de 2021. 25% unidad 1.
+* Evaluación 2: septiembre 16 de 2021. 25% unidad 2.
+* Evaluación 3: octubre 14 de 2021. 25% unidad 3.
+* Proyecto: noviembre 5 de 2021. 25% unidad 4.
 
-Puedes entregar cada unidad cuando quieras, pero considera lo siguiente:
+Grupo 2
 
-En la semana 8 haré un primer corte del 50% y reportaré al sistema
-las unidades terminadas. Ten presente que la evaluación se realiza
-mediante una entrevista con el profesor en la cual discutiremos los resultados
-de tu trabajo y recibirás retroalimentación personalizada. Para la semana 8
-deberías tener terminadas las unidades 1 y 2. Si no alcanzas, cuando las termines
-se actualizará tu nota.
+* Evaluación 1: agosto 20 de 2021. 25% unidad 1.
+* Evaluación 2: septiembre 17 de 2021. 25% unidad 2.
+* Evaluación 3: octubre 15 de 2021. 25% unidad 3.
+* Proyecto: noviembre 6 de 2021. 25% unidad 4.
 
-En la semana 17 se reportarán al sistema todas las unidades terminadas. ES MUY
-IMPORTANTE que tengas en cuenta que una unidad se considera terminada SI y SOLO
-completas al 100% todos los ejercicios y proyectos.
+Para solicitar un supletorio hablar con el director del programa 
+Jackson Reina: jackson.reina@upb.edu.co
 
 Dedicación
 -----------
 
 Este curso es muy práctico. Deberás trabajar de manera sincrónica
-4 horas utilizando herramientas TIC y 2 de horas de forma asincrónica.
+3:20 horas utilizando herramientas TIC y 2 de horas de forma asincrónica.
 
 Bibliografía
 ---------------------
@@ -99,84 +97,13 @@ en el sitio web del curso.
 Actividades de cada unidad
 ----------------------------
 
-Actividad 1: encuentros sincrónicos
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Tendremos dos encuentros sincrónicos semanales:
 
-* Fechas: miércoles y viernes a las 10
-* Descripción: asesorías en tiempo real y evaluación.
-* Recursos: ingresa a `Discord <https://discord.gg/vC5RaagNcE>`__
-* Duración de la actividad: sesiones de 1:40. 
-* Forma de trabajo: individual-colaborativo/sincrónico
+* Encuentro 1: revisión de conceptos y ejercicios.
+* Encuentro 2: asesorías sobre los ejercicios.
 
-Actividad 2: fundamentación
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Descripción: realiza los ejercicios, retos y preguntas
-  propuestas.
-* Recursos: trayecto de actividades en cada unidad.
-* Duración de la actividad: depende de ti.
-* Forma de trabajo: individual-colaborativo
-
-Actividad 3: proyectos y sustentación
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Descripción: realiza los proyectos, usa las herramientas
-  de control de versión y productividad y actualiza
-  tu portafolio.
-* Duración de la actividad: depende de ti.
-* Forma de trabajo: individual.
-
-Evidencias de evaluación
--------------------------
-
-Código de honor
-^^^^^^^^^^^^^^^^
-
-Para realizar el trabajo de cada unidad se espera que hagas lo siguiente:
-
-* Colabora con tus compañeros cuando así se indique.
-* Trabaja de manera individual cuando la actividad así te lo
-  proponga.
-* No busques la solución a los ejercicios y proyectos porque DAÑARÍAS tu
-  proceso de aprendizaje. Recuerda, se trata de seguir un camino
-  y aprender en el recorrido.
-* ¿Entonces qué hacer si no me funciona algo? Te propongo que
-  experimentes, crea hipótesis, experimenta de nuevo, observa y concluye.
-* NO OLVIDES, este curso se trata de pensar y experimentar NO de
-  BUSCAR soluciones en Internet.
-
-Detalle de las evidencias  
+Bitácora de trabajo  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Vamos a utilizar dos herramientas para la presentación de evidencias, tanto
-para los ejercicios de fundamentación como para los proyectos.
-
-* GitHub
-* `Notion <https://www.notion.so>`__
-
-En GitHub mantendrás todo tu código bajo control de versión y
-debes evidenciar un flujo de trabajo continuo.
-
-En Notion vas a presentar la documentación de la fundamentación (ejercicios) y 
-del proyecto o proyectos de cada unidad. El formato de tu documentación es 
-libre, pero deberás incluir al menos lo siguiente:
-
-* El desarrollo de los ejercicios
-
-* ¿De qué se trataba el proyecto o los proyectos? ¿Cuáles eran los problema a resolver?
-
-* Presenta tus resultados: muestra un video de los proyectos funcionando.
-
-* Explica cómo resolviste los ejercicios y proyectos.
-
-* No olvides dejar un enlace a tu repositorio público en GitHub.
-
-* Tu repositorio público debe reflejar un PROCESO. Por tanto, debes tener
-  commits frecuentes. Conserva la rama principal de tu repositorio
-  estable, es decir, cada que implementes características nuevas en tu
-  código crea una rama y luego realiza merges a la rama principal. No 
-  es necesario que borres las ramas que crees.
-
-¿Cómo inicio con Notion? Te dejo `aquí <https://www.youtube.com/watch?v=0iS_E9tN8nk>`__
-un enlace.
-
+Te voy a proponer que uses una bitácora de trabajo donde puedas ir desarrollando 
+los ejercicios, se llama `Notion <https://www.notion.so>`__.

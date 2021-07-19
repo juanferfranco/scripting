@@ -9,9 +9,8 @@ organizar tu trabajo y trabajar en equipo. Una de las herramientas más
 importantes será aquella que permita hacer control de versión.
 
 También vamos a repasar algunos de los conceptos más importantes que has 
-estudiado en tus cursos de programación, pero aprovecharemos para ir un poco 
-más lejos estudiando a fondo la implementación de algunas estructuras de datos y 
-algoritmos relacionados con esas estructuras. 
+estudiado en tus cursos de programación, pero aprovecharemos para estudiar 
+algunas estructuras de datos y algoritmos. 
 
 Propósito de aprendizaje
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -33,7 +32,7 @@ Temas
 
 * Algoritmos de búsqueda y toma de decisiones.
 
-Ejercicios y proyectos
+Lecturas y ejercicios 
 ------------------------
 
 Ejercicio 1
@@ -41,18 +40,16 @@ Ejercicio 1
 
 * Crea una cuenta en GitHub con tu correo institucional de la UPB. Si
   tienes la cuenta, tanto mejor.
-* Explora `este <https://www.gitkraken.com/student-resources>`__ sitio y 
-  solicita, por medio de tu cuenta de GitHub, el paquete de herramientas
-  para estudiantes. Este proceso requiere aprobación, así que te recomiendo
-  que lo hagas YA.
 * Ingresa a `este <https://www.gitkraken.com/learn/git/tutorials>`__ sitio
   y realiza el curso corto sobre Git.
 * Finalmente, observa el siguiente `video <https://www.youtube.com/watch?v=lYAHmthUO1M>`__
   para que analices un posible flujo de trabajo en equipo utilizando herramientas
   de control de versión.
+* Para los ejercicios que siguen instala GitKraken. Será la herramienta que usaremos 
+  en el curso, además de la línea de comandos.
 
-Ejercicio 2
-^^^^^^^^^^^^
+Lectura 1: trabajo bajo control de versión fon forks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el último video que viste donde te muestran cómo contribuir a un proyecto 
 open source. Vamos a suponer que el proyecto lo inició uno de tus compañeros 
@@ -76,8 +73,8 @@ serían:
 #. Tu compañero encargado de hacer la integración de tus cambios al proyecto aprobará o no
    tu contribución luego de probar que todo está correcto.
 
-Ejercicio 3
-^^^^^^^^^^^^^
+Ejercicio 1: proyecto de Unity bajo control de versión. Primero creando el repo 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora observa `este <https://youtu.be/WH7qDUYHGK8>`__ video. 
 
@@ -90,8 +87,8 @@ adicionas el proyecto de Unity.
 * ¿En dónde debe estar el archivo .gitignore? Abre el archivo y mira las primeras líneas.
   Ahí está la respuesta.
 
-Ejercicio 4
-^^^^^^^^^^^^
+Ejercicio 2: proyecto de Unity bajo control de versión. Primero creando el proyecto de Unity 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora reproduce tu mismo el segundo caso (video anterior): creas un proyecto de Unity y luego 
 adicionas un repositorio al proyecto. De todas 
@@ -100,29 +97,30 @@ maneras no olvides ir a Project Settings (Project Settings: version control
 
 Comprueba que el proyecto queda publicado en GitHub.
 
-Ejercicio 5
-^^^^^^^^^^^^
-En el minuto 12:10 del video te hablarán sobre un flujo de trabajo que involucra la 
+Ejercicio 3: creación de ramas con features
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En el minuto 12:10 del video te hablan sobre un flujo de trabajo que involucra la 
 creación de ramas.
 
 ¿Por qué y para qué se crean las ramas?
 
 En el ejercicio anterior creaste un repo. Ahora adiciona una rama llamada feature1.
-Realiza cambios al proyecto en esa rama. Cuando esté satisfecho con los cambios 
+Realiza cambios al proyecto en esa rama. Cuando estés satisfecho con los cambios 
 realiza un pull request. Como es tu propio proyecto, tu mismo puedes aprobar los cambios
 y realizar un merge. Ahora, ten presente que al trabajar en equipo otro de tus compañeros 
 puede tener la tarea de aprobar e integrar los cambios.
 
 
-Ejercicio 6
-^^^^^^^^^^^^
+Ejercicio 4: deshacer errores
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Salta al minuto 18:10. Verás cómo deshacer errores. Reproduce los pasos 
 en tu proyecto.
 
 
-Ejercicio 7
-^^^^^^^^^^^^
+Ejercicio 5: consolidación del manejo de git
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En este ejercicio te voy a pedir que hagas de memoria los siguientes pasos.
 Si no recuerdas, vuelve a ver el video. El reto es que puedas hacer todos 
@@ -141,15 +139,14 @@ los pasos al menos una vez de memoria.
 * Ahora deshace todos los cambios, uno por uno, haciendo revert al commit inicial.
   comprueba los cambios en el proyecto cada que los hagas.
 
-Ejercicio 8
-^^^^^^^^^^^^
+Ejercicio 6: control de versión en equipo (ejercicio grupal)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora que ya sabes qué es el control de versión, conoces las herramientas
-y los flujos de trabajo, te voy a proponer un ejercicio en grupo:
+y algunos flujos de trabajo, te voy a proponer un ejercicio en grupo:
 
 
-* Habla con otro compañero (o crea otra cuenta de GitHub con la cual puedas
-  simular a otra persona)
+* Habla con otro compañero.
 * Vas a crear un proyecto en Unity y lo colocarás bajo control de versión.
 * Luego vas a escribir 3 features que vas a implementar en ese proyecto. 
   Para cada feature sigue las estrategias del flujo de trabajo que aprendiste. 
@@ -167,8 +164,8 @@ de manera efectiva en equipo. Por tanto, vamos a practicar MUCHO.
 muchos tipos de productos interactivos, no solo videojuegos.
 
 
-Ejercicio 9
-^^^^^^^^^^^^
+Ejercicio 7: Soporte para grandes archivos LFS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En el ejercicio 1 te pedí que vieras la serie de videos del tutorial 
 de git de Gitkraken. Te voy a pedir que mires de nuevo 
@@ -184,14 +181,14 @@ cómo lo harías para tu sistema operativo.
 Ahora observa `este <https://youtu.be/LS1VI1Y8WTM>`__ video y `este <https://youtu.be/09McJ2NL7YM>`__ 
 otro. Te explicarán cómo usar Unity con git lfs.
 
-Ejercicio 11
-^^^^^^^^^^^^^
+Ejercicio 8: practicar la creación de un proyecto con soporte para LFS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sigue las instrucciones del último video y practica la creación de un proyecto en Unity 
 con control de versión y lfs.
 
-Ejercicio 12
-^^^^^^^^^^^^^
+Ejercicio 9: información complementaria
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ¿Hay otra manera más fácil de hacer todo lo anterior? Si. Unity compró en 2020 la herramienta 
 PlaticSCM.
@@ -203,23 +200,8 @@ foro. También encontrarás información reciente en `este <https://youtu.be/PjP
     En este curso vamos a utilizar Git y GitHub. Ten en cuenta que todos 
     los repositorios que crees sean públicos para poder hacer seguimiento a tu trabajo.
 
-Ejercicio 13
-^^^^^^^^^^^^^^^
-
-En la introducción del curso, te hablé de las herramientas de planeación o gestión de 
-proyectos. En este curso puedes usar los boards y calendarios de Notion; sin embargo, 
-puedes mirar otras herramientas como:
-
-* `Hacknplan <https://hacknplan.com/>`__ 
-* `eecks <https://www.codecks.io/>`__
-* GitKraken Boards, GitKraken TimeLines.
-
-.. warning::
-    En este curso vamos a utilizar Notion para realizar la gestión y documentación 
-    del trabajo del curso.
-
-Ejercicio 14
-^^^^^^^^^^^^^^^
+Ejercicio 10: repaso de conceptos claves antes de comenzar con las estructuras de datos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Antes de comenzar a estudiar algunas estructuras de datos y algoritmos, vamos 
 repasar algunos conceptos claves.
@@ -238,8 +220,8 @@ Asume que dentro de un método tienes lo siguiente:
 * ¿Para qué sirve new?
 * ¿Para qué sirve el constructor de una clase?
 
-Ejercicio 15
-^^^^^^^^^^^^^^^
+Ejercicio 11: stack vs heap
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el siguiente código donde crearemos dos perros Huskies. 
 Uno se llamará Pepe y el otro Tom. El color de los ojos de Pepe 
@@ -293,21 +275,21 @@ y observa el resultado. Descubre que salió mal.
       }
 
 
-Ejercicio 16
-^^^^^^^^^^^^^^^
+Ejercicio 12: PROBLEMA
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Corrige el problema del código anterior.
 
-Ejercicio 17
-^^^^^^^^^^^^^^^
+Ejercicio 13: tipos valor y tipos referencia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En C# ¿Cuál es la diferencia entre un tipo valor y un tipo referencia?
 
 Si no lo sabes, dale una mirada a `este <http://www.albahari.com/valuevsreftypes.aspx>`__ 
 artículo hasta antes de la sección Memory Disposal.
 
-Ejercicio 18
-^^^^^^^^^^^^^^^^^^
+Ejercicio 14: introducción al concepto de hilo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el siguiente programa (tomado de `aquí <http://www.albahari.com/threading/>`__):
 
@@ -349,8 +331,8 @@ con el ciclo ``for`` que imprime las ``x``. El segundo flujo ejecutará el méto
 y comenzará cuando el sistema operativo lo decida, luego de que solicites 
 iniciar el hilo con ``t.Start();``
 
-Ejercicio 19
-^^^^^^^^^^^^^^^^^^
+Ejercicio 15: diferencia entre objecto, clase, hilo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora dale una mirada a este programa (tomado de `aquí <http://www.albahari.com/threading/>`__):
 
@@ -381,8 +363,8 @@ Déjame hacerte unas cuantas preguntas
 * ¿Los hilos están compartiendo la variable cycles?
 
 
-Ejercicio 20
-^^^^^^^^^^^^^^^
+Lectura 2: estructuras de datos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Te prometo que vamos a seguir repasando otros conceptos que aprendiste 
 en tu curso de programación y diseño orientado a objetos, pero por ahora, 
@@ -399,8 +381,8 @@ como un plan detallado y paso a paso para resolver un problema.
 ¿Conoces ejemplos de algunos algoritmos que se usen en la construcción de aplicaciones 
 interactivas?
 
-Ejercicio 21
-^^^^^^^^^^^^^
+Ejercicio 16: notación BIG-O
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ¿Cómo analizar la eficiencia de un algoritmo? ¿Cómo comparo entre dos alternativas?
 
@@ -422,8 +404,8 @@ Observa `este <https://youtu.be/__vX2sjlpXU>`__ video.
 
 * ¿Qué algoritmo crees que sea mejor, uno con O(1) o con O(n) ?
 
-Ejercicio 22
-^^^^^^^^^^^^^
+Lectura 3: notación BiG-O y documentación oficial 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En este curso vas a trabajar con C#. Ingresa a 
 `este <https://docs.microsoft.com/en-us/dotnet/standard/collections/#algorithmic-complexity-of-collections>`__ 
@@ -440,8 +422,8 @@ lista vieja a la nueva (que tiene más memoria). Si tienes N datos, debes hacer 
 Dale de nuevo una mirada a `este <https://docs.microsoft.com/en-us/dotnet/standard/collections/>`__ 
 sitio y déjalo en tus favoritos para futuras consultas.
 
-Ejercicio 23
-^^^^^^^^^^^^^
+Ejercicio 17: arreglos
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Comencemos con los arrays. Mira `estos <https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/>`__ 
 ejemplos.
@@ -452,8 +434,8 @@ Toma el ejemplo de la página que te compartí. Añade un método y sus
 `sobrecargas <https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/member-overloading>`__ 
 para imprimir todos los items de cada arreglo. ¿Todos te funcionaron? ¿Alguna excepción? ¿Por qué?
 
-Ejercicio 24
-^^^^^^^^^^^^^
+Ejercicio 18: listas
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora si vamos a practicar un poco más. Ya sabrás que una de las desventajas de los 
 arreglos es que son estáticos. Una vez creados, no puedes cambiar su tamaño. Entonces te 
@@ -476,8 +458,8 @@ No olvides ajustar el ``namespace``.
 * Ejecuta el programa ¿Cuál de las pruebas aplicaste?
 * ¿Ya viste que hay otras dos pruebas para realizar? Realiza las pruebas y compara los resultados.
 * Recuerda que estamos repasando, por tanto en la práctica se espera que uses
-  la clase `List<T> <https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2>`__, pero lo importante es que notes que List es un arreglo dinámico, similar,
-  al que está implementado en la clase ArrayList. 
+  la clase `List<T> <https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2>`__, pero lo importante 
+  es que notes que List es un arreglo dinámico, similar, al que está implementado en la clase ArrayList. 
 
 Te haré algunas preguntas relacionadas con el código en ArrayList.cs:
 
@@ -598,8 +580,7 @@ UFFFFFFF. Interesante. Pero descansemos un rato...
 Una última cosa, por ahora. Me cuentas en notación Big-O ¿Cuál es el costo 
 de cada método en ArrayList.cs?  (Profe, eso no es descansar...  Perdón).
 
-
-Ejercicio 25: algoritmos de búsqueda en arreglos
+Ejercicio 19: algoritmos de búsqueda en arreglos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera que tienes algunos elementos almacenados en un arreglo y quieres buscar 
@@ -683,7 +664,7 @@ Analiza cada algoritmo de búsqueda:
 
 * En notación Big-O ¿Cuaĺ es el costo de cada algoritmo de búsqueda?
 
-Ejercicio 26: algoritmos de ordenamiento
+Ejercicio 20: algoritmos de ordenamiento
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para el algoritmo de búsqueda binario del ejercicio anterior es necesario que los elementos estén ordenados.
@@ -712,7 +693,7 @@ Ten presente que el programa genera un arreglo aleatorio.
   la longitud del arreglo es 1, entonces cuántas iteraciones necesitas para llegar a un arreglo de tamaño 
   1 partiendo de un arreglo de tamaño n:
 
-  .. math::
+.. math::
 
       n/2^k = 1
 
@@ -731,135 +712,135 @@ Ten presente que el programa genera un arreglo aleatorio.
 
 |
 
-  .. image:: ../_static/merge-split.png
+.. image:: ../_static/merge-split.png
       :scale: 100%
       :align: center
       :alt: split
 
 |
 
-  ¿Cuál sería el costo en Big-O de hacer estas particiones?
+¿Cuál sería el costo en Big-O de hacer estas particiones?
 
-  Luego se comienzan a mezclar así: se toma la parte izquierda y la parte derecha. Se comparan los primeros 
-  elementos de cada parte. Si el elemento de la parte izquierda es menor que el elemento de la parte derecha ENTONCES 
-  se selecciona el primer elemento de la parte izquierda y se AVANZA al siguiente item de la parte izquierda.
-  Sino, se selecciona el elemento de la parte derecha y se avanza al siguiente elemento de la parte derecha.
+Luego se comienzan a mezclar así: se toma la parte izquierda y la parte derecha. Se comparan los primeros 
+elementos de cada parte. Si el elemento de la parte izquierda es menor que el elemento de la parte derecha ENTONCES 
+se selecciona el primer elemento de la parte izquierda y se AVANZA al siguiente item de la parte izquierda.
+Sino, se selecciona el elemento de la parte derecha y se avanza al siguiente elemento de la parte derecha.
 
 |
 
-  .. image:: ../_static/merge-1.png
+.. image:: ../_static/merge-1.png
       :scale: 100%
       :align: center
       :alt: merge 1
 
 |
 
-  .. image:: ../_static/merge-2.png
+.. image:: ../_static/merge-2.png
       :scale: 100%
       :align: center
       :alt: merge 2
 
 |
 
-  .. image:: ../_static/merge-3.png
+.. image:: ../_static/merge-3.png
       :scale: 100%
       :align: center
       :alt: merge 3
 
 |
 
-  .. image:: ../_static/merge-4.png
+.. image:: ../_static/merge-4.png
       :scale: 100%
       :align: center
       :alt: merge 4
 
 | 
 
-  .. image:: ../_static/merge-5.png
+.. image:: ../_static/merge-5.png
       :scale: 100%
       :align: center
       :alt: merge 5
 
 |
 
-  .. image:: ../_static/merge-6.png
+.. image:: ../_static/merge-6.png
       :scale: 100%
       :align: center
       :alt: merge 6
 
 |
 
-  .. image:: ../_static/merge-7.png
+.. image:: ../_static/merge-7.png
       :scale: 100%
       :align: center
       :alt: merge 7
 
 |
 
-  .. image:: ../_static/merge-8.png
+.. image:: ../_static/merge-8.png
       :scale: 100%
       :align: center
       :alt: merge 8
 
 |
 
-  .. image:: ../_static/merge-9.png
+.. image:: ../_static/merge-9.png
       :scale: 100%
       :align: center
       :alt: merge 9
 
 |
 
-  .. image:: ../_static/merge-10.png
+.. image:: ../_static/merge-10.png
       :scale: 100%
       :align: center
       :alt: merge 10
 
 |
 
-  .. image:: ../_static/merge-11.png
+.. image:: ../_static/merge-11.png
       :scale: 100%
       :align: center
       :alt: merge 11
 
 |
 
-  .. image:: ../_static/merge-12.png
+.. image:: ../_static/merge-12.png
       :scale: 100%
       :align: center
       :alt: merge 12
 
 |
 
-  .. image:: ../_static/merge-13.png
+.. image:: ../_static/merge-13.png
       :scale: 100%
       :align: center
       :alt: merge 13
 
 |
 
-  .. image:: ../_static/merge-14.png
+.. image:: ../_static/merge-14.png
       :scale: 100%
       :align: center
       :alt: merge 14
 
 |
 
-  .. image:: ../_static/merge-15.png
+.. image:: ../_static/merge-15.png
       :scale: 100%
       :align: center
       :alt: merge 15
 
 |
 
-  .. image:: ../_static/merge-16.png
+.. image:: ../_static/merge-16.png
       :scale: 100%
       :align: center
       :alt: merge 16
 
 |
 
-  .. image:: ../_static/merge-17.png
+.. image:: ../_static/merge-17.png
       :scale: 100%
       :align: center
       :alt: merge 17
@@ -870,7 +851,7 @@ Ten presente que el programa genera un arreglo aleatorio.
   optimizar optimizar el uso de la memoria mientras mantiene una complejidad similar al algoritmo 
   merge sort.
 
-Ejercicio 27: listas enlazadas
+Ejercicio 21: listas enlazadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * ¿Qué es una lista enlazada y para qué sirve?
@@ -885,9 +866,10 @@ Ejercicio 27: listas enlazadas
 
 |
 
-  .. image:: ../_static/LL-insert.png
+.. image:: ../_static/LL-insert.png
       :scale: 100%
       :align: center
+      :alt: LL-insert
 
 |
 
@@ -929,13 +911,13 @@ Ejercicio 27: listas enlazadas
 
         public (Node<T> previous, Node<T> found) FindFirst(T value)
 
-Ejercicio 28: reto listas enlazadas
+Ejercicio 22: reto listas enlazadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Implementa un programa que te permita contar la cantidad de nodos de una lista enlazada.
 
 
-Ejercicio 29: stacks y queues
+Ejercicio 23: stacks y queues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Los stacks sirven para apilar información usando la estrategia last input - first output (LIFO). Te puedes 
@@ -958,7 +940,7 @@ puedes ver cómo está implementado una queue. Toma solo los archivos .cs y creo
 
 * Realiza una gráficas que ilustren el funcionamiento de la queue al ingresar y sacar nodos de ella.
 
-Ejercicio 30: hash tables y diccionarios
+Ejercicio 24: hash tables y diccionarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Las hash tables, al igual que los diccionarios se utilizan para resolver un problema concreto: ACELERAR la búsqueda de 
@@ -980,7 +962,7 @@ SOLO para que veas conceptualmente cómo funciona:
 * ¿Cómo se resuelven las colisiones de claves con el mismo hash?
 * Para qué se utilizan las listas enlazadas en esta implementación?
 
-Ejercicio 31: ejemplo de diccionarios
+Ejercicio 25: ejemplo de diccionarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En `este <https://github.com/PacktPublishing/-C-8-Data-Structures-and-Algorithms/tree/master/Section%204/HashCollections>`__ 
@@ -1018,17 +1000,17 @@ enlace vas a encontrar algunos ejemplos de cómo usar diccionarios y hash tables
   * ¿Cómo recupero un item de un diccionario?
   * Describe cómo se usa el método TryGetValue.
   
-Ejercicio 32: reflexión
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 26: evaluación formativa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Este ejercicio es simple: ¿Cuál es la gracias de usar una ESTRUCTURA DE DATOS DICCIONARY? 
 ¿Qué buscamos optimizar?
 
 
-PROYECTO 
-^^^^^^^^^^^^^
+CASO DE ESTUDIO
+^^^^^^^^^^^^^^^^^^^
 
-Este proyecto se trata de analizar a fondo un videojuego sencillo basado en el uso 
+Este caso de estudio es sobre un videojuego sencillo basado en el uso 
 de estructuras de datos y algoritmos de búsqueda.
 
 Vamos a utilizar `este <https://github.com/lordjesus/Packt-Introduction-to-graph-algorithms-for-game-developers>`__ 
@@ -1196,7 +1178,7 @@ Pregunta 1
 #############
 
 Para responder esta pregunta vas a necesitar analizar cómo funciona el 
-algoritmo `Breadth First Search` (BFS). El algoritmo te permitirá recorrer 
+algoritmo ``Breadth First Search`` (BFS). El algoritmo te permitirá recorrer 
 los nodos o vértices de un GRAFO. ¿Qué es un grafo? es una estructura de 
 datos compuesta por VÉRTICES y por ARCOS. Los arcos son las líneas 
 que conectan los vértices. En la siguiente gráfica te voy a mostrar 
@@ -1268,7 +1250,7 @@ que terminemos de recorrer todo el grafo o hasta que lleguemos al nodo deseado.
 Vamos a utilizar este algoritmo para solucionar el puzzle. En este 
 caso, partimos de este nodo:
 
-  .. code:: bash
+.. code:: bash
 
       1 6 4
       5 8 2
@@ -1276,7 +1258,7 @@ caso, partimos de este nodo:
 
 Y queremos llegar a este otro:
 
-  .. code:: bash
+.. code:: bash
 
       1 2 3
       4 5 6

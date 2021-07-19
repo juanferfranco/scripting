@@ -5,7 +5,7 @@ Introducción
 --------------
 
 En esta unidad vas a aplicar todo lo aprendido a un proyecto propio. La idea 
-es que tomes uno de tus proyectos de Taller o proyectos personales y los 
+es que tomes uno de tus proyectos de Taller o proyectos personales y lo 
 analices usando todo lo que vimos en el curso.
 
 
@@ -18,8 +18,8 @@ Aplicar y analizar todo lo aprendido en el curso a un proyecto propio.
     La unidad se debería realizar entre la semana 14 a la 16: 3 semanas. 
     más una semana más de colchón.
 
-Ejercicios y proyectos
-------------------------
+Lecturas, ejercicios y proyectos
+----------------------------------
 
 Ejercicio 1
 ^^^^^^^^^^^^^
