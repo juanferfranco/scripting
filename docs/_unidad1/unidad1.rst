@@ -1390,3 +1390,11 @@ Pregunta 13
 ¿Qué es una corrutina y cómo está funcionando en este caso 
 para animar el movimiento de los números en cada uno de los estados 
 almacenados en el path con la solución?
+
+
+EVALUACIÓN DE LA UNIDAD
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+La evaluación se publicará en la semana de evaluación. Por tanto, te recomiendo que termines la mayor 
+cantidad de ejercicios que puedas, ojalá todos, antes de la semana de evaluación. Recuerda que 
+el trayecto de actividades que vamos a realizar tiene como objetivo prepararte para esta evaluación. 

@@ -60,27 +60,17 @@ Cronograma
 #. Unidad 1: semanas 1 a 4
 #. Unidad 2: semanas 5 a 8
 #. Unidad 3: semanas 9 a 12
-#. Unidad 4: semanas 13 a 16  
+#. Unidad 4: semanas 13 a 16
 
 Evaluación
 -----------
 
-Grupo 1:
+* Evaluación 1: unidad 1 25%. Semana del 16 de agosto. Plazo máximo 20 de agosto.
+* Evaluación 2: unidad 2 25%. Semana del 13 de septiembre. Plazo máximo 17 de septiembre.
+* Evaluación 3: unidad 3 25%. Semana del 11 de octubre. Plazo máximo 15 de octubre.
+* Proyecto: unidad 4 25%. Semana del 1 de noviembre. Plazo máximo 5 de noviembre.
 
-* Evaluación 1: agosto 19 de 2021. 25% unidad 1.
-* Evaluación 2: septiembre 16 de 2021. 25% unidad 2.
-* Evaluación 3: octubre 14 de 2021. 25% unidad 3.
-* Proyecto: noviembre 5 de 2021. 25% unidad 4.
-
-Grupo 2
-
-* Evaluación 1: agosto 20 de 2021. 25% unidad 1.
-* Evaluación 2: septiembre 17 de 2021. 25% unidad 2.
-* Evaluación 3: octubre 15 de 2021. 25% unidad 3.
-* Proyecto: noviembre 6 de 2021. 25% unidad 4.
-
-Para solicitar un supletorio hablar con el director del programa 
-Jackson Reina: jackson.reina@upb.edu.co
+Luego del plazo máximo la nota de la evaluación será 0.
 
 Dedicación
 -----------
