@@ -48,7 +48,7 @@ Ejercicio 1: Git y Github
 * Para los ejercicios que siguen instala GitKraken. Será la herramienta que usaremos 
   en el curso, además de la línea de comandos.
 
-Lectura 1: trabajo bajo control de versión fon forks
+Lectura 1: trabajo bajo control de versión con forks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el último video que viste donde te muestran cómo contribuir a un proyecto 
