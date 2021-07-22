@@ -60,7 +60,7 @@ Cronograma
 #. Unidad 1: semanas 1 a 5
 #. Unidad 2: semanas 6 a 9
 #. Unidad 3: semanas 10 a 13
-#. Unidad 4: semanas 114 a 16
+#. Unidad 4: semanas 14 a 16
 
 Evaluación
 -----------
