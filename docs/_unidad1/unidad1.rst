@@ -390,6 +390,8 @@ Utilizaremos la notación Big-O.
 
 Observa `este <https://youtu.be/__vX2sjlpXU>`__ video.
 
+Ten como referencia `este <https://www.bigocheatsheet.com/>`__ enlace que muestran en el video.
+
 * Si tengo dos computadores, uno más lento y otro más rápido, ¿Tendría dos medidas 
   Big-O diferentes?
 
@@ -1003,7 +1005,7 @@ enlace vas a encontrar algunos ejemplos de cómo usar diccionarios y hash tables
 Ejercicio 27: evaluación formativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Este ejercicio es simple: ¿Cuál es la gracias de usar una ESTRUCTURA DE DATOS DICCIONARY? 
+Este ejercicio es simple: ¿Cuál es la gracia de usar una ESTRUCTURA DE DATOS DICCIONARY? 
 ¿Qué buscamos optimizar?
 
 
