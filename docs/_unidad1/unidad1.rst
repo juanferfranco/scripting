@@ -693,18 +693,8 @@ Ten presente que el programa genera un arreglo aleatorio.
   partes a la mitad en la primera iteración, tendrás un arreglo de tamaño :math:`n/2`, en la segunda 
   iteración :math:`n/4`, en la tercera :math:`n/8`, en la k :math:`n/2^k`. Si en la iteración k 
   la longitud del arreglo es 1, entonces cuántas iteraciones necesitas para llegar a un arreglo de tamaño 
-  1 partiendo de un arreglo de tamaño n:
-
-.. math::
-
-      n/2^k = 1
-
-      2^k = n
-      
-      log_2(2^k) = log_2(n) 
-      
-      k = log_2(n)  
-
+  1 partiendo de un arreglo de tamaño n. :math:`n/2^k = 1`, :math:`2^k = n`, :math:`log_2(2^k) = log_2(n)`, 
+  :math:`k = log_2(n)`.  
 
   Entonces, en notación Big-O ¿Cuál sería el costo del algoritmo Bubble sort?
 
