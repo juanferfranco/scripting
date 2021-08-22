@@ -1419,6 +1419,7 @@ Para la parte de las estructuras de datos y algoritmos de búsqueda vas a analiz
 una aplicación interactiva creada por crew7 studio games. En 
 `este <https://crew7studiogames.itch.io/bfs-simulation-using-unity-game-engine>`__ enlace 
 puedes ver la aplicación. Para probar la aplicación te pediré que crees un proyecto vacío 
-3D en Unity versión 2020 LTS y luego importa el siguiente `paquete <../_static/mazeUnit1.unitypackage>`__.
+3D en Unity versión 2020 LTS y luego importa el siguiente 
+`paquete <https://drive.google.com/file/d/1czODHzaOyEfH6vCf2t8IpkUNml0vF076/view?usp=sharing>`__.
 
 
