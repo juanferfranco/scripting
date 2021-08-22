@@ -1425,13 +1425,64 @@ puedes ver la aplicación. Para probar la aplicación te pediré que crees un pr
 3D en Unity versión 2020 LTS y luego importa el siguiente 
 `paquete <https://drive.google.com/file/d/1czODHzaOyEfH6vCf2t8IpkUNml0vF076/view?usp=sharing>`__.
 
-Para realizar el análisis debes hacer lo siguiente:
+Para las dos actividades anteriores vas a responder las siguientes preguntas de la manera más 
+concreta, pero precisa posible.
 
-#. Explica qué hace cada uno de los Game Objects de la escena maze de la aplicación interactiva.
-#. Explica cómo funciona el algoritmo BFS en la aplicación.
-#. Indica qué estructuras de datos se están usando en la aplicación y para qué se usa cada una 
-   de ellas. 
-#. Explica cómo funciona la aplicación luego de dar click en play.
+Para el control de versión:
+
+#. Define qué es origin desde el punto de vista del moderador y desde el punto de vista de
+   un miembro del equipo.
+#. ¿Cuál es la diferencia entre origin y upstream desde el punto de vista del moderador y de 
+   un miembro del equipo?
+#. ¿Para qué necesita referenciar el upstream un miembro del equipo?
+#. ¿Por qué se crea una rama featureX por cada featureX.txt?
+#. Como moderador escribe los pasos para crear el repositorio en Github.
+#. Como moderador escribe los pasos para clonar el repositorio en tu computador de desarrollo.
+#. Como moderador escribe los pasos necesarios para crear una rama para una feature tanto local 
+   como remota.
+#. Como moderador escribe los pasos necesarios para realizar un commit.
+#. Como moderador escribe los pasos necesarios para realizar un pull request.
+#. Como moderador escribe los pasos necesarios para realizar un merge.
+#. Como moderador escribe los pasos necesarios para solicitar un cambio a un pull request.
+#. Como miembro del equipo escribe los pasos necesarios para obtener una copiar un repositorio 
+   de una cuenta de Github a otra cuenta.
+#. Como miembro del equipo escribe los pasos necesarios para clonar tu repositorio en Github 
+   a tu computador local.
+#. Como miembro del equipo escribe los los pasos necesarios para configurar el upstream.
+#. Como miembro del equipo escribe los pasos para crear un pull request.
+#. Cuando haces un pull request y el moderador te pide un cambio, es necesario hacer un nuevo 
+   pull request?
+#. En cualquier rol escribe los pasos necesarios para actualizar tu origin con tu local y tu local 
+   con el origin. ¿Cuál es la diferencia?
+
+Para el uso de estructuras de datos y algoritmos vas a crear un nuevo proyecto tipo consola 
+con dos archivos llamados Program.cs y SearchPath.cs que tendrán las siguientes características:
+
+* En Program.cs debes medir el tiempo que tarda encontrar el path.
+* Analiza la manera como se está representando cada nodo del terreno a recorrer en la 
+  aplicación interactiva, así como la estructura de datos que se está usando. 
+* En Program.cs define el terreno usando misma representación y estructura de datos 
+  usada en la aplicación interactiva.
+* En Program.cs define un nodo inicial y un nodo final entre TODOS los posibles nodo explorables.
+* En Program.cs llama un método de SearchPath.getPath(state) para obtener el path.
+* Imprime en la terminal el path.
+
+Responde las siguientes preguntas de la manera más corta, pero precisa posible.
+
+#. ¿Como se está representando cada nodo del terreno a recorrer en la 
+   aplicación interactiva? 
+#. ¿Cuál es la estructura de datos que se está usando para almacenar cada nodo del terreno?
+#. ¿Cómo se definen el punto de inicio y el punto final del recorrido?
+#. ¿Qué ventaja tiene usar la estructura de datos anterior para este problema?
+#. Escribe los pasos que componen el algoritmo BFS en la solución del problema.
+#. ¿Para qué se usa una cola en el algoritmo BFS de la aplicación interactiva?
+#. ¿Cómo se determina si un nodo ya fue explorado?
+#. ¿Cómo se determina qué nodos serán explorados?
+#. ¿Qué estructura de datos se está utilizando para almacenar los nodos que componen la ruta 
+   calculada desde el punto de inicio al punto final?
+#. ¿Qué ventaja tiene usar la estructura de datos de la pregunta anterior?
+#. Al crear el path ¿Por qué es necesario  
+#. Explica cómo funciona la aplicación interactiva luego de dar click en play.
 #. ¿Qué es una corutina y cómo y para qué se está usando en la aplicación interactiva.
 
 Entregables
@@ -1448,12 +1499,14 @@ El archivo debe tener lo siguiente:
 * Tu nombre completo.
 * Evaluación de la unidad 1 y la fecha en la cual vas subir el archivo.
 * Sección 1: enlace al repositorio en github donde tu eres el moderador y el enlace al repositorio 
-  donde tu eres el miembro del equipo.
-* Sección 2: enlaces a dos videos. Uno donde hagas todo lo solicitado en el enunciado 
-  actuando como moderador y otro donde hagas todo lo solicitado pero esta vez como miembro 
-  del equipo. 
-* Sección 3: un video donde respondas los 5 items solicitados en el análisis de la aplicación 
-  interactiva.
+  donde tu eres el miembro del equipo. Ambos repositorios deberían estar sincronizados y con los 
+  featureX, commits y pull requests solicitados.
+* Sección 2: enlace a Github con la el código de la aplicación tipo consola solicitado. 
+* Sección 3: el texto con la solución a todas las preguntas.
 
 Criterios de evaluación
 ##############################
+
+Sección 1 (1). Se califica 1 si está completo o 0 si le falta algo.
+Sección 2 (1). Se califica 1 si está completo o 0 si le falta algo.
+Sección 3 (3). Cada pregunta tiene el mismo valor.
