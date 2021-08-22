@@ -1390,6 +1390,12 @@ EVALUACIÓN DE LA UNIDAD
 Para realizar la evaluación es fundamental que trabajes el CASO DE ESTUDIO, si 
 no lo has hecho, te recomiendo que lo trabajes a fondo.
 
+.. warning:: MUY IMPORTANTE
+  
+  El ejercicio de control de versión lo puedes hacer con otro compañero, pero la solución 
+  a todas las preguntas es INDIVIDUAL. No cumplir con este requisito hará que la nota 
+  de tu evaluación sea automáticamente 0.
+
 Enunciado 
 ###########
 
@@ -1456,7 +1462,10 @@ Para el control de versión:
    con el origin. ¿Cuál es la diferencia?
 
 Para el uso de estructuras de datos y algoritmos vas a crear un nuevo proyecto tipo consola 
-con dos archivos llamados Program.cs y SearchPath.cs que tendrán las siguientes características:
+con dos archivos llamados Program.cs y SearchPath.cs. Por favor usa el código 
+de la aplicación interactiva para ENSAMBLAR los programas anteriores. Ten en cuenta que antes debes 
+analizar a fondo el funcionamiento de la aplicación para que puedas determinar qué partes te sirven 
+y/o cuáles debes modificar. Considera lo siguiente:
 
 * En Program.cs debes medir el tiempo que tarda encontrar el path.
 * Analiza la manera como se está representando cada nodo del terreno a recorrer en la 
@@ -1467,7 +1476,7 @@ con dos archivos llamados Program.cs y SearchPath.cs que tendrán las siguientes
 * En Program.cs llama un método de SearchPath.getPath(state) para obtener el path.
 * Imprime en la terminal el path.
 
-Responde las siguientes preguntas de la manera más corta, pero precisa posible.
+Ahora, regresa a la aplicación interactiva en Unity y responde las siguientes preguntas:
 
 #. ¿Como se está representando cada nodo del terreno a recorrer en la 
    aplicación interactiva? 
@@ -1481,7 +1490,7 @@ Responde las siguientes preguntas de la manera más corta, pero precisa posible.
 #. ¿Qué estructura de datos se está utilizando para almacenar los nodos que componen la ruta 
    calculada desde el punto de inicio al punto final?
 #. ¿Qué ventaja tiene usar la estructura de datos de la pregunta anterior?
-#. Al crear el path ¿Por qué es necesario  
+#. Al crear el path ¿Por qué es necesario usar el método Reverse()?
 #. Explica cómo funciona la aplicación interactiva luego de dar click en play.
 #. ¿Qué es una corutina y cómo y para qué se está usando en la aplicación interactiva.
 
@@ -1492,12 +1501,22 @@ Sube a `este <https://upbeduco-my.sharepoint.com/:f:/g/personal/juanf_franco_upb
 enlace un archivo pdf nombrado con los nueve dígitos que componen tu ID y finalizando con 
 t si tienes clase los martes o con w si tienes clase los miércoles. 
 Por ejemplo: 000008716t.pdf identificará el archivo de juan franco que tiene los clase los 
-martes. 
+martes.
+
+.. warning:: MUY IMPORTANTE
+  
+  El plazo máximo de entrega de la evaluación es estricto, no se recibirán evaluaciones luego del plazo máximo.
+  Es tu responsabilidad asegurarte cuál es la fecha y hora máxima de entrega. Ten presente que una vez 
+  el enlace se cierre, no es posible entregar por ningún otro medio la evaluación y la nota en ese caso 
+  será automáticamente 0.
+  
+  Debes asegurarte que todo lo solicitado esté en el archivo pdf. No se recibirán archivos adicionales
+  o correcciones.
 
 El archivo debe tener lo siguiente:
 
 * Tu nombre completo.
-* Evaluación de la unidad 1 y la fecha en la cual vas subir el archivo.
+* El título: evaluación de la unidad 1 y la fecha en la cual vas subir el archivo.
 * Sección 1: enlace al repositorio en github donde tu eres el moderador y el enlace al repositorio 
   donde tu eres el miembro del equipo. Ambos repositorios deberían estar sincronizados y con los 
   featureX, commits y pull requests solicitados.
@@ -1507,6 +1526,7 @@ El archivo debe tener lo siguiente:
 Criterios de evaluación
 ##############################
 
-Sección 1 (1). Se califica 1 si está completo o 0 si le falta algo.
-Sección 2 (1). Se califica 1 si está completo o 0 si le falta algo.
-Sección 3 (3). Cada pregunta tiene el mismo valor.
+* Sección 1 (1). Se califica 1 si está completo o 0 si le falta algo.
+* Sección 2 (1). Se califica 1 si está completo o 0 si le falta algo.
+* Sección 3 (3). Cada pregunta tiene el mismo valor. Se califica con 0.1 se está correcta
+  y completa o con 0 si le falta algo. 
