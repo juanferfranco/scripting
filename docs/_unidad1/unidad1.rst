@@ -1398,6 +1398,8 @@ La evaluación está compuesta por dos partes:
 #. Trabajo en equipo usando control de versión
 #. Uso de estructuras de datos y algoritmos de búsqueda.
 
+Para la parte de trabajo en equipo usando control de versión:
+
 Vas a simular la realización de un proyecto de software usando 
 control de versión con un flujo de trabajo bifurcado. El proyecto  
 estará compuesto por archivos de texto que simularán código fuente.
@@ -1415,11 +1417,43 @@ evidenciar ambos roles (trabaja con otra persona).
 * Cada featureX se debe trabajar en una rama llamada featureX.
 * Solo el moderador hace el merge en el repositorio controlado por este.
 
-Para la parte de las estructuras de datos y algoritmos de búsqueda vas a analizar 
-una aplicación interactiva creada por crew7 studio games. En 
+Para la parte de las estructuras de datos y algoritmos de búsqueda:
+
+Vas a analizar una aplicación interactiva creada por crew7 studio games. En 
 `este <https://crew7studiogames.itch.io/bfs-simulation-using-unity-game-engine>`__ enlace 
 puedes ver la aplicación. Para probar la aplicación te pediré que crees un proyecto vacío 
 3D en Unity versión 2020 LTS y luego importa el siguiente 
 `paquete <https://drive.google.com/file/d/1czODHzaOyEfH6vCf2t8IpkUNml0vF076/view?usp=sharing>`__.
 
+Para realizar el análisis debes hacer lo siguiente:
 
+#. Explica qué hace cada uno de los Game Objects de la escena maze de la aplicación interactiva.
+#. Explica cómo funciona el algoritmo BFS en la aplicación.
+#. Indica qué estructuras de datos se están usando en la aplicación y para qué se usa cada una 
+   de ellas. 
+#. Explica cómo funciona la aplicación luego de dar click en play.
+#. ¿Qué es una corutina y cómo y para qué se está usando en la aplicación interactiva.
+
+Entregables
+################
+
+Sube a `este <https://upbeduco-my.sharepoint.com/:f:/g/personal/juanf_franco_upb_edu_co/Es232BKaC6pLiPZvPM01e1EBvo8CNycjhsed9KnTyOi7ug>`__ 
+enlace un archivo pdf nombrado con los nueve dígitos que componen tu ID y finalizando con 
+t si tienes clase los martes o con w si tienes clase los miércoles. 
+Por ejemplo: 000008716t.pdf identificará el archivo de juan franco que tiene los clase los 
+martes. 
+
+El archivo debe tener lo siguiente:
+
+* Tu nombre completo.
+* Evaluación de la unidad 1 y la fecha en la cual vas subir el archivo.
+* Sección 1: enlace al repositorio en github donde tu eres el moderador y el enlace al repositorio 
+  donde tu eres el miembro del equipo.
+* Sección 2: enlaces a dos videos. Uno donde hagas todo lo solicitado en el enunciado 
+  actuando como moderador y otro donde hagas todo lo solicitado pero esta vez como miembro 
+  del equipo. 
+* Sección 3: un video donde respondas los 5 items solicitados en el análisis de la aplicación 
+  interactiva.
+
+Criterios de evaluación
+##############################
