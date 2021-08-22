@@ -1387,6 +1387,38 @@ almacenados en el path con la solución?
 EVALUACIÓN DE LA UNIDAD
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-La evaluación se publicará en la semana de evaluación. Por tanto, te recomiendo que termines la mayor 
-cantidad de ejercicios que puedas, ojalá todos, antes de la semana de evaluación. Recuerda que 
-el trayecto de actividades que vamos a realizar tiene como objetivo prepararte para esta evaluación. 
+Para realizar la evaluación es fundamental que trabajes el CASO DE ESTUDIO, si 
+no lo has hecho, te recomiendo que lo trabajes a fondo.
+
+Enunciado 
+###########
+
+La evaluación está compuesta por dos partes:
+
+#. Trabajo en equipo usando control de versión
+#. Uso de estructuras de datos y algoritmos de búsqueda.
+
+Vas a simular la realización de un proyecto de software usando 
+control de versión con un flujo de trabajo bifurcado. El proyecto  
+estará compuesto por archivos de texto que simularán código fuente.
+Primero serás moderador del proyecto y luego serás un miembro. DEBES 
+evidenciar ambos roles (trabaja con otra persona).
+
+* El proyecto está compuesto por 4 features independientes. Cada feature 
+  será implementada en un archivo de texto denominado featureX.txt, donde 
+  X es el número de la feature simulada. Para cada featureX crea al menos 3 
+  commits. Como moderador debes realizar 2 features y como miembro debes 
+  hacer otras dos.
+* Al finalizar deben quedar los repositorios en Github y locales sincronizados.
+* Debes realizar 4 pull request: dos del moderador y 2 del miembro.
+* El moderador debe solicitar cambios al menos a un pull request.
+* Cada featureX se debe trabajar en una rama llamada featureX.
+* Solo el moderador hace el merge en el repositorio controlado por este.
+
+Para la parte de las estructuras de datos y algoritmos de búsqueda vas a analizar 
+una aplicación interactiva creada por crew7 studio games. En 
+`este <https://crew7studiogames.itch.io/bfs-simulation-using-unity-game-engine>`__ enlace 
+puedes ver la aplicación. Para probar la aplicación te pediré que crees un proyecto vacío 
+3D en Unity versión 2020 LTS y luego importa el siguiente `paquete <../_static/mazeUnit1.unitypackage>`__.
+
+

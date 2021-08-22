@@ -57,17 +57,17 @@ evidenciarás los criterios de competencia del curso.
 Cronograma
 -----------
 
-#. Unidad 1: semanas 1 a 5
-#. Unidad 2: semanas 6 a 9
-#. Unidad 3: semanas 10 a 13
-#. Unidad 4: semanas 14 a 16
+#. Unidad 1: semanas 1 a 6
+#. Unidad 2: semanas 7 a 10
+#. Unidad 3: semanas 11 a 14
+#. Unidad 4: semanas 15 a 16
 
 Evaluación
 -----------
 
-* Evaluación 1: unidad 1 25%. Semana del 16 de agosto. Plazo máximo 22 de agosto.
-* Evaluación 2: unidad 2 25%. Semana del 13 de septiembre. Plazo máximo 19 de septiembre.
-* Evaluación 3: unidad 3 25%. Semana del 11 de octubre. Plazo máximo 17 de octubre.
+* Evaluación 1: unidad 1 25%. Semana del 23 de agosto. Plazo máximo 29 de agosto.
+* Evaluación 2: unidad 2 25%. Semana del 20 de septiembre. Plazo máximo 26 de septiembre.
+* Evaluación 3: unidad 3 25%. Semana del 18 de octubre. Plazo máximo 24 de octubre.
 * Proyecto: unidad 4 25%. Semana del 1 de noviembre. Plazo máximo 7 de noviembre.
 
 Luego del plazo máximo la nota de la evaluación será 0.
