@@ -1462,7 +1462,7 @@ Para el control de versión:
    con el origin. ¿Cuál es la diferencia?
 
 Para el uso de estructuras de datos y algoritmos vas a crear un nuevo proyecto tipo consola 
-con dos archivos llamados Program.cs (incluye aquí las clases que necesites) y SearchPath.cs. 
+con dos archivos llamados Program.cs y SearchPath.cs. 
 Por favor, usa el código de la aplicación interactiva para ENSAMBLAR los programas anteriores. 
 Ten en cuenta que antes debes analizar a fondo el funcionamiento de la aplicación para que puedas 
 determinar qué partes te sirven y/o cuáles debes modificar. Considera lo siguiente:
