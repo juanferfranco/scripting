@@ -1442,35 +1442,35 @@ Para el control de versión:
    un miembro del equipo?
 #. ¿Para qué necesita referenciar el upstream un miembro del equipo?
 #. ¿Por qué se crea una rama featureX por cada featureX.txt?
-#. Como moderador escribe los pasos para crear el repositorio en Github.
-#. Como moderador escribe los pasos para clonar el repositorio en tu computador de desarrollo.
-#. Como moderador escribe los pasos necesarios para crear una rama para una feature tanto local 
+#. Como moderador, escribe los pasos para crear el repositorio en Github.
+#. Como moderador, escribe los pasos para clonar el repositorio en tu computador de desarrollo.
+#. Como moderador, escribe los pasos necesarios para crear una rama para una feature, tanto local 
    como remota.
-#. Como moderador escribe los pasos necesarios para realizar un commit.
-#. Como moderador escribe los pasos necesarios para realizar un pull request.
-#. Como moderador escribe los pasos necesarios para realizar un merge.
-#. Como moderador escribe los pasos necesarios para solicitar un cambio a un pull request.
-#. Como miembro del equipo escribe los pasos necesarios para obtener una copiar un repositorio 
+#. Como moderador, escribe los pasos necesarios para realizar un commit.
+#. Como moderador, escribe los pasos necesarios para realizar un pull request.
+#. Como moderador, escribe los pasos necesarios para realizar un merge.
+#. Como moderador, escribe los pasos necesarios para solicitar un cambio a un pull request.
+#. Como miembro del equipo, escribe los pasos necesarios para obtener una copiar de un repositorio 
    de una cuenta de Github a otra cuenta.
-#. Como miembro del equipo escribe los pasos necesarios para clonar tu repositorio en Github 
+#. Como miembro del equipo, escribe los pasos necesarios para clonar tu repositorio en Github 
    a tu computador local.
-#. Como miembro del equipo escribe los los pasos necesarios para configurar el upstream.
-#. Como miembro del equipo escribe los pasos para crear un pull request.
+#. Como miembro del equipo, escribe los pasos necesarios para configurar el upstream.
+#. Como miembro del equipo, escribe los pasos para crear un pull request.
 #. Cuando haces un pull request y el moderador te pide un cambio, es necesario hacer un nuevo 
    pull request?
-#. En cualquier rol escribe los pasos necesarios para actualizar tu origin con tu local y tu local 
+#. En cualquier rol, escribe los pasos necesarios para actualizar tu origin con tu local y tu local 
    con el origin. ¿Cuál es la diferencia?
 
 Para el uso de estructuras de datos y algoritmos vas a crear un nuevo proyecto tipo consola 
-con dos archivos llamados Program.cs y SearchPath.cs. Por favor usa el código 
-de la aplicación interactiva para ENSAMBLAR los programas anteriores. Ten en cuenta que antes debes 
-analizar a fondo el funcionamiento de la aplicación para que puedas determinar qué partes te sirven 
-y/o cuáles debes modificar. Considera lo siguiente:
+con dos archivos llamados Program.cs (incluye aquí las clases que necesites) y SearchPath.cs. 
+Por favor, usa el código de la aplicación interactiva para ENSAMBLAR los programas anteriores. 
+Ten en cuenta que antes debes analizar a fondo el funcionamiento de la aplicación para que puedas 
+determinar qué partes te sirven y/o cuáles debes modificar. Considera lo siguiente:
 
 * En Program.cs debes medir el tiempo que tarda encontrar el path.
 * Analiza la manera como se está representando cada nodo del terreno a recorrer en la 
   aplicación interactiva, así como la estructura de datos que se está usando. 
-* En Program.cs define el terreno usando misma representación y estructura de datos 
+* En Program.cs define el terreno usando la misma representación y estructura de datos 
   usada en la aplicación interactiva.
 * En Program.cs define un nodo inicial y un nodo final entre TODOS los posibles nodo explorables.
 * En Program.cs llama un método de SearchPath.getPath(state) para obtener el path.
@@ -1492,7 +1492,7 @@ Ahora, regresa a la aplicación interactiva en Unity y responde las siguientes p
 #. ¿Qué ventaja tiene usar la estructura de datos de la pregunta anterior?
 #. Al crear el path ¿Por qué es necesario usar el método Reverse()?
 #. Explica cómo funciona la aplicación interactiva luego de dar click en play.
-#. ¿Qué es una corutina y cómo y para qué se está usando en la aplicación interactiva.
+#. ¿Qué es una corutina y cómo y para qué se está usando en la aplicación interactiva?
 
 Entregables
 ################
@@ -1506,7 +1506,7 @@ martes.
 .. warning:: MUY IMPORTANTE
   
   El plazo máximo de entrega de la evaluación es estricto, no se recibirán evaluaciones luego del plazo máximo.
-  Es tu responsabilidad asegurarte cuál es la fecha y hora máxima de entrega. Ten presente que una vez 
+  Es tu responsabilidad saber cuál es la fecha y hora máxima de entrega. Ten presente que una vez 
   el enlace se cierre, no es posible entregar por ningún otro medio la evaluación y la nota en ese caso 
   será automáticamente 0.
   
