@@ -1497,7 +1497,7 @@ Ahora, regresa a la aplicación interactiva en Unity y responde las siguientes p
 Entregables
 ################
 
-Sube a `este <https://upbeduco-my.sharepoint.com/:f:/g/personal/juanf_franco_upb_edu_co/Es232BKaC6pLiPZvPM01e1EBvo8CNycjhsed9KnTyOi7ug>`__ 
+Sube a `este <https://www.dropbox.com/request/SenGjly3TvD9mbUzhxaK>`__ 
 enlace un archivo pdf nombrado con los nueve dígitos que componen tu ID y finalizando con 
 t si tienes clase los martes o con w si tienes clase los miércoles. 
 Por ejemplo: 000008716t.pdf identificará el archivo de juan franco que tiene los clase los 
