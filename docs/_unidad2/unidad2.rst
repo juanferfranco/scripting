@@ -172,7 +172,7 @@ Ejercicio 3: tipo valor vs tipo referencia (discusión grupal)
 
 Ahora vamos a compartir los resultados del ejercicio anterior entre todos.
 
-Ejercicio 5: reto tipo valor vs tipo referencia
+Ejercicio 4: reto tipo valor vs tipo referencia
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el siguiente código en el cual se está representando 
@@ -269,7 +269,7 @@ variables y los objetos del programa anterior. ¿Por qué el primer try genera u
 y el segundo no?
 
 
-Ejercicio 6: repaso sobre el concepto de miembro static
+Ejercicio 5: repaso sobre el concepto de miembro static
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Analicemos juntos en el tablero el siguiente programa:
@@ -313,7 +313,7 @@ Trabajo autónomo bloque 1
 Esta sesión de trabajo autónomo tiene una duración estimada de 1 hora 20 minutos 
 aproximadamente.
 
-Ejercicio 7: repaso sobre el concepto de interface
+Ejercicio 6: repaso sobre el concepto de interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vas a repasar el concepto de ``interface`` analizando detenidamente `este <https://youtu.be/MZOrGXk4XFI>`__ 
@@ -329,7 +329,7 @@ Escribe en un bitácora de trabajo las respuestas a estas preguntas cuyas respue
 
 (Tiempo estimado: 30 minutos)
 
-Ejercicio 8: repaso sobre el concepto de interface: código en Unity
+Ejercicio 7: repaso sobre el concepto de interface: código en Unity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En el minuto 1:48 al minuto 6:33 del video te muestran un ejemplo:
@@ -341,7 +341,7 @@ En el minuto 1:48 al minuto 6:33 del video te muestran un ejemplo:
 
 (Tiempo estimado: 20 minutos)
 
-Ejercicio 9: repaso sobre el concepto de interface: ejemplo en una aplicación interactiva
+Ejercicio 8: repaso sobre el concepto de interface: ejemplo en una aplicación interactiva
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En el minuto 8:34 te muestran un ejemplo de aplicación de las interfaces en una aplicación 
@@ -362,7 +362,7 @@ referencias.
 
 (Tiempo estimado: 20 minutos)
 
-Ejercicio 10: repaso sobre el concepto de interface: repite de memoria
+Ejercicio 9: repaso sobre el concepto de interface: repite de memoria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Crea una aplicación de consola.
