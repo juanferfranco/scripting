@@ -230,7 +230,6 @@ color de los ojos a café. Ejecuta el código
 y observa el resultado. Descubre que salió mal. 
 
 .. code-block:: csharp
-    :linenos:
 
       public class Eye
       {
