@@ -451,8 +451,8 @@ Vamos a utilizar `esta <https://docs.google.com/presentation/d/1ko3k9wePbRp2GVdP
 Con los siguientes ejercicios vas a practicar algunos de los principios. Los ejemplos son tomados 
 de `este <https://refactoring.guru/design-patterns>`__  sitio.
 
-Ejercicio 13: principio encapsula lo que varía
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 13: el principio encapsula lo que varía
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Considera el siguiente seudocódigo:
   
@@ -472,8 +472,8 @@ Considera el siguiente seudocódigo:
     :align: center
     :alt: encapsula lo que varía. Mejora.
 
-Ejercicio 14: programa a una interfaz, no a una implementación
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 14: el principio programa a una interfaz, no a una implementación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 DEPENDE de abstracciones, no de clases concretas. ¿Por qué? 
 Piensa en lo anterior y participa en clase con tu opinión. Piensa 
@@ -727,8 +727,8 @@ Ejercicio 15: analiza de nuevo el ejemplo anterior
 
 Realiza para uno de los códigos del ejemplo anterior el diagrama UML correspondiente.
 
-Ejercicio 16: favorece la composición sobre la herencia
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 16: el principio favorece la composición sobre la herencia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Hay varias razones que justifican este principio. Por ejemplo, una razón es esta:
 ``Las subclases están fuertemente acopladas a superclases``. Cambias algo en la 
