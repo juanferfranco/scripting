@@ -457,7 +457,7 @@ Ejercicio 13: principio encapsula lo que varía
 Considera el siguiente seudocódigo:
   
 .. image:: ../_static/encapsulaAntes.png
-    :scale: 70%
+    :scale: 60%
     :align: center
     :alt: encapsula lo que varía
 
@@ -468,7 +468,7 @@ Considera el siguiente seudocódigo:
 .. warning:: ALERTA DE SPOILER
 
 .. image:: ../_static/encapsulaDespues.png
-    :scale: 70%
+    :scale: 60%
     :align: center
     :alt: encapsula lo que varía. Mejora.
 
