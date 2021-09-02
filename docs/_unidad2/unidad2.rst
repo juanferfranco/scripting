@@ -19,8 +19,7 @@ Temas
 
 * Repaso de algunos conceptos básicos de programación orientada a objetos.
 
-* Principios SOLID: Single responsibility, Open–closed, Liskov substitution, 
-  Interface segregation, Dependency inversion.
+* Principios de diseño de software.
 
 * Análisis e implementación de algunos patrones de diseño.
 
@@ -29,8 +28,8 @@ Temas
 Lecturas y ejercicios
 ------------------------
 
-Sesión 1
-**********
+Sesión 1: repaso POO
+**********************
 
 Ejercicio 1: repaso sobre el concepto de tipo valor y tipo referencia en C#
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -307,7 +306,7 @@ Analicemos juntos en el tablero el siguiente programa:
   }
 
 
-Trabajo autónomo bloque 1
+Trabajo autónomo 1: repaso POO
 *******************************
 
 Esta sesión de trabajo autónomo tiene una duración estimada de 1 hora 20 minutos 
@@ -347,7 +346,7 @@ Ejercicio 8: repaso sobre el concepto de interface: ejemplo en una aplicación i
 En el minuto 8:34 te muestran un ejemplo de aplicación de las interfaces en una aplicación 
 interactiva.
 
-En el minuto 9:483 te muestran la que la clase Bullet necesita identificar el enemigo con 
+En el minuto 9:43 te muestran la que la clase Bullet necesita identificar el enemigo con 
 el cual colisiona. PIENSA en el siguiente escenario. Ya terminaste tu aplicación interactiva 
 y todo está probado. Unos meses más tarde, tu jefe te pide implementar una nueva funcionalidad 
 en la cual necesitas adicionar un nuevo enemigo u objeto con el cual la Bullet puede colisionar.
@@ -374,169 +373,401 @@ Ejercicio 9: repaso sobre el concepto de interface: repite de memoria
 
 (Tiempo estimado: 10 minutos)
 
-..
-  Ejercicio : repaso sobre el concepto de interface
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sesión 2: principios de diseño de software
+********************************************
 
-  Vamos a discutir este concepto juntos en el tablero.
-  Puedes complementar el concepto y una demostración con `este <https://youtu.be/MZOrGXk4XFI>`__ 
-  video.
-  Ejercicio 1: principios SOLID- Video 1-ver
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 10: repaso de algunos diagramas UML 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Imágenes tomadas de `este <https://refactoring.guru/design-patterns>`__ sitio).
 
-  Vas a analizar de manera práctica los principios de diseño SOLID mediante 
-  unos videos.
+Vamos al tablero y hablemos de estos diagramas:
 
-  Primero comienza SIMPLEMENTE observando este `video <https://www.youtube.com/watch?v=_yf5vzZ2sYE>`__. 
+.. image:: ../_static/classDiagram.png
+    :scale: 70%
+    :align: center
+    :alt: diagrama de clases
 
-  Ejercicio 2: principios SOLID- Video 1-reproducir
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ../_static/relaciones.png
+    :scale: 70%
+    :align: center
+    :alt: relaciones
 
-  Ahora vas a ver de nuevo el video, pero esta vez descarga el código y observa 
-  ambas cosas a la vez. 
+* Dependencia: cuando ciertos cambios en una clase puede provocar modificaciones en otra.
+  Ocurre cuando se usan nombre concretos de clases en otras. ¿Qué puedo hacer para que 
+  la dependencia sea más débil? Hacer que el código dependa de interfaces o clases abstractas
+  en lugar de clases concretas. Por ejemplo, tipos en la firma de un método, constructores al 
+  instanciar una clase.
+* Asociación: cuando un objeto interactúa o utiliza otra. Es un tipo de dependencia, pero en este 
+  caso un objeto siempre tendrá acceso a los objetos con los que interactúa. Por ejemplo, un campo
+  en una clase.
 
-  * Escribe qué GameObjects tiene la escena.
-  * ¿Cuál es la función de cada GameObject en la escena?
-  * Busca la documentación de todo lo que no entiendas.
+.. image:: ../_static/dependenciaVsAsoc.png
+    :scale: 70%
+    :align: center
+    :alt: dependencia vs asociación
 
-  Ejercicio 3: principios SOLID- Video 1 - memoria
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Si alguien cambia el nombre o un parámetro de ``getKnowledge`` el código se rompe, hay una dependencia. 
+Con ``student`` también hay una dependencia si alguien el método ``remember``; sin embargo, student es 
+un campo de la clase Professor que siempre está disponible y por tanto será una asociación igualmente.
 
-  Crea un nuevo proyecto y trata de reproducir de memoria el proyecto 
-  anterior, pero no tienes que reproducir el arte tal cual, solo nos vamos a 
-  concentrar en el código.
+* Agregación: tipo de asociación que representa una relación uno a muchos. El componente puede 
+  existir sin el contenedor. La punta de diamante vacío en el diagrama es el contenedor y la flecha apunta 
+  al componente.
+* Composición: es una asociación en la que un objeto está compuesto por otros. Las partes no pueden 
+  vivir sin el contenedor. El contenedor gestiona el ciclo de vida de las partes.
 
-  Ejercicio 4: principios SOLID- Video 2-ver
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejercicio 11: inventa ejemplos de la explicación anterior  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Ahora vas ver `este <https://www.youtube.com/watch?v=QDldZWvNK_E>`__ video donde se 
+Vuelve a leer las explicaciones anteriores. Inventa ejemplos en UML para las relaciones de 
+dependencia, asociación, agregación, composición, herencia e implementación. Implementa 
+los diagramas.
+
+Por ejemplo mira estos diagramas para la relación de herencia y la relación de implementación.
+
+Relación de herencia:
+
+.. image:: ../_static/herencia.png
+    :scale: 70%
+    :align: center
+    :alt: relación de herencia
+
+Relación de implementación:
+
+.. image:: ../_static/interfaces.png
+    :scale: 70%
+    :align: center
+    :alt: relación de implementación
+
+
+Ejercicio 12: concepto de los principios de diseño de software
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En este ejercicio vamos a abordar algunos conceptos relacionados con los 
+principios de DISEÑO DE SOFTWARE.
+
+Vamos a utilizar `esta <https://docs.google.com/presentation/d/1ko3k9wePbRp2GVdPJTSmhqRJNh7UUBZ6DnPWs4FFB18/edit?usp=sharing>`__ presentación.
+
+Con los siguientes ejercicios vas a practicar algunos de los principios. Los ejemplos son tomados 
+de `este <https://refactoring.guru/design-patterns>`__  sitio.
+
+Ejercicio 13: principio encapsula lo que varía
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Considera el siguiente seudocódigo:
+  
+.. image:: ../_static/encapsulaAntes.png
+    :scale: 70%
+    :align: center
+    :alt: encapsula lo que varía
+
+* ¿Qué es lo que varía?
+
+* ¿Cómo lo encapsulas?
+
+.. warning:: ALERTA DE SPOILER
+
+.. image:: ../_static/encapsulaDespues.png
+    :scale: 70%
+    :align: center
+    :alt: encapsula lo que varía. Mejora.
+
+Ejercicio 14: programa a una interfaz, no a una implementación
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DEPENDE de abstracciones, no de clases concretas. ¿Por qué? 
+Piensa en lo anterior y participa en clase con tu opinión. Piensa 
+en el trabajo autónomo bloque 1. ¿Te recuerda algo?
+
+Iniciemos con este código:
+
+.. code-block:: csharp
+
+    using System;
+
+    namespace companyIdeaInicial
+    {
+
+        class Designer
+        {
+            public void designArchitecture()
+            {
+                Console.WriteLine("Design");
+            }
+        }
+
+        class Programmer
+        {
+            public void writeCode()
+            {
+                Console.WriteLine("Coding");
+            }
+        }
+        
+        class Tester
+        {
+            public  void testSoftware()
+            {
+                Console.WriteLine("Testing");
+            }
+        }
+
+        class Company
+        {
+            public void createSoftware()
+            {
+                Designer d = new Designer();
+                d.designArchitecture();
+                Programmer p = new Programmer();
+                p.writeCode();
+                Tester t = new Tester();
+                t.testSoftware();
+            }
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Company c = new Company();
+                c.createSoftware();
+            }
+        }
+    }
+
+Problema: la clase Company está FUERTEMENTE ACOPLADA con las clases de empleados 
+concretos. Entonces hagamos que company dependa de una interfaz.
+
+.. code-block:: csharp
+
+    using System;
+
+    namespace companyIdeaInicial
+    {
+        interface IEmployee
+        {
+            public void doWork();
+        }
+        class Designer:IEmployee
+        {
+            private void designArchitecture()
+            {
+                Console.WriteLine("Design");
+            }
+
+            public void doWork()
+            {
+                designArchitecture();
+            }
+        }
+
+        class Programmer:IEmployee
+        {
+            private void writeCode()
+            {
+                Console.WriteLine("Coding");
+            }
+
+            public void doWork()
+            {
+                writeCode();
+            }
+        }
+        
+        class Tester:IEmployee
+        {
+            private  void testSoftware()
+            {
+                Console.WriteLine("Testing");
+            }
+
+            public void doWork()
+            {
+                testSoftware();
+            }
+        }
+
+        class Company
+        {
+            public void createSoftware()
+            {
+                IEmployee[] employees = new IEmployee[] { new Designer(),new Programmer(),new Tester()};
+                foreach (var employee in employees)
+                {
+                    employee.doWork();
+                }
+            }
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Company c = new Company();
+                c.createSoftware();
+            }
+        }
+    }
+
+Problema: la clase Company sigue acoplada a las clases de los empleados porque sigue siendo 
+necesario crear el arreglo de empleados para una empresa específica. Si tuviéramos que crear 
+una nueva empresa con otros empleados, toca MODIFICAR la clase Company.
+
+Lo que puedes hacer es crear un nuevo método ABSTRACTO que te de los empleados específicos 
+que tendrá que definir una empresa concreta:
+
+.. code-block:: csharp
+
+    using System;
+
+    namespace companyIdeaInicial
+    {
+        interface IEmployee
+        {
+            public void doWork();
+        }
+        class Designer:IEmployee
+        {
+            private void designArchitecture()
+            {
+                Console.WriteLine("Design");
+            }
+
+            public void doWork()
+            {
+                designArchitecture();
+            }
+        }
+
+        class Programmer:IEmployee
+        {
+            private void writeCode()
+            {
+                Console.WriteLine("Coding");
+            }
+
+            public void doWork()
+            {
+                writeCode();
+            }
+        }
+        
+        class Tester:IEmployee
+        {
+            private  void testSoftware()
+            {
+                Console.WriteLine("Testing");
+            }
+
+            public void doWork()
+            {
+                testSoftware();
+            }
+        }
+
+        class Artist:IEmployee
+        {
+            private  void makeArt()
+            {
+                Console.WriteLine("Art");
+            }
+
+            public void doWork()
+            {
+                makeArt();
+            }
+        }
+        
+        abstract class Company
+        {
+          public abstract IEmployee[] getEmployees();
+          
+            public void createSoftware()
+            {
+                IEmployee[] employees = getEmployees();
+                foreach (var employee in employees)
+                {
+                    employee.doWork();
+                }
+            }
+        }
+
+        class GameDevCompany : Company
+        {
+            public override IEmployee[] getEmployees()
+            {
+                return new IEmployee[] { new Artist(), new Programmer() };
+            }
+        }
+
+        class ExperiencesDevCompany : Company
+        {
+            public override IEmployee[] getEmployees()
+            {
+                return new IEmployee[] { new Programmer(), new Designer() };
+            }
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("GameDev company");
+                Company c = new GameDevCompany();
+                c.createSoftware();
+                Console.WriteLine("ExperiencesDev company");
+                c = new ExperiencesDevCompany();
+                c.createSoftware();
+            }
+        }
+    }
+
+Ejercicio 15: analiza de nuevo el ejemplo anterior
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Realiza para uno de los códigos del ejemplo anterior el diagrama UML correspondiente.
+
+Ejercicio 16: favorece la composición sobre la herencia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Hay varias razones que justifican este principio. Por ejemplo, una razón es esta:
+``Las subclases están fuertemente acopladas a superclases``. Cambias algo en la 
+superclase y puedes dañar la funcionalidad de las subclases.
+
+Pronto veremos un patrón de diseño que ilustra este asunto con más detalle.
+
+Trabajo autónomo 2: principios de diseño de software
+*******************************************************
+
+(Duración estimada de 1 hora 20 minutos)
+
+Para el trabajo autónomo de esta sesión te voy a proponer que veas unos videos de un 
+canal en youtube que me gusta mucho, espero que a ti también. En los Videos vas a 
+escuchar acerca de dos asuntos: REFACTORING y PRINCIPIOS SOLID. También te cuento 
+que en la descripción de los videos vas a encontrar el enlace para descargar cada uno. Si 
+tienes un poco más de tiempo de lo recomiendo MUCHO!
+
+* `Video1 <https://www.youtube.com/watch?v=_yf5vzZ2sYE>`__: aplicación interactiva inicial 
+  (tiempo estimado 9:30).
+* `Video2 <https://www.youtube.com/watch?v=QDldZWvNK_E>`__: video donde se 
   aplicarán algunos principios SOLID para hacer un refactoring al MonoBeHaviour 
   SelectionManager. Profe, ¿Para qué si ya funciona? ya verás...
-
-  Mientras estás viendo el video anota todos los conceptos de programación 
-  y de C# que no entiendas o no recuerdes.
-
-  Ejercicio 5: principios SOLID- Video 2 - repasa
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  En el ejercicio anterior anotaste los conceptos que no recordabas o 
-  no entendías. Ahora es tiempo de estudiarlos de nuevo.
-
-
-  Ejercicio 6: principios SOLID- Video 2- analiza
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Vuelve a ver el video y responde estas preguntas luego de verlo:
-
-  * Si el código ya funciona ¿Para qué es necesario hacer un refactoring 
-    en este ejemplo?
-
-  * Uno de los principios SOLID que se aplica es el Single responsibility.
-    ¿En parte del código se aplica este principio? ¿Cuáles son las responsabilidades 
-    detectadas?
-
-  * ¿Un código debería estar Open a qué y Closed a qué?
-    
-  * ¿En este ejemplo qué deseamos extender y qué no queremos estar modificando?
-
-  * ¿Cómo se está aplicando el principio SOLID Liskov's substitution en este 
-    ejemplo?
-
-  * ¿Qué relación tiene el polimorfismo en tiempo de ejecución con este 
-    principio SOLID?
-
-  * En el ejemplo proponen una manera de aplicar otro principio 
-    ¿Cómo se aplica el principio SOLID Interface segregation? 
-
-  * Finalmente, en el ejemplo ¿Cómo se está aplicando el principio 
-    SOLID Dependency inversion?
-
-  Ejercicio 7: principios SOLID- Video 2 - código
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Descarga el código del video 2 y organiza el proyecto para que puedas 
-  ver funcionando todo lo que viste en el video.
-
-  Ejercicio 8: principios SOLID- Video 2 - RETO
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Añade otro comportamiento para la selección de objetos. RECUERDA, sigue 
-  los principios SOLID y justifica por qué el nuevo comportamiento que has 
-  añadido respecta dichos principios.
-
-  Ejercicio 9: principios SOLID- Video 3 - ver
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Vas a continuar el procesos de refactoring aplicando los principios SOLID. 
-  Esta será la segunda parte del video anterior. 
-  `Aquí <https://www.youtube.com/watch?v=Fs8jy7DHDyc>`__ está el video.
-
-  De nuevo, mira primero el video y anota todos los conceptos de programación 
-  y de C# que no entiendas o no recuerdes.
-
-  Ejercicio 10: principios SOLID- Video 3 - repasa
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  En el ejercicio anterior anotaste los conceptos que no recordabas o 
-  no entendías. Ahora es tiempo de estudiarlos de nuevo.
-
-  Ejercicio 11: principios SOLID- Video 3 - analiza
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Nota que en este video número 3 se identifican las responsabilidades 
-  y luego se SEGREGAN esas responsabilidades en interfaces.
-
-  * Lista cuáles son las responsabilidades del SelectionManager.
-
-  * Indica cómo están segregadas las responsabilidades y qué principio SOLID  
-    se está aplicando.
-
-  * Cuando decimos que una clase depende de una interface en vez de una 
-    implementación concreta a ¿Qué principio nos estamos refiriendo?
-
-  * ¿En qué parte del código se ve aplicado el principio anterior?
-
-  * Cuando queremos reemplazar fácilmente un comportamiento por otro 
-    ¿Qué principio estamos aplicando?
-
-  * ¿Cómo aplicamos el principio anterior en este ejemplo?
-
-  Ejercicio 12: principios SOLID- Video 3 - código
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Descarga el código del video 3 y organiza el proyecto para que puedas 
-  ver funcionando todo lo que viste en el video.
-
-  Aprovecha y analiza de nuevo ya en contexto.
-
-  Ejercicio 13: principios SOLID- Video 4-ver
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  En `este <https://www.youtube.com/watch?v=cxJnvEpwQHc>`__ video vas a ver 
-  uno de los beneficios de aplicar los principios SOLID cuando necesitas 
-  hacer modificaciones a tu proyecto.
-
-  Ejercicio 14: principios SOLID- Video 4 - analiza
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  ¿Cómo funciona la idea de usar el producto punto en el video 4?
-
-  Ejercicio 15: principios SOLID- Video 4 - código
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Descarga el código del video 4 y organiza el proyecto para que puedas 
-  ver funcionando todo lo que viste en el video.
-
-  Analiza de nuevo ya en contexto.
-
-  Ejercicio 16: principios SOLID- Video 5 - ver
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  En `este <https://www.youtube.com/watch?v=MjwbhfR7DsM>`__ último video de la 
-  serie vas a aprender a realizar una herramienta 
-  para el editor que te ayudará a realizar cambios de comportamientos 
+  (tiempo estimado 14:57).
+* `Video3 <https://www.youtube.com/watch?v=Fs8jy7DHDyc>`__: continua el proceso 
+  de refactoring.
+  (tiempo estimado 11:39).
+* `Video4 <https://www.youtube.com/watch?v=cxJnvEpwQHc>`__: ahora verás uno de los beneficios 
+  de aplicar los principios SOLID cuando necesitas hacer modificaciones a tu proyecto.
+  (tiempo estimado 12:52).
+* `Video5 <https://www.youtube.com/watch?v=MjwbhfR7DsM>`__: vas a ver cómo se realiza una 
+  herramienta para el editor de Unity que ayudará a realizar cambios de comportamientos 
   de manera más fácil y gracias al uso de los principios SOLID.
+  (tiempo estimado 15:23).
 
+Para finalizar esta actividad te voy a pedir que escribas en el canal GENERAL del
+grupo en Teams qué entendiste de cada principio SOLID y cómo se aplicó en el video.
+
+..
   Ejercicio 17: principios SOLID- Video 5 - código
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
