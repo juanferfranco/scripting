@@ -741,6 +741,9 @@ Trabajo autónomo 2: principios de diseño de software
 
 (Duración estimada de 1 hora 20 minutos)
 
+Ejercicio 17: principios SOLID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Para el trabajo autónomo de esta sesión te voy a proponer que veas unos videos de un 
 canal en youtube que me gusta mucho, espero que a ti también. En los Videos vas a 
 escuchar acerca de dos asuntos: REFACTORING y PRINCIPIOS SOLID. También te cuento 
@@ -766,6 +769,500 @@ tienes un poco más de tiempo de lo recomiendo MUCHO!
 
 Para finalizar esta actividad te voy a pedir que escribas en el canal GENERAL del
 grupo en Teams qué entendiste de cada principio SOLID y cómo se aplicó en el video.
+
+Sesión 3: patrones de diseño
+********************************************
+
+Ejercicio 18: resumen de los principios SOLID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SOLID es un acrónimo para:
+
+* S - Single Responsability Principle: una clase solo debe tener una razón para cambiar
+* O - Open/Closed Principle: las clases deben estar abiertas a la extensión pero cerradas 
+  a la modificación.
+* L - Liskov Substitution Principle: al extender una clase se debe garantizar que al pasar 
+  a un cliente, que recibe objetos de la superclase, objetos de las subclases, no se descompondrá 
+  el código de ese cliente. Las subclases deben tener un comportamiento compatible con el de 
+  la superclase.
+* I - Interface Segregation Principle: no forzar a los clientes a depender de métodos que no 
+  utilizan. El truco es desintergrar las interfaces gruesas en otras más específicas.
+* D - Dependency Inversion Principle: hacer que las clases de bajo nivel dependan de las abstracciones 
+  de las clases de alto nivel.
+
+Ejercicio 19: ejemplos SOLID
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+S:
+
+.. image:: ../_static/S.png
+    :scale: 60%
+    :align: center
+    :alt: Ejemplo Single Responsability Principle
+
+O:
+
+.. image:: ../_static/O.png
+    :scale: 50%
+    :align: center
+    :alt: Ejemplo Open/Closed Principle
+
+L:
+
+.. image:: ../_static/L.png
+    :scale: 60%
+    :align: center
+    :alt: Ejemplo Liskov Substitution Principle
+
+I:
+
+.. image:: ../_static/I.png
+    :scale: 60%
+    :align: center
+    :alt: Ejemplo Interface Segregation Principle
+
+D:
+
+.. image:: ../_static/D.png
+    :scale: 50%
+    :align: center
+    :alt: Ejemplo Dependency Inversion Principle
+
+Ejercicio 20: escribe el código 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Considerando los diagramas anteriores implementa en código 
+la funcionalidad que ves allí.
+
+.. warning:: ALERTA DE SPOILER
+
+  Te dejo aquí algunas posibilidades de código.
+
+S:
+
+.. code-block:: csharp 
+
+    using System;
+
+    namespace solidExamples
+    {
+
+        class Employee
+        {
+            private string name;
+            private int hoursThisWeek = 40;
+
+            public Employee(string name,int time)
+            {
+                this.name = name;
+                this.hoursThisWeek = time;
+            }
+
+            public string getName()
+            {
+                return name;
+            }
+            public int getTime()
+            {
+                return hoursThisWeek;
+            }
+        }
+
+        class TimeSheetReport
+        {
+            public void printHours(Employee employee)
+            {
+                Console.WriteLine(string.Format("{0} worked {1} hours",employee.getName(), employee.getTime()));
+            }
+        }
+        
+        class NameSheetReport
+        {
+            public void printEmployee(Employee employee)
+            {
+                Console.WriteLine(employee.getName());
+            }
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Employee juan = new Employee("Juan Franco",40); 
+                (new TimeSheetReport()).printHours(juan);
+                (new NameSheetReport()).printEmployee(juan);
+            }
+        }
+    }
+
+O:
+
+.. code-block:: csharp 
+
+    using System;
+    using System.ComponentModel;
+    using System.Security.Cryptography.X509Certificates;
+
+    namespace solidExamples
+    {
+        class Item
+        {
+            public double Cost { get; set;}
+            public double Weight { get; set;}
+            public Item(double cost, double weight)
+            {
+                Cost = cost;
+                Weight = weight;
+
+            }
+        }
+        
+        interface IShipping
+        {
+            public double getCost(Order order);
+        }
+
+        class Ground:IShipping
+        {
+            public double getCost(Order order)
+            {
+                if (order.getTotal() > 100)
+                {
+                    return 0;
+                }
+
+                double costBasedOnWeight = order.getTotalWeight() * 1.5;
+                if (costBasedOnWeight > 10)
+                {
+                    return costBasedOnWeight;
+                }
+                else return 10;
+            }
+        }
+
+        class Air:IShipping
+        {
+            public double getCost(Order order)
+            {
+                double costBasedOnWeight = order.getTotalWeight() * 3;
+                if (costBasedOnWeight > 20)
+                {
+                    return costBasedOnWeight;
+                }
+                else return 20;
+            }
+        }
+
+        class Order
+        {
+            private Item[] items;
+            private IShipping shipping;
+
+            public Order(Item[] items, IShipping shipping)
+            {
+                this.items = items;
+                this.shipping = shipping;
+            }
+            
+            public double getShippingCost()
+            {
+                return shipping.getCost(this);
+            }
+
+            public double getTotal()
+            {
+                double total = 0;
+                foreach (var item in items)
+                {
+                    total = total + item.Cost;
+                }
+                return total;
+            }
+            
+            public double getTotalWeight()
+            {
+                double total = 0;
+                foreach (var item in items)
+                {
+                    total = total + item.Weight;
+                }
+                return total;
+            }
+            
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Item[] items = new Item[] { new Item(1,1), new Item(2,2), new Item(3,3) };
+                Order order1 = new Order(items,new Ground());
+                Console.WriteLine(order1.getShippingCost());
+                
+                items = new Item[] { new Item(10,1), new Item(20,2), new Item(30,3) };
+                Order order2 = new Order(items,new Air());
+                Console.WriteLine(order2.getShippingCost());
+
+            }
+        }
+    }
+
+L:
+
+.. code-block:: csharp
+
+    using System;
+    using System.Security.Cryptography;
+
+    namespace solidExamples
+    {
+        class Document
+        {
+            private string data;
+
+            public Document(string _data)
+            {
+                data = _data;
+            }
+
+            public void open()
+            {
+                Console.WriteLine("doc opened");
+            }
+            
+        }
+
+
+        class WritableDocument : Document
+        {
+            public WritableDocument(string _data) : base(_data)
+            {
+                
+            }
+
+            public void save()
+            {
+                Console.WriteLine("doc saved");
+            }
+        }
+
+        class Project
+        {
+            private WritableDocument[] writableDocuments;
+
+            private Document[] documents;
+
+            public Project()
+            {
+                writableDocuments = new WritableDocument[]{new ("hola w1"), new ("hola w2")};
+                documents = new Document[]{ new Document("holi r1"), new Document("holi r2"), writableDocuments[0], writableDocuments[1]};
+            }
+
+            public void openAll()
+            {
+                foreach (var doc in documents)
+                {
+                    doc.open();   
+                }
+            }
+
+            public void saveAll()
+            {
+                foreach (var doc in writableDocuments)
+                {
+                    doc.save();   
+                }
+            }
+            
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Project project = new Project();
+                project.openAll();
+                project.saveAll();
+            }
+        }
+    }
+
+I:
+
+.. code-block:: csharp 
+
+    using System;
+    using System.Security.Cryptography;
+
+    namespace solidExamples
+    {
+        interface IA
+        {
+            public void a1();
+            public void a2();
+        }
+
+        interface IB
+        {
+            public void b();
+            
+        }
+        
+        interface IC
+        {
+            public void c1();
+            public void c2();
+            
+        }
+
+        class Class1 : IA, IB, IC
+        {
+            public void a1()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void a2()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void b()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void c1()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void c2()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        class Class2 : IC
+        {
+            public void c1()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void c2()
+            {
+                throw new NotImplementedException();
+            }
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                
+            }
+        }
+    }
+
+D:
+
+.. code-block:: csharp
+
+    using System;
+    using System.Security.Cryptography;
+
+    namespace solidExamples
+    {
+
+        interface IDatabase
+        {
+            public void insert();
+            public void update();
+            public void delete();
+        }
+
+        class MySQL : IDatabase
+        {
+            public void insert()
+            {
+            }
+            public void update()
+            {
+            }
+
+            public void delete()
+            {
+            }
+        }
+
+        class MongoDB : IDatabase
+        {
+            public void insert()
+            {
+            }
+            public void update()
+            {
+            }
+
+            public void delete()
+            {
+            }
+        }
+        
+        class BudgetReport
+        {
+            private IDatabase _database;
+
+
+            public BudgetReport(IDatabase database)
+            {
+                _database = database;
+            }
+
+            public void open()
+            {
+                
+            }
+
+            public void save()
+            {
+                // Some logic here
+                _database.update();
+                // Some logic here
+            }
+        }
+        
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                BudgetReport _budgetReport = new BudgetReport(new MySQL());
+            }
+        }
+    }
+
+Ejercicio 21: ¿Qué son los patrones de diseño?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Vamos a estudiar juntos qué son y para qué sirven los patrones de diseño con 
+`esta <https://docs.google.com/presentation/d/1PGM25BV7jUfUMtkfSzsDLDShuIjyS8EaQwiyerehkEo/edit?usp=sharing>`__ 
+corta presentación.
+
+
+Ejercicio 22: ¿Qué son los patrones de diseño?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Como ejercicio de repaso hasta aquí podrías responder con tus propias palabras estas preguntas:
+
+* ¿Qué son los patrones de diseño?
+* ¿Los patrones de diseño son como algoritmos?
+* ¿Por qué vale la pena aprender patrones de diseño?
+
+Ejercicio 23: patrón creacional Singleton
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 ..
   Ejercicio 17: principios SOLID- Video 5 - código
