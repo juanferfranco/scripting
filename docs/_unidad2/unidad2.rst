@@ -1242,7 +1242,12 @@ D:
         }
     }
 
-Ejercicio 21: ¿Qué son los patrones de diseño?
+Ejercicio 21: tarea trabajo autónomo 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+¿Vamos al tablero para analizar partes de la tarea?
+
+Ejercicio 22: ¿Qué son los patrones de diseño?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vamos a estudiar juntos qué son y para qué sirven los patrones de diseño con 
@@ -1250,7 +1255,7 @@ Vamos a estudiar juntos qué son y para qué sirven los patrones de diseño con
 corta presentación.
 
 
-Ejercicio 22: ¿Qué son los patrones de diseño?
+Ejercicio 23: ¿Qué son los patrones de diseño?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Como ejercicio de repaso hasta aquí podrías responder con tus propias palabras estas preguntas:
@@ -1259,53 +1264,51 @@ Como ejercicio de repaso hasta aquí podrías responder con tus propias palabras
 * ¿Los patrones de diseño son como algoritmos?
 * ¿Por qué vale la pena aprender patrones de diseño?
 
-Ejercicio 23: patrón creacional Singleton
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Trabajo autónomo 3: patrones de diseño
+****************************************
+(Duración estimada de 1 hora 20 minutos)
 
+Ejercicio 24: patrones de diseño - STATE pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ahora que ya conoces los principios SOLID, te voy a proponer que 
+estudies algunos patrones de diseño que te van a servir como 
+herramienta para estructurar mejor tu código. 
+
+Observa y analiza `este video <https://youtu.be/_1pz_ohupPs>`__.
+
+En `este enlace <https://github.com/Brackeys/Turn-based-combat>`__ puedes 
+descargar el juego.
+
+Piensa en los siguientes asuntos:
+
+* ¿Qué tipo de juego se construye en el video?
+* ¿Cuáles son los ESTADOS del juego?
+* ¿Qué es un tipo `enum <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum>`__ 
+  en C# y para qué se usa en el juego?
+* Analiza detenidamente el código en BattleSystem.cs.
+* ¿Para qué se usan las corutinas en el juego?
+
+Ahora vas a supón que necesitas ADICIONAR funcionalidad o añadir nuevas características 
+al juego.
+
+En `este <https://youtu.be/5PTd0WdKB-4>`__ video te proponen precisamente eso.
+Puedes bajar el código del video `aquí <https://www.patreon.com/posts/32320915>`__.
+
+Piensa en lo siguiente:
+
+* ¿Qué problema tiene el juego del primer video a la hora de añadir más funcionalidad?
+* ¿A qué se refieren en el video con el término Spaghetti Code?
+* ¿Para qué proponen utilizar una STATE MACHINE? ¿Qué patrón de diseño es este?
+* Explica en tus propias palabras qué es el PATRÓN STATE.
+* En la implementación del patrón se crea una clase abstracta. ¿Para qué sirve 
+  en este caso?
+* ¿Por qué el refactoring que se propone con el patrón STATE es más escalable?
+
+(Duración estimada de 1 hora 20 minutos)
 
 ..
-  Ejercicio 17: principios SOLID- Video 5 - código
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Descarga el código del video 5 y organiza el proyecto para que puedas 
-  ver funcionando todo lo que viste en el video.
-
-  Ejercicio 18: patrones de diseño - STATE pattern
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Ahora que ya conoces los principios SOLID, te voy a proponer que 
-  estudies algunos patrones de diseño que te van a servir como 
-  herramienta para estructurar mejor tu código. 
-
-  Observa y analiza `este video <https://youtu.be/_1pz_ohupPs>`__.
-
-  En `este enlace <https://github.com/Brackeys/Turn-based-combat>`__ puedes 
-  descargar el juego.
-
-  * ¿Qué tipo de juego se construye en el video?
-  * ¿Cuáles son los ESTADOS del juego?
-  * ¿Qué es un tipo `enum <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum>`__ 
-    en C# y para qué se usa en el juego?
-  * Analiza detenidamente el código en BattleSystem.cs. Explica cómo funciona 
-    cuándo el juego inicia, al presionar los botones de ataque y curación.
-  * ¿Para qué se usan las corutinas en el juego?
-  * Trata de explicar cómo están implementadas las corutinas.
-
-  Ahora vas a supón que necesitas ADICIONAR funcionalidad o añadir nuevas características 
-  al juego.
-
-  En `este <https://youtu.be/5PTd0WdKB-4>`__ video te proponen precisamente eso.
-  Puedes bajar el código del video `aquí <https://www.patreon.com/posts/32320915>`__.
-
-  * ¿Qué problema tiene el juego del primer video a la hora de añadir más funcionalidad?
-  * ¿A qué se refieren en el video con el término Spaghetti Code?
-  * ¿Para qué proponen utilizar una STATE MACHINE? ¿Qué patrón de diseño es este?
-  * Explica en tus propias palabras qué es el PATRÓN STATE.
-  * En la implementación del patrón se crea una clase abstracta. ¿Para qué sirve 
-    en este caso?
-  * ¿Por qué el refactoring que se propone con el patrón STATE es más escalable?
-
   Ejercicio 19: patrones de diseño -  INTERFACES
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
