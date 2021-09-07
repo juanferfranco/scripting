@@ -1245,7 +1245,8 @@ D:
 Ejercicio 21: tarea trabajo autónomo 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-¿Vamos al tablero para analizar partes de la tarea?
+`¿Vamos al tablero <https://drive.google.com/file/d/1vrbM1crclb7kM_JWo3M4l9rHLSr05ku7/view?usp=sharing>`__ 
+para analizar partes de la tarea?
 
 Ejercicio 22: ¿Qué son los patrones de diseño?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
