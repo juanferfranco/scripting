@@ -1309,6 +1309,23 @@ Piensa en lo siguiente:
 
 (Duración estimada de 1 hora 20 minutos)
 
+Sesión 4: patrones de diseño
+******************************
+
+Ejercicio 25: patrones de diseño - STATE pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+El patrón state es un patrón de comportamiento. Recuerda que los patrones 
+de comportamiento tratan con algoritmos y la asignación de responsabilidades 
+entre objetos.
+
+* Descripción: este patrón le permite a un objeto alterar su comportamiento 
+  cuando su ESTADO interno cambia.
+* ¿Cuál es el problema que intenta resolver? 
+
+
+
+
 ..
   Ejercicio 19: patrones de diseño -  INTERFACES
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
