@@ -1248,29 +1248,11 @@ Ejercicio 21: tarea trabajo autónomo 2
 `¿Vamos al tablero <https://drive.google.com/file/d/1vrbM1crclb7kM_JWo3M4l9rHLSr05ku7/view?usp=sharing>`__ 
 para analizar partes de la tarea?
 
-Ejercicio 22: ¿Qué son los patrones de diseño?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Vamos a estudiar juntos qué son y para qué sirven los patrones de diseño con 
-`esta <https://docs.google.com/presentation/d/1PGM25BV7jUfUMtkfSzsDLDShuIjyS8EaQwiyerehkEo/edit?usp=sharing>`__ 
-corta presentación.
-
-
-Ejercicio 23: ¿Qué son los patrones de diseño?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Como ejercicio de repaso hasta aquí podrías responder con tus propias palabras estas preguntas:
-
-* ¿Qué son los patrones de diseño?
-* ¿Los patrones de diseño son como algoritmos?
-* ¿Por qué vale la pena aprender patrones de diseño?
-
-
 Trabajo autónomo 3: patrones de diseño
 ****************************************
 (Duración estimada de 1 hora 20 minutos)
 
-Ejercicio 24: patrones de diseño - STATE pattern
+Ejercicio 22: patrones de diseño - STATE pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora que ya conoces los principios SOLID, te voy a proponer que 
@@ -1312,6 +1294,23 @@ Piensa en lo siguiente:
 Sesión 4: patrones de diseño
 ******************************
 
+Ejercicio 23: ¿Qué son los patrones de diseño?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Vamos a estudiar juntos qué son y para qué sirven los patrones de diseño con 
+`esta <https://docs.google.com/presentation/d/1PGM25BV7jUfUMtkfSzsDLDShuIjyS8EaQwiyerehkEo/edit?usp=sharing>`__ 
+corta presentación.
+
+
+Ejercicio 24: repaso: ¿Qué son los patrones de diseño?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Como ejercicio de repaso hasta aquí podrías responder con tus propias palabras estas preguntas:
+
+* ¿Qué son los patrones de diseño?
+* ¿Los patrones de diseño son como algoritmos?
+* ¿Por qué vale la pena aprender patrones de diseño?
+
 Ejercicio 25: patrones de diseño - STATE pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1321,96 +1320,139 @@ entre objetos.
 
 * Descripción: este patrón le permite a un objeto alterar su comportamiento 
   cuando su ESTADO interno cambia.
-* ¿Cuál es el problema que intenta resolver? 
+* Problema: este patrón está relacionado con el concepto de máquinas de estado. 
+  Usualmente la máquina de estados que modela el comportamiento de un objecto 
+  se implementa usando if o switch/cases. Lo malo de este estilo de implementación 
+  es que conduce a código complejo de mantener porque con cada nuevo estado es 
+  necesario modificar la lógica que ya se tiene para acomodar ese  nuevo 
+  estado o las transiciones a este. 
+* Solución: para cada estado se implementa una clase nueva. Por tanto, el objeto 
+  original no implementará su comportamiento sino que mantendrá una referencia 
+  a un objeto que representará su estado actual y delegará la implementación 
+  del comportamiento a la clase de ese objeto.
 
+`Vamos al tablero <https://navy-point-d0d.notion.site/State-b259f0da2dda4016a3e057a81fcf76ac>`__.
 
+`Aquí <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018>`__ 
+puedes descargar el código.
 
+Ejercicio 26: ¿dudas sobre la tarea de la sesión 3?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-..
-  Ejercicio 19: patrones de diseño -  INTERFACES
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`En el tablero <https://drive.google.com/file/d/1FJ912YijucTrXZOUCK5kppRdiUdOQ7Ad/view?usp=sharing>`__  
+hay en resumen de lo que está pasando.
 
-  Ahora vas a ver la flexibilidad que obtienes al estructurar tu código por medio 
-  de eventos. Pero antes de eso repasa de nuevo el manejo de interfaces.
+.. warning:: VIDEO OPCIONAL
 
-  Dele una mirada a `este <https://youtu.be/2LA3BLqOw9g>`__ video. Mira que el personaje 
-  del video ya terminó el programa, PERO, como siempre, si la arquitectura no está bien 
-  pensada, extender el código o añadir funcionalidad no será fácil.
+    Hay una segunda parte del video de la tarea de la sesión 3. Te dejo el 
+    enlace `aquí <https://youtu.be/G1bd75R10m4>`__ por si te animas a verlo.
 
-  Descarga el código del video de `este sitio <https://www.patreon.com/posts/35152838>`__.
-  La escena inicial está en la carpeta _Project/Start Here.
+Ejercicio 27: patrones de diseño - Singleton
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Analiza esta escena detenidamente.Observa los scripts.
+* Descripción: es un patrón creacional que permite que una clase tenga una sola instancia y 
+  permite un acceso global a esa instancia.
+* Problema: controlar el acceso a un recurso compartido y proporcionar un punto de acceso 
+  global, por ejemplo a un GAME MANAGER que controle el ciclo de la aplicación interactiva.
+* Solución: "hackear" el constructor de la clase para que siempre entregue 
+  la referencia a la misma instancia.
 
-  * ¿Por qué en el video indican que esta parte del código no es escalable?
+.. image:: ../_static/singleton.png
+    :scale: 100%
+    :align: center
+    :alt: estructura de un singleton
 
-    .. code-block:: csharp
+`Vamos al tablero <https://www.notion.so/Singleton-6b1cce32d3504d779afeb2bfe8e20cd4>`__ 
+para analizar más aspectos del patrón.
 
-        private void Update()
+Trabajo autónomo 4: patrones de diseño
+****************************************
+(Duración estimada de 1 hora 20 minutos)
+
+Ejercicio 28: patrones de diseño -  INTERFACES
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ahora vas a ver la flexibilidad que obtienes al estructurar tu código por medio 
+de eventos. Pero antes de eso repasa de nuevo el manejo de interfaces.
+
+Dele una mirada a `este <https://youtu.be/2LA3BLqOw9g>`__ video. Mira que el personaje 
+del video ya terminó el programa, PERO, como siempre, si la arquitectura no está bien 
+pensada, extender el código o añadir funcionalidad no será fácil.
+
+Descarga el código del video de `este sitio <https://www.patreon.com/posts/35152838>`__.
+La escena inicial está en la carpeta _Project/Start Here.
+
+Analiza esta escena detenidamente.Observa los scripts.
+
+* ¿Por qué en el video indican que el siguiente código no es escalable?
+
+.. code-block:: csharp
+
+    private void Update()
+    {
+        var nearestGameObject = GetNearestGameObject();
+        if (nearestGameObject == null) return;
+        
+        if (Input.GetButtonDown("Fire1"))
         {
-            var nearestGameObject = GetNearestGameObject();
-            if (nearestGameObject == null) return;
-            
-            if (Input.GetButtonDown("Fire1"))
+            var lightSwitch = nearestGameObject.GetComponent<Lamp>();
+            if (lightSwitch != null)
             {
-                var lightSwitch = nearestGameObject.GetComponent<Lamp>();
-                if (lightSwitch != null)
-                {
-                    lightSwitch.Switch();
-                }
-                var door = nearestGameObject.GetComponent<Door>();
-                
-                if (door != null)
-                {
-                  door.Open();
-                }
-                
-                var radio = nearestGameObject.GetComponent<Radio>();
-                if (radio != null)
-                {
-                  radio.Toggle();
-                }
+                lightSwitch.Switch();
+            }
+            var door = nearestGameObject.GetComponent<Door>();
+            
+            if (door != null)
+            {
+                door.Open();
+            }
+            
+            var radio = nearestGameObject.GetComponent<Radio>();
+            if (radio != null)
+            {
+                radio.Toggle();
             }
         }
+    }
 
-  * Si quieres adicionar otros objetos para interactuar tendrías que modificar el código anterior.
-    ¿Cómo lo harías? ¿Qué principio SOLID estarías violando?
+* Si quieres adicionar otros objetos para interactuar tendrías que modificar el 
+  código anterior.¿Cómo lo harías? ¿Qué principio SOLID estarías violando?
 
-  * En el video  ¿A qué se refieren con el término clase monolítica?
+* En el video ¿A qué se refieren con el término clase monolítica?
 
-  * Específicamente cuál es el problema de escalabilidad que tiene el programa?
+* Específicamente cuál es el problema de escalabilidad que tiene el programa?
 
-  La carpeta _Project/Completed tiene el refactoring al problema anterior
+La carpeta _Project/Completed tiene el refactoring al problema anterior
 
-  * ¿Cómo se están usando las interfaces en este caso para permitir que el programa 
-    escale mejor?
+* ¿Cómo se están usando las interfaces en este caso para permitir que el programa 
+  escale mejor?
 
-  * ¿Qué principio SOLID estás aplicando en este caso?
+* ¿Qué principio SOLID estás aplicando en este caso?
 
-  * Explica cómo funciona el componente CompositeInteractable.
+* Explica cómo funciona el componente CompositeInteractable.
 
+Ejercicio 29: patrones de diseño -  OBSERVER pattern / EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Ejercicio 20: patrones de diseño -  OBSERVER pattern / EVENTOS
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Los eventos permiten mantener desacopladas partes del código. Esto permite 
+flexibilidad. Observa el `siguiente video <https://youtu.be/GUTURxgcoj4>`__.
 
-  Los eventos permiten mantener desacopladas partes del código. Esto permite 
-  flexibilidad. Observa el `siguiente video <https://youtu.be/GUTURxgcoj4>`__.
+* Explica qué ventaja tiene usar eventos en este caso.
 
-  * Explica qué ventaja tiene usar eventos en este caso.
+El `siguiente video <https://youtu.be/JupiI9jegFg>`__ muestra una característica 
+particular de Unity que permite exponer un evento en el editor de tal manera que 
+puedas suscribirte a ese evento de manera gráfica usando el editor.
 
-  El `siguiente video <https://youtu.be/JupiI9jegFg>`__ muestra una característica particular 
-  de Unity que permite exponer un evento en el editor de tal manera que puedas suscribirte 
-  a ese evento de manera gráfica usando el editor.
+* ¿Qué ventaja le encuentras a lo anterior?
 
-  * ¿Qué ventaja le encuentras a lo anterior?
+Ejercicio 30: patrones de diseño -  OBSERVER pattern / EVENTOS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Ejercicio 21: patrones de diseño -  OBSERVER pattern / EVENTOS
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Descarga el código de los dos videos anteriores y analiza la implementación. 
+Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
+será ligeramente diferente al video, pero conserva la esencia.
 
-  Descarga el código de los dos video anteriores y analiza la implementación. 
-  Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
-  será ligeramente diferente al video, pero conserva la esencia.
-
+..
   Ejercicio 22: patrones de diseño - COMMAND pattern
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
