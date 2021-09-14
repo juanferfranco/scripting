@@ -770,7 +770,7 @@ tienes un poco más de tiempo de lo recomiendo MUCHO!
 Para finalizar esta actividad te voy a pedir que escribas en el canal GENERAL del
 grupo en Teams qué entendiste de cada principio SOLID y cómo se aplicó en el video.
 
-Sesión 3: patrones de diseño
+Sesión 3: patrones de diseño 1
 ********************************************
 
 Ejercicio 18: resumen de los principios SOLID
@@ -1291,8 +1291,8 @@ Piensa en lo siguiente:
 
 (Duración estimada de 1 hora 20 minutos)
 
-Sesión 4: patrones de diseño
-******************************
+Sesión 4: patrones de diseño 2
+*********************************
 
 Ejercicio 23: ¿Qué son los patrones de diseño?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1347,29 +1347,11 @@ hay en resumen de lo que está pasando.
     Hay una segunda parte del video de la tarea de la sesión 3. Te dejo el 
     enlace `aquí <https://youtu.be/G1bd75R10m4>`__ por si te animas a verlo.
 
-Ejercicio 27: patrones de diseño - Singleton
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Descripción: es un patrón creacional que permite que una clase tenga una sola instancia y 
-  permite un acceso global a esa instancia.
-* Problema: controlar el acceso a un recurso compartido y proporcionar un punto de acceso 
-  global, por ejemplo a un GAME MANAGER que controle el ciclo de la aplicación interactiva.
-* Solución: "hackear" el constructor de la clase para que siempre entregue 
-  la referencia a la misma instancia.
-
-.. image:: ../_static/singleton.png
-    :scale: 100%
-    :align: center
-    :alt: estructura de un singleton
-
-`Vamos al tablero <https://www.notion.so/Singleton-6b1cce32d3504d779afeb2bfe8e20cd4>`__ 
-para analizar más aspectos del patrón.
-
 Trabajo autónomo 4: patrones de diseño
 ****************************************
 (Duración estimada de 1 hora 20 minutos)
 
-Ejercicio 28: patrones de diseño -  INTERFACES
+Ejercicio 27: patrones de diseño -  INTERFACES
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ahora vas a ver la flexibilidad que obtienes al estructurar tu código por medio 
@@ -1431,7 +1413,7 @@ La carpeta _Project/Completed tiene el refactoring al problema anterior
 
 * Explica cómo funciona el componente CompositeInteractable.
 
-Ejercicio 29: patrones de diseño -  OBSERVER pattern / EVENTOS
+Ejercicio 28: patrones de diseño -  OBSERVER pattern / EVENTOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Los eventos permiten mantener desacopladas partes del código. Esto permite 
@@ -1445,12 +1427,102 @@ puedas suscribirte a ese evento de manera gráfica usando el editor.
 
 * ¿Qué ventaja le encuentras a lo anterior?
 
-Ejercicio 30: patrones de diseño -  OBSERVER pattern / EVENTOS
+Ejercicio 29: patrones de diseño -  OBSERVER pattern / EVENTOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Descarga el código de los dos videos anteriores y analiza la implementación. 
 Ten presente que el autor simplificó al máximo las cosas entonces lo que verás 
 será ligeramente diferente al video, pero conserva la esencia.
+
+Sesión 5: patrones de diseño 3
+**********************************
+
+Ejercicio 30: patrones de diseño - Singleton
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Descripción: es un patrón creacional que permite que una clase tenga una sola instancia y 
+  permite un acceso global a esa instancia.
+* Problema: controlar el acceso a un recurso compartido y proporcionar un punto de acceso 
+  global, por ejemplo a un GAME MANAGER que controle el ciclo de la aplicación interactiva.
+* Solución: "hackear" el constructor de la clase para que siempre entregue 
+  la referencia a la misma instancia.
+
+.. image:: ../_static/singleton.png
+    :scale: 100%
+    :align: center
+    :alt: estructura de un singleton
+
+`Vamos al tablero <https://www.notion.so/Singleton-6b1cce32d3504d779afeb2bfe8e20cd4>`__ 
+para analizar más aspectos del patrón.
+
+Ejercicio 31: patrones de diseño - OBSERVER pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`Vamos al tablero <https://navy-point-d0d.notion.site/Observer-b3389c30b8f6429fa6f6604f046fce6e>`__ 
+para analizar el patrón.
+
+Trabajo autónomo 5: arquitectura guiada por eventos
+*********************************************************
+(Duración estimada de 1 hora 20 minutos)
+
+Ejercicio 32: patrones de diseño - FLYWEIGHT pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+El patrón de diseño flyweight (peso mosca) busca optimizar el ``uso de la memoria`` 
+haciendo que varias entidades (por ejemplo instancias) compartan aquellas cosas que son 
+comunes entre ellas. En un motor como Unity se cuenta 
+con varias de estas optimizaciones; sin embargo, vamos a concentrarnos en 
+dos de ellas: scriptable objects y el entity-component-system.
+
+Lo primero que debes hacer es leer 
+`¿Qué son los scriptable objects? <https://docs.unity3d.com/Manual/class-ScriptableObject.html>`__
+
+* ¿Cuándo es útil utilizar un Scriptable object (SO)?
+* ¿Qué significa que se pueda acceder a los datos que almacena un SO 
+   por REFERENCIA desde varios Prefabs?
+* Entonces si varios Profabs utilizan el mismo SO ¿Cuántas copias en memoria 
+  de los datos de ese SO hay?
+* ¿Cómo puedes usar un SO en una aplicación interactiva? Resume los pasos que debes seguir.
+
+En el `siguiente video <https://www.youtube.com/watch?v=7jxS8HIny3Q&t=40s>`__ puedes darle 
+una última revisión a los puntos anteriores.
+
+* ¿Por qué crees que los SOs son una característica que permite hacer el desarrollo de una 
+  aplicación interactiva más amigable con el diseñador?
+
+Y en este otro video puedes ver `cómo usar SOs <https://youtu.be/E91NYvDqsy8>`__ en una 
+aplicación específica.
+
+* Explica de qué se trataba el ejemplo del video y cómo se utilizaron los SO en 
+  esta aplicación.
+
+(Duración estimada de 50 minutos)
+
+Ejercicio 33: Arquitectura de una aplicación interactiva - Introducción 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+El término arquitectura de una aplicación interactiva se refiere a la manera 
+como puedes organizar las diferentes partes que componen tu aplicación interactiva.
+
+Observa y analiza `este video <https://youtu.be/WLDgtRNK2VE>`__.
+
+* En el video indican cuál son las propiedades deseadas para la arquitectura 
+  del juego. Lista cuáles son.
+* En el video ¿Para qué se están utilizando SOs?
+* Con lo que has aprendido hasta este momento porqué las conexiones rígidas entre 
+  partes de tu aplicación interactiva pueden conducirte a problemas de escalabilidad?
+* En el video mencionan el patrón SINGLETON. Explica de nuevo para qué se usa y 
+  qué PROBLEMA tiene. 
+* ¿Por qué el uso de SINGLETONS puede complicar los procesos de prueba de un programa?
+* ¿Qué significa que un SO puede servir como un EVENT-RELAYER centralizado?
+* Dibuja un diagrama que muestre cómo puedes utilizar un SO como un EVENT-RELAYER.
+* ¿Por qué el uso de un SO como un EVENT-RELAYER ayuda a construir aplicaciones 
+  interactivas modulares y fáciles de mantener?
+* En el video ¿Qué quiere decir que un SO se puede usar como un punto intermedio 
+  de comunicación? ¿Qué relación tiene esto con un EVENT-RELAYER? 
+* ¿Qué quiere decir que un SO se usa como CHANNEL?
+
+(Duración estimada de 30 minutos)
 
 ..
   Ejercicio 22: patrones de diseño - COMMAND pattern
@@ -1498,36 +1570,7 @@ será ligeramente diferente al video, pero conserva la esencia.
   un diagrama de clases y un diagrama de secuencias para que puedas entender 
   de manera gráfica las partes de la solución y sus relaciones.
 
-  Ejercicio 24: patrones de diseño - FLYWEIGHT pattern
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  El patrón de diseño flyweight (peso mosca) busca optimizar el ``uso de la memoria`` 
-  haciendo que varias entidades (por ejemplo instancias) compartan aquellas cosas que son 
-  comunes entre ellas. En un motor como Unity se cuenta 
-  con varias de estas optimizaciones; sin embargo, vamos a concentrarnos en 
-  dos de ellas: scriptable objects y el entity-component-system.
-
-  Lo primero que debes hacer es leer 
-  `¿Qué son los scriptable objects? <https://docs.unity3d.com/Manual/class-ScriptableObject.html>`__
-
-  * ¿Cuándo es útil utilizar un Scriptable object (SO)?
-  * ¿Qué significa que se pueda acceder a los datos que almacena un SO 
-    por REFERENCIA desde varios Prefabs?
-  * Entonces si varios Profabs utilizan el mismo SO ¿Cuántas copias en memoria 
-    de los datos de ese SO hay?
-  * ¿Cómo puedes usar un SO en una aplicación interactiva? Resume los pasos que debes seguir.
-
-  En el `siguiente video <https://www.youtube.com/watch?v=7jxS8HIny3Q&t=40s>`__ puedes darle 
-  una última revisión a los puntos anteriores.
-
-  * ¿Por qué crees que los SOs son una característica que permite hacer el desarrollo de una 
-    aplicación interactiva más amigable con el diseñador?
-
-  Y en este otro video puedes ver `cómo usar SOs <https://youtu.be/E91NYvDqsy8>`__ en una 
-  aplicación específica.
-
-  * Explica de qué se trataba el ejemplo del video y cómo se utilizaron los SO en 
-    esta aplicación.
 
   Ejercicio 25: patrones de diseño - OBJECT POOL
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1614,29 +1657,6 @@ será ligeramente diferente al video, pero conserva la esencia.
   Inventa ejemplos para PlayerPrefs, JSON y JsonUtility. NO TE COMPLIQUES la idea es que 
   aproveches este momento para que te quede código que luego puedas utilizar en otros proyectos.
 
-  Ejercicio 30: Arquitectura de una aplicación interactiva -Introducción 
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  El término arquitectura de una aplicación interactiva se refiere a la manera 
-  como puedes organizar las diferentes partes que componen tu aplicación interactiva.
-
-  Observa y analiza `este video <https://youtu.be/WLDgtRNK2VE>`__.
-
-  * En el video indican cuál son las propiedades deseadas para la arquitectura 
-    del juego. Lista cuáles son.
-  * En el video ¿Para qué se están utilizando SOs?
-  * Con lo que has aprendido hasta este momento porqué las conexiones rígidas entre 
-    partes de tu aplicación interactiva pueden conducirte a problemas de escalabilidad?
-  * En el video mencionan el patrón SINGLETON. Explica de nuevo para qué se usa y 
-    qué PROBLEMA tiene. 
-  * ¿Por qué el uso de SINGLETONS puede complicar los procesos de prueba de un programa?
-  * ¿Qué significa que un SO puede servir como un EVENT-RELAYER centralizado?
-  * Dibuja un diagrama que muestre cómo puedes utilizar un SO como un EVENT-RELAYER.
-  * ¿Por qué el uso de un SO como un EVENT-RELAYER ayuda a construir aplicaciones 
-    interactivas modulares y fáciles de mantener?
-  * En el video ¿Qué quiere decir que un SO se puede usar como un punto intermedio 
-    de comunicación? ¿Qué relación tiene esto con un EVENT-RELAYER? 
-  * ¿Qué quiere decir que un SO se usa como CHANNEL?
 
   Ejercicio 31: Arquitectura de una aplicación interactiva - reto
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
