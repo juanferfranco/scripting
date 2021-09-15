@@ -1472,15 +1472,15 @@ El patrón de diseño flyweight (peso mosca) busca optimizar el ``uso de la memo
 haciendo que varias entidades (por ejemplo instancias) compartan aquellas cosas que son 
 comunes entre ellas. En un motor como Unity se cuenta 
 con varias de estas optimizaciones; sin embargo, vamos a concentrarnos en 
-dos de ellas: scriptable objects y el entity-component-system.
+una de ellas: scriptable objects.
 
 Lo primero que debes hacer es leer 
 `¿Qué son los scriptable objects? <https://docs.unity3d.com/Manual/class-ScriptableObject.html>`__
 
 * ¿Cuándo es útil utilizar un Scriptable object (SO)?
-* ¿Qué significa que se pueda acceder a los datos que almacena un SO 
-   por REFERENCIA desde varios Prefabs?
-* Entonces si varios Profabs utilizan el mismo SO ¿Cuántas copias en memoria 
+* ¿Qué significa que se pueda acceder a los datos que almacena un SO,
+  por REFERENCIA, desde varios Prefabs?
+* Entonces si varios Prefabs utilizan el mismo SO ¿Cuántas copias en memoria 
   de los datos de ese SO hay?
 * ¿Cómo puedes usar un SO en una aplicación interactiva? Resume los pasos que debes seguir.
 
@@ -1493,7 +1493,7 @@ una última revisión a los puntos anteriores.
 Y en este otro video puedes ver `cómo usar SOs <https://youtu.be/E91NYvDqsy8>`__ en una 
 aplicación específica.
 
-* Explica de qué se trataba el ejemplo del video y cómo se utilizaron los SO en 
+* Explica de qué se trataba el ejemplo del video y cómo se utilizaron los SOs en 
   esta aplicación.
 
 (Duración estimada de 50 minutos)
@@ -1506,10 +1506,10 @@ como puedes organizar las diferentes partes que componen tu aplicación interact
 
 Observa y analiza `este video <https://youtu.be/WLDgtRNK2VE>`__.
 
-* En el video indican cuál son las propiedades deseadas para la arquitectura 
+* En el video indican cuáles son las propiedades deseadas para la arquitectura 
   del juego. Lista cuáles son.
 * En el video ¿Para qué se están utilizando SOs?
-* Con lo que has aprendido hasta este momento porqué las conexiones rígidas entre 
+* Con lo que has aprendido hasta este momento ¿Por qué las conexiones rígidas entre 
   partes de tu aplicación interactiva pueden conducirte a problemas de escalabilidad?
 * En el video mencionan el patrón SINGLETON. Explica de nuevo para qué se usa y 
   qué PROBLEMA tiene. 
