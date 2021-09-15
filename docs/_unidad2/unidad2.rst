@@ -1524,6 +1524,49 @@ Observa y analiza `este video <https://youtu.be/WLDgtRNK2VE>`__.
 
 (Duración estimada de 30 minutos)
 
+Sesión 6: arquitectura guiada por eventos
+************************************************
+
+En esta última sesión de la unidad vas a estudiar cómo puedes 
+emplear algunas de las estrategias estudiadas hasta ahora para 
+definir una arquitectura de aplicación usando EVENTOS.
+
+Ejercicio 34: concepto
+^^^^^^^^^^^^^^^^^^^^^^^
+
+`Vamos al tablero <https://navy-point-d0d.notion.site/EVENTOS-fb375d9742124ab59351de1550ea5fc0>`__.
+
+Ejercicio 35: RETO 1. Implementación de un EVENT-RELAYER con un Scriptable Object
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Crea una aplicación interactiva que al presionar un botón incremente un entero 
+contenido en un Scriptable Object. Ese mismo SO debe generar un evento que 
+incluya como argumente el valor del entero. Crea al menos estos tres GameObjects que se 
+suscriban a ese evento: uno que actualice un texto en pantalla con el valor del entero,
+uno que imprima en la consola el valor del entero, uno que genere una alerta auditiva 
+cada que el entero cambie.
+
+
+Trabajo autónomo 6: RETO 2
+*********************************************************
+(Duración estimada de 1 hora 20 minutos)
+
+Ejercicio 36: mini proyecto con un EVENT-RELAYER
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Crea una aplicación que incluya DOS escenas. Cada escena tendrá 
+un botón para incrementar un entero que estará en un SO, un botón para 
+cambiar de escena y un texto para mostrar el valor del entero cada que se 
+incremente. El entero estará en el mismo SO para ambas escenas.
+
+* ¿Qué puedes concluir de este experimento?
+* En el `manual de Unity <https://docs.unity3d.com/Manual/class-ScriptableObject.html>`__ 
+  se describe que los SO tiene diferente comportamiento cuando estás en modo editor/play 
+  y cuando estás en modo deploy. Explica la diferencia entre ambos.
+* Si quieres conservar, en modo deploy, el valor de de los SO entre sesiones de la 
+  aplicación interactiva ¿Qué harías?
+
+
 ..
   Ejercicio 22: patrones de diseño - COMMAND pattern
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1657,33 +1700,6 @@ Observa y analiza `este video <https://youtu.be/WLDgtRNK2VE>`__.
   Inventa ejemplos para PlayerPrefs, JSON y JsonUtility. NO TE COMPLIQUES la idea es que 
   aproveches este momento para que te quede código que luego puedas utilizar en otros proyectos.
 
-
-  Ejercicio 31: Arquitectura de una aplicación interactiva - reto
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Crea una aplicación interactiva que al presionar un botón incremente un entero 
-  contenido en un Scriptable Object. Ese mismo SO debe generar un evento que 
-  incluya como argumente el valor del entero. Crea al menos estos tres GameObjects que se 
-  suscriban a ese evento: uno que actualice un texto en pantalla con el valor del entero,
-  uno que imprima en la consola el valor del entero, uno que genere una alerta auditiva 
-  cada que el entero cambie.
-
-  Como puedes ver, la idea es que implementes con un SO en EVENT-RELAYER.
-
-  Ejercicio 32: Arquitectura de una aplicación interactiva - reto
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Crea una aplicación que incluya DOS escenas. Cada escena tendrá 
-  un botón para incrementar un entero que estará en un SO, un botón para 
-  cambiar de escena y un texto para mostrar el valor del entero cada que se 
-  incremente. El entero estará en el mismo SO para ambas escenas.
-
-  * ¿Qué puedes concluir de este experimento?
-  * En el `manual de Unity <https://docs.unity3d.com/Manual/class-ScriptableObject.html>`__ 
-    se describe que los SO tiene diferente comportamiento cuando estás en modo editor/play 
-    y cuando estás en modo deploy. Explica la diferencia entre ambos.
-  * Si quieres conservar, en modo deploy, el valor de de los SO entre sesiones de la 
-    aplicación interactiva ¿Qué harías?
 
   .. warning:: FIN DE LA UNIDAD
 
