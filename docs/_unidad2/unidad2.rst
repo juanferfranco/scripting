@@ -1566,175 +1566,263 @@ incremente. El entero estará en el mismo SO para ambas escenas.
 * Si quieres conservar, en modo deploy, el valor de de los SO entre sesiones de la 
   aplicación interactiva ¿Qué harías?
 
+Evaluación de la unidad
+------------------------
 
-..
-  Ejercicio 22: patrones de diseño - COMMAND pattern
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+¿En qué consiste?  
+********************
 
-  Este patrón hace que un objeto le delegue la responsabilidad a otro 
-  objeto de ejecutar un comando. Ya verás en el video por qué esto 
-  te dará flexibilidad para hacer operaciones más complejas con el comando.
+Para la evaluación de esta unidad vas a realizar una aplicaciones interactiva SIMPLE 
+en base a los videos y material presentado en la unidad. Sigue los siguientes pasos:
 
-  Para analizar este patrón vas a comenzar mirando, solo mirando,
-  `este <https://youtu.be/UoNumkMTx-U>`__ video de Jason Weimann.
+* Arma un grupo de compañeros desde 3 hasta 5. ¿Puedes hacerlo solo? Si, pero la 
+  evaluación está diseñada para trabajar en equipo, de lo contrario tendrás que 
+  invertir un tiempo mayor a 6 horas.
+* Vas a usar un flujo de trabajo de control de versión bifurcado, tal 
+  como lo hiciste en la Unidad 1. Cada grupo entrega solo el enlace a un repositorio; 
+  sin embargo, recuerda que cada compañero debe hacer un fork y los cambios se deben 
+  integrar mediante pull requests.
+* Van a pensar juntos en una aplicaciones MUY simple desde el punto de vista gráfico, 
+  aunque si quieren pueden usar assets FREE. La aplicación se debe estructurar usando 
+  la arquitectura de CANALES/EVENT-RELAYER que estudiamos en la unidad.  
+* Van a pensar en varios PUBLICADORES-OBSERVADORES de tal manera que permitan 
+  mostrar cómo se aplica en la aplicación:
+  
+  * El patrón STATE
+  * El patrón OBSERVER
+  * El principio S de SOLID.
+  * El principio O de SOLID.
+  * El principio L de SOLID.
+  * El principio I de SOLID.
+  * El principio D de SOLID.
 
-  * En el video, cuando el autor dice que _inputReader y _commandProcessor 
-    serán ``getting chached`` ¿Qué quiere decir esto? ¿Qué ventaja tiene hacerlo?
-    ¿Qué pasaría si no lo hago?
+* Deben ser estratégicos en relación al punto anterior. Ten presente que 
+  un solo observador, publicador o la propia arquitectura podría ilustrar varios de 
+  los asuntos anteriores. Lo importante es que al final puedan 
+  explicar y mostrar claramente cómo se está aplicando lo solicitado.
 
-  * ¿De qué instancias externas depende una ENTIDAD?
+¿Qué debes entregar?  
+***********************
 
-  * ¿Qué relación hay entre MoveCommand y Command?
+* Un video donde se explique la aplicación de los puntos solicitados.
+* El video se debe subir a youtube como un video público o no listado.
+* El video debe tener una duración MÁXIMA de 20 minutos.
+* El video debe tener los siguientes capítulos en este mismo orden:
+  
+  * Integrantes y las tareas que realizó cada uno.
+  * Demo de la aplicación funcionando.
+  * Explicación de la arquitectura de la aplicación.
+  * Explicación de la aplicación del patrón state
+  * Explicación de la aplicación del patrón observer
+  * Explicación de la aplicación del principio S
+  * Explicación de la aplicación del principio O
+  * Explicación de la aplicación del principio L
+  * Explicación de la aplicación del principio I
+  * Explicación de la aplicación del principio D
 
-  * ¿Por qué no se puede instanciar Command?
+* En `este video <https://youtu.be/6-0cERIVsFg>`__ puedes aprender a adicionar capítulos a tu video.
+* Subir a `este <https://www.dropbox.com/request/C90BCy15dn9EC4BxScXp>`__ 
+  enlace un ``.pdf`` con:
 
-  * Nota que el método ExecuteCommand de CommandProcessor recibe una 
-    referencia a un tipo Command, pero en el código de la Entidad no se pasa
-    la referencia a un objeto tipo Command sino a un tipo MoveCommand. 
-    ¿Entonces por qué funciona? (recuerdas la pregunta sobre la relación entre 
-    MoveCommand y Command). A esto se le conoce como polimorfismo. ¿Qué 
-    tipo de polimorfismos es este?
+  #. Los nombres y IDs.
+  #. Enlace al repositorio principal en GitHub con el proyecto 
+  #. La URL del video en youtube.
+  #. Reportar si algún compañero del equipo no trabajó. 
 
-  * En el video nota que el autor indica que sería posible llamar directamente 
-    a moveCommand.Execute(), pero no se hace así sino que se llama ese método
-    mediante otro objeto cuya referencia esta en _commandProcessor. ¿Por qué 
-    es esto? Entonces cuál es la gracias de este patrón Command?
+Criterios de evaluación   
+*****************************
 
-  * El autor menciona que el demo 1 puede ser ineficiente en el uso de memoria, 
-    particularmente en el método update de la Entidad. ¿Por qué es esto?
+Se asignará una sola nota para todo el grupo; sin embargo, el grupo es responsable 
+de revisar el trabajo de cada compañero y apoyarse en caso de tener dificultades.
 
-  * Analiza el demo2, puedes cambiar el personaje por un cilindro si gustas.
+* Calidad y duración del video: 0.5
+* Trabajo en equipo con control de versión bifurcado: 0.5
+* Explicación de la aplicación y la arquitectura por canales: 0.5
+* Explicación de la aplicación del patrón state: 0.5
+* Explicación de la aplicación del patrón observer: 0.5
+* Explicación de la aplicación del principio S de SOLID: 0.5
+* Explicación de la aplicación del principio O de SOLID: 0.5
+* Explicación de la aplicación del principio L de SOLID: 0.5
+* Explicación de la aplicación del principio I de SOLID: 0.5
+* Explicación de la aplicación del principio D de SOLID: 0.5
 
-  Ejercicio 23: patrones de diseño - COMMAND pattern
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. note:: Sobre las personas reportadas en el pdf
 
-  Ahora mira de nuevo el video, pero esta vez reproduce el código del DEMO 1. 
-  Una vez te funcione, analiza detalladamente la estructura del código. Dibuja 
-  un diagrama de clases y un diagrama de secuencias para que puedas entender 
-  de manera gráfica las partes de la solución y sus relaciones.
+    Las personas que aparezcan reportadas en el pdf obtendrán automáticamente 
+    una calificación de 0.
 
+Material complementario
+------------------------
 
+Ejercicios  
+****************
 
-  Ejercicio 25: patrones de diseño - OBJECT POOL
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Patrones de diseño - COMMAND pattern (1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  La memoria de un computador es un recurso finito que debemos usar de la mejor 
-  manera posible. Actualmente las plataformas móviles, incluyendo los headset 
-  de VR standalone demandan que hagas un uso adecuado de este recurso. 
-  El patrón object pool busca REUTILIZAR objetos ya creados y de esta manera 
-  puedas mantener un uso apropiado de la memoria.
+Este patrón hace que un objeto le delegue la responsabilidad a otro 
+objeto de ejecutar un comando. Ya verás en el video por qué esto 
+te dará flexibilidad para hacer operaciones más complejas con el comando.
 
-  Observa y analiza el `siguiente video <https://youtu.be/uxm4a0QnQ9E>`__.
+Para analizar este patrón vas a comenzar mirando, solo mirando,
+`este <https://youtu.be/UoNumkMTx-U>`__ video de Jason Weimann.
 
-  * ¿De qué se trata la aplicación con la que se ilustra el patrón de diseño 
-    en el video?
-  * ¿Cómo se está usando el patrón de diseño en el ejemplo?
-  * ¿Qué significa en el contexto de una aplicación interactiva EVITAR generar 
-    basura? (Consulta qué es el GARBAGE collector).
-  * ¿Por qué es importante evitar al máximo que el Garbage collector trabaje mucho?
+* En el video, cuando el autor dice que _inputReader y _commandProcessor 
+  serán ``getting chached`` ¿Qué quiere decir esto? ¿Qué ventaja tiene hacerlo?
+  ¿Qué pasaría si no lo hago?
 
-  Ejercicio 26: patrones de diseño - Calentamiento para el siguiente ejercicio
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* ¿De qué instancias externas depende una ENTIDAD?
 
-  Antes de que realices el próximo ejercicio. REPASA de nuevo los patrones 
-  que están en `este video <https://youtu.be/hQE8lQk9ikE>`__.
+* ¿Qué relación hay entre MoveCommand y Command?
 
-  * Lista los patrones que viste en el video y describe cuál es el objetivo 
-    de cada uno de ellos. RECUERDA, la idea es repasar.
+* ¿Por qué no se puede instanciar Command?
 
-  * Trata de implementar algunos de los ejemplos que viste en el video.
+* Nota que el método ExecuteCommand de CommandProcessor recibe una 
+  referencia a un tipo Command, pero en el código de la Entidad no se pasa
+  la referencia a un objeto tipo Command sino a un tipo MoveCommand. 
+  ¿Entonces por qué funciona? (recuerdas la pregunta sobre la relación entre 
+  MoveCommand y Command). A esto se le conoce como polimorfismo. ¿Qué 
+  tipo de polimorfismos es este?
 
-  * OPCIONAL 1. En el video el autor hace referencia al patrón de diseño 
-    STATE. Este ya lo trabajamos, pero si quieres repasarlo de nuevo, te dejo 
-    `aquí el enlace <https://youtu.be/V75hgcsCGOM>`__ al video que señala el 
-    autor.
+* En el video nota que el autor indica que sería posible llamar directamente 
+  a moveCommand.Execute(), pero no se hace así sino que se llama ese método
+  mediante otro objeto cuya referencia esta en _commandProcessor. ¿Por qué 
+  es esto? Entonces cuál es la gracias de este patrón Command?
 
-  * OPCIONAL 2. El mismo autor tiene un video sobre el patrón singleton.
-    Lo puedes `ver aquí <https://www.youtube.com/watch?v=ptkxRn0HCJc>`__.
+* El autor menciona que el demo 1 puede ser ineficiente en el uso de memoria, 
+  particularmente en el método update de la Entidad. ¿Por qué es esto?
 
-  Ejercicio 27 (MUY IMPORTANTE): patrones de diseño - Última iteración
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Analiza el demo2, puedes cambiar el personaje por un cilindro si gustas.
 
-  En este ejercicio vamos a realizar una última iteración sobre el tema 
-  de patrones de diseño. La idea es que hagas esto:
+Patrones de diseño - COMMAND pattern (2)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  * Inventa EJEMPLOS en Unity para estos patrones (puedes combinar varios 
-    si quieres).
+Ahora mira de nuevo el video, pero esta vez reproduce el código del DEMO 1. 
+Una vez te funcione, analiza detalladamente la estructura del código. Dibuja 
+un diagrama de clases y un diagrama de secuencias para que puedas entender 
+de manera gráfica las partes de la solución y sus relaciones.
 
-    * COMMAND
-    * FLYWEIGHT (Scriptable Objects)
-    * OBSERVER
-    * COMPONENT
-    * SINGLETON 
-    * STATE 
-    * OBJECT POOL
+Patrones de diseño - OBJECT POOL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  * Escribe un párrafo corto que explique en CADA EJEMPLO cómo usaste el patrón.
+La memoria de un computador es un recurso finito que debemos usar de la mejor 
+manera posible. Actualmente las plataformas móviles, incluyendo los headset 
+de VR standalone demandan que hagas un uso adecuado de este recurso. 
+El patrón object pool busca REUTILIZAR objetos ya creados y de esta manera 
+puedas mantener un uso apropiado de la memoria.
 
-  Ejercicio 28: persistencia - Introducción
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Observa y analiza el `siguiente video <https://youtu.be/uxm4a0QnQ9E>`__.
 
-  Persistencia se refiere a la capacidad de almacenar permanentemente 
-  información de tu aplicación interactiva en algún medio de almacenamiento 
-  permanente.
+* ¿De qué se trata la aplicación con la que se ilustra el patrón de diseño 
+  en el video?
+* ¿Cómo se está usando el patrón de diseño en el ejemplo?
+* ¿Qué significa en el contexto de una aplicación interactiva EVITAR generar 
+  basura? (Consulta qué es el GARBAGE collector).
+* ¿Por qué es importante evitar al máximo que el Garbage collector trabaje mucho?
 
-  Inicia observando y analizando el `siguiente video <https://www.youtube.com/watch?v=uD7y4T4PVk0>`__.
-  Te darás cuenta que no hay un solo método para realizar la persistencia en tus aplicaciones 
-  interactivas. Cada método tiene sus debilidades y fortalezas. Por tanto, lo que te propongo 
-  con este ejercicio es que comiences a identificarlas.
+Patrones de diseño - Calentamiento para el siguiente ejercicio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  * En el video te hablan de varios métodos para realizar la persistencia en tus aplicaciones 
-    interactivas. Lista esos métodos.
-  * Para cada método indica cuándo se usa, que debilidades tiene y qué fortalezas.
-  * Explica ¿Qué significa el término serialización de los datos?
-  * En el video mencionan un formato denominado JSON. Busca en qué consiste ese formato.
-  * ¿Qué ventaja podría tener guardar datos en formato JSON comparado con un 
-    `formato binario <https://en.wikipedia.org/wiki/Binary_file>`__? 
+Antes de que realices el próximo ejercicio. REPASA de nuevo los patrones 
+que están en `este video <https://youtu.be/hQE8lQk9ikE>`__.
 
-  Repasa de nuevo y complementa las preguntas de este ejercicio con el texto en 
-  `este blog <https://blogs.unity3d.com/2021/02/23/persistent-data-how-to-save-your-game-states-and-settings/>`__.
+* Lista los patrones que viste en el video y describe cuál es el objetivo 
+  de cada uno de ellos. RECUERDA, la idea es repasar.
 
-  Ejercicio 29: persistencia - ejemplos
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Trata de implementar algunos de los ejemplos que viste en el video.
 
-  Inventa ejemplos para PlayerPrefs, JSON y JsonUtility. NO TE COMPLIQUES la idea es que 
-  aproveches este momento para que te quede código que luego puedas utilizar en otros proyectos.
+* OPCIONAL 1. En el video el autor hace referencia al patrón de diseño 
+  STATE. Este ya lo trabajamos, pero si quieres repasarlo de nuevo, te dejo 
+  `aquí el enlace <https://youtu.be/V75hgcsCGOM>`__ al video que señala el 
+  autor.
 
+* OPCIONAL 2. El mismo autor tiene un video sobre el patrón singleton.
+  Lo puedes `ver aquí <https://www.youtube.com/watch?v=ptkxRn0HCJc>`__.
 
-  .. warning:: FIN DE LA UNIDAD
+Patrones de diseño - Última iteración
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Aunque con esto llegamos al fin de la Unidad, todavía tienes mucho más 
-    que estudiar y analizar en cuanto a los asuntos de arquitectura de una aplicación 
-    interactiva. ¿Tal vez en Scripting 2? (no existe ese curso).
+En este ejercicio vamos a realizar una última iteración sobre el tema 
+de patrones de diseño. La idea es que hagas esto:
 
-  .. warning:: OPCIONAL
+* Inventa EJEMPLOS en Unity para estos patrones (puedes combinar varios 
+  si quieres).
 
-    Lee `este blog <https://blogs.unity3d.com/2017/11/20/making-cool-stuff-with-scriptableobjects/>`__ 
-    y observa un par de videos que están allí. Verás más usos de los SO.
+* COMMAND
+* FLYWEIGHT (Scriptable Objects)
+* OBSERVER
+* COMPONENT
+* SINGLETON 
+* STATE 
+* OBJECT POOL
 
-  .. warning:: PARA VACACIONES
+* Escribe un párrafo corto que explique en CADA EJEMPLO cómo usaste el patrón.
 
-    Te recomiendo MUCHO, MUCHO, que estudies y analices el 
-    `proyecto CHOP-CHOP <https://github.com/UnityTechnologies/open-project-1>`__. Tiene 
-    mucha documentación y es un proyecto cargada de muchas ideas que pueden servirte
+Persistencia - Introducción
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. warning:: OPCIONAL
+Persistencia se refiere a la capacidad de almacenar permanentemente 
+información de tu aplicación interactiva en algún medio de almacenamiento 
+permanente.
 
-    Este `es un tutorial <https://www.youtube.com/watch?v=HVls6_srbNc>`__ que muestra 
-    cómo usar el sistema de eventos de Chop-Chop.
+Inicia observando y analizando el `siguiente video <https://www.youtube.com/watch?v=uD7y4T4PVk0>`__.
+Te darás cuenta que no hay un solo método para realizar la persistencia en tus aplicaciones 
+interactivas. Cada método tiene sus debilidades y fortalezas. Por tanto, lo que te propongo 
+con este ejercicio es que comiences a identificarlas.
 
-  .. warning:: Repositorio en Git con códigos útiles
+* En el video te hablan de varios métodos para realizar la persistencia en tus aplicaciones 
+  interactivas. Lista esos métodos.
+* Para cada método indica cuándo se usa, que debilidades tiene y qué fortalezas.
+* Explica ¿Qué significa el término serialización de los datos?
+* En el video mencionan un formato denominado JSON. Busca en qué consiste ese formato.
+* ¿Qué ventaja podría tener guardar datos en formato JSON comparado con un 
+  `formato binario <https://en.wikipedia.org/wiki/Binary_file>`__? 
 
-    En `este enlace <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/tree/master/Assets/Patterns>`__ se 
-    puedes encontrar códigos útiles para la implementación 
-    de patrones de diseño. Por ejemplo, 
-    `aquí <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/blob/master/Assets/Patterns/Singleton/Singleton.cs>`__ 
-    se puede ver el código para implementar un singleton muy similar al que se observa 
-    en el video de Arquitectura con SOs del proyecto Chop Chop.
+Repasa de nuevo y complementa las preguntas de este ejercicio con el texto en 
+`este blog <https://blogs.unity3d.com/2021/02/23/persistent-data-how-to-save-your-game-states-and-settings/>`__.
 
-  .. warning:: Presentación sobre patrones de diseño
+Persistencia - ejemplos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    En `este enlace <https://www.notion.so/PATRONES-DE-DISE-O-8291412254bc47cfb1ad0588e4d6f28b>`__ se 
-    encuentra el material sobre las cápsulas de patrones de diseño que hemos visto en las 
-    sesiones sincrónicas. 
-    
+Inventa ejemplos para PlayerPrefs, JSON y JsonUtility. NO TE COMPLIQUES la idea es que 
+aproveches este momento para que te quede código que luego puedas utilizar en otros proyectos.
+
+Otros enlaces de interés
+****************************
+
+.. warning:: FIN DE LA UNIDAD
+
+Aunque con esto llegamos al fin de la Unidad, todavía tienes mucho más 
+que estudiar y analizar en cuanto a los asuntos de arquitectura de una aplicación 
+interactiva. ¿Tal vez en Scripting 2? (no existe ese curso).
+
+.. warning:: OPCIONAL
+
+Lee `este blog <https://blogs.unity3d.com/2017/11/20/making-cool-stuff-with-scriptableobjects/>`__ 
+y observa un par de videos que están allí. Verás más usos de los SO.
+
+.. warning:: PARA VACACIONES
+
+Te recomiendo MUCHO, MUCHO, que estudies y analices el 
+`proyecto CHOP-CHOP <https://github.com/UnityTechnologies/open-project-1>`__. Tiene 
+mucha documentación y es un proyecto cargada de muchas ideas que pueden servirte
+
+.. warning:: OPCIONAL
+
+Este `es un tutorial <https://www.youtube.com/watch?v=HVls6_srbNc>`__ que muestra 
+cómo usar el sistema de eventos de Chop-Chop.
+
+.. warning:: Repositorio en Git con códigos útiles
+
+En `este enlace <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/tree/master/Assets/Patterns>`__ se 
+puedes encontrar códigos útiles para la implementación 
+de patrones de diseño. Por ejemplo, 
+`aquí <https://github.com/PacktPublishing/Hands-On-Game-Development-Patterns-with-Unity-2018/blob/master/Assets/Patterns/Singleton/Singleton.cs>`__ 
+se puede ver el código para implementar un singleton muy similar al que se observa 
+en el video de Arquitectura con SOs del proyecto Chop Chop.
+
+.. warning:: Presentación sobre patrones de diseño
+
+En `este enlace <https://www.notion.so/PATRONES-DE-DISE-O-8291412254bc47cfb1ad0588e4d6f28b>`__ se 
+encuentra el material sobre las cápsulas de patrones de diseño que hemos visto en las 
+sesiones sincrónicas. 
