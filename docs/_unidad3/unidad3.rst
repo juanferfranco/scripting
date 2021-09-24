@@ -4,19 +4,19 @@ Unidad 3. Depuración, perfilamiento y optimización
 Introducción
 --------------
 
-En esta unidad vas a estudiar alguna técnicas de depuración 
-que te permitirán identificar posibles errores en tu código. Adicionalmente, 
-varás algunas técnicas de perfilamiento y optimización de código.
-
+En esta unidad vas a estudiar algunas técnicas de depuración 
+que te permitirán identificar posibles errores en tu código. 
+Adicionalmente, varás algunas técnicas de perfilamiento y 
+optimización del código.
 
 Propósito de aprendizaje
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+**************************
 
 Conocer algunas técnicas de depuración, perfilamiento y optimización 
 del código que describe el comportamiento de una aplicación interactiva.
 
 Temas
-^^^^^^
+******
 
 * Técnicas de depuración.
 * Perfilamiento y optimización.
@@ -27,31 +27,55 @@ Temas
     Si comienzan la unidad 3 en la semana 11 estarán terminando en 
     la semana 13.
 
-Ejercicios y proyecto
+Lecturas y ejercicios
 -----------------------
+
+Sesión 1: depuración
+**********************
 
 Ejercicio 1: depuración - observar (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Tiempo total estimado: 20 minutos)
 
-Lo primero que vas a hacer es aprender a depurar un programa. Para hacerlo tendrás 
-que conectar el depurador de tu entorno de desarrollo al proceso que está corriendo 
-el editor de Unity.
+Lo primero que vas a hacer es aprender a depurar un programa. 
+Para hacerlo tendrás que conectar el depurador de tu entorno de 
+desarrollo al proceso que está corriendo el editor de Unity.
 
 Observa detenidamente este `video <https://youtu.be/y3kqIlLzIig>`__.
 
 * ¿Para que sirve un breakpoint?
+* ¿Para qué sirve un watchpoint?
 * ¿Cuál es la diferencia entre step into y step over?
 * ¿Cuál era el problema con el primer ejemplo?
 * ¿Cuál era el problema del segundo ejemplo?
 
 Ejercicio 2: depuración - reproducir (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Tiempo estimado: 20 minutos)
 
-Ahora que ya viste los ejemplos del video, trata de observalo de nuevo pero esta vez 
-reproduce los ejemplos y las situaciones de error en tu computador.
+Ahora que ya viste el video vas a reproducir en tu propios computador y 
+con tus herramientas lo que viste.
+
+En `este enlace <https://github.com/juanferfranco/scripting/tree/main/docs/_static/u3-ej2-1-bug.unitypackage
+>`__ puedes bajar el primer ejemplo que tiene el bug.
+
+* Reproduce el error.
+* Verifica el programa colocando breakpoints y ejecutando con step into y step over según 
+  necesites.
+* Corrige el problema.
+
+Prueba ahora con el segundo ejemplo del cual te dejo 
+`aquí <https://github.com/juanferfranco/scripting/tree/main/docs/_static/u3-ej2-2-bug.unitypackage>`__ 
+la versión con el error.
+
+* Reproduce el error.
+* Verifica el programa colocando breakpoints y ejecutando con step into y step over según 
+  necesites.
+* Corrige el problema.
 
 Ejercicio 3: depuración - logs/introducción (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Tiempo estimado: 20 minutos)
 
 Utilizar Logs en tu aplicación puede ser de mucha ayuda a la hora de desarrollar. En este 
 ejercicio te voy a pedir que leas `esta entrada <https://docs.unity3d.com/Manual/class-Debug.html>`__ 
@@ -59,6 +83,7 @@ del manual de Unity.
 
 * ¿Que diferencia ves en la consola entre un log normal, un log de error y un log de advertencia?
 * La clase Debug tiene más métodos además de log. Lee qué otros métodos tienes disponibles.
+* ¿Qué ventaja tiene esta línea ``Debug.LogWarning("I come in peace!", this.gameObject);``?
 
 Ejercicio 4: depuración - logs/experimenta (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
