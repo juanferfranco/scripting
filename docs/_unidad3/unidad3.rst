@@ -87,32 +87,32 @@ del manual de Unity.
 
 Ejercicio 4: depuración - logs/experimenta (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Tiempo estimado: 20 minutos)
 
 La clase `Debug <https://docs.unity3d.com/ScriptReference/Debug.html>`__ tiene varios 
 ejemplos de cómo puedes usar algunos métodos estáticos para depurar tu programa.
 
-Experimenta reproduciendo algunos de esos ejemplos.
+Experimenta reproduciendo algunos de esos ejemplos (tendrás que darle click y abrir para 
+ver cuáles tienen ejemplos :) ).
 
 Ejercicio 5: depuración - logs/enriquecidos (1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Tiempo estimado: 20)
 
-El método `Log <https://docs.unity3d.com/ScriptReference/Debug.Log.html>`__ te permite 
-utilizar texto enriquecido. Lee algunas posibilidades de este texto enriquecido 
-`aquí <https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/StyledText.html>`__.
+* Observa `este video <https://youtu.be/S2LNvvcVgRo>`__ video donde verás cómo generar 
+  log con texto enriquecido.
 
-Ahora observa `este video <https://youtu.be/S2LNvvcVgRo>`__ para que veas en acción 
-lo anterior. Ten presente que el autor utiliza Rider, pero tu puedes utilizar la consola 
-de Unity e ir y venir entre la consola y el editor de Visual Studio.
+* El método `Log <https://docs.unity3d.com/ScriptReference/Debug.Log.html>`__ te permite 
+  utilizar texto enriquecido. Lee algunas posibilidades de este texto enriquecido 
+  `aquí <https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/StyledText.html>`__.
 
-Ejercicio 6: depuración - logs/enriquecidos (1)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Puedes bajar el código del video 
+  `aquí <https://www.patreon.com/file?h=29898031&i=4427918>`__ para que puedas reproducir 
+  lo que viste.
 
-Observa de nuevo el video anterior, pero esta vez 
-`descarga el código <https://www.patreon.com/file?h=29898031&i=4427918>`__ 
-y reproduce lo que viste en el video.
-
-Ejercicio 7: perfilamiento - introducción (2)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Trabajo autónomo 1: PROFILING (introducción)
+******************************************************
+(Tiempo estimado: 1 hora 20 minutos)
 
 Cuando desarrollas aplicaciones interactivas es importante que analices y depures 
 tu aplicación para que te asegures que está libre de errores y corre adecuadamente 
@@ -135,10 +135,18 @@ errores u oportunidades de OPTIMIZACIÓN.
 Observa el `siguiente video <https://youtu.be/uXRURWwabF4>`__ que introduce las posibilidades 
 de profiling que tiene Unity.
 
-Ejercicio 7: perfilamiento - análisis (6)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sesión 2: profiling (actividad grupal)
+*******************************************
+(Tiempo estimado 1 hora 40 minutos)
 
-Vuelve a observar el video anterior, pero esta vez analiza las siguientes preguntas:
+Usando el video propuesto en la sesión de trabajo autónomo 1:
+
+* Arma un equipo de trabajo, máximo 5.
+* Van a crear un documento compartido en docs de Google.
+* Una vez creado el documento, van a compartirlo con el profe y le darán 
+  permisos de edición al profe.
+* Reúnanse a trabajar en uno de los canales que tenemos dispuestos en Teams.
+* Discutan y respondan las siguientes preguntas:
 
 #. En el video mencionan que el profiler es un instrumentation-based profiler y no un sample-based. 
    ¿Cuál es la diferencia?
@@ -197,290 +205,302 @@ Vuelve a observar el video anterior, pero esta vez analiza las siguientes pregun
 #. ¿Por qué es importante realizar un profiling cuando el juego lleva un rato 
    corriendo?
 #. ¿Para qué crees que puede ser útil la clase Profiler.logFile de Unity?
-#. ¿Qué ventajas en términos de optimización el uso del patrón OBJECT POLLING?
+#. ¿Qué ventajas en términos de optimización tiene el uso del patrón OBJECT POLLING?
 #. ¿Qué quiere decir la expresión Spreading the load in time?
 #. Si tienes un algoritmo que toma mucho tiempo en ejecutarse, considerando la pregunta 
    anterior ¿Qué deberías hacer?
 
-.. 
-    Hasta aquí van 7 horas de trabajo
+Trabajo autónomo 2: profiling (terminación del documento)
+***********************************************************
+(Tiempo estimado 1 hora 20 minutos)
 
-Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System (1)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Vas a revisar y completar con tus compañeros el documento que trabajaste en clase.
 
-En este ejercicio vas a estudiar un caso donde se recurre al Job System para 
-optimizar la aplicación interactiva.
+..
+   Ejercicio 7: perfilamiento - análisis (6)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Se trata de un simulador de una ciudad que cuenta con 65 edificios. Cada 
-edificio tiene 150 pisos (aunque puedes modificar la cantidad) y en cada piso 
-pueden vivir entre 20 a 500 inquilinos (tenants). Para cada edificio se 
-realiza el cálculo de su consumo de energía. Esta operación es intensiva en el 
-uso de CPU, como te darás cuenta. Por tanto, esta aplicación será CPU-bounded o 
-ligada a la CPU. Ten en cuenta que otras aplicaciones son I/O-bounded, es decir, 
-la aplicación debe esperar a que se complete una operación de entrada-salida (I/O). 
-La técnica de optimización que verás en este ejercicio te sirve para lidiar 
-con problemas CPU-bounded. Cuando tengas escenarios I/O-bounded tendrás que 
-recurrir a otras técnicas; sin embargo, el mecanismos de fondo es usar ``Threads``.
+   Vuelve a observar el video anterior, pero esta vez analiza las siguientes preguntas:
 
-¿Quieres volver a repasar el concepto de Threads que viste en la Unidad 1?
-Te dejo por `aquí <https://youtu.be/Iwj0_p0bLpc>`__ un video corto para que lo hagas.
+   .. 
+      Hasta aquí van 7 horas de trabajo
 
-Por lo pronto te voy a pedir SOLO VER `este video <https://youtu.be/3o12aic7kDY>`__ donde 
-se presenta el caso de estudio. En el siguiente ejercicio vas a analizar a fondo 
-el caso.
+   Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System (1)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ejercicio 9: perfilamiento y optimización caso de estudio 1 / Job System (3)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   En este ejercicio vas a estudiar un caso donde se recurre al Job System para 
+   optimizar la aplicación interactiva.
 
-El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
+   Se trata de un simulador de una ciudad que cuenta con 65 edificios. Cada 
+   edificio tiene 150 pisos (aunque puedes modificar la cantidad) y en cada piso 
+   pueden vivir entre 20 a 500 inquilinos (tenants). Para cada edificio se 
+   realiza el cálculo de su consumo de energía. Esta operación es intensiva en el 
+   uso de CPU, como te darás cuenta. Por tanto, esta aplicación será CPU-bounded o 
+   ligada a la CPU. Ten en cuenta que otras aplicaciones son I/O-bounded, es decir, 
+   la aplicación debe esperar a que se complete una operación de entrada-salida (I/O). 
+   La técnica de optimización que verás en este ejercicio te sirve para lidiar 
+   con problemas CPU-bounded. Cuando tengas escenarios I/O-bounded tendrás que 
+   recurrir a otras técnicas; sin embargo, el mecanismos de fondo es usar ``Threads``.
 
-#. Crea un proyecto en Unity 2019.4 LTS 
-#. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
-   y Jobs usando el Packet Manager. No olvides habilitar la opción mostrar los paquete 
-   en preview (Show preview packages).
-#. Importa el paquete de código que descargaste.
-#. Carga la escena que está en el directorio Start Here. Esta escena te permitirá 
-   observar la primera parte del video. Verifica el problema usando el profiler.
-   Deberías observar una figura similar a esta:
+   ¿Quieres volver a repasar el concepto de Threads que viste en la Unidad 1?
+   Te dejo por `aquí <https://youtu.be/Iwj0_p0bLpc>`__ un video corto para que lo hagas.
 
-   .. image:: ../_static/ExJobProblem.png
-      :alt:  captura del profiler con el problema
-      :scale: 50%
-      :align: center
+   Por lo pronto te voy a pedir SOLO VER `este video <https://youtu.be/3o12aic7kDY>`__ donde 
+   se presenta el caso de estudio. En el siguiente ejercicio vas a analizar a fondo 
+   el caso.
 
-#. ¿Qué parte del código tiene el problema? ¿Cuál es el problema? (Observa 
-   la duración del PlayerLoop y la franja azul)
-#. Nota en la figura que el Main Thread está muy ocupado mientras que los 
-   Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
-   lo puedes hacer con el Job System.
-#. ¿Qué es el `C# Job system <https://docs.unity3d.com/Manual/JobSystem.html>`__?
-#. Para definir un Job se utiliza una struct. ¿Cuál es la razón que indican el video?
-#. Nota que se implementa la interfaz 
-   `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
-   ¿Qué relación hay entre esta interfaz y los Threads?
-#. En el minuto 5:28 se crea un nuevo MonoBeHaviour llamado BuildingManager que tendrá 
-   una lista para almacenar las referencias a todos lo edificios y adicionalmente le dirá 
-   al Job System de Unity que por favor le reparta trabajo a los worker threads que tiene 
-   disponibles:
+   Ejercicio 9: perfilamiento y optimización caso de estudio 1 / Job System (3)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. code-block:: csharp
-   
-      private void Update()
-      {
-        var job = new BuildingUpdateJob();
-        var jobHandle = _job.Schedule(buildings.Count, 1);
-        jobHandle.Complete();
-      }
-    
-   ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
-#. En el código anterior el método Complete() espera a que todos los Jobs terminen. 
-   ¿Qué crees que ocurra si el trabajo que tienen que hacer los Jobs es muy largo?
-   ¿Qué harías para lidiar con lo anterior?
-#. Observa que, en este caso, un Job (la estructura de datos) está definido por dos 
-   partes: un arreglo de datos y el código que se ejecutara sobre cada item del arreglo 
-   de datos. Mira el código que actuará sobre cada dato:
+   El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
 
-   .. code-block:: csharp
-   
-      public void Execute(int index)
-      {
-            var data = BuildingDataArray[index];
-            data.Update();
-            BuildingDataArray[index] = data;
-      }
-   
-   ¿Por qué luego de actualizar a data (data.Update()) se copia de nuevo a data 
-   en el arreglo? Si necesitas repasar te dejo 
-   `aquí <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct>`__ 
-   un enlace.
-#. En el minuto 5:28 se creó BuildingManager y en el método update se escribió código 
-   para solicitarle al Job system de Unity que le diera trabajo a los worker threads: 
-   
-   .. code-block:: csharp
-   
-      private void Update()
-      {
-            var job = new BuildingUpdateJob();
-            var jobHandle = _job.Schedule(buildings.Count, 1);
-            jobHandle.Complete();
-      }
+   #. Crea un proyecto en Unity 2019.4 LTS 
+   #. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
+      y Jobs usando el Packet Manager. No olvides habilitar la opción mostrar los paquete 
+      en preview (Show preview packages).
+   #. Importa el paquete de código que descargaste.
+   #. Carga la escena que está en el directorio Start Here. Esta escena te permitirá 
+      observar la primera parte del video. Verifica el problema usando el profiler.
+      Deberías observar una figura similar a esta:
 
-   Nota que hasta este punto BuildingUpdateJob no tiene los datos almacenados sobre los 
-   cuales cada worker thread ejecutará el método Execute:  
+      .. image:: ../_static/ExJobProblem.png
+         :alt:  captura del profiler con el problema
+         :scale: 50%
+         :align: center
 
-   .. code-block:: csharp
-   
-        private void Update()
-        {
-                // 1
-                var buildingDataArray = new NativeArray<Building.Data>(buildings.Count, Allocator.TempJob);
-                
-                // 2
-                for ( var i = 0; i < buildings.Count;i++)
-                {
-                    buildingDataArray[i] = new Building.Data(building[i]);
-                }
+   #. ¿Qué parte del código tiene el problema? ¿Cuál es el problema? (Observa 
+      la duración del PlayerLoop y la franja azul)
+   #. Nota en la figura que el Main Thread está muy ocupado mientras que los 
+      Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
+      lo puedes hacer con el Job System.
+   #. ¿Qué es el `C# Job system <https://docs.unity3d.com/Manual/JobSystem.html>`__?
+   #. Para definir un Job se utiliza una struct. ¿Cuál es la razón que indican el video?
+   #. Nota que se implementa la interfaz 
+      `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
+      ¿Qué relación hay entre esta interfaz y los Threads?
+   #. En el minuto 5:28 se crea un nuevo MonoBeHaviour llamado BuildingManager que tendrá 
+      una lista para almacenar las referencias a todos lo edificios y adicionalmente le dirá 
+      al Job System de Unity que por favor le reparta trabajo a los worker threads que tiene 
+      disponibles:
 
-                // 3
-                var job = new BuildingUpdateJob
-                {
-                    BuildingDataArray = buildingDataArray;
-                }
-                var jobHandle = _job.Schedule(buildings.Count, 1);
-                jobHandle.Complete();
+      .. code-block:: csharp
+      
+         private void Update()
+         {
+         var job = new BuildingUpdateJob();
+         var jobHandle = _job.Schedule(buildings.Count, 1);
+         jobHandle.Complete();
+         }
+      
+      ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
+   #. En el código anterior el método Complete() espera a que todos los Jobs terminen. 
+      ¿Qué crees que ocurra si el trabajo que tienen que hacer los Jobs es muy largo?
+      ¿Qué harías para lidiar con lo anterior?
+   #. Observa que, en este caso, un Job (la estructura de datos) está definido por dos 
+      partes: un arreglo de datos y el código que se ejecutara sobre cada item del arreglo 
+      de datos. Mira el código que actuará sobre cada dato:
 
-                // 4
-                buildingDataArray.Dispose();
-        }
-    
-   Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
-   estás haciendo una copia por valor o por referencia?
-#. Esta no es una pregunta. Pero quería contarte que en la parte final de la unidad 
-   te dejé un enlace con material que ven tus compañeros de experiencias sobre aplicaciones  
-   interactivas I/O bounded. 
+      .. code-block:: csharp
+      
+         public void Execute(int index)
+         {
+               var data = BuildingDataArray[index];
+               data.Update();
+               BuildingDataArray[index] = data;
+         }
+      
+      ¿Por qué luego de actualizar a data (data.Update()) se copia de nuevo a data 
+      en el arreglo? Si necesitas repasar te dejo 
+      `aquí <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct>`__ 
+      un enlace.
+   #. En el minuto 5:28 se creó BuildingManager y en el método update se escribió código 
+      para solicitarle al Job system de Unity que le diera trabajo a los worker threads: 
+      
+      .. code-block:: csharp
+      
+         private void Update()
+         {
+               var job = new BuildingUpdateJob();
+               var jobHandle = _job.Schedule(buildings.Count, 1);
+               jobHandle.Complete();
+         }
 
-.. 
-    Hasta aquí van 9 horas de trabajo
+      Nota que hasta este punto BuildingUpdateJob no tiene los datos almacenados sobre los 
+      cuales cada worker thread ejecutará el método Execute:  
 
-.. 
-    Este segundo caso le añadiría 5 horas de video y 4 de análisis
-    para completar 18 horas de trabajo en este Unidad.
+      .. code-block:: csharp
+      
+         private void Update()
+         {
+                  // 1
+                  var buildingDataArray = new NativeArray<Building.Data>(buildings.Count, Allocator.TempJob);
+                  
+                  // 2
+                  for ( var i = 0; i < buildings.Count;i++)
+                  {
+                     buildingDataArray[i] = new Building.Data(building[i]);
+                  }
 
-Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  // 3
+                  var job = new BuildingUpdateJob
+                  {
+                     BuildingDataArray = buildingDataArray;
+                  }
+                  var jobHandle = _job.Schedule(buildings.Count, 1);
+                  jobHandle.Complete();
 
-.. warning:: EJERCICIO LARGO!
+                  // 4
+                  buildingDataArray.Dispose();
+         }
+      
+      Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
+      estás haciendo una copia por valor o por referencia?
+   #. Esta no es una pregunta. Pero quería contarte que en la parte final de la unidad 
+      te dejé un enlace con material que ven tus compañeros de experiencias sobre aplicaciones  
+      interactivas I/O bounded. 
 
-   Este último ejercicio de la unidad es largo. Te tomará aproximadamente 
-   9 horas en completarlo. Ten paciencia y distribuye tu tiempo. Te recomiendo 
-   que lo hagas en una semana y media.
+   .. 
+      Hasta aquí van 9 horas de trabajo
 
-   El ejercicio se basa en un proyecto de Unity learn. Primero 
-   tendrás que leer unos fundamentos teóricos y luego realizarás una serie de 
-   RETOS guiados para ir optimizando el proyecto.
+   .. 
+      Este segundo caso le añadiría 5 horas de video y 4 de análisis
+      para completar 18 horas de trabajo en este Unidad.
 
-   Lo primero que debes hacer es descargar los archivos del proyecto. Es sobre 
-   este proyecto que realizarás todos los RETOS.
+   Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   Al final de todo el proyecto verás una grabación donde se hace la optimización 
-   de este proyecto en VIVO. Si gustas podrías comenzar por aquí y luego 
-   volver a revisar al final los videos para repasar.
+   .. warning:: EJERCICIO LARGO!
 
-En este caso de estudio vas a realizar uno de los proyectos de Unity learn 
-relacionado con el asunto de esta unidad. La idea es que practiques de nuevo 
-todo lo que hemos estudiado. 
+      Este último ejercicio de la unidad es largo. Te tomará aproximadamente 
+      9 horas en completarlo. Ten paciencia y distribuye tu tiempo. Te recomiendo 
+      que lo hagas en una semana y media.
 
-El enlace al proyecto esta 
-`aquí <https://learn.unity.com/project/optimizing-for-performance-2019-3>`__.
+      El ejercicio se basa en un proyecto de Unity learn. Primero 
+      tendrás que leer unos fundamentos teóricos y luego realizarás una serie de 
+      RETOS guiados para ir optimizando el proyecto.
 
-Puedes bajar el código del proyecto 
-`aquí <https://connect-prd-cdn.unity.com/20200319/9d88a529-d7d4-4f3e-bfa6-9af72294a535/LearnLive_OptimizationAssets.zip?_ga=2.126028237.1943325220.1617376423-1653210251.1613099991>`__.
+      Lo primero que debes hacer es descargar los archivos del proyecto. Es sobre 
+      este proyecto que realizarás todos los RETOS.
 
-Para usar el código crea un proyecto 3D en Unity 2019.4LTS e importa el packet anterior.
+      Al final de todo el proyecto verás una grabación donde se hace la optimización 
+      de este proyecto en VIVO. Si gustas podrías comenzar por aquí y luego 
+      volver a revisar al final los videos para repasar.
 
-No olvides ir documentando toda la experiencia. Verás como varios de los conceptos 
-fundamentales que hemos abordado en el curso se aplican y analizan. Además de ir 
-documentando tu experiencia y resultados del proyecto, te voy a dejar algunas 
-preguntas para que reflexiones un poco más sobre los conceptos. TEN PRESENTE que 
-además verás conceptos nuevos que no solo se aplican a Unity sino a cualquier 
-otro tipo de motor. Este ejercicio es importante y por ello que le dedicaremos 
-9 horas de trabajo, es decir, semana y media.
+   En este caso de estudio vas a realizar uno de los proyectos de Unity learn 
+   relacionado con el asunto de esta unidad. La idea es que practiques de nuevo 
+   todo lo que hemos estudiado. 
 
-#. ¿Por qué la memoria que se usa en el stack se libera automáticamente?
-#. ¿Por qué se dice que le memoria en el heap es manejada?
-#. ¿Por qué es más lento el manejo de memoria en el heap?
-#. Explica de nuevo en pocas palabras el concepto de Object pooling y explica 
-   por qué permite optimizar la recolección de basura por parte del Garbage 
-   collector.
-#. ¿Por qué puede ser mejor utilizar GetComponent en el método Start o Awake en 
-   vez de Update?
-#. ¿Cuándo deberías utilizar LateUpdate en vez de Update?
-#. ¿Cuándo deberías utilizar FixedUpdate en vez de Update?
-#. ¿Cómo se comparan las corutinas con las máquinas de estado?
-#. Si tienes una operación MUY MUY larga que te está tomando varios frames 
-   ¿Qué tienes que hacer para poder implementar esa operación con una corutina?
-#. En `esta parte <https://learn.unity.com/tutorial/introduction-to-optimization-with-unity-2019-3?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e1da6a0edbc2a3da3a31f09>`__ 
-   del proyecto hay un ejemplo de código que podría optimizarse. 
-   Muestra cómo podrías hacerlo.
-#. ¿Qué es el lenguaje CIL?
-#. ¿Qué hace un ahead of time compiler (AOT)?
-#. ¿Qué hace un Jit compiler?
-#. ¿Cuál es la diferencia entre el AOT y el Jit compilers?
-#. ¿Cuál es la relación entre el lenguaje C++ y el motor de Unity?
-#. ¿Qué es código manejado?
-#. ¿Qué es el managed run time?
-#. Enumera y explica las posibles causas para que un código no se ejecute de manera 
-   eficiente.
-#. ¿Qué es `reflection` y por qué es tan costosa en términos de desempeño?
-#. ¿Por qué el uso de find es costo en términos de desempeño? ¿Qué podrías hacer 
-   para minimizar su impacto en la aplicación?
-#. ¿Por qué no deberías tener métodos Update vacíos?
-#. ¿Por qué usar Camera.main es costoso en términos de desempeño y qué podrías 
-   hacer para minimizar este costo?
-#. Explica y muestra un ejemplo del concepto Culling.
-#. Explica a qué se refiere el concepto de LOD o level of detail.
-#. Enumera y explica varias estrategias que permitan minimizar el impacto del Garbage 
-   collector.
-#. ¿Qué síntomas en la ejecución de tu código pueden ser indicios de problemas 
-   con el Garbage collector? ¿A qué se puede deber este síntoma?
-#. ¿Cuál es la diferencia entre el manejo de memoria manual y el Garbage collector?
-#. ¿A qué se refiere el concepto de Allocated Memory?
-#. ¿A qué se refiere el concepto de Deallocated Memory?
-#. ¿Qué significa el concepto IN SCOPE relacionado con las variables?
-#. Explica cómo es el proceso de allocate y deallocate memoria del STACK.
-#. Explica cómo es el proceso de allocate y deallocate memoria del HEAP.
-#. ¿Cada cuánto se ejecuta el Garbage collector?
-#. ¿Qué puede hacer que el Garbage collector tome mucho tiempo en ejecutarse? 
-   ¿Crees que esto puede ser grave o no para tu aplicación? ¿Por qué?
-#. ¿Qué es el concepto de heap fragmentation?
-#. ¿Qué tipo de variables se almacenan en el heap y en el stack? Muestra ejemplos.
-#. Enumera y explica tres ESTRATEGIAS con las cuales puedes reducir el impacto del 
-   Garbage collector.
-#. Explica y da ejemplos de la técnicas Caching.
-#. ¿Por qué no deberías asignar memoria en métodos que sean llamados frecuentemente?
-#. Explica le técnica Clearing collections.
-#. ¿Por qué es útil en términos de memoria la clase StringBuilding?
-#. Explica y muestra un ejemplo del concepto de Boxing.
-#. ¿Por qué deberías evitar el Boxing?
-#. ¿Qué es el concepto de CLOSURE?
-#. Explica los pasos que debe realizar la CPU con cada frame que se renderiza.
-#. ¿Qué significa el término Draw Call?
-#. ¿Qué significa el término Batching.
-#. Explica los pasos que debe realizar la GPU con cada frame que se renderiza.
-#. ¿Qué significa que el PIPELINE de renderización sea ineficiente, es decir, qué 
-   puede hacer qué no sea eficiente?
-#. ¿Cuál es el `flujo de trabajo <https://learn.unity.com/tutorial/challenge-optimize-the-project-scripts?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e734280edbc2a001f390afd>`__ 
-   que debes seguir para optimizar un proyecto?
-#. ¿A qué se refiere el término Global Illumitation?
-#. Cuando estés realizando el RETO Bake the scene lighting ten presente que en el paso 
-   2 cuando selecciones Generate Lighting esto tardará un buen rato. Todo dependerá de 
-   tu computador.
-#. ¿Qué significa la técnica occlusion culling? ¿Para qué sirve? ¿Qué hace?
-#. ¿Por qué la técnica no es sirve cuando el contenido de una escena se genera en 
-   tiempo real?
-#. ¿Para qué tipo de proyectos la técnica es ideal? 
-#. ¿El proyecto que estás optimizando es buen candidato según lo anterior?
+   El enlace al proyecto esta 
+   `aquí <https://learn.unity.com/project/optimizing-for-performance-2019-3>`__.
 
-.. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
+   Puedes bajar el código del proyecto 
+   `aquí <https://connect-prd-cdn.unity.com/20200319/9d88a529-d7d4-4f3e-bfa6-9af72294a535/LearnLive_OptimizationAssets.zip?_ga=2.126028237.1943325220.1617376423-1653210251.1613099991>`__.
 
-   Te voy a dejar aquí otros enlaces muy interesantes. TEN PRESENTE 
-   que varias de las tecnologías relacionadas con Dots están en etapa experimental, 
-   en particular la parte que llaman actualmente ENTITY (antes ECS).
+   Para usar el código crea un proyecto 3D en Unity 2019.4LTS e importa el packet anterior.
 
-   * `Mejoras al profiler <https://youtu.be/oWaBW8A1pmQ>`__.
-   * `Sobre el Job system <https://youtu.be/3o12aic7kDY>`__.
-   * `Tutorial sobre el Job system <https://youtu.be/C56bbgtPr_w>`__.
-   * `Conceptos básicos <https://youtu.be/HVzSTEIAXi8>`__ de Dots.
-   * `Sobre Dots <https://youtu.be/Z9-WkwdDoNY>`__.
-   * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
-   * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
-     sobre profiling y optimización.
-   * Los escenarios I/O-bounded son muy comunes en las aplicaciones interactivas 
-     que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
-     integrar a la aplicación `DISPOSITIVOS EXTERNOS`. Si tienes curiosidad puedes 
-     aprender un poco más acerca de esto 
-     `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__.
-   * `Conferencia de Unity <https://youtu.be/kwnb9Clh2Is>`__ en el GDC del 2018 donde 
-     explican algunos asuntos relativos al Job system, entre otros.
-   * `Conferencia introductoria <https://youtu.be/epTPFamqkZo>`__ sobre profiling y 
-     optimización en Unity.
+   No olvides ir documentando toda la experiencia. Verás como varios de los conceptos 
+   fundamentales que hemos abordado en el curso se aplican y analizan. Además de ir 
+   documentando tu experiencia y resultados del proyecto, te voy a dejar algunas 
+   preguntas para que reflexiones un poco más sobre los conceptos. TEN PRESENTE que 
+   además verás conceptos nuevos que no solo se aplican a Unity sino a cualquier 
+   otro tipo de motor. Este ejercicio es importante y por ello que le dedicaremos 
+   9 horas de trabajo, es decir, semana y media.
+
+   #. ¿Por qué la memoria que se usa en el stack se libera automáticamente?
+   #. ¿Por qué se dice que le memoria en el heap es manejada?
+   #. ¿Por qué es más lento el manejo de memoria en el heap?
+   #. Explica de nuevo en pocas palabras el concepto de Object pooling y explica 
+      por qué permite optimizar la recolección de basura por parte del Garbage 
+      collector.
+   #. ¿Por qué puede ser mejor utilizar GetComponent en el método Start o Awake en 
+      vez de Update?
+   #. ¿Cuándo deberías utilizar LateUpdate en vez de Update?
+   #. ¿Cuándo deberías utilizar FixedUpdate en vez de Update?
+   #. ¿Cómo se comparan las corutinas con las máquinas de estado?
+   #. Si tienes una operación MUY MUY larga que te está tomando varios frames 
+      ¿Qué tienes que hacer para poder implementar esa operación con una corutina?
+   #. En `esta parte <https://learn.unity.com/tutorial/introduction-to-optimization-with-unity-2019-3?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e1da6a0edbc2a3da3a31f09>`__ 
+      del proyecto hay un ejemplo de código que podría optimizarse. 
+      Muestra cómo podrías hacerlo.
+   #. ¿Qué es el lenguaje CIL?
+   #. ¿Qué hace un ahead of time compiler (AOT)?
+   #. ¿Qué hace un Jit compiler?
+   #. ¿Cuál es la diferencia entre el AOT y el Jit compilers?
+   #. ¿Cuál es la relación entre el lenguaje C++ y el motor de Unity?
+   #. ¿Qué es código manejado?
+   #. ¿Qué es el managed run time?
+   #. Enumera y explica las posibles causas para que un código no se ejecute de manera 
+      eficiente.
+   #. ¿Qué es `reflection` y por qué es tan costosa en términos de desempeño?
+   #. ¿Por qué el uso de find es costo en términos de desempeño? ¿Qué podrías hacer 
+      para minimizar su impacto en la aplicación?
+   #. ¿Por qué no deberías tener métodos Update vacíos?
+   #. ¿Por qué usar Camera.main es costoso en términos de desempeño y qué podrías 
+      hacer para minimizar este costo?
+   #. Explica y muestra un ejemplo del concepto Culling.
+   #. Explica a qué se refiere el concepto de LOD o level of detail.
+   #. Enumera y explica varias estrategias que permitan minimizar el impacto del Garbage 
+      collector.
+   #. ¿Qué síntomas en la ejecución de tu código pueden ser indicios de problemas 
+      con el Garbage collector? ¿A qué se puede deber este síntoma?
+   #. ¿Cuál es la diferencia entre el manejo de memoria manual y el Garbage collector?
+   #. ¿A qué se refiere el concepto de Allocated Memory?
+   #. ¿A qué se refiere el concepto de Deallocated Memory?
+   #. ¿Qué significa el concepto IN SCOPE relacionado con las variables?
+   #. Explica cómo es el proceso de allocate y deallocate memoria del STACK.
+   #. Explica cómo es el proceso de allocate y deallocate memoria del HEAP.
+   #. ¿Cada cuánto se ejecuta el Garbage collector?
+   #. ¿Qué puede hacer que el Garbage collector tome mucho tiempo en ejecutarse? 
+      ¿Crees que esto puede ser grave o no para tu aplicación? ¿Por qué?
+   #. ¿Qué es el concepto de heap fragmentation?
+   #. ¿Qué tipo de variables se almacenan en el heap y en el stack? Muestra ejemplos.
+   #. Enumera y explica tres ESTRATEGIAS con las cuales puedes reducir el impacto del 
+      Garbage collector.
+   #. Explica y da ejemplos de la técnicas Caching.
+   #. ¿Por qué no deberías asignar memoria en métodos que sean llamados frecuentemente?
+   #. Explica le técnica Clearing collections.
+   #. ¿Por qué es útil en términos de memoria la clase StringBuilding?
+   #. Explica y muestra un ejemplo del concepto de Boxing.
+   #. ¿Por qué deberías evitar el Boxing?
+   #. ¿Qué es el concepto de CLOSURE?
+   #. Explica los pasos que debe realizar la CPU con cada frame que se renderiza.
+   #. ¿Qué significa el término Draw Call?
+   #. ¿Qué significa el término Batching.
+   #. Explica los pasos que debe realizar la GPU con cada frame que se renderiza.
+   #. ¿Qué significa que el PIPELINE de renderización sea ineficiente, es decir, qué 
+      puede hacer qué no sea eficiente?
+   #. ¿Cuál es el `flujo de trabajo <https://learn.unity.com/tutorial/challenge-optimize-the-project-scripts?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e734280edbc2a001f390afd>`__ 
+      que debes seguir para optimizar un proyecto?
+   #. ¿A qué se refiere el término Global Illumitation?
+   #. Cuando estés realizando el RETO Bake the scene lighting ten presente que en el paso 
+      2 cuando selecciones Generate Lighting esto tardará un buen rato. Todo dependerá de 
+      tu computador.
+   #. ¿Qué significa la técnica occlusion culling? ¿Para qué sirve? ¿Qué hace?
+   #. ¿Por qué la técnica no es sirve cuando el contenido de una escena se genera en 
+      tiempo real?
+   #. ¿Para qué tipo de proyectos la técnica es ideal? 
+   #. ¿El proyecto que estás optimizando es buen candidato según lo anterior?
+
+   .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
+
+      Te voy a dejar aquí otros enlaces muy interesantes. TEN PRESENTE 
+      que varias de las tecnologías relacionadas con Dots están en etapa experimental, 
+      en particular la parte que llaman actualmente ENTITY (antes ECS).
+
+      * `Mejoras al profiler <https://youtu.be/oWaBW8A1pmQ>`__.
+      * `Sobre el Job system <https://youtu.be/3o12aic7kDY>`__.
+      * `Tutorial sobre el Job system <https://youtu.be/C56bbgtPr_w>`__.
+      * `Conceptos básicos <https://youtu.be/HVzSTEIAXi8>`__ de Dots.
+      * `Sobre Dots <https://youtu.be/Z9-WkwdDoNY>`__.
+      * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
+      * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
+      sobre profiling y optimización.
+      * Los escenarios I/O-bounded son muy comunes en las aplicaciones interactivas 
+      que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
+      integrar a la aplicación `DISPOSITIVOS EXTERNOS`. Si tienes curiosidad puedes 
+      aprender un poco más acerca de esto 
+      `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__.
+      * `Conferencia de Unity <https://youtu.be/kwnb9Clh2Is>`__ en el GDC del 2018 donde 
+      explican algunos asuntos relativos al Job system, entre otros.
+      * `Conferencia introductoria <https://youtu.be/epTPFamqkZo>`__ sobre profiling y 
+      optimización en Unity.
