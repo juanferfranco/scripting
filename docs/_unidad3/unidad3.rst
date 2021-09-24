@@ -56,8 +56,8 @@ Ejercicio 2: depuración - reproducir (1)
 Ahora que ya viste el video vas a reproducir en tu propios computador y 
 con tus herramientas lo que viste.
 
-En `este enlace <https://github.com/juanferfranco/scripting/tree/main/docs/_static/u3-ej2-1-bug.unitypackage
->`__ puedes bajar el primer ejemplo que tiene el bug.
+En `este enlace <https://github.com/juanferfranco/scripting/tree/main/docs/_static/u3-ej2-1-bug.unitypackage>`__ 
+puedes bajar el primer ejemplo que tiene el bug.
 
 * Reproduce el error.
 * Verifica el programa colocando breakpoints y ejecutando con step into y step over según 
