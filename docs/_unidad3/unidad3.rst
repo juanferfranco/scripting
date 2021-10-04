@@ -139,6 +139,9 @@ Sesión 2: profiling (actividad grupal)
 *******************************************
 (Tiempo estimado 1 hora 40 minutos)
 
+Ejercicio 6: actividad grupal de consolidación de los conceptos teóricos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Usando el video propuesto en la sesión de trabajo autónomo 1:
 
 * Arma un equipo de trabajo, máximo 5.
@@ -216,156 +219,145 @@ Trabajo autónomo 2: profiling (terminación del documento)
 
 Vas a revisar y completar con tus compañeros el documento que trabajaste en clase.
 
-..
-   Ejercicio 7: perfilamiento - análisis (6)
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sesión 3: caso de estudio 
+*******************************
 
-   Vuelve a observar el video anterior, pero esta vez analiza las siguientes preguntas:
+Ejercicio 7: perfilamiento y optimización caso de estudio 1 / Job System
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. 
-      Hasta aquí van 7 horas de trabajo
+En este ejercicio vas a estudiar un caso donde se recurre al Job System para 
+optimizar la aplicación interactiva.
 
-   Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System (1)
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Se trata de un simulador de una ciudad que cuenta con 65 edificios. Cada 
+edificio tiene 150 pisos (aunque puedes modificar la cantidad) y en cada piso 
+pueden vivir entre 20 a 500 inquilinos (tenants). Para cada edificio se 
+realiza el cálculo de su consumo de energía. Esta operación es intensiva en el 
+uso de CPU, como te darás cuenta. Por tanto, esta aplicación será CPU-bounded o 
+ligada a la CPU. Ten en cuenta que otras aplicaciones son I/O-bounded, es decir, 
+la aplicación debe esperar a que se complete una operación de entrada-salida (I/O). 
+La técnica de optimización que verás en este ejercicio te sirve para lidiar 
+con problemas CPU-bounded. Cuando tengas escenarios I/O-bounded tendrás que 
+recurrir a otras técnicas; sin embargo, el mecanismos de fondo es usar ``Threads``.
 
-   En este ejercicio vas a estudiar un caso donde se recurre al Job System para 
-   optimizar la aplicación interactiva.
+¿Quieres volver a repasar el concepto de Threads que viste en la Unidad 1?
+Te dejo por `aquí <https://youtu.be/Iwj0_p0bLpc>`__ un video corto para que lo hagas.
 
-   Se trata de un simulador de una ciudad que cuenta con 65 edificios. Cada 
-   edificio tiene 150 pisos (aunque puedes modificar la cantidad) y en cada piso 
-   pueden vivir entre 20 a 500 inquilinos (tenants). Para cada edificio se 
-   realiza el cálculo de su consumo de energía. Esta operación es intensiva en el 
-   uso de CPU, como te darás cuenta. Por tanto, esta aplicación será CPU-bounded o 
-   ligada a la CPU. Ten en cuenta que otras aplicaciones son I/O-bounded, es decir, 
-   la aplicación debe esperar a que se complete una operación de entrada-salida (I/O). 
-   La técnica de optimización que verás en este ejercicio te sirve para lidiar 
-   con problemas CPU-bounded. Cuando tengas escenarios I/O-bounded tendrás que 
-   recurrir a otras técnicas; sin embargo, el mecanismos de fondo es usar ``Threads``.
+Por lo pronto te voy a pedir SOLO VER `este video <https://youtu.be/3o12aic7kDY>`__ donde 
+se presenta el caso de estudio. En el siguiente ejercicio vas a analizar a fondo 
+el caso.
 
-   ¿Quieres volver a repasar el concepto de Threads que viste en la Unidad 1?
-   Te dejo por `aquí <https://youtu.be/Iwj0_p0bLpc>`__ un video corto para que lo hagas.
+Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   Por lo pronto te voy a pedir SOLO VER `este video <https://youtu.be/3o12aic7kDY>`__ donde 
-   se presenta el caso de estudio. En el siguiente ejercicio vas a analizar a fondo 
-   el caso.
+El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
 
-   Ejercicio 9: perfilamiento y optimización caso de estudio 1 / Job System (3)
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Crea un proyecto en Unity 2019.4 LTS 
+#. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
+   y Jobs usando el Packet Manager. No olvides habilitar la opción mostrar los paquete 
+   en preview (Show preview packages).
+#. Importa el paquete de código que descargaste.
+#. Carga la escena que está en el directorio Start Here. Esta escena te permitirá 
+   observar la primera parte del video. Verifica el problema usando el profiler.
+   Deberías observar una figura similar a esta:
 
-   El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
+   .. image:: ../_static/ExJobProblem.png
+      :alt:  captura del profiler con el problema
+      :scale: 50%
+      :align: center
 
-   #. Crea un proyecto en Unity 2019.4 LTS 
-   #. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
-      y Jobs usando el Packet Manager. No olvides habilitar la opción mostrar los paquete 
-      en preview (Show preview packages).
-   #. Importa el paquete de código que descargaste.
-   #. Carga la escena que está en el directorio Start Here. Esta escena te permitirá 
-      observar la primera parte del video. Verifica el problema usando el profiler.
-      Deberías observar una figura similar a esta:
+#. ¿Qué parte del código tiene el problema? ¿Cuál es el problema? (Observa 
+   la duración del PlayerLoop y la franja azul)
+#. Nota en la figura que el Main Thread está muy ocupado mientras que los 
+   Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
+   lo puedes hacer con el Job System.
+#. ¿Qué es el `C# Job system <https://docs.unity3d.com/Manual/JobSystem.html>`__?
+#. Para definir un Job se utiliza una struct. ¿Cuál es la razón que indican el video?
+#. Nota que se implementa la interfaz 
+   `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
+   ¿Qué relación hay entre esta interfaz y los Threads?
+#. En el minuto 5:28 se crea un nuevo MonoBeHaviour llamado BuildingManager que tendrá 
+   una lista para almacenar las referencias a todos lo edificios y adicionalmente le dirá 
+   al Job System de Unity que por favor le reparta trabajo a los worker threads que tiene 
+   disponibles:
 
-      .. image:: ../_static/ExJobProblem.png
-         :alt:  captura del profiler con el problema
-         :scale: 50%
-         :align: center
+   .. code-block:: csharp
+   
+      private void Update()
+      {
+      var job = new BuildingUpdateJob();
+      var jobHandle = _job.Schedule(buildings.Count, 1);
+      jobHandle.Complete();
+      }
+   
+   ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
+#. En el código anterior el método Complete() espera a que todos los Jobs terminen. 
+   ¿Qué crees que ocurra si el trabajo que tienen que hacer los Jobs es muy largo?
+   ¿Qué harías para lidiar con lo anterior?
+#. Observa que, en este caso, un Job (la estructura de datos) está definido por dos 
+   partes: un arreglo de datos y el código que se ejecutara sobre cada item del arreglo 
+   de datos. Mira el código que actuará sobre cada dato:
 
-   #. ¿Qué parte del código tiene el problema? ¿Cuál es el problema? (Observa 
-      la duración del PlayerLoop y la franja azul)
-   #. Nota en la figura que el Main Thread está muy ocupado mientras que los 
-      Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
-      lo puedes hacer con el Job System.
-   #. ¿Qué es el `C# Job system <https://docs.unity3d.com/Manual/JobSystem.html>`__?
-   #. Para definir un Job se utiliza una struct. ¿Cuál es la razón que indican el video?
-   #. Nota que se implementa la interfaz 
-      `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
-      ¿Qué relación hay entre esta interfaz y los Threads?
-   #. En el minuto 5:28 se crea un nuevo MonoBeHaviour llamado BuildingManager que tendrá 
-      una lista para almacenar las referencias a todos lo edificios y adicionalmente le dirá 
-      al Job System de Unity que por favor le reparta trabajo a los worker threads que tiene 
-      disponibles:
+   .. code-block:: csharp
+   
+      public void Execute(int index)
+      {
+            var data = BuildingDataArray[index];
+            data.Update();
+            BuildingDataArray[index] = data;
+      }
+   
+   ¿Por qué luego de actualizar a data (data.Update()) se copia de nuevo a data 
+   en el arreglo? Si necesitas repasar te dejo 
+   `aquí <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct>`__ 
+   un enlace.
+#. En el minuto 5:28 se creó BuildingManager y en el método update se escribió código 
+   para solicitarle al Job system de Unity que le diera trabajo a los worker threads: 
+   
+   .. code-block:: csharp
+   
+      private void Update()
+      {
+            var job = new BuildingUpdateJob();
+            var jobHandle = _job.Schedule(buildings.Count, 1);
+            jobHandle.Complete();
+      }
 
-      .. code-block:: csharp
-      
-         private void Update()
-         {
-         var job = new BuildingUpdateJob();
-         var jobHandle = _job.Schedule(buildings.Count, 1);
-         jobHandle.Complete();
-         }
-      
-      ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
-   #. En el código anterior el método Complete() espera a que todos los Jobs terminen. 
-      ¿Qué crees que ocurra si el trabajo que tienen que hacer los Jobs es muy largo?
-      ¿Qué harías para lidiar con lo anterior?
-   #. Observa que, en este caso, un Job (la estructura de datos) está definido por dos 
-      partes: un arreglo de datos y el código que se ejecutara sobre cada item del arreglo 
-      de datos. Mira el código que actuará sobre cada dato:
+   Nota que hasta este punto BuildingUpdateJob no tiene los datos almacenados sobre los 
+   cuales cada worker thread ejecutará el método Execute:  
 
-      .. code-block:: csharp
-      
-         public void Execute(int index)
-         {
-               var data = BuildingDataArray[index];
-               data.Update();
-               BuildingDataArray[index] = data;
-         }
-      
-      ¿Por qué luego de actualizar a data (data.Update()) se copia de nuevo a data 
-      en el arreglo? Si necesitas repasar te dejo 
-      `aquí <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct>`__ 
-      un enlace.
-   #. En el minuto 5:28 se creó BuildingManager y en el método update se escribió código 
-      para solicitarle al Job system de Unity que le diera trabajo a los worker threads: 
-      
-      .. code-block:: csharp
-      
-         private void Update()
-         {
-               var job = new BuildingUpdateJob();
+   .. code-block:: csharp
+   
+      private void Update()
+      {
+               // 1
+               var buildingDataArray = new NativeArray<Building.Data>(buildings.Count, Allocator.TempJob);
+               
+               // 2
+               for ( var i = 0; i < buildings.Count;i++)
+               {
+                  buildingDataArray[i] = new Building.Data(building[i]);
+               }
+
+               // 3
+               var job = new BuildingUpdateJob
+               {
+                  BuildingDataArray = buildingDataArray;
+               }
                var jobHandle = _job.Schedule(buildings.Count, 1);
                jobHandle.Complete();
-         }
 
-      Nota que hasta este punto BuildingUpdateJob no tiene los datos almacenados sobre los 
-      cuales cada worker thread ejecutará el método Execute:  
+               // 4
+               buildingDataArray.Dispose();
+      }
+   
+   Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
+   estás haciendo una copia por valor o por referencia?
+#. Esta no es una pregunta. Pero quería contarte que en la parte final de la unidad 
+   te dejé un enlace con material que ven tus compañeros de experiencias sobre aplicaciones  
+   interactivas I/O bounded. 
 
-      .. code-block:: csharp
-      
-         private void Update()
-         {
-                  // 1
-                  var buildingDataArray = new NativeArray<Building.Data>(buildings.Count, Allocator.TempJob);
-                  
-                  // 2
-                  for ( var i = 0; i < buildings.Count;i++)
-                  {
-                     buildingDataArray[i] = new Building.Data(building[i]);
-                  }
 
-                  // 3
-                  var job = new BuildingUpdateJob
-                  {
-                     BuildingDataArray = buildingDataArray;
-                  }
-                  var jobHandle = _job.Schedule(buildings.Count, 1);
-                  jobHandle.Complete();
-
-                  // 4
-                  buildingDataArray.Dispose();
-         }
-      
-      Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
-      estás haciendo una copia por valor o por referencia?
-   #. Esta no es una pregunta. Pero quería contarte que en la parte final de la unidad 
-      te dejé un enlace con material que ven tus compañeros de experiencias sobre aplicaciones  
-      interactivas I/O bounded. 
-
-   .. 
-      Hasta aquí van 9 horas de trabajo
-
-   .. 
-      Este segundo caso le añadiría 5 horas de video y 4 de análisis
-      para completar 18 horas de trabajo en este Unidad.
-
+..
    Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
