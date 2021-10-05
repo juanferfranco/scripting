@@ -237,10 +237,9 @@ ligada a la CPU. Ten en cuenta que otras aplicaciones son I/O-bounded, es decir,
 la aplicación debe esperar a que se complete una operación de entrada-salida (I/O). 
 La técnica de optimización que verás en este ejercicio te sirve para lidiar 
 con problemas CPU-bounded. Cuando tengas escenarios I/O-bounded tendrás que 
-recurrir a otras técnicas; sin embargo, el mecanismos de fondo es usar ``Threads``.
+recurrir a otras técnicas; sin embargo, el mecanismo de fondo es usar ``Threads``.
 
-¿Quieres volver a repasar el concepto de Threads que viste en la Unidad 1?
-Te dejo por `aquí <https://youtu.be/Iwj0_p0bLpc>`__ un video corto para que lo hagas.
+¿Volvemos a repasar juntos el concepto de Thread?
 
 Por lo pronto te voy a pedir SOLO VER `este video <https://youtu.be/3o12aic7kDY>`__ donde 
 se presenta el caso de estudio. En el siguiente ejercicio vas a analizar a fondo 
@@ -251,12 +250,13 @@ Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System
 
 El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
 
-#. Crea un proyecto en Unity 2019.4 LTS 
-#. Antes de importar el código que descargaste incluye los paquetes Mathematics, Collections 
-   y Jobs usando el Packet Manager. No olvides habilitar la opción mostrar los paquete 
-   en preview (Show preview packages).
+#. Crea un proyecto en Unity 2020.3 LTS, pero no IMPORTA aún el paquete descargado.
+#. En el menú Edit selecciona project settings y luego la opción Package Manager. En las opciones
+   avanzadas selecciona: Enable Preview Packages y Show Dependencies. 
+#. Abre el Package Manager y busca en el Unity Register el paquete Jobs, al instalarlo, este 
+   descargará e instalará las dependencias (Mathematics y Collections).
 #. Importa el paquete de código que descargaste.
-#. Carga la escena que está en el directorio Start Here. Esta escena te permitirá 
+#. Carga la escena que está en el directorio ``Start Here``. Esta escena te permitirá 
    observar la primera parte del video. Verifica el problema usando el profiler.
    Deberías observar una figura similar a esta:
 
@@ -266,7 +266,7 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
       :align: center
 
 #. ¿Qué parte del código tiene el problema? ¿Cuál es el problema? (Observa 
-   la duración del PlayerLoop y la franja azul)
+   la duración del PlayerLoop)
 #. Nota en la figura que el Main Thread está muy ocupado mientras que los 
    Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
    lo puedes hacer con el Job System.
@@ -284,9 +284,9 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
    
       private void Update()
       {
-      var job = new BuildingUpdateJob();
-      var jobHandle = _job.Schedule(buildings.Count, 1);
-      jobHandle.Complete();
+         var job = new BuildingUpdateJob();
+         var jobHandle = _job.Schedule(buildings.Count, 1);
+         jobHandle.Complete();
       }
    
    ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
@@ -352,10 +352,15 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
    
    Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
    estás haciendo una copia por valor o por referencia?
-#. Esta no es una pregunta. Pero quería contarte que en la parte final de la unidad 
-   te dejé un enlace con material que ven tus compañeros de experiencias sobre aplicaciones  
-   interactivas I/O bounded. 
 
+Trabajo autónomo 3: caso de estudio
+***********************************************************
+(Tiempo estimado 1 hora 20 minutos)
+
+Este caso de estudio es interesante, pero hay muchos conceptos e ideas que 
+procesar. En este bloque de tiempo autónomo vas a repasar el ejercicio anterior.
+Ve escribiendo las dudas que te surjan para compartirlas y aclararlas en 
+la próxima sesión de clase. 
 
 ..
    Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
