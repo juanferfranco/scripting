@@ -271,7 +271,7 @@ El código para analizar el proyecto lo tienes
 #. Nota en la figura que el Main Thread está muy ocupado mientras que los 
    Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
    lo puedes hacer con el Job System.
-#. Ahora abre la carpeta Completed en el proyecto de Unity. Allí encontrarás la escena
+#. Ahora abre la carpeta ``Completed`` en el proyecto de Unity. Allí encontrarás la escena
    que tiene la versión optimizada de la aplicación que hace uso del C# Job System.
 #. Ejecuta la escena y verifica los fps. Abre también el profiler para que observes
    cómo funciona la aplicación en este caso mediante el Main Thread y los workers.
@@ -298,6 +298,167 @@ El código para analizar el proyecto lo tienes
 #. Identifica en la aplicación en qué parte ocurre: la creación del Job, el llenado de los datos del Job, 
    la solicitud al Job System para que planifique el Job, la ejecución del Job.     
 
+Ejercicio 9: perfilamiento y optimización caso de estudio 1 / Job System
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+En este punto, ya viste el video, ya estudiaste los conceptos teóricos y ejemplos. Ahora 
+dedica unos minutos a analizar el código de la solución que está en la carpeta ``Completed``
+del proyecto de Unity.
+
+Primero observa el código del Job:
+
+.. code-block:: csharp
+
+    public struct BuildingUpdateJob : IJobParallelFor
+    {
+        public NativeArray<Building.Data> BuildingDataArray;
+        
+        public void Execute(int index)
+        {
+            var data = BuildingDataArray[index];
+            data.Update();
+            BuildingDataArray[index] = data;
+        }
+    }
+
+Varios puntos a notar:
+
+* Un Job se define como un ``struct``.
+* Se está implementando la interfaz IJobParallelFor. El método ``Execute`` declarado 
+  en la interfaz e implementado en el Job se aplicará a cada componente de la FUENTE DE 
+  DATOS del Job. En este caso la fuente de datos es el NativeArray. Nota como el argumento 
+  ``index`` de Execute. Este argumento te permitirá acceder a cada elemento del NativeArray.
+* Ahora veamos si entiendes lo anterior ¿Cuántas veces se ejecutará el método Execute? ¿Qué relación 
+  tiene la cantidad de veces que se ejecutará el método Execute con el tamaño del NativeArray?
+
+Ahora mira solo este código:
+
+.. code-block:: csharp
+
+   var data = BuildingDataArray[index];
+   data.Update();
+   BuildingDataArray[index] = data;
+
+* ¿Cuál es el tipo de ``data``? Es de tipo struct Data. Ten presente que BuildingDataArray es de 
+  tipo NativeArray y tiene algunas limitaciones como puedes leer en la sección 
+  ``Don’t try to update NativeContainer contents`` en `este <https://docs.unity3d.com/Manual/JobSystemTroubleshooting.html>`__ 
+  enlace. Por tanto, debes copiar el contenido en una struct Data local, modificar su contenido y luego 
+  copiar el contenido de nuevo en el NativeArray.
+
+Los datos relacionados con cada edificio están en la clase Building.cs:
+
+.. code-block:: csharp 
+
+   public class Building : MonoBehaviour
+   {
+      [SerializeField] private int floors;
+
+      public struct Data
+      {
+            private int _tenants;
+            
+            public int PowerUsage { get; private set; }
+
+            private Unity.Mathematics.Random _random;
+
+            public Data(Building building)
+            {
+               _random = new Unity.Mathematics.Random(1);
+               _tenants = building.floors * _random.NextInt(20, 500);
+               PowerUsage = 0;
+            }
+
+            public void Update()
+            {
+               var random = new Unity.Mathematics.Random(1);
+               for (var i = 0; i < _tenants; i++)
+               {
+                  PowerUsage += random.NextInt(12, 24);
+               }
+            }
+      }
+   }
+
+* floors será un campo serializado que permite configurar la cantidad de pisos que 
+  tendrá cada edificio.
+* La clase Building encapsula un nuevo tipo de dato que será el tipo de cada elemento del 
+  NativeArray.
+* Observa que en el constructor de struct Data se está definiendo de manera aleatoria 
+  cuántos inquilinos tendrá el edificio y el valor inicial del consumo energético del 
+  edificio (PowerUsage).
+* Finalmente, Update calculará el consumo de todo el edificio. Este método será llamado 
+  en el método Execute del Job.
+
+La clase BuildingManager crea el Job, inicia el NativeArray, pasa el Job al Job System y
+finalmente espera a que todos los Jobs terminen:
+
+.. code-block:: csharp
+
+    public class BuildingManager : MonoBehaviour
+    {
+        [SerializeField] private List<Building> buildings;
+        
+        private BuildingUpdateJob _job;
+        private NativeArray<Building.Data> _buildingDataArray;
+
+        private void Awake()
+        {
+            var buildingData = new Building.Data[buildings.Count];
+            for (var i = 0; i < buildingData.Length; i++)
+            {
+                buildingData[i] = new Building.Data(buildings[i]);
+            }
+            
+            _buildingDataArray = new NativeArray<Building.Data>(buildingData.Length, Allocator.Persistent);
+            
+            _job = new BuildingUpdateJob();
+            _job.BuildingDataArray = _buildingDataArray;
+        }
+
+        private void Update()
+        {
+            var jobHandle = _job.Schedule(buildings.Count, 1);
+            jobHandle.Complete();
+        }
+
+        private void OnDestroy()
+        {
+            _buildingDataArray.Dispose();
+        }
+    }
+
+* buildings es un campo serializado que te permite definir en el editor la cantidad de edificios 
+  que tendrá la ciudad.
+* En Awake, buildingData es un arreglo de struct Data. Nota como new Building.Data(buildings[i]);
+  inicia cada element del arreglo con una struct Data.
+* La siguiente línea de código crea (vacío por ahora) el NativeArray indicando el tipo de cada 
+  elemento, struct Data, el tamaño, buildingData.Length, y en este caso el tiempo de vida del arreglo.
+  Allocator.Persistent permitirá que el arreglo dure tantos frames como tu quieras, eso si, en algún 
+  punto tendrás que liberar la memoria. Es este caso se hace en OnDestroy cuando el motor destruya 
+  BuildingManager, al finalizar la ejecución de la escena.
+
+.. code-block:: csharp
+
+  _buildingDataArray = new NativeArray<Building.Data>(buildingData.Length, Allocator.Persistent);
+
+* En este par de líneas que siguen, se crea el Job y se inician, ahora si el NativeArray.
+
+.. code-block:: csharp
+
+   _job = new BuildingUpdateJob();
+   _job.BuildingDataArray = _buildingDataArray;
+
+* Finalmente, BuildingManager calculará en ``cada frame`` el consumo de energía de toda la ciudad, 
+  solicitando la planificación de buildings.Count Jobs con un tamaño de batch de 1. Ojo, ten presente
+  que el MainThread será bloqueado con el método Complete hasta que los Jobs terminen:
+
+.. code-block:: csharp
+
+   private void Update()
+   {
+      var jobHandle = _job.Schedule(buildings.Count, 1);
+      jobHandle.Complete();
+   }
+
 
 Trabajo autónomo 3: caso de estudio
 ***********************************************************
@@ -306,8 +467,8 @@ Trabajo autónomo 3: caso de estudio
 Este caso de estudio es interesante, pero hay muchos conceptos e ideas que 
 procesar. En este bloque de tiempo autónomo te propongo: 
 
-* Repasar el ejercicio anterior.
-* Responder las preguntas que estás en el ejercicio.
+* Repasar los ejercicios de esta la sesión 3.
+* Responder las preguntas que están en los ejercicios de la sesión 3.
 * Ve escribiendo las dudas que te surjan para compartirlas y aclararlas en 
   la próxima sesión de clase. 
 
