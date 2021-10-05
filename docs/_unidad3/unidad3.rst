@@ -408,7 +408,7 @@ finalmente espera a que todos los Jobs terminen:
                 buildingData[i] = new Building.Data(buildings[i]);
             }
             
-            _buildingDataArray = new NativeArray<Building.Data>(buildingData.Length, Allocator.Persistent);
+            _buildingDataArray = new NativeArray<Building.Data>(buildingData, Allocator.Persistent);
             
             _job = new BuildingUpdateJob();
             _job.BuildingDataArray = _buildingDataArray;
@@ -430,15 +430,14 @@ finalmente espera a que todos los Jobs terminen:
   que tendrá la ciudad.
 * En Awake, buildingData es un arreglo de struct Data. Nota como new Building.Data(buildings[i]);
   inicia cada element del arreglo con una struct Data.
-* La siguiente línea de código crea (vacío por ahora) el NativeArray indicando el tipo de cada 
-  elemento, struct Data, el tamaño, buildingData.Length, y en este caso el tiempo de vida del arreglo.
+* La siguiente línea de código crea el NativeArray y lo inicia de buildingData.
   Allocator.Persistent permitirá que el arreglo dure tantos frames como tu quieras, eso si, en algún 
   punto tendrás que liberar la memoria. Es este caso se hace en OnDestroy cuando el motor destruya 
   BuildingManager, al finalizar la ejecución de la escena.
 
 .. code-block:: csharp
 
-  _buildingDataArray = new NativeArray<Building.Data>(buildingData.Length, Allocator.Persistent);
+  _buildingDataArray = new NativeArray<Building.Data>(buildingData, Allocator.Persistent);
 
 * En este par de líneas que siguen, se crea el Job y se inician, ahora si el NativeArray.
 
