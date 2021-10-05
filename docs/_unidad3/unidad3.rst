@@ -248,7 +248,8 @@ el caso.
 Ejercicio 8: perfilamiento y optimización caso de estudio 1 / Job System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/posts/34702445>`__.
+El código para analizar el proyecto lo tienes 
+`aquí <https://github.com/juanferfranco/scripting/blob/main/docs/_static/u3-ej-7-jobSys.unitypackage>`__.
 
 #. Crea un proyecto en Unity 2020.3 LTS, pero no IMPORTA aún el paquete descargado.
 #. En el menú Edit selecciona project settings y luego la opción Package Manager. En las opciones
@@ -270,97 +271,45 @@ El código para analizar el proyecto lo tienes `aquí <https://www.patreon.com/p
 #. Nota en la figura que el Main Thread está muy ocupado mientras que los 
    Workers están básicamente desocupados. ¿Y si lo pones a trabajar? Eso 
    lo puedes hacer con el Job System.
-#. ¿Qué es el `C# Job system <https://docs.unity3d.com/Manual/JobSystem.html>`__?
-#. Para definir un Job se utiliza una struct. ¿Cuál es la razón que indican el video?
-#. Nota que se implementa la interfaz 
-   `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__. 
-   ¿Qué relación hay entre esta interfaz y los Threads?
-#. En el minuto 5:28 se crea un nuevo MonoBeHaviour llamado BuildingManager que tendrá 
-   una lista para almacenar las referencias a todos lo edificios y adicionalmente le dirá 
-   al Job System de Unity que por favor le reparta trabajo a los worker threads que tiene 
-   disponibles:
+#. Ahora abre la carpeta Completed en el proyecto de Unity. Allí encontrarás la escena
+   que tiene la versión optimizada de la aplicación que hace uso del C# Job System.
+#. Ejecuta la escena y verifica los fps. Abre también el profiler para que observes
+   cómo funciona la aplicación en este caso mediante el Main Thread y los workers.
+#. Desde este momento comenzarás a analizar la aplicación, pero primero necesitas 
+   estudiar algunos conceptos de cómo funciona el Job System.
+#. ¿Qué es `código multihilado <https://docs.unity3d.com/Manual/JobSystemOverview.html>`__?
+   Qué quiere decir la expresión: ``This cooperation avoids creating more threads than CPU cores, 
+   which would cause contention for CPU resources.``
+#. ¿Qué es el `Job System <https://docs.unity3d.com/Manual/JobSystemJobSystems.html>`__? 
+#. ¿Qué son las `condiciones de carrera <https://docs.unity3d.com/Manual/JobSystemSafetySystem.html>`__?
+   ¿Qué sistema provee Unity para evitar las condiciones de carrera?
+#. ¿Qué son los `contenedores nativos <https://docs.unity3d.com/Manual/JobSystemNativeContainer.html>`__ 
+   y por qué son útiles?
+#. ¿Qué se necesita para `crear un Job <https://docs.unity3d.com/Manual/JobSystemCreatingJobs.html>`__?
+#. ¿Para qué sirve el método Execute declarado en IJob?
+#. ¿Qué tipo de datos puede tener un Job?
+#. ¿Cuáles son los pasos para `planificar un Job <https://docs.unity3d.com/Manual/JobSystemSchedulingJobs.html>`__?
+#. ¿Para qué sirve el método Complete?
+#. ¿Qué es un `JobHandle <https://docs.unity3d.com/Manual/JobSystemJobDependencies.html>`__ 
+   y qué se refiere que un Job tenga dependencias?
+#. ¿Cuál es la diferencia entre un IJob y un 
+   `IJobParallelFor <https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html>`__?
+#. ¿Qué quiere decir que que el C# Job System divide el trabajo en LOTES (batches)?
+#. Identifica en la aplicación en qué parte ocurre: la creación del Job, el llenado de los datos del Job, 
+   la solicitud al Job System para que planifique el Job, la ejecución del Job.     
 
-   .. code-block:: csharp
-   
-      private void Update()
-      {
-         var job = new BuildingUpdateJob();
-         var jobHandle = _job.Schedule(buildings.Count, 1);
-         jobHandle.Complete();
-      }
-   
-   ¿De qué tipo es la variable job? ¿Esa variable vive en el stack o en el heap?
-#. En el código anterior el método Complete() espera a que todos los Jobs terminen. 
-   ¿Qué crees que ocurra si el trabajo que tienen que hacer los Jobs es muy largo?
-   ¿Qué harías para lidiar con lo anterior?
-#. Observa que, en este caso, un Job (la estructura de datos) está definido por dos 
-   partes: un arreglo de datos y el código que se ejecutara sobre cada item del arreglo 
-   de datos. Mira el código que actuará sobre cada dato:
-
-   .. code-block:: csharp
-   
-      public void Execute(int index)
-      {
-            var data = BuildingDataArray[index];
-            data.Update();
-            BuildingDataArray[index] = data;
-      }
-   
-   ¿Por qué luego de actualizar a data (data.Update()) se copia de nuevo a data 
-   en el arreglo? Si necesitas repasar te dejo 
-   `aquí <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct>`__ 
-   un enlace.
-#. En el minuto 5:28 se creó BuildingManager y en el método update se escribió código 
-   para solicitarle al Job system de Unity que le diera trabajo a los worker threads: 
-   
-   .. code-block:: csharp
-   
-      private void Update()
-      {
-            var job = new BuildingUpdateJob();
-            var jobHandle = _job.Schedule(buildings.Count, 1);
-            jobHandle.Complete();
-      }
-
-   Nota que hasta este punto BuildingUpdateJob no tiene los datos almacenados sobre los 
-   cuales cada worker thread ejecutará el método Execute:  
-
-   .. code-block:: csharp
-   
-      private void Update()
-      {
-               // 1
-               var buildingDataArray = new NativeArray<Building.Data>(buildings.Count, Allocator.TempJob);
-               
-               // 2
-               for ( var i = 0; i < buildings.Count;i++)
-               {
-                  buildingDataArray[i] = new Building.Data(building[i]);
-               }
-
-               // 3
-               var job = new BuildingUpdateJob
-               {
-                  BuildingDataArray = buildingDataArray;
-               }
-               var jobHandle = _job.Schedule(buildings.Count, 1);
-               jobHandle.Complete();
-
-               // 4
-               buildingDataArray.Dispose();
-      }
-   
-   Explica qué hacen las líneas marcadas con 1,2,3 y 4. En la marca 3 del código
-   estás haciendo una copia por valor o por referencia?
 
 Trabajo autónomo 3: caso de estudio
 ***********************************************************
 (Tiempo estimado 1 hora 20 minutos)
 
 Este caso de estudio es interesante, pero hay muchos conceptos e ideas que 
-procesar. En este bloque de tiempo autónomo vas a repasar el ejercicio anterior.
-Ve escribiendo las dudas que te surjan para compartirlas y aclararlas en 
-la próxima sesión de clase. 
+procesar. En este bloque de tiempo autónomo te propongo: 
+
+* Repasar el ejercicio anterior.
+* Responder las preguntas que estás en el ejercicio.
+* Ve escribiendo las dudas que te surjan para compartirlas y aclararlas en 
+  la próxima sesión de clase. 
 
 ..
    Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
