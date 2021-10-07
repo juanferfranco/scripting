@@ -599,6 +599,13 @@ Regresa aquí la semana de evaluación y no olvides presionar la tecla F5 para
 recargar la página web.
 
 
+Material Complementario
+----------------------------
+
+Te voy a dejar un material complementario para que puedas profundizar un poco 
+más en los asuntos abordados en esta unidad.
+
+
 .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
 
    * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
