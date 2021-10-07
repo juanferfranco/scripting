@@ -471,142 +471,141 @@ procesar. En este bloque de tiempo autónomo te propongo:
 * Ve escribiendo las dudas que te surjan para compartirlas y aclararlas en 
   la próxima sesión de clase. 
 
-..
-   Ejercicio 10: perfilamiento y optimización / caso de estudio (18)
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. warning:: EJERCICIO LARGO!
+Sesión 4: revisión final del caso de estudio 1 
+****************************************************
 
-      Este último ejercicio de la unidad es largo. Te tomará aproximadamente 
-      9 horas en completarlo. Ten paciencia y distribuye tu tiempo. Te recomiendo 
-      que lo hagas en una semana y media.
+En esta sesión vamos a resolver dudas del caso de estudio 1 y del ejercicio grupal 
+de las sesiones 1 y 2.
 
-      El ejercicio se basa en un proyecto de Unity learn. Primero 
-      tendrás que leer unos fundamentos teóricos y luego realizarás una serie de 
-      RETOS guiados para ir optimizando el proyecto.
+Trabajo autónomo 4: caso de estudio 2
+***********************************************************
+(Tiempo estimado 1 hora 20 minutos)
 
-      Lo primero que debes hacer es descargar los archivos del proyecto. Es sobre 
-      este proyecto que realizarás todos los RETOS.
+En este espacio te voy a pedir que revises una sesión en Vivo de Unity que puede ver 
+`aquí <https://learn.unity.com/tutorial/learn-live-recording-how-to-profile-and-optimize-a-game?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5ebdde1fedbc2a002280b3cd>`__. 
+En esta sesión podrás un segundo caso de estudio donde se optimizará un juego.
 
-      Al final de todo el proyecto verás una grabación donde se hace la optimización 
-      de este proyecto en VIVO. Si gustas podrías comenzar por aquí y luego 
-      volver a revisar al final los videos para repasar.
+En el video te invitarán a bajar un proyecto; sin embargo, esto vamos a postergarlo 
+para la próxima semana.
 
-   En este caso de estudio vas a realizar uno de los proyectos de Unity learn 
-   relacionado con el asunto de esta unidad. La idea es que practiques de nuevo 
-   todo lo que hemos estudiado. 
+Sesiones 5 y 6 y trabajo autónomo 5 y 6
+****************************************
+(Tiempo estimado: 6 horas)
 
-   El enlace al proyecto esta 
-   `aquí <https://learn.unity.com/project/optimizing-for-performance-2019-3>`__.
+Ejercicio 10: perfilamiento y optimización / caso de estudio 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   Puedes bajar el código del proyecto 
-   `aquí <https://connect-prd-cdn.unity.com/20200319/9d88a529-d7d4-4f3e-bfa6-9af72294a535/LearnLive_OptimizationAssets.zip?_ga=2.126028237.1943325220.1617376423-1653210251.1613099991>`__.
+* Arma un equipo de trabajo, máximo 5.
+* Van a crear un documento compartido en docs de Google.
+* Una vez creado el documento, van a compartirlo con el profe y le darán 
+  permisos de edición al profe.
+* Reúnanse a trabajar en uno de los canales que tenemos dispuestos en Teams.
+* Discutan y respondan las preguntas propuestas:
 
-   Para usar el código crea un proyecto 3D en Unity 2019.4LTS e importa el packet anterior.
 
-   No olvides ir documentando toda la experiencia. Verás como varios de los conceptos 
-   fundamentales que hemos abordado en el curso se aplican y analizan. Además de ir 
-   documentando tu experiencia y resultados del proyecto, te voy a dejar algunas 
-   preguntas para que reflexiones un poco más sobre los conceptos. TEN PRESENTE que 
-   además verás conceptos nuevos que no solo se aplican a Unity sino a cualquier 
-   otro tipo de motor. Este ejercicio es importante y por ello que le dedicaremos 
-   9 horas de trabajo, es decir, semana y media.
+En este caso de estudio vas a realizar uno de los proyectos de Unity learn 
+relacionado con el asunto de esta unidad. La idea es que practiques de nuevo 
+todo lo que hemos estudiado. 
 
-   #. ¿Por qué la memoria que se usa en el stack se libera automáticamente?
-   #. ¿Por qué se dice que le memoria en el heap es manejada?
-   #. ¿Por qué es más lento el manejo de memoria en el heap?
-   #. Explica de nuevo en pocas palabras el concepto de Object pooling y explica 
-      por qué permite optimizar la recolección de basura por parte del Garbage 
-      collector.
-   #. ¿Por qué puede ser mejor utilizar GetComponent en el método Start o Awake en 
-      vez de Update?
-   #. ¿Cuándo deberías utilizar LateUpdate en vez de Update?
-   #. ¿Cuándo deberías utilizar FixedUpdate en vez de Update?
-   #. ¿Cómo se comparan las corutinas con las máquinas de estado?
-   #. Si tienes una operación MUY MUY larga que te está tomando varios frames 
-      ¿Qué tienes que hacer para poder implementar esa operación con una corutina?
-   #. En `esta parte <https://learn.unity.com/tutorial/introduction-to-optimization-with-unity-2019-3?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e1da6a0edbc2a3da3a31f09>`__ 
-      del proyecto hay un ejemplo de código que podría optimizarse. 
-      Muestra cómo podrías hacerlo.
-   #. ¿Qué es el lenguaje CIL?
-   #. ¿Qué hace un ahead of time compiler (AOT)?
-   #. ¿Qué hace un Jit compiler?
-   #. ¿Cuál es la diferencia entre el AOT y el Jit compilers?
-   #. ¿Cuál es la relación entre el lenguaje C++ y el motor de Unity?
-   #. ¿Qué es código manejado?
-   #. ¿Qué es el managed run time?
-   #. Enumera y explica las posibles causas para que un código no se ejecute de manera 
-      eficiente.
-   #. ¿Qué es `reflection` y por qué es tan costosa en términos de desempeño?
-   #. ¿Por qué el uso de find es costo en términos de desempeño? ¿Qué podrías hacer 
-      para minimizar su impacto en la aplicación?
-   #. ¿Por qué no deberías tener métodos Update vacíos?
-   #. ¿Por qué usar Camera.main es costoso en términos de desempeño y qué podrías 
-      hacer para minimizar este costo?
-   #. Explica y muestra un ejemplo del concepto Culling.
-   #. Explica a qué se refiere el concepto de LOD o level of detail.
-   #. Enumera y explica varias estrategias que permitan minimizar el impacto del Garbage 
-      collector.
-   #. ¿Qué síntomas en la ejecución de tu código pueden ser indicios de problemas 
-      con el Garbage collector? ¿A qué se puede deber este síntoma?
-   #. ¿Cuál es la diferencia entre el manejo de memoria manual y el Garbage collector?
-   #. ¿A qué se refiere el concepto de Allocated Memory?
-   #. ¿A qué se refiere el concepto de Deallocated Memory?
-   #. ¿Qué significa el concepto IN SCOPE relacionado con las variables?
-   #. Explica cómo es el proceso de allocate y deallocate memoria del STACK.
-   #. Explica cómo es el proceso de allocate y deallocate memoria del HEAP.
-   #. ¿Cada cuánto se ejecuta el Garbage collector?
-   #. ¿Qué puede hacer que el Garbage collector tome mucho tiempo en ejecutarse? 
-      ¿Crees que esto puede ser grave o no para tu aplicación? ¿Por qué?
-   #. ¿Qué es el concepto de heap fragmentation?
-   #. ¿Qué tipo de variables se almacenan en el heap y en el stack? Muestra ejemplos.
-   #. Enumera y explica tres ESTRATEGIAS con las cuales puedes reducir el impacto del 
-      Garbage collector.
-   #. Explica y da ejemplos de la técnicas Caching.
-   #. ¿Por qué no deberías asignar memoria en métodos que sean llamados frecuentemente?
-   #. Explica le técnica Clearing collections.
-   #. ¿Por qué es útil en términos de memoria la clase StringBuilding?
-   #. Explica y muestra un ejemplo del concepto de Boxing.
-   #. ¿Por qué deberías evitar el Boxing?
-   #. ¿Qué es el concepto de CLOSURE?
-   #. Explica los pasos que debe realizar la CPU con cada frame que se renderiza.
-   #. ¿Qué significa el término Draw Call?
-   #. ¿Qué significa el término Batching.
-   #. Explica los pasos que debe realizar la GPU con cada frame que se renderiza.
-   #. ¿Qué significa que el PIPELINE de renderización sea ineficiente, es decir, qué 
-      puede hacer qué no sea eficiente?
-   #. ¿Cuál es el `flujo de trabajo <https://learn.unity.com/tutorial/challenge-optimize-the-project-scripts?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e734280edbc2a001f390afd>`__ 
-      que debes seguir para optimizar un proyecto?
-   #. ¿A qué se refiere el término Global Illumitation?
-   #. Cuando estés realizando el RETO Bake the scene lighting ten presente que en el paso 
-      2 cuando selecciones Generate Lighting esto tardará un buen rato. Todo dependerá de 
-      tu computador.
-   #. ¿Qué significa la técnica occlusion culling? ¿Para qué sirve? ¿Qué hace?
-   #. ¿Por qué la técnica no es sirve cuando el contenido de una escena se genera en 
-      tiempo real?
-   #. ¿Para qué tipo de proyectos la técnica es ideal? 
-   #. ¿El proyecto que estás optimizando es buen candidato según lo anterior?
+El enlace al proyecto esta 
+`aquí <https://learn.unity.com/project/optimizing-for-performance-2019-3>`__.
 
-   .. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
+Puedes bajar el código del proyecto 
+`aquí <https://connect-prd-cdn.unity.com/20200319/9d88a529-d7d4-4f3e-bfa6-9af72294a535/LearnLive_OptimizationAssets.zip?_ga=2.126028237.1943325220.1617376423-1653210251.1613099991>`__.
 
-      Te voy a dejar aquí otros enlaces muy interesantes. TEN PRESENTE 
-      que varias de las tecnologías relacionadas con Dots están en etapa experimental, 
-      en particular la parte que llaman actualmente ENTITY (antes ECS).
+Para usar el código crea un proyecto 3D en Unity 2019.4LTS e importa el packet anterior.
 
-      * `Mejoras al profiler <https://youtu.be/oWaBW8A1pmQ>`__.
-      * `Sobre el Job system <https://youtu.be/3o12aic7kDY>`__.
-      * `Tutorial sobre el Job system <https://youtu.be/C56bbgtPr_w>`__.
-      * `Conceptos básicos <https://youtu.be/HVzSTEIAXi8>`__ de Dots.
-      * `Sobre Dots <https://youtu.be/Z9-WkwdDoNY>`__.
-      * `PathFinding in Dots <https://youtu.be/1bO1FdEThnU>`__.
-      * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
-      sobre profiling y optimización.
-      * Los escenarios I/O-bounded son muy comunes en las aplicaciones interactivas 
-      que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
-      integrar a la aplicación `DISPOSITIVOS EXTERNOS`. Si tienes curiosidad puedes 
-      aprender un poco más acerca de esto 
-      `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__.
-      * `Conferencia de Unity <https://youtu.be/kwnb9Clh2Is>`__ en el GDC del 2018 donde 
-      explican algunos asuntos relativos al Job system, entre otros.
-      * `Conferencia introductoria <https://youtu.be/epTPFamqkZo>`__ sobre profiling y 
-      optimización en Unity.
+#. ¿Por qué la memoria que se usa en el stack se libera automáticamente?
+#. ¿Por qué se dice que le memoria en el heap es manejada?
+#. ¿Por qué es más lento el manejo de memoria en el heap?
+#. Explica en pocas palabras el concepto de Object pooling y explica 
+   por qué permite optimizar la recolección de basura por parte del Garbage 
+   collector.
+#. ¿Por qué puede ser mejor utilizar GetComponent en el método Start o Awake en 
+   vez de Update?
+#. ¿Cuándo deberías utilizar LateUpdate en vez de Update?
+#. ¿Cuándo deberías utilizar FixedUpdate en vez de Update?
+#. ¿Cómo se comparan las corutinas con las máquinas de estado?
+#. Si tienes una operación MUY MUY larga que te está tomando varios frames 
+   ¿Qué tienes que hacer para poder implementar esa operación con una corutina?
+#. En `esta parte <https://learn.unity.com/tutorial/introduction-to-optimization-with-unity-2019-3?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e1da6a0edbc2a3da3a31f09>`__ 
+   del proyecto hay un ejemplo de código que podría optimizarse. 
+   Muestra cómo podrías hacerlo.
+#. ¿Qué es el lenguaje CIL?
+#. ¿Qué hace un ahead of time compiler (AOT)?
+#. ¿Qué hace un Jit compiler?
+#. ¿Cuál es la diferencia entre el AOT y el Jit compilers?
+#. ¿Cuál es la relación entre el lenguaje C++ y el motor de Unity?
+#. ¿Qué es código manejado?
+#. ¿Qué es el managed run time?
+#. Enumera y explica las posibles causas para que un código no se ejecute de manera 
+   eficiente.
+#. ¿Qué es ``reflection`` y por qué es tan costosa en términos de desempeño?
+#. ¿Por qué el uso de find es costoso en términos de desempeño? 
+   ¿Qué podrías hacer para minimizar su impacto en la aplicación?
+#. ¿Por qué no deberías tener métodos Update vacíos?
+#. ¿Por qué usar Camera.main es costoso en términos de desempeño y qué podrías 
+   hacer para minimizar este costo?
+#. Explica y muestra un ejemplo del concepto Culling.
+#. Explica a qué se refiere el concepto de LOD o level of detail.
+#. Enumera y explica varias estrategias que permitan minimizar el impacto del Garbage 
+   collector.
+#. ¿Qué síntomas en la ejecución de tu código pueden ser indicios de problemas 
+   con el Garbage collector? ¿A qué se puede deber este síntoma?
+#. ¿Cuál es la diferencia entre el manejo de memoria manual y el Garbage collector?
+#. ¿A qué se refiere el concepto de Allocated Memory?
+#. ¿A qué se refiere el concepto de Deallocated Memory?
+#. ¿Qué significa el concepto IN SCOPE relacionado con las variables?
+#. Con relación al STACK explica cómo es el proceso de allocate y deallocate.
+#. Con relación al HEAP explica cómo es el proceso de allocate y deallocate.
+#. ¿Cada cuánto se ejecuta el Garbage collector?
+#. ¿Qué puede hacer que el Garbage collector tome mucho tiempo en ejecutarse? 
+   ¿Crees que esto puede ser grave o no para tu aplicación? ¿Por qué?
+#. ¿Qué es el concepto de heap fragmentation?
+#. ¿Qué tipo de variables se almacenan en el heap y en el stack? Muestra ejemplos.
+#. Enumera y explica tres ESTRATEGIAS con las cuales puedes reducir el impacto del 
+   Garbage collector.
+#. Explica y da ejemplos de la técnicas Caching.
+#. ¿Por qué no deberías asignar memoria en métodos que sean llamados frecuentemente?
+#. Explica le técnica Clearing collections.
+#. ¿Por qué es útil en términos de memoria la clase StringBuilding?
+#. Explica y muestra un ejemplo del concepto de Boxing.
+#. ¿Por qué deberías evitar el Boxing?
+#. ¿Qué es el concepto de CLOSURE?
+#. Explica los pasos que debe realizar la CPU con cada frame que se renderiza.
+#. ¿Qué significa el término Draw Call?
+#. ¿Qué significa el término Batching.
+#. Explica los pasos que debe realizar la GPU con cada frame que se renderiza.
+#. ¿Qué significa que el PIPELINE de renderización sea ineficiente, es decir, qué 
+   puede hacer qué no sea eficiente?
+#. ¿Cuál es el `flujo de trabajo <https://learn.unity.com/tutorial/challenge-optimize-the-project-scripts?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5e734280edbc2a001f390afd>`__ 
+   que debes seguir para optimizar un proyecto?
+#. ¿A qué se refiere el término Global Illumitation?
+#. Cuando estés realizando el RETO Bake the scene lighting ten presente que en el paso 
+   2 cuando selecciones Generate Lighting esto tardará un buen rato. Todo dependerá de 
+   tu computador.
+#. ¿Qué significa la técnica occlusion culling? ¿Para qué sirve? ¿Qué hace?
+#. ¿Por qué la técnica no es sirve cuando el contenido de una escena se genera en 
+   tiempo real?
+#. ¿Para qué tipo de proyectos la técnica es ideal? 
+#. ¿El proyecto que estás optimizando es buen candidato según lo anterior?
+
+
+Evaluación de la unidad 3
+----------------------------
+
+Regresa aquí la semana de evaluación y no olvides presionar la tecla F5 para 
+recargar la página web.
+
+
+.. warning:: OPCIONAL (tal vez en vacaciones o cuando tengas tiempo libre)
+
+   * `Curso avanzado <https://learn.unity.com/course/performance-and-optimisation>`__ 
+     sobre profiling y optimización.
+
+   * Los escenarios I/O-bounded son muy comunes en las aplicaciones interactivas 
+     que construyen tus compañeros de Experiencias Interactivas ya que ellos deben 
+     integrar a la aplicación ``DISPOSITIVOS EXTERNOS``. Si tienes curiosidad puedes 
+     aprender un poco más acerca de esto 
+     `aquí <https://sensores1.readthedocs.io/es/latest/_unidad4/unidad4.html>`__.
