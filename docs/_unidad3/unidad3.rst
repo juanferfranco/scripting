@@ -484,10 +484,8 @@ Trabajo autónomo 4: caso de estudio 2
 
 En este espacio te voy a pedir que revises una sesión en Vivo de Unity que puede ver 
 `aquí <https://learn.unity.com/tutorial/learn-live-recording-how-to-profile-and-optimize-a-game?uv=2019.3&projectId=5e71011aedbc2a07f42bd138#5ebdde1fedbc2a002280b3cd>`__. 
-En esta sesión podrás un segundo caso de estudio donde se optimizará un juego.
+En esta sesión podrás ver un segundo caso de estudio donde se optimizará un juego.
 
-En el video te invitarán a bajar un proyecto; sin embargo, esto vamos a postergarlo 
-para la próxima semana.
 
 Sesiones 5 y 6 y trabajo autónomo 5 y 6
 ****************************************
