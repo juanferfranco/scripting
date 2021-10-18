@@ -61,3 +61,20 @@ Con tus compañeros de trabajo vas a preparar un presentación así:
 * Cada equipo realizará la presentación al grupo en la última sesión de 
   clases en la semana 16.
 
+Criterios de evaluación
+**************************
+
+#. Conformación del equipo mínimo de 3 y máximo de 5 y manejo 
+   del proyecto bajo control de versión mostrando el manejo en Github: 0.6
+#. Orden y preparación de la presentación: 0.4
+#. Análisis de estructuras de datos: 0.4
+#. Aplicación de estructuras de datos: 0.4
+#. Análisis de los principios SOLID: 0.4
+#. Aplicación (refactoring) de los principios SOLID: 0.4
+#. Análisis de patrones de diseño: 0.4
+#. Aplicación de patrones de diseño: 0.4
+#. Análisis de arquitectura: 0.4
+#. Aplicación de arquitectura por eventos: 0.4
+#. Perfilamiento del proyecto e identificación de posibles problemas: 0.4
+#. Optimización y comparación de mejoras: 0.4
+
