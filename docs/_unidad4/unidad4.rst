@@ -51,15 +51,6 @@ Qué debes hacer en este proyecto de la Unidad.
 #. Implementa las optimizaciones y compara los resultados de la optimización 
    con el perfilamiento anterior.
 
-Entrega
-*********
-
-Con tus compañeros de trabajo vas a preparar un presentación así:
-
-* Duración máxima de 10 minutos.
-* Vas a mostrar los resultados de cada uno de los puntos del enunciado.
-* Cada equipo realizará la presentación al grupo en la última sesión de 
-  clases en la semana 16.
 
 Criterios de evaluación
 **************************
@@ -78,3 +69,13 @@ Criterios de evaluación
 #. Perfilamiento del proyecto e identificación de posibles problemas: 0.4
 #. Optimización y comparación de mejoras: 0.4
 
+Entrega
+*********
+
+Con tus compañeros de trabajo vas a preparar un presentación así:
+
+* Duración máxima de 10 minutos.
+* Vas a mostrar los resultados de cada item presentado en los criterios de evaluación.
+* Cada equipo realizará la presentación al grupo en la última sesión de 
+  clases en la semana 16.
+* Sube a `este <https://forms.office.com/r/C53LPXHakj>`__  enlace los datos de tu grupo.
