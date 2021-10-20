@@ -597,7 +597,7 @@ Durante esta semana vas a dedicar 4 horas a terminar las preguntas y a REPASAR d
 manera INDIVIDUAL todo el trabajo que realizaste en equipo. TE VAS A PREPARAR PARA 
 LA EVALUACIÓN que estará activa desde el jueves.
 
-Puedes ingresar a la evaluación en `este <https://auladigital.upb.edu.co/mod/quiz/view.php?id=949016>`__ 
+Puedes ingresar a la evaluación en `este <https://auladigital.upb.edu.co/mod/quiz/view.php?id=952811>`__ 
 enlace. La evaluación estará activa desde el jueves 21 de octubre hasta el viernes 22 de octubre. 
 
 
