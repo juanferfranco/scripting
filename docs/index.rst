@@ -1,4 +1,4 @@
-Curso Scripting 2021-20
+Scripting 2024-10
 ========================================
 
 Docente diseñador del curso: Juan Fernando Franco Higuita
