@@ -1,4 +1,4 @@
-INTRODUCCIÓN AL CURSO 
+Introducción al curso 
 =======================
 
 Carta descriptiva
@@ -126,16 +126,17 @@ Metodología
 Seguiremos el marco Challenge based learning, pero ajustada a nuestro contexto,  
 Toda la información relacionada la puedes consultar `aquí <https://www.challengebasedlearning.org/framework/>`__.
 
+.. _cronograma:
 
 Cronograma
 -----------
 
 Estas serás la etapas de nuestro viaje en este curso:
 
-#. Comprometerse: inicia en la semana 1 -  cierre en la semana 3 (inicia en febrero 5).
-#. Investigar: inicia en la semana 4 - cierre en la semana 8 (inicia en marzo 11).
-#. Actuar: inicia en la semana 9 - cierre semana 12 (inicia en abril 15).
-#. Compartir: inicia en la semana 13 - cierre en la semana 16 (inicia en mayo 13).
+#. Comprometerse: inicia en la semana 1 -  cierre en la semana 3 (febrero 10).
+#. Investigar: inicia en la semana 4 - cierre en la semana 8 (marzo 16).
+#. Actuar: inicia en la semana 9 - cierre semana 12 (abril 20).
+#. Compartir: inicia en la semana 13 - cierre en la semana 16 (mayo 18).
 
 Evaluación formativa
 ---------------------
@@ -149,8 +150,8 @@ Evaluación sumativa
 En la evaluación siempre se tendrá en cuenta el PROCESO. Dicho proceso lo observaremos 
 en tu bitácora de aprendizaje. Allí deberás evidenciar los resultados de aprendizaje y 
 la solución a las preguntas guía. Para conseguir un 5 en la nota final de cada etapa, 
-deberás acumular 5 puntos hasta el cierre de la etapa. Cada semana hay puntos para 
-ganar. Te estaré informando qué debes hacer en cada etapa para acumularlos.
+deberás acumular 5 puntos hasta el cierre de la etapa. Cada semana hay puntos por  
+ganar así:
 
 #. Comprometerse: bitácora (2 puntos) + presentación (3 puntos) 20%
 #. Investigar: bitácora (4 puntos) + presentación (1 punto) 30%
@@ -237,6 +238,23 @@ Cada sesión tendrá una duración de 2 horas.
    * Boleto de salida (15 minutos): responder ¿Se logró el propósito de la sesión? Si se 
      logró, reportar las conclusiones de la sesión. Si no se logró reportar qué pasó. 
 
+Manejo de la Bitácora
+------------------------
+
+En la bitácora documentarás tu trayecto de aprendizaje. Te pido que consideres los 
+siguientes aspectos:
+
+* Al planear la sesión de trabajo indica qué pregunta guía o recurso guía 
+  estarás revisando.
+* Incluye en tu bitácora referentes, información, recursos, etc, pero SIEMPRE acompaña esto 
+  con un comentario donde reflexiones acerca de ese recurso, trata de responder la pregunta 
+  ¿Qué puedo concluir acerca de este recurso?
+* Cierra tu sesión respondiendo la pregunta ¿Qué puedo concluir acerca de la pregunta guía? 
+  Mira, es posible que aún no puedas responder la pregunta y necesites trabajar más, pero 
+  si es importante que escribas y visualices qué vas pensando acerca de la pregunta.
+* No olvides SIEMPRE preguntarte ¿Por qué? ¿Qué pasa si? ¿Cómo sería si?  
+
+
 Recursos y actividades guía 
 -----------------------------
 
@@ -247,3 +265,11 @@ Bitácora de trabajo
 --------------------
 
 En `este <https://classroom.github.com/a/CiWiN5KD>`__ enlace podrás encontrar el enlace a tu bitácora personal para el curso.
+
+
+Encuesta de entrada
+----------------------
+
+El propósito de la siguiente encuesta será establecer cómo valoras 
+la programación de computadores para tu área de interés.
+Diligencia la encuesta en este enlace.
