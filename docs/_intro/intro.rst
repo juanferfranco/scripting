@@ -1,99 +1,249 @@
 INTRODUCCIÓN AL CURSO 
 =======================
 
+Carta descriptiva
+--------------------
+
+Por favor consulta la carta descriptiva en el sistema de la Universidad. Te voy a 
+mostrar aquí los puntos más importantes de esa documento.
+
+Descripción del curso
+----------------------
 En la actualidad se utilizan plataformas de software especializadas 
-para el desarrollo de aplicaciones interactivas de tiempo real como son, 
-por ejemplo, los motores de videojuegos. Por tanto, el objetivo de este curso 
-es que desarrolles competencias para construir dichas 
+para el desarrollo de aplicaciones interactivas de tiempo real y contenido 
+digital procedural. Por tanto, el objetivo de este curso 
+es que desarrolles las competencias para construir dichas 
 aplicaciones mediante estas plataformas especializadas utilizando las 
 técnicas  y procesos de desarrollo de software adecuados según los requisitos 
 funcionales y no funcionales establecidos.
 
-Propósito de formación de curso
-----------------------------------
+¿Para qué sirve este curso?
+-----------------------------
 
-Se busca que adquieras las competencias que te permitan construir aplicaciones 
-interactivas de tiempo real mediante el uso de plataformas de desarrollo 
-especializadas, aplicando patrones de diseño,  técnicas de depuración, 
-perfilamiento y optimización , uso de estructuras de datos, algoritmos y 
-herramientas que faciliten el trabajo en equipo.
+Este curso busca que explores técnicas y herramientas que te permitan construir 
+aplicaciones interactivas que entreguen valor a tus flujos de trabajo específicos.
 
-Competencia a desarrollar en el curso 
----------------------------------------
+Resultado de aprendizaje general 1
+------------------------------------
 
-Construye aplicaciones que posibilitan la interacción entre personas, mediada 
-por tecnologías digitales, utilizando lenguajes y metodologías apropiadas 
-según el contexto 
+Ejecuto procesos de desarrollo de aplicaciones interactivas utilizando lenguajes y 
+metodologías apropiadas según el contexto para solucionar problemas de interacción.
 
-Resultados de aprendizaje esperados
----------------------------------------
+Competencia 1
+**************
 
-#. Construyo aplicaciones interactivas aplicando patrones y estrategias que 
-   permitan alcanzar los requisitos funcionales y no funcionales establecidos.
+Diseña, implementa y soporta soluciones basadas en software que hacen uso eficiente 
+de los recursos de un sistema de cómputo.
 
-#. Diseño, aplico y gestiono pruebas para verificar el correcto funcionamiento 
-   de las partes y del todo de un software de manera ordenada y eficiente.
+Resultado de aprendizaje específico 1
+**************************************
 
+Diseño aplicaciones de software para sistemas de entretenimiento digital utilizando 
+los procedimientos y herramientas adecuadas para cumplir los objetivos de un proyecto.
+El nivel de desarrollo esperado es autónomo.
 
-Carta descriptiva
---------------------
+Resultado de aprendizaje específico 2
+**************************************
 
-En `este <https://drive.google.com/file/d/1LjrvO4K0zc3HSF85LJYQAfZ9TEkk2H90/view?usp=sharing>`__ enlace podrías 
-encontrar la carta descriptiva del curso.
+Construyo aplicaciones interactivas aplicando patrones y estrategias que permitan 
+alcanzar los requisitos funcionales y no funcionales establecidos.
+El nivel de desarrollo esperado es autónomo.
 
-Estructura y metodología del curso
------------------------------------
+Resultado de aprendizaje general 2
+------------------------------------
 
-El curso está divido en 4 unidades:
+Soluciono problemas de interacción mediante la integración de contenidos digitales y 
+software de acuerdo con un diseño previo, para la implementación de sistemas intermediados 
+por el entretenimiento digital. 
 
-#. Unidad 1: Trabajo en equipo, estructuras de datos y algoritmos.
-#. Unidad 2: Patrones de diseño.
-#. Unidad 3: Depuración, perfilamiento y optimización.
-#. Unidad 4: Proyecto final.
+Competencia 2
+**************
 
-Cada unidad estará dividida en lecturas y ejercicios que te preparán para la evaluación donde 
-evidenciarás los criterios de competencia del curso.
+Aplica adecuadamente conceptos y utiliza las  herramientas e instrumentos TIC  para 
+conceptualizar, diseñar, implementar y gestionar  sistemas informáticos.
+
+Resultado de aprendizaje específico 3
+**************************************
+
+Aplico pruebas de las partes y del todo de un software siguiendo metodologías, técnicas 
+y estándares de la industria para garantizar el correcto funcionamiento de las aplicaciones.
+El nivel de desarrollo esperado es autónomo.
+
+¿Cómo puedes evidenciar lo aprendido en este curso?
+-----------------------------------------------------
+
+.. warning:: EVIDENCIAS DEL APRENDIZAJE 
+
+  Ahora te voy a mostrar lo que tendrás que hacer para 
+  evidenciar cada uno de los niveles esperados del resultado 
+  de aprendizaje específicos (RAE) al que aporta este curso.
+
+  * RAE1: mediante un proceso de investigación riguroso que 
+    muestre cómo exploraste y evaluaste diferentes opciones 
+    de diseño para llegar a una solución conceptual de tu 
+    aplicación interactiva.
+
+  * RAE2: mediante la implementación de la aplicación interactiva
+    que optimiza las requisitos establecidos evidenciando y 
+    argumentando los patrones y estrategias seleccionados.
+
+  * RAE3: mediante las pruebas que realizarás a lo largo del curso 
+    para explorar posibles soluciones y para evaluar el cumplimiento 
+    de los requisitos establecidos.
+ 
+
+Contenidos a revisar
+-----------------------
+
+En el proceso de investigación para el diseño de la solución conceptual 
+de tu aplicación interactiva se espera que explores, entre MUCHOS otros, 
+al menos estos contenidos:
+
+* Decisiones de diseño para favorecer el trabajo en equipo a la hora 
+  de desarrollar aplicaciones interactivas.
+* Estructura de datos.
+* Algoritmos.
+* Patrones de diseño.
+* Arquitectura de la aplicación.
+* Consideraciones de optimización.
+* Pruebas.
+
+Estructura 
+-----------
+
+El curso está divido en cuatro momentos o llamados a la acción; sin embargo, se 
+espera los llamados a investigar y actuar vayan y vengan en función de las 
+preguntas guía que resulten en el proceso.
+
+#. Comprometerse.
+#. Investigar.
+#. Actuar.
+#. Compartir.
+
+Metodología 
+------------
+
+Seguiremos el marco Challenge based learning, pero ajustada a nuestro contexto,  
+Toda la información relacionada la puedes consultar `aquí <https://www.challengebasedlearning.org/framework/>`__.
+
 
 Cronograma
 -----------
 
-#. Unidad 1: semanas 1 a 6
-#. Unidad 2: semanas 7 a 10
-#. Unidad 3: semanas 11 a 14
-#. Unidad 4: semanas 15 a 16
+Estas serás la etapas de nuestro viaje en este curso:
 
-Evaluación
------------
+#. Comprometerse: inicia en la semana 1 -  cierre en la semana 3 (inicia en febrero 5).
+#. Investigar: inicia en la semana 4 - cierre en la semana 8 (inicia en marzo 11).
+#. Actuar: inicia en la semana 9 - cierre semana 12 (inicia en abril 15).
+#. Compartir: inicia en la semana 13 - cierre en la semana 16 (inicia en mayo 13).
 
-* Evaluación 1: unidad 1 25%. Semana del 23 de agosto. Plazo máximo 29 de agosto.
-* Evaluación 2: unidad 2 25%. Semana del 20 de septiembre. Plazo máximo 26 de septiembre.
-* Evaluación 3: unidad 3 25%. Semana del 18 de octubre. Plazo máximo 24 de octubre.
-* Proyecto: unidad 4 25%. Semana del 1 de noviembre. Plazo máximo 7 de noviembre.
+Evaluación formativa
+---------------------
 
-Luego del plazo máximo la nota de la evaluación será 0.
+Cada semana te estaré proponiendo ejercicios de evaluación formativa y recibirás 
+retroalimentación personalizada.
+
+Evaluación sumativa
+---------------------
+
+En la evaluación siempre se tendrá en cuenta el PROCESO. Dicho proceso lo observaremos 
+en tu bitácora de aprendizaje. Allí deberás evidenciar los resultados de aprendizaje y 
+la solución a las preguntas guía. Para conseguir un 5 en la nota final de cada etapa, 
+deberás acumular 5 puntos hasta el cierre de la etapa. Cada semana hay puntos para 
+ganar. Te estaré informando qué debes hacer en cada etapa para acumularlos.
+
+#. Comprometerse: bitácora (2 puntos) + presentación (3 puntos) 20%
+#. Investigar: bitácora (4 puntos) + presentación (1 punto) 30%
+#. Actuar: bitácora (3 puntos) + prototipo final (2) 30%
+#. Compartir: bitácora (3 puntos) + producto (2 punto) 20%
+
+.. warning:: ¿Qué pasa si no cumplo con los plazos?
+
+   * Nota que siempre hay puntos por la bitácora. Si no trabajas cada semana 
+     ese punto se pierde.
+   * Si no entregas el producto de cierre de proceso debes buscar al profesor 
+     a más tardar dos días hábiles, pero deberás ajustarte a la disponibilidad 
+     del profesor. En esa reunión se establecerá la penalidad por el incumplimiento.
+     Dicha penalidad puede ir hasta perder todos los puntos del producto de cierre.
+
+Asistencia
+---------------------
+
+* La sesión presencial es obligatoria.
+* La sesión de trabajo independiente es obligatoria.
+* Si no asistes debes enviar un correo al profesor a más tardar dos días 
+  hábiles:
+  
+  * La razón de la falta y los soportes.
+  * Tendrás la semana siguiente antes de la sesión de clase para realizar 
+    el trabajo de las sesiones que faltaste.
+  * En la siguiente sesión debes mostrarle al profesor tu bitácora con 
+    los resultados de la sesión que faltaste. De no hacerlo, perderás los puntos 
+    correspondientes.
+* La sesión de trabajo independiente la programas según tu horario; sin embargo, 
+  el resultado debe aparecer en la bitácora.
+
+.. warning:: importantes
+
+   * Siempre que faltes a una sesión se reportará en el sistema de la Universidad.
+   * Faltar no significa no trabajar. Tendrás que compensar.
 
 Dedicación
 -----------
 
-Este curso es muy práctico. Deberás trabajar de manera sincrónica
-3:20 horas utilizando herramientas TIC y 2 de horas de forma asincrónica.
+Este curso es de 2 créditos distribuidos en dos sesiones semanales con 
+acompañamiento del docente y una sesión de trabajo independiente. La dedicación 
+en horas es de 6 horas.
 
-Bibliografía
----------------------
+Rutina de trabajo en aula   
+---------------------------
 
-Vamos a utilizar recursos gratuitos en Internet e información que estará disponible
-en el sitio web del curso.
+Cada sesión tendrá una duración de 1 hora 40 minutos.
 
-Actividades de cada unidad
-----------------------------
+* Micro-sesión 1 (20 minutos): apertura. Reflexión inicial.
+   * Hágalo ahora: 15 minutos para planear la sesión y retomar el trabajo previo.
+   * Aclaraciones con el profe: 5 minutos para solicitar aclaraciones de algún 
+     asunto (asuntos rápidos) que puedan impedir el desarrollo de la planeación.
+* Micro-sesión 2 (30 minutos):
+   * 25 minutos de trabajo concentrado.
+   * 5 minutos de pausa activa.
+* Micro-sesión 3 (30 minutos):
+   * 25 minutos de trabajo concentrado.
+   * 5 minutos de pausa activa.
+* Micro-sesión 4 (20 minutos): cierre. Reflexión final.
+   * Boleto de salida (15 minutos): responder ¿Se logró el propósito de la sesión? Si se 
+     logró, reportar las conclusiones de la sesión. Si no se logró reportar qué pasó. 
+   * Aclaraciones con el profe: 5 minutos para solicitar aclaraciones de algún 
+     asunto (asuntos rápidos) y verificar con el profesor el commit en el repositorio.
 
-Tendremos dos encuentros sincrónicos semanales:
 
-* Encuentro 1: revisión de conceptos y ejercicios.
-* Encuentro 2: asesorías sobre los ejercicios.
+Rutina de trabajo independiente 
+---------------------------------
+
+Cada sesión tendrá una duración de 2 horas.
+
+* Micro-sesión 1 (15 minutos): apertura. Reflexión inicial.
+   * Hágalo ahora: 15 minutos para planear la sesión y retomar el trabajo previo.
+* Micro-sesión 2 (30 minutos):
+   * 25 minutos de trabajo concentrado.
+   * 5 minutos de pausa activa.
+* Micro-sesión 3 (30 minutos):
+   * 25 minutos de trabajo concentrado.
+   * 5 minutos de pausa activa.
+* Micro-sesión 4 (30 minutos):
+   * 25 minutos de trabajo concentrado.
+   * 5 minutos de pausa activa.
+* Micro-sesión 5 (15 minutos): cierre. Reflexión final.
+   * Boleto de salida (15 minutos): responder ¿Se logró el propósito de la sesión? Si se 
+     logró, reportar las conclusiones de la sesión. Si no se logró reportar qué pasó. 
+
+Recursos y actividades guía 
+-----------------------------
+
+Material en Internet, material elaborado por el docente e inteligencias 
+artificiales generativas.
 
 Bitácora de trabajo  
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------
 
-Te voy a proponer que uses una bitácora de trabajo donde puedas ir desarrollando 
-los ejercicios, se llama `Notion <https://www.notion.so>`__.
+En `este <https://classroom.github.com/a/CiWiN5KD>`__ enlace podrás encontrar el enlace a tu bitácora personal para el curso.
