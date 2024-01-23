@@ -264,7 +264,7 @@ artificiales generativas.
 Bitácora de trabajo  
 --------------------
 
-En `este <https://classroom.github.com/a/CiWiN5KD>`__ enlace podrás encontrar el enlace a tu bitácora personal para el curso.
+En `este <https://classroom.github.com/a/GECszppM>`__ enlace podrás encontrar el enlace a tu bitácora personal para el curso.
 
 
 Encuesta de entrada
