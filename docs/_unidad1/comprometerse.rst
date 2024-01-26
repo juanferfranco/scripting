@@ -6,7 +6,7 @@ Introducción
 
 Por motivos de tiempo y restricciones curriculares, esta fase del marco de 
 trabajo Challenge Based Learning (CBL) no la podremos desplegar tal cual 
-como la propone la `metodología de trabajo <https://www.challengebasedlearning.org/framework/>`. 
+como la propone la `metodología de trabajo <https://www.challengebasedlearning.org/framework/>`__. 
 Vamos a partir desde su última sub-fase, que corresponde al enunciado del reto; 
 sin embargo, te voy a proponer que ``personalices`` el reto para que puedas ``comprometerte`` 
 con el trayecto de aprendiza que emprenderás.
@@ -83,7 +83,7 @@ Actividad 3
   #. ¿A qué se refiere la integración de técnicas procedurales?
   #. ¿A qué se refiere la integración de técnicas automatización?
   #. ¿Qué significa optimizar un aspecto del flujo de trabajo?
-  #. Qué significa una mejora tangible?
+  #. ¿Qué significa una mejora tangible?
 
 Actividad 4
 *************
@@ -95,21 +95,21 @@ Actividad 4
 
   * ¿Cuál será tu área de énfasis?
   * ¿Cuál será el aspecto clave?
-  * Justifica tus conclusiones basadas en las conclusiones de las actividades anteriores
+  * Justifica tus decisiones basado en las conclusiones de las actividades anteriores.
 
 Evidencias
 -------------
 
-#. Bitácoras de las sesiones de trabajo en aula e independientes. Se asignará un punto 
-  semanal por el cumplimiento de este aspecto. Recuerda que el punto no se da retroactivo, 
-  es decir, semana que no trabajes, es punto perdido. 
+#. Bitácoras de las sesiones de trabajo en aula e independiente. Se asignará un punto 
+   semanal por el cumplimiento de este aspecto. Recuerda que el punto no se da retroactivo, 
+   es decir, semana que no trabajes, es punto perdido. 
 #. Para la sesión de trabajo en aula de la semana de cierre tienes 5 minutos para presentar 
    la solución a estas preguntas:
 
-  ¿Cómo personalicé el reto?
-  ¿Por qué llegué a esta personalización?
-  ¿Qué referentes utilicé para llegar a esta personalización (siempre acompáñalos de
-  una descripción muy corta)?
+   ¿Cómo personalicé el reto?
+   ¿Por qué llegué a esta personalización?
+   ¿Qué referentes utilicé para llegar a esta personalización (siempre acompáñalos de
+   una descripción muy corta)?
 
 #. Esta presentación la realizarás en el README.md de la carpeta `reto` del repositorio
-#. Diligencia esta encuesta.
+#. (TODO) Diligencia esta encuesta.

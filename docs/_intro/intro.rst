@@ -5,7 +5,7 @@ Carta descriptiva
 --------------------
 
 Por favor consulta la carta descriptiva en el sistema de la Universidad. Te voy a 
-mostrar aquí los puntos más importantes de esa documento.
+mostrar aquí los puntos más importantes de ese documento.
 
 Descripción del curso
 ----------------------
@@ -27,7 +27,7 @@ Resultado de aprendizaje general 1
 ------------------------------------
 
 Ejecuto procesos de desarrollo de aplicaciones interactivas utilizando lenguajes y 
-metodologías apropiadas según el contexto para solucionar problemas de interacción.
+metodologías apropiadas, según el contexto, para solucionar problemas de interacción.
 
 Competencia 1
 **************
@@ -75,8 +75,8 @@ El nivel de desarrollo esperado es autónomo.
 .. warning:: EVIDENCIAS DEL APRENDIZAJE 
 
   Ahora te voy a mostrar lo que tendrás que hacer para 
-  evidenciar cada uno de los niveles esperados del resultado 
-  de aprendizaje específicos (RAE) al que aporta este curso.
+  evidenciar cada uno de los niveles esperados de los resultados
+  de aprendizaje específicos (RAE) a los que aporta este curso:
 
   * RAE1: mediante un proceso de investigación riguroso que 
     muestre cómo exploraste y evaluaste diferentes opciones 
@@ -108,22 +108,23 @@ al menos estos contenidos:
 * Consideraciones de optimización.
 * Pruebas.
 
+
 Estructura 
 -----------
 
 El curso está divido en cuatro momentos o llamados a la acción; sin embargo, se 
-espera los llamados a investigar y actuar vayan y vengan en función de las 
-preguntas guía que resulten en el proceso.
+espera que los llamados a investigar y a actuar vayan y vengan en función de las 
+preguntas guía que resulten en el proceso:
 
-#. Comprometerse.
-#. Investigar.
-#. Actuar.
-#. Compartir.
+#. Comprometerse: alinear el contenido con tus intereses.
+#. Investigar: construir los fundamentos conceptuales.
+#. Actuar: aplicar los conceptos a la solución de un problema real.
+#. Compartir: lo aprendido y la solución.
 
 Metodología 
 ------------
 
-Seguiremos el marco Challenge based learning, pero ajustada a nuestro contexto,  
+Seguiremos el marco Challenge based learning, pero ajustado a nuestro contexto.
 Toda la información relacionada la puedes consultar `aquí <https://www.challengebasedlearning.org/framework/>`__.
 
 .. _cronograma:
@@ -131,7 +132,7 @@ Toda la información relacionada la puedes consultar `aquí <https://www.challen
 Cronograma
 -----------
 
-Estas serás la etapas de nuestro viaje en este curso:
+Estas serán la etapas de nuestro trayecto de aprendizaje:
 
 #. Comprometerse: inicia en la semana 1 -  cierre en la semana 3 (febrero 10).
 #. Investigar: inicia en la semana 4 - cierre en la semana 8 (marzo 16).
@@ -141,7 +142,8 @@ Estas serás la etapas de nuestro viaje en este curso:
 Evaluación formativa
 ---------------------
 
-Cada semana te estaré proponiendo ejercicios de evaluación formativa y recibirás 
+Cada semana te estaré proponiendo actividades donde deberás tomar decisiones. 
+Te acompañaré en el proceso de evaluación de esas decisiones entregándote 
 retroalimentación personalizada.
 
 Evaluación sumativa
@@ -176,11 +178,9 @@ Asistencia
   hábiles:
   
   * La razón de la falta y los soportes.
-  * Tendrás la semana siguiente antes de la sesión de clase para realizar 
-    el trabajo de las sesiones que faltaste.
-  * En la siguiente sesión debes mostrarle al profesor tu bitácora con 
-    los resultados de la sesión que faltaste. De no hacerlo, perderás los puntos 
-    correspondientes.
+  * Tendrás la semana siguiente hasta las 12 del medio día para completar 
+    tus sesiones de trabajo en la bitácora. Recuerda que cada semana debes 
+    reportar 3 sesiones, dos presenciales y una de trabajo independiente.
 * La sesión de trabajo independiente la programas según tu horario; sin embargo, 
   el resultado debe aparecer en la bitácora.
 
@@ -188,6 +188,8 @@ Asistencia
 
    * Siempre que faltes a una sesión se reportará en el sistema de la Universidad.
    * Faltar no significa no trabajar. Tendrás que compensar.
+   * Tienes hasta las 12 del medio día de cada viernes para completar tus 
+     sesiones de trabajo en la bitácora. 
 
 Dedicación
 -----------
@@ -270,6 +272,11 @@ En `este <https://classroom.github.com/a/GECszppM>`__ enlace podrás encontrar e
 Encuesta de entrada
 ----------------------
 
-El propósito de la siguiente encuesta será establecer cómo valoras 
-la programación de computadores para tu área de interés.
-Diligencia la encuesta en este enlace.
+El propósito de la siguiente encuesta será establecer qué tanto valores la programación 
+y qué tanto te sientes autoeficaz en ella. Por favor ingresa a `este <https://forms.office.com/r/sjMq9vWdQ5>`__ 
+enlace y diligencia honestamente el formulario. Muchas gracias.
+
+Diagnóstico de entrada 
+------------------------
+
+Ingresa `aquí <https://classroom.github.com/a/1rwTxf2c>`__ para realizar la prueba diagnóstica.
