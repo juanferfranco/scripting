@@ -119,7 +119,7 @@ preguntas guía que resulten en el proceso:
 #. Comprometerse: alinear el contenido con tus intereses.
 #. Investigar: construir los fundamentos conceptuales.
 #. Actuar: aplicar los conceptos a la solución de un problema real.
-#. Compartir: lo aprendido y la solución.
+#. Compartir: mostrar lo aprendido y la solución a la que llegaste.
 
 Metodología 
 ------------
@@ -152,22 +152,21 @@ Evaluación sumativa
 En la evaluación siempre se tendrá en cuenta el PROCESO. Dicho proceso lo observaremos 
 en tu bitácora de aprendizaje. Allí deberás evidenciar los resultados de aprendizaje y 
 la solución a las preguntas guía. Para conseguir un 5 en la nota final de cada etapa, 
-deberás acumular 5 puntos hasta el cierre de la etapa. Cada semana hay puntos por  
-ganar así:
+deberás acumular 5 puntos hasta el cierre de esa etapa. Cada semana hay puntos por ganar 
+distribuidos de esta manera: 
 
-#. Comprometerse: bitácora (2 puntos) + presentación (3 puntos) 20%
-#. Investigar: bitácora (4 puntos) + presentación (1 punto) 30%
-#. Actuar: bitácora (3 puntos) + prototipo final (2) 30%
-#. Compartir: bitácora (3 puntos) + producto (2 punto) 20%
+#. Comprometerse: :math:`5/3` cada semana. 20%
+#. Investigar: :math:`5/5` cada semana. 30%
+#. Actuar: :math:`5/4` cada semana. 30%
+#. Compartir: :math:`5/4` cada semana. 20%
 
 .. warning:: ¿Qué pasa si no cumplo con los plazos?
 
-   * Nota que siempre hay puntos por la bitácora. Si no trabajas cada semana 
-     ese punto se pierde.
-   * Si no entregas el producto de cierre de proceso debes buscar al profesor 
-     a más tardar dos días hábiles, pero deberás ajustarte a la disponibilidad 
-     del profesor. En esa reunión se establecerá la penalidad por el incumplimiento.
-     Dicha penalidad puede ir hasta perder todos los puntos del producto de cierre.
+   * Nota que siempre hay puntos por ganar cada semana. Si no trabajas cada semana 
+     esos puntos se pierde. No se recuperan, no son retroactivos.
+   * Cada etapa tiene una presentación grupal en la semana de cierre para compartir los resultados. 
+     Si no realizas esa presentación debes buscar al profesor a más tardar dos días hábiles 
+     para concretar los puntos de esa semana.
 
 Asistencia
 ---------------------
@@ -178,7 +177,7 @@ Asistencia
   hábiles:
   
   * La razón de la falta y los soportes.
-  * Tendrás la semana siguiente hasta las 12 del medio día para completar 
+  * Tendrás la semana siguiente hasta el viernes a las 12 del medio día para completar 
     tus sesiones de trabajo en la bitácora. Recuerda que cada semana debes 
     reportar 3 sesiones, dos presenciales y una de trabajo independiente.
 * La sesión de trabajo independiente la programas según tu horario; sin embargo, 
@@ -196,7 +195,7 @@ Dedicación
 
 Este curso es de 2 créditos distribuidos en dos sesiones semanales con 
 acompañamiento del docente y una sesión de trabajo independiente. La dedicación 
-en horas es de 6 horas.
+es de 6 horas.
 
 Rutina de trabajo en aula   
 ---------------------------
@@ -205,7 +204,7 @@ Cada sesión tendrá una duración de 1 hora 40 minutos.
 
 * Micro-sesión 1 (20 minutos): apertura. Reflexión inicial.
    * Hágalo ahora: 15 minutos para planear la sesión y retomar el trabajo previo.
-   * Aclaraciones con el profe: 5 minutos para solicitar aclaraciones de algún 
+   * Aclaraciones con el profesor: 5 minutos para solicitar aclaraciones de algún 
      asunto (asuntos rápidos) que puedan impedir el desarrollo de la planeación.
 * Micro-sesión 2 (30 minutos):
    * 25 minutos de trabajo concentrado.
@@ -216,7 +215,7 @@ Cada sesión tendrá una duración de 1 hora 40 minutos.
 * Micro-sesión 4 (20 minutos): cierre. Reflexión final.
    * Boleto de salida (15 minutos): responder ¿Se logró el propósito de la sesión? Si se 
      logró, reportar las conclusiones de la sesión. Si no se logró reportar qué pasó. 
-   * Aclaraciones con el profe: 5 minutos para solicitar aclaraciones de algún 
+   * Aclaraciones con el profesor: 5 minutos para solicitar aclaraciones de algún 
      asunto (asuntos rápidos) y verificar con el profesor el commit en el repositorio.
 
 

@@ -19,8 +19,9 @@ el contenido académico de este curso o trayecto de aprendizaje. La idea es que
 puedas personalizar el reto para que esté alineado con aquello que valoras.
 
 En términos más simples. En este curso es necesario programar, ya sea con lenguajes 
-de programación textuales o gráficos. La idea es que encuentres ¿Cómo puedes 
-potenciar aquello que realmente valoras programando un computador? 
+de programación textuales o gráficos. La idea es que encuentres cómo puedes 
+potenciar aquello que realmente valoras mediante el uso de la herramienta 
+de la programación de computadores.
 
 Mi propósito en este curso es acompañarte y apoyarte para que estés motivado, es decir, 
 para que puedas iniciar, te mantengas trabajando y pongas el esfuerzo mental adecuado 
@@ -79,6 +80,9 @@ Actividad 3
 .. warning::
   PREGUNTAS GUÍA
 
+  Estas son preguntas iniciales, pero tu puedes generar muchas más en función 
+  de tu interés y curiosidad.
+
   #. ¿Qué significa desarrollar un prototipo de aplicación interactiva?
   #. ¿A qué se refiere la integración de técnicas procedurales?
   #. ¿A qué se refiere la integración de técnicas automatización?
@@ -100,16 +104,17 @@ Actividad 4
 Evidencias
 -------------
 
-#. Bitácoras de las sesiones de trabajo en aula e independiente. Se asignará un punto 
-   semanal por el cumplimiento de este aspecto. Recuerda que el punto no se da retroactivo, 
-   es decir, semana que no trabajes, es punto perdido. 
-#. Para la sesión de trabajo en aula de la semana de cierre tienes 5 minutos para presentar 
-   la solución a estas preguntas:
+#. Bitácoras de las sesiones de trabajo en aula e independiente. 
+#. Para la sesión de trabajo en aula de la semana de cierre debes tener resueltas 
+   las siguientes preguntas para compartir con tus compañeros. Tienes 5 minutos para presentar 
+   tus respuestas a estas preguntas:
+   
+   .. tip:: Preguntas guía para la presentación
 
-   ¿Cómo personalicé el reto?
-   ¿Por qué llegué a esta personalización?
-   ¿Qué referentes utilicé para llegar a esta personalización (siempre acompáñalos de
-   una descripción muy corta)?
+      * ¿Cómo personalicé el reto?
+      * ¿Por qué llegué a esta personalización?
+      * ¿Qué referentes utilicé para llegar a esta personalización (siempre acompáñalos de
+        una descripción muy corta)?
 
-#. Esta presentación la realizarás en el README.md de la carpeta `reto` del repositorio
+#. Esta presentación la realizarás en la bitácora de esta etapa (carpeta `reto`).
 #. (TODO) Diligencia esta encuesta.
