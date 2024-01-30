@@ -279,3 +279,11 @@ Diagnóstico de entrada
 ------------------------
 
 Ingresa `aquí <https://classroom.github.com/a/1rwTxf2c>`__ para realizar la prueba diagnóstica.
+
+Puntos semanales
+------------------
+
+En `este <https://docs.google.com/spreadsheets/d/1pIkOUzHpXWrSw7E76pAYnfNdzs_IFe-yX6vmz8o6HoM/edit?usp=sharing>`__ 
+enlace puedes consultar la asignación semanal de puntos. Recuerda que tienes plazo hasta el viernes a las 12 
+del medio día todas las semanas para completar tus tres sesiones de trabajo y el resultado o producto de cierre 
+de la fase.
