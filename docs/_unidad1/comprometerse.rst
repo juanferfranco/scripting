@@ -20,8 +20,7 @@ puedas personalizar el reto para que esté alineado con aquello que valoras.
 
 En términos más simples. En este curso es necesario programar, ya sea con lenguajes 
 de programación textuales o gráficos. La idea es que encuentres cómo puedes 
-potenciar aquello que realmente valoras mediante el uso de la herramienta 
-de la programación de computadores.
+potenciar aquello que realmente valoras mediante la programación.
 
 Mi propósito en este curso es acompañarte y apoyarte para que estés motivado, es decir, 
 para que puedas iniciar, te mantengas trabajando y pongas el esfuerzo mental adecuado 
