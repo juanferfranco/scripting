@@ -108,7 +108,6 @@ al menos estos contenidos:
 * Consideraciones de optimización.
 * Pruebas.
 
-
 Estructura 
 -----------
 

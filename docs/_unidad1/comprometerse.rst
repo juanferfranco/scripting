@@ -118,4 +118,3 @@ Evidencias
 #. Esta presentación la realizarás en el archivo README.md de la carpeta 01reto. Ten presente que tenemos 
    una bitácora para todas las etapas y una carpeta para la documentación específica de cada producto de 
    cierre de etapa.
-#. (TODO) Diligencia esta encuesta.
