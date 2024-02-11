@@ -115,6 +115,5 @@ Evidencias
       * ¿Qué referentes utilicé para llegar a esta personalización (siempre acompáñalos de
         una descripción muy corta)?
 
-#. Esta presentación la realizarás en el archivo README.md de la carpeta 01reto. Ten presente que tenemos 
-   una bitácora para todas las etapas y una carpeta para la documentación específica de cada producto de 
-   cierre de etapa.
+#. Esta presentación la realizarás en el archivo README.md de la carpeta resultadoFinal que está en 01comprometerse. 
+

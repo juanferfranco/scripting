@@ -1,11 +1,6 @@
 Investigar
 ===========================
 
-.. warning:: EN CONSTRUCCIÓN 
-
-  Esta sección aún no está lista, pero ya casi :)
-
-
 Introducción
 --------------
 
@@ -20,9 +15,9 @@ Propósito de esta fase
 -----------------------
 
 El objetivo de esta fase es demostrar que has explorado a fondo tu reto personalizado, abarcando todas las 
-preguntas clave necesarias para comprender los principales conceptos para comprender el reto. Esto te 
+preguntas clave necesarias para comprender los principales conceptos para abordar el reto. Esto te 
 permitirá desarrollar conclusiones bien fundamentadas, las cuales son esenciales para desarrollar la 
-solución al reto en la siguiente fase. 
+solución al reto en la siguiente fase.
 
 Duración de esta etapa 
 -----------------------
@@ -45,7 +40,7 @@ Actividad 1
     Tomado de la `guía <https://www.challengebasedlearning.org/project/becoming-great-questioners/>`__ de CBL:
 
     "Piensa en el tipo de preguntas que estás haciendo. Las preguntas superficiales suelen incluir cuándo, qué, 
-    dónde, cómo y quién. Proporcionan antecedentes, pero por lo general son fáciles de responder y solo proporcionan 
+    dónde, cómo y quién. Proporcionan antecedentes, pero por lo general son fáciles de responder y solo permiten  
     una exploración a nivel "superficial" del tema. Las preguntas que comienzan con "Por qué", "Qué pasaría si" o 
     "Cómo es eso" pueden permitirte ir más allá de la superficie para comprender las motivaciones, filosofías e 
     ideas subyacentes."
@@ -55,11 +50,11 @@ Actividad 1
 
 .. important:: PREGUNTAS DE CIERRE DE ACTIVIDAD
 
-    * ¿Cuál crees que sea la importancia de las preguntas orientadoras en tu proceso de investigación?
+    * ¿Cuál crees que sea la importancia de las preguntas guía en tu proceso de investigación?
     * En tu proceso de investigación usarás Internet y posiblemente large language models. ¿Será que puedes 
       desconfiar? Mira, lo que te quiero proponer es que verifiques la validez de tus fuentes y te preguntes 
       si son creíbles y cómo sabes si lo son. De corazón te digo que no es fácil, pero entre más preguntes, 
-      compares y contrastes más fácil será hacerte a una idea más cercana a la verdad. Eso si, te propongo una 
+      compares y contrastes, más fácil será hacerte a una idea más cercana a la verdad. Eso si, te propongo una 
       idea. Yo creo que la verdad es un viaje y no un destino. Lo importante es que dejes siempre la puerta 
       abierta a la duda, pero como una práctica de humildad. Dicho todo esto ¿Te animas a experimentar una 
       desconfianza curiosa y honesta?
@@ -67,7 +62,7 @@ Actividad 1
 Actividad 2
 *************
 
-Ya estás listo para comenzar con toda la fase de investigación. Te ruego que prestes especial atención a lo siguiente.
+Todo está para comenzar con toda la fase de investigación. Te ruego que prestes especial atención a lo siguiente.
 
 .. important:: ALINEACIÓN CON LA CARTA DESCRIPTIVA DEL CURSO 
 
@@ -104,7 +99,6 @@ te daré unas preguntas guía iniciales (preguntas de ajuste curricular) que bus
 con los RAE y los contenidos declarados en la carta descriptiva del curso. Eso si, ten en cuenta que para tu reto 
 personalizado tendrás que abordar MUCHAS, MUCHAS, MUCHAS más preguntas guía. 
 
-
 .. important:: ¿Cuál es el propósito de la fase de investigación?
 
     El propósito de la fase de investigación es que resuelvas todas las preguntas necesarias que se requieren 
@@ -132,7 +126,7 @@ Los pasos son entonces:
        la solución a esta pregunta varía mucho dependiendo del flujo de trabajo y las herramientas que uses, por 
        ejemplo, algunos flujos de trabajo para la construcción de experiencias interactivas usan TouchDesigner. 
        `Aquí <https://youtu.be/KGeQpDoEOro?si=OvPDGAeqFme47TVP>`__ hay un recurso que muestra cómo abordan la pregunta.
-       Pero te insisto, que tendrás que buscar cómo se hace en tu caso particular.
+       Pero te insisto, tendrás que buscar cómo se hace en tu caso particular.
     #. ¿Cómo se hace el control de versión del código y de los assets en un tu caso particular?
     #. ¿Qué estructuras de datos son las más usuales? ¿Por qué? ¿Puedes mostrar ejemplos?
     #. ¿Qué algoritmos son las más usuales? ¿Por qué? ¿Puedes mostrar ejemplos?
@@ -150,10 +144,11 @@ Los pasos son entonces:
 Evidencias
 -------------
 
-#. Bitácoras de las sesiones de trabajo en aula e independiente en la bitácora.
+#. Bitácoras de las sesiones de trabajo en aula e independiente.
 #. Para la sesión de trabajo en aula de la semana de cierre aborda las siguientes 
    cuestiones para compartir con tus compañeros. Tienes 5 minutos para presentar. Recuerda 
-   que la presentación la realizarás en el archivo README.md de la carpeta 02conceptos. 
+   que la presentación la realizarás en el archivo README.md en la carta resultadoFinal que está 
+   en 02investigar. 
 
     .. important:: Consideraciones para la presentación
 

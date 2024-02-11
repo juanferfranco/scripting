@@ -23,3 +23,6 @@ Créditos y horas totales del curso: 2 créditos - 96 horas totales
    Actuar <_unidad3/actuar>
    Compartir <_unidad4/compartir>
    Recursos Guía <recursosGuia>
+
+* Notas del curso.
+* `Classroom <https://classroom.github.com/classrooms/19781391-scripting-2024-10/assignments/bitacorasscripting2024-10>`__.
