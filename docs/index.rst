@@ -22,3 +22,4 @@ Créditos y horas totales del curso: 2 créditos - 96 horas totales
    Investigar <_unidad2/investigar>
    Actuar <_unidad3/actuar>
    Compartir <_unidad4/compartir>
+   Recursos Guía <recursosGuia>
