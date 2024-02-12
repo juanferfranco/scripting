@@ -120,6 +120,8 @@ Trabajo en equipo
 * Git with `Unity for Game Development <https://youtu.be/GmRPCl4MzCA?si=EG3JCI862_eW04h7>`__.
 * `Stress-Free Game Development <https://youtu.be/t9HRzE7_2Xc?si=NLWcyf_354hXydYn>`__: Powering Up Your Studio With DevOps.
 * Version Control Tips for Programmers and Artists. `Unity video <https://youtu.be/I07nO7Mo91g?si=xa8svNpEgAGM1MZI>`__.
+* `Collaborative World Building in Unreal Engine <https://interactiveimmersive.io/blog/unreal-engine/collaborative-world-building-in-unreal-engine-with-multi-user-editing/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Immersive+Monday+%23338&utm_campaign=Immersive+Monday+%23335>`__ with Multi-User Editing.
+
 
 Optimización
 **************
