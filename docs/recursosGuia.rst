@@ -182,3 +182,16 @@ Producciones virtuales
 
 * "EPIPHANY" Unreal Engine 5 Short Film (virtual production). `Video <https://youtu.be/EqbYQoqIZvU?si=1IldzusK5jP3wVuT>`__.
 * I Used Unreal Engine For My Short Film // Virtual Production. `Video <https://youtu.be/LyZ1nZtpYgM?si=dDkH9HzFzmtbJiDk>`__.
+
+Ciencias del aprendizaje
+**************************
+
+* How to STUDY EFFECTIVELY | Andrew Huberman. `Youtube Video <https://youtu.be/Ffh_6VkO0W8?si=aE8y0SGWCEf7xIGt>`__.
+* Charla TED de `Barbara Oakley <https://barbaraoakley.com/>`__.
+* Curso `learning how to learn <https://www.coursera.org/learn/learning-how-to-learn>`__.
+* Barbara cuenta, en `esta <https://youtu.be/m9wXxywLVtQ?t=476>`__ conferencia estilo TED, 
+  como la neurociencia está cambiando lo que sabemos acerca del aprendizaje.
+* `Este <https://barbaraoakley.com/books/learn-like-a-pro/>`__ libro excelente para aprender a aprender cualquier cosa.
+* `Esta <https://youtu.be/erJiJLQcGVg>`__ entrevista sobre el libro Learn like a pro.
+* Si en algún momento de la vida te encargan la tarea de enseñarle a otras personas te recomiendo que estudies con 
+  mucho detenimiento `este <https://barbaraoakley.com/books/uncommon-sense-teaching/>`__ libro.
