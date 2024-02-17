@@ -62,7 +62,7 @@ Actividad 1
 Actividad 2
 *************
 
-Todo está para comenzar con toda la fase de investigación. Te ruego que prestes especial atención a lo siguiente.
+Ahora si, vamos a comenzar con toda la fase de investigación. Te ruego que prestes especial atención a lo siguiente.
 
 .. important:: ALINEACIÓN CON LA CARTA DESCRIPTIVA DEL CURSO 
 
@@ -87,7 +87,7 @@ Todo está para comenzar con toda la fase de investigación. Te ruego que preste
     En cuanto a los contenidos curriculares se espera que abordes:
 
         * Decisiones de diseño para favorecer el trabajo en equipo a la hora de desarrollar aplicaciones interactivas.
-        * Estructura de datos.
+        * Estructuras de datos.
         * Algoritmos.
         * Patrones de diseño.
         * Arquitectura de la aplicación.
@@ -147,7 +147,7 @@ Evidencias
 #. Bitácoras de las sesiones de trabajo en aula e independiente.
 #. Para la sesión de trabajo en aula de la semana de cierre aborda las siguientes 
    cuestiones para compartir con tus compañeros. Tienes 5 minutos para presentar. Recuerda 
-   que la presentación la realizarás en el archivo README.md en la carta resultadoFinal que está 
+   que la presentación la realizarás en el archivo README.md en el directorio resultadoFinal que está 
    en 02investigar. 
 
     .. important:: Consideraciones para la presentación

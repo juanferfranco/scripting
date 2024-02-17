@@ -177,17 +177,18 @@ Asistencia
   
   * La razón de la falta y los soportes.
   * Tendrás la semana siguiente hasta el viernes a las 12 del medio día para completar 
-    tus sesiones de trabajo en la bitácora. Recuerda que cada semana debes 
+    tus sesiones de trabajo presenciales en la bitácora. Recuerda que cada semana debes 
     reportar 3 sesiones, dos presenciales y una de trabajo independiente.
 * La sesión de trabajo independiente la programas según tu horario; sin embargo, 
-  el resultado debe aparecer en la bitácora.
+  el resultado debe aparecer en la bitácora. Como las clases son finalizando la 
+  semana debes realizar tu sesión de trabajo independiente antes de las clases presenciales.
 
 .. warning:: importantes
 
    * Siempre que faltes a una sesión se reportará en el sistema de la Universidad.
    * Faltar no significa no trabajar. Tendrás que compensar.
-   * Tienes hasta las 12 del medio día de cada viernes para completar tus 
-     sesiones de trabajo en la bitácora. 
+   * Tienes hasta las 12 del medio día de cada viernes para completar tu 
+     sesión de trabajo independiente.
 
 Dedicación
 -----------
