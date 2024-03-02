@@ -25,4 +25,6 @@ Créditos y horas totales del curso: 2 créditos - 96 horas totales
    Recursos Guía <recursosGuia>
 
 * `Bitácora del curso <https://github.com/juanferfranco/bitacoraDocScripting-2024-10.git>`__.
+* `Puntos semanales <https://docs.google.com/spreadsheets/d/1pIkOUzHpXWrSw7E76pAYnfNdzs_IFe-yX6vmz8o6HoM/edit?usp=sharing>`__.
 * `Bitácoras de los aprendices <https://classroom.github.com/classrooms/19781391-scripting-2024-10/assignments/bitacorasscripting2024-10>`__.
+
