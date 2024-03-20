@@ -135,8 +135,8 @@ Estas serán la etapas de nuestro trayecto de aprendizaje:
 
 #. Comprometerse: inicia en la semana 1 -  cierre en la semana 3 (febrero 10).
 #. Investigar: inicia en la semana 4 - cierre en la semana 8 (marzo 16).
-#. Actuar: inicia en la semana 9 - cierre semana 12 (abril 20).
-#. Compartir: inicia en la semana 13 - cierre en la semana 16 (mayo 18).
+#. Actuar: inicia en la semana 9 - cierre semana 13 (abril 27).
+#. Compartir: inicia en la semana 14 - cierre en la semana 16 (mayo 18).
 
 Evaluación formativa
 ---------------------
@@ -156,13 +156,13 @@ distribuidos de esta manera:
 
 #. Comprometerse: :math:`5/3` cada semana. 20%
 #. Investigar: :math:`5/5` cada semana. 30%
-#. Actuar: :math:`5/4` cada semana. 30%
-#. Compartir: :math:`5/4` cada semana. 20%
+#. Actuar: :math:`3/5` cada semana + resultado final (2). 30%
+#. Compartir: :math:`3/3` cada semana + resultado final (2). 20%
 
 .. warning:: ¿Qué pasa si no cumplo con los plazos?
 
    * Nota que siempre hay puntos por ganar cada semana. Si no trabajas cada semana 
-     esos puntos se pierde. No se recuperan, no son retroactivos.
+     esos puntos se pierden. No se recuperan, no son retroactivos.
    * Cada etapa tiene una presentación grupal en la semana de cierre para compartir los resultados. 
      Si no realizas esa presentación debes buscar al profesor a más tardar dos días hábiles 
      para concretar los puntos de esa semana.
