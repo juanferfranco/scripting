@@ -188,6 +188,7 @@ Blender
 **********
 
 * How YOU Should Learn Blender In 2024! `Youtube video <https://youtu.be/iCmaM7oobUY?si=hZ_aLZFZ9ylBlx9X>`__. 
+* Blender 4.x Basics Course. `Youtube playlist <https://youtube.com/playlist?list=PL3GeP3YLZn5hhfaGRSmRia0OwPPMfJu0V&si=RAztGJN2xBzXBexV>`__.
 
 
 Ciencias del aprendizaje
