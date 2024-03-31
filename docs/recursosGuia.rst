@@ -184,6 +184,12 @@ Producciones virtuales
 * "EPIPHANY" Unreal Engine 5 Short Film (virtual production). `Video <https://youtu.be/EqbYQoqIZvU?si=1IldzusK5jP3wVuT>`__.
 * I Used Unreal Engine For My Short Film // Virtual Production. `Video <https://youtu.be/LyZ1nZtpYgM?si=dDkH9HzFzmtbJiDk>`__.
 
+Blender
+**********
+
+* How YOU Should Learn Blender In 2024! `Youtube video <https://youtu.be/iCmaM7oobUY?si=hZ_aLZFZ9ylBlx9X>`__. 
+
+
 Ciencias del aprendizaje
 **************************
 
