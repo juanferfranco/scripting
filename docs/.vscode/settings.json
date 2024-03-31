@@ -47,5 +47,6 @@
         "sincronización",
         "sumativas",
         "sumativo"
-    ]
+    ],
+    "esbonio.sphinx.confDir": "${workspaceFolder}"
 }
